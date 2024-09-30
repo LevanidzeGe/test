@@ -1,27 +1,96 @@
-.wrapper {
-  text-align: center;
-  padding-top: 80px;
-}
-
-.wrapper h3 {
-  margin-bottom: 50px;
-}
-
-.imageDiv {
+.TextIntoPhotoWrapper {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap; /* Ensures that images wrap on smaller screens */
-  justify-content: space-between; /* Distribute images evenly */
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.reverse {
+  flex-direction: row-reverse;
 }
 
-.imageDiv img {
-  width: 25%; /* Each image takes 25% of the container width */
-  height: auto; /* Maintain aspect ratio */
-  aspect-ratio: 1 / 1; /* Ensure the images are square */
-  object-fit: cover; /* Ensure image is fully contained and cropped if necessary */
+.image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 600px;
 }
 
-@media (max-width: 768px) {
-  .imageDiv img {
-    width: 50%; /* On smaller screens, images take up 50% of the container width */
+.textDivWrapper {
+  width: 50%;
+  z-index: 1;
+  margin: auto -20%;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.textDiv {
+  border: 1px solid var(--gray5);
+  text-align: center;
+  padding: 15%;
+}
+.textDiv img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+.textDiv p {
+  margin: 20px auto;
+}
+
+@media (max-width: 800px) {
+  .textDiv p {
+    margin: 10px auto;
+  }
+  .textDiv {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .TextIntoPhotoWrapper {
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+  .textDivWrapper {
+    width: 70%;
+    margin: -20% auto;
+  }
+
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .textDiv {
+    padding: 10px;
+  }
+  .TextIntoPhotoWrapper {
+    margin-bottom: 100px;
+  }
+}
+
+/* ----------------slide animation------------------- */
+
+.slideSide {
+  animation: slideSide linear forwards;
+  animation-timeline: view();
+  animation-range: cover -70% cover 40%;
+}
+@keyframes slideSide {
+  0% {
+    /* opacity: 0; */
+    margin: auto 200px;
+  }
+
+  100% {
+    /* opacity: 1; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .slideSide {
+    animation: none;
   }
 }

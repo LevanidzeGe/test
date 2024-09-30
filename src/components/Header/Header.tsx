@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/public/images/logo.png";
+import { logo } from "@/public/image";
 import LanguageSwitcher from "./Navigations/LanguageSwitcher/LanguageSwitcher";
 import { companyName } from "../../../Manager/info";
 import StandartNav from "./Navigations/StandartNav/StandartNav";
@@ -20,13 +20,13 @@ export default function Header() {
         <div className="container">
           <div className={styles.navigationWrapper}>
             <Link href={`/`} onClick={navClose} className={styles.logoWrapper}>
-              {/* <Image
+              <Image
                 className="logo"
-                src={Logo}
+                src={logo}
                 height={200}
                 width={200}
                 alt={`${companyName} logo`}
-              /> */}
+              />
             </Link>
             <StandartNav />
             <LanguageSwitcher />

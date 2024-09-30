@@ -1,42 +1,21 @@
-import Image, { StaticImageData } from "next/image";
+import React from "react";
 import styles from "./ComponentSix.module.css";
-import { useTranslations } from "next-intl";
-import ReservationContactForm from "./ReservationContactForm/ReservationContactForm";
+import Hours from "./components/Hours";
+import Text from "./components/Text";
+import { mapLocation } from "@/Manager/info";
 
-export default function ComponentSix({ image }: { image: StaticImageData }) {
-  const t = useTranslations("homePage.componentSix");
+export default function ComponentSix() {
   return (
-    <section className="section section-light">
+    <section className="section section-medium">
       <div className="container">
-        <div className={styles.threeWrapper}>
-          <div className={styles.firstDiv}>
-            <Image
-              className="shadow-black-m"
-              src={image}
-              alt=""
-              height={400}
-              width={400}
-            />
-            <div className={styles.emptyDiv}></div>
-          </div>
-
-          <div className={styles.secondDiv}>
-            <div className={styles.titleDiv}>
-              <h3 className="heading2 color4">{t("title")}</h3>
+        <div className={styles.mapAndTimesWrapper}>
+          <div className={styles.textMapWrap}>
+            <Text />
+            <div className={styles.mapSide}>
+              <iframe className={styles.mapSide} src={mapLocation}></iframe>
             </div>
-            <ReservationContactForm
-              name={t("name")}
-              email={t("email")}
-              phone={t("phone")}
-              date={t("date")}
-              time={t("time")}
-              quantity={t("quantity")}
-              message={t("message")}
-              send={t("send")}
-              thankYou={t("thankYou")}
-              comfirmation={t("comfirmation")}
-            />
           </div>
+          <Hours />
         </div>
       </div>
     </section>

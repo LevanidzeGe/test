@@ -6,9 +6,6 @@ import { MenuItemProps } from "../menuTypes"; // Assuming MenuItemProps is defin
 import { dynamicPageRoute } from "@/Manager/navigation";
 import { useLocale } from "next-intl";
 import { menuCarPlaceHoldImg } from "@/Manager/navigation";
-import { FaHeart } from "react-icons/fa6";
-import { LuVegan } from "react-icons/lu";
-import { newItem } from "@/public/image";
 
 export default function ServerCard({
   id,
@@ -29,7 +26,7 @@ export default function ServerCard({
     descriptions?.[locale] || "No description available"; // Multilingual descriptions, fallback to single description
 
   return (
-    <div className={`shadow-black-s ${styles.cardWrapper}`}>
+    <div className={` ${styles.cardWrapper}`}>
       <Link href={`/${locale}/${dynamicPageRoute}/${id}`}>
         <Image
           src={image || menuCarPlaceHoldImg}
@@ -41,46 +38,29 @@ export default function ServerCard({
       </Link>
       <div className={styles.cardInfoDiv}>
         <div>
-          <h2 className="heading4 color2">
-            {displayName.length > 40
-              ? `${displayName.substring(0, 40)}...`
-              : displayName}
-          </h2>
-          <h3 className="paragraph white">
+          <div className={styles.titlePrice}>
+            <h2 className="caption color4 ">
+              {displayName.length > 40
+                ? `${displayName.substring(0, 40)}...`
+                : displayName}
+            </h2>{" "}
+            <div className={styles.priceWrap}>
+              <p className={styles.price}>{price} </p>
+              <span>CHF</span>
+            </div>
+          </div>
+          <h3 className="paragraph gray7 ">
             {displayDescription.length > 60
               ? `${displayDescription.substring(0, 60)}...`
               : displayDescription}
           </h3>
         </div>
 
-        <div className={` ${styles.tagsPriceWrap}`}>
+        <div className={` ${styles.tagseWrap}`}>
           <div className={styles.details}>
-            {option2 && (
-              <div className={styles.new}>
-                <Image
-                  className={styles.eachItem}
-                  src={newItem}
-                  width={50}
-                  height={40}
-                  alt="svgNew"
-                />
-              </div>
-            )}
-            {option3 && (
-              <div className={styles.heart}>
-                <FaHeart className={styles.eachItem} />
-              </div>
-            )}
-            {option1 && (
-              <div className={styles.vegan}>
-                <LuVegan className={styles.eachItem} />
-              </div>
-            )}
-          </div>
-
-          <div className={styles.priceWrap}>
-            <p className={styles.price}>{price} </p>
-            <span>CHF</span>
+            {option1 && <p className={styles.new}>new</p>}
+            {option2 && <p className={styles.favorite}>favorite</p>}
+            {option3 && <p className={styles.vegan}>vegan</p>}
           </div>
         </div>
       </div>

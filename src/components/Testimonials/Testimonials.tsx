@@ -59,7 +59,7 @@ export default function Testimonials({
   }, []);
 
   return (
-    <section className="section section-light hidden no-padding-x">
+    <section className="section  hidden no-padding-x">
       <div>
         <div className="section no-padding-y">
           <div className="container">

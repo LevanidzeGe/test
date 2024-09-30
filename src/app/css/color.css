@@ -22,14 +22,15 @@
   /* color1 = bright color */
   /* color5 = dark color */
   --color1: #fffee8;
-  --color2: #f3d4ad;
+  --color2: #e3a058;
   --color3: #6bd839;
-  --color4: #3f4c39;
+  --color4: #002e5b;
+
   --color4-10: rgba(63, 76, 57, 0.1); /*opacity 10*/
   --color4-20: rgba(63, 76, 57, 0.2); /*opacity 10*/
   --color4-40: rgba(63, 76, 57, 0.4); /*opacity 40*/
   --color4-80: rgba(63, 76, 57, 0.8); /*opacity 80*/
-  --color5: #262626;
+  --color5: #1111;
 }
 
 /* Classes */

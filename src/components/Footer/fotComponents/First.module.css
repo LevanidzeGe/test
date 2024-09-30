@@ -1,0 +1,11 @@
+.contactInfo {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.email {
+  color: var(--color1);
+  margin: 15px 0;
+}

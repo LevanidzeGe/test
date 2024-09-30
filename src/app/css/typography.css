@@ -35,51 +35,65 @@
 
 /* standart Nav link */
 .link {
-  font-size: 22px;
+  font-family: var(--font1);
+  font-size: 15px;
   transition: all 0.2s;
-  font-family: var(--font2);
-  color: var(--color2);
-  text-transform: lowercase;
+  color: var(--color1);
+  text-transform: uppercase;
+  font-weight: 500;
+  /* font-weight: 500; */
 }
 .active-link {
   /* text-decoration: underline; */
-  border-bottom: 2px solid var(--color2);
+  color: var(--color2);
 }
 .link:hover {
-  border-bottom: 2px solid var(--color2);
+  text-decoration: underline;
 }
 
 /* typography */
 .heading1 {
-  font-size: 150px;
   font-family: var(--font2);
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 700;
 }
 .heading2 {
-  font-size: 80px;
-  font-family: var(--font2);
+  font-size: 38px;
+  font-family: var(--font1);
   line-height: 120%;
   user-select: none;
+  font-weight: 900;
 }
 .heading3 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
-  font-family: var(--font2);
+  font-family: var(--font1);
 }
 .heading4 {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .heading5 {
-  font-size: 18px;
+  font-family: var(--font3);
+  font-size: 56px;
+  font-weight: 600;
+}
+.heading6 {
+  font-family: var(--font3);
+  font-size: 38px;
   font-weight: 600;
 }
 .paragraph {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
-  letter-spacing: 0.3px;
   line-height: 160%;
-  color: var(--gray7);
+}
+.paragraph-bold {
+  font-weight: 700;
 }
 .caption {
   font-size: 16px;

@@ -1,39 +1,32 @@
-.componentTwoWrapper {
-  display: flex;
-  width: 100%;
-}
-.componentTwoWrapper div {
-  width: 50%;
-}
-.componentTwoWrapper img {
-  object-fit: cover;
-  width: 100%;
-  min-height: 500px;
-  /* box-shadow: -40px 35px 45px rgba(0, 0, 0, 0.425); */
-}
-.textWrapper {
-  width: 50%;
-  padding-left: 90px;
+.TwoTextWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.textWrapper h2 {
-  width: 100px;
-  margin-top: -100px;
-}
-.textWrapper p {
-  padding-top: 40px;
-  width: 70%;
-  min-width: 200px;
-  max-width: 600px;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .componentTwoWrapper {
+.head {
+  text-align: center;
+}
+.textWrap {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.textWrap div {
+  width: 40%;
+}
+
+.head p {
+  margin: 30px auto;
+}
+.TwoTextWrapper a {
+  margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+  .textWrap {
     flex-direction: column;
-  }
-  .componentTwoWrapper div {
-    width: 100%;
+    gap: 20px;
+    text-align: center;
   }
 }

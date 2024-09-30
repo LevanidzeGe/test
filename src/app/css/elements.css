@@ -1,8 +1,4 @@
 /* elements */
-.logo {
-  object-fit: contain;
-  max-width: 130px;
-}
 
 /* COLOR-4 shadow */
 
@@ -32,4 +28,16 @@
 .shadow-black-l {
   box-shadow: -30px 30px 35px -10px rgba(0, 0, 0, 0.5),
     -4px 6px 18px -10px rgba(0, 0, 0, 0.2);
+}
+
+/* restaurant menu tags like spicy or new or vegan.... needs to add bg color */
+
+.twoLines {
+  margin: auto;
+  width: 70px;
+  height: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-top: 1px solid #dfa25f;
+  border-bottom: 1px solid #dfa25f;
 }

@@ -26,13 +26,15 @@
   padding: var(--section-padding-xl);
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 .section-light {
   background-color: var(--color4-10);
 }
 .section-medium {
-  background-color: var(--color4-20);
+  background-image: url("/assets/background/white-graysh.jpeg");
+  /* background-color: var(--color4-20); */
+
+  /* must fix */
 }
 
 .section-dark {

@@ -1,44 +1,62 @@
-.componentThreeWrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 70vh;
-}
-.componentThreeWrapper div {
-  width: 50%;
-}
-.componentThreeWrapper img {
-  max-height: 1000px;
-  min-height: 500px;
-  height: 100%;
+/* construction guy with services around  */
 
-  object-fit: cover;
-  width: 100%;
-  /* height: 700px; */
+.mainWrapper {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 .textWrapper {
-  width: 50%;
-  padding-left: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.textWrapper h2 {
-  width: 100px;
-}
-.textWrapper p {
-  padding-top: 40px;
-  width: 70%;
-  min-width: 200px;
-  max-width: 600px;
+  text-align: center;
+  padding: 40px 0;
 }
 
-@media (max-width: 768px) {
-  .componentThreeWrapper {
-    flex-direction: column;
+.threeSectionWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  max-height: 600px;
+  object-fit: contain;
+  margin: auto;
+  /* width: 40%; */
+}
+
+.sideSection {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.sideSection img {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+.sideSection h2 {
+  padding: 10px 0 0px 0;
+}
+
+.sideSection a {
+  justify-content: center;
+}
+.sideSection div {
+  padding: 20px 0;
+}
+
+@media (max-width: 700px) {
+  .image {
+    display: none;
   }
-  .componentThreeWrapper div {
-    width: 100%;
-    padding-bottom: 50px;
+}
+
+@media (max-width: 550px) {
+  .threeSectionWrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }

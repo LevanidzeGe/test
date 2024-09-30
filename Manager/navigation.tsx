@@ -16,24 +16,24 @@ export const navItems: { [key: string]: NavItemProps[] } = {
     { title: "Home", url: "/" },
     { title: "Menu", url: "/menu" },
     { title: "Our Story", url: "/story" },
-    { title: "Reservation", url: "/reservation" },
+    { title: "Reservation", url: "/reservation", button: true },
   ],
   fr: [
     { title: "Accueil", url: "/" },
     { title: "Menu", url: "/menu" },
     { title: "À propos", url: "/story" },
-    { title: "Réservation", url: "/reservation" },
+    { title: "Réservation", url: "/reservation", button: true },
   ],
   de: [
     { title: "Startseite", url: "/" },
     { title: "Speisekarte", url: "/menu" },
     { title: "Über uns", url: "/story" },
-    { title: "Reservierung", url: "/reservation" },
+    { title: "Reservierung", url: "/reservation", button: true },
   ],
   it: [
     { title: "Home", url: "/" },
     { title: "Menu", url: "/menu" },
     { title: "Chi siamo", url: "/story" },
-    { title: "Prenotazione", url: "/reservation" },
+    { title: "Prenotazione", url: "/reservation", button: true },
   ],
 };

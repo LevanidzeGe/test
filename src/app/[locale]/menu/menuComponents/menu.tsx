@@ -44,8 +44,10 @@ export default async function Menu() {
             return (
               <div key={index} className={styles.menuWrapper}>
                 <div className={styles.menuTitles}>
+                  <span className="font2 heading4 color2 ">MENU</span>
+                  {/* <span className="heading3 white">{t("underCategory")}</span> */}
+                  <p className="twoLines"></p>
                   <h3 className="font2 color4 heading2">{categoryName}</h3>
-                  <span className="heading3 white">{t("underCategory")}</span>
                 </div>
                 <div className={styles.itemContainer}>
                   {sortedItems.map(

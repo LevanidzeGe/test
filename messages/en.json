@@ -3,43 +3,6 @@
     "metadata": {
       "title": "Welcome to Our Sushi Haven",
       "description": "Discover an unforgettable dining experience, crafted with love and sustainability in mind. Enjoy the finest sushi in Genève, Switzerland."
-    },
-    "hero": {
-      "days": "Tue-Sun",
-      "hours": "8:00am - 9:00pm",
-      "address1": "Rue Leschot 10, 1205",
-      "address2": "Genève, Switzerland"
-    },
-    "componentTwo": {
-      "title": "With Love",
-      "text": "We are passionate about providing a sustainable and unforgettable dining experience, serving locally sourced dishes that reflect the essence of our community."
-    },
-    "testimonials": {
-      "title1": "Some love",
-      "title2": "from our customers"
-    },
-    "componentThree": {
-      "title": "Our Journey",
-      "text": "From a passion for homemade sushi to a beloved local eatery, we’ve become a second home for sushi enthusiasts across the region."
-    },
-    "componentFour": {
-      "title": "With Love"
-    },
-    "componentSix": {
-      "title": "Reserve a Table",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "date": "Date",
-      "time": "Time",
-      "quantity": "Number of Guests",
-      "message": "Special requests or dietary restrictions?",
-      "send": "Send Reservation Request",
-      "thankYou": "Thank you for your reservation!",
-      "comfirmation": "Please wait for confirmation"
-    },
-    "componentFive": {
-      "title": "Join Our Community"
     }
   },
   "menuPage": {

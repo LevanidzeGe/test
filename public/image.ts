@@ -5,6 +5,7 @@ import heroMain from "@/public/images/heros/heroHome.jpg";
 import heroMenu from "@/public/images/heros/heroMenu.jpg";
 import heroStory from "@/public/images/heros/heroStory.jpg";
 import heroReservation from "@/public/images/heros/heroReservation.jpg";
+import dumplings from "@/public/images/heros/dumplings.webp";
 
 //
 //
@@ -21,9 +22,10 @@ import instagram4 from "@/public/images/heros/heroStory.jpg";
 //
 //
 //images story page
+import womanChef from "@/public/images/womanChef.webp";
 import chefImage from "@/public/images/sushiChef.png";
 import chroisant2 from "@/public/images/heros/heroReservation.jpg";
-import logo from "@/public/assets/svg/Puki..svg";
+import logo from "@/public/images/logo.png";
 import logoDark from "@/public/assets/svg/Puki-dark.svg";
 
 //
@@ -47,4 +49,6 @@ export {
   logo,
   logoDark,
   newItem,
+  dumplings,
+  womanChef,
 };

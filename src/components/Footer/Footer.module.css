@@ -1,24 +1,29 @@
-.middleDiv {
-  display: flex;
-  justify-content: right;
-  gap: 10%;
-  margin-right: 15%;
-  padding: 50px 0;
-}
-.middleDiv li {
-  transition: all 0.3s;
-}
-.middleDiv li:hover {
-  color: var(--color2);
+.footMainWrapper {
+  background-color: var(--color4);
 }
 
-.BottomDiv {
+.footWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 4%;
+  color: var(--white);
 }
 
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.footWrapper h2 {
+  padding-bottom: 30px;
+}
+
+.footWrapper section {
+  width: 25%;
+}
+
+@media (max-width: 1000px) {
+  .footWrapper {
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  .footWrapper section {
+    min-width: 300px;
+    margin-bottom: 10%;
+  }
 }
