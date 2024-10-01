@@ -1,4 +1,7 @@
-"use client"; // Error boundaries must be Client Components
+"use client";
+import Link from "next/link";
+
+// Error boundaries must be Client Components
 
 export default function GlobalError({
   error,
@@ -8,11 +11,29 @@ export default function GlobalError({
   reset: () => void;
 }) {
   return (
-    // global-error must include html and body tags
     <html>
-      <body>
-        <h2>Something went wrong!</h2>
-        <button onClick={() => reset()}>Try again</button>
+      <body
+        style={{
+          backgroundColor: "var(--color4)", // Apply dark blue background
+          color: "var(--color2)", // Apply yellow text color
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          width: "100%",
+          margin: 0,
+        }}
+      >
+        <h2 style={{ color: "var(--color2)" }}>Something went wrong!</h2>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <button className="button" onClick={() => reset()}>
+            Try again
+          </button>
+          <Link className="button button-reverse" href="/">
+            Back To Home
+          </Link>
+        </div>
       </body>
     </html>
   );
