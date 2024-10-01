@@ -9,6 +9,7 @@ import {
   heroReservation,
   heroStory,
 } from "@/public/image";
+import Image from "next/image";
 
 const defaultImages = [
   pizza,
@@ -25,7 +26,7 @@ export default function Fourth() {
       <h2 className="heading4">Instagram</h2>
       <div className={styles.imageWrapper}>
         {defaultImages.slice(0, 6).map((img, index) => (
-          <img
+          <Image
             key={img.src || index}
             className={styles.image}
             alt={`Instagram photo ${index + 1}`}
