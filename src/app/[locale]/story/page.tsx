@@ -2,8 +2,8 @@ import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
 import PageHeadImage from "@/src/components/PageHeadImage/PageHeadImage";
 import { chroisant2, womanChef } from "@/public/image";
-// import ComponentThree from "@/src/components/ComponentThree/ComponentThree";
-// import ComponentTwo from "@/src/components/ComponentTwo/ComponentTwo";
+import ComponentThree from "@/src/components/ComponentThree/ComponentThree";
+import ComponentTwo from "@/src/components/ComponentTwo/ComponentTwo";
 
 export async function generateMetadata() {
   const t = await getTranslations("storyPage.metadata");
@@ -19,9 +19,9 @@ export default async function StoryPage() {
   return (
     <div className="fadeOut">
       <PageHeadImage image={chroisant2} value="Our Story" short />
-      {/* <ComponentTwo /> */}
+      <ComponentTwo />
 
-      {/* <ComponentThree image={womanChef} /> */}
+      <ComponentThree image={womanChef} />
 
       <Testimonials
         title1={t("homePage.testimonials.title1")}
