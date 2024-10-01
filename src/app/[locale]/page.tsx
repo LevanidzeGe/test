@@ -39,9 +39,9 @@ export default function Home() {
     <div className="fadeOut">
       <Hero />
       <ComponentOne image={chefImage} />
-      <ComponentTwo />
-      <ComponentThree image={womanChef} />
-      <ComponentFour
+      {/* <ComponentTwo /> */}
+      {/* <ComponentThree image={womanChef} /> */}
+      {/* <ComponentFour
         icon={instagram1}
         image={instagram2}
         title={t("componentFour.1.title")}
@@ -53,14 +53,14 @@ export default function Home() {
         title={t("componentFour.2.title")}
         text={t("componentFour.2.text")}
         reverse
-      />
+      /> */}
       <ComponentFive />
 
       <Testimonials
         title1={t("testimonials.title1")}
         title2={t("testimonials.title2")}
       />
-      <ComponentSix />
+      {/* <ComponentSix /> */}
     </div>
   );
 }
