@@ -19,9 +19,9 @@ export default async function StoryPage() {
   return (
     <div className="fadeOut">
       <PageHeadImage image={chroisant2} value="Our Story" short />
-      <ComponentTwo />
+      {/* <ComponentTwo /> */}
 
-      <ComponentThree image={womanChef} />
+      {/* <ComponentThree image={womanChef} /> */}
 
       <Testimonials
         title1={t("homePage.testimonials.title1")}
