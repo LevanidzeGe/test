@@ -3,9 +3,10 @@ import { FiPhone } from "react-icons/fi";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import Link from "next/link";
 import { companyName, phoneNumber } from "@/Manager/info";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function ImageOverlay() {
+  const locale = useLocale();
   const t = useTranslations("homePage.hero");
   return (
     <section className="section no-padding-y">
@@ -18,10 +19,13 @@ export default function ImageOverlay() {
             <div className="twoLines"></div>
             <p className="paragraph white">{t("text")}</p>
             <div className={styles.buttons}>
-              <Link className="button" href="./menu">
+              <Link className="button" href={`./${locale}/menu`}>
                 {t("button1")}
               </Link>
-              <Link href="/reservation" className="button button-reverse">
+              <Link
+                href={`/${locale}/reservation`}
+                className="button button-reverse"
+              >
                 {t("button2")}
               </Link>
             </div>

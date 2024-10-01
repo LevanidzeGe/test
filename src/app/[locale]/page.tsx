@@ -29,6 +29,10 @@ export async function generateMetadata() {
       description: t("description"),
       url: companyDomain,
     },
+    twitter: {
+      card: "summary_large_image",
+      site: companyDomain, // Same as above
+    },
   };
 }
 

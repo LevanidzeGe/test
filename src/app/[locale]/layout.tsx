@@ -17,14 +17,10 @@ export async function generateMetadata() {
       title: companyName,
       description: t("description"),
       url: companyDomain,
-      images: [
-        {
-          // url: "@/public/images/opengraph-image.jpg",
-          width: 800,
-          height: 600,
-          alt: companyName + companyDomain,
-        },
-      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: companyDomain, // Same as above
     },
   };
 }
@@ -59,17 +55,23 @@ const greatVibes = Great_Vibes({
 import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";
 import LowerFoot from "@/src/components/LowerFooter/LowerFoot";
+import { redirect } from "next/navigation";
+import { defaultLocale, supportedLocales } from "@/Manager/navigation"; // Import supported locales
+import { usePathname } from "next/navigation"; // For handling redirects
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: { locale: string };
 }
+
 export default function LangLayout({
   children,
   params: { locale },
-}: Readonly<RootLayoutProps>) {
+}: RootLayoutProps) {
+  if (!supportedLocales.includes(locale)) {
+    return redirect(`/${defaultLocale}`);
+  }
+
   return (
     <html lang={locale}>
       <body
