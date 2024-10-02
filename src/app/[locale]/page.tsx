@@ -1,15 +1,6 @@
-import { companyDomain, companyName } from "@/Manager/info";
 import ComponentFive from "@/src/components/Five/ComponentFive";
 import Hero from "@/src/components/Hero/Hero";
-import { getTranslations } from "next-intl/server";
-import {
-  instagram1,
-  instagram2,
-  instagram3,
-  instagram4,
-  chefImage,
-  womanChef,
-} from "@/public/image";
+import { instagram1, instagram2, chefImage, womanChef } from "@/public/image";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { useTranslations } from "next-intl";
 import ComponentFour from "@/src/components/Four/ComponentFour";
@@ -17,24 +8,6 @@ import ComponentTwo from "@/src/components/Two/ComponentTwo";
 import ComponentSix from "@/src/components/Six/ComponentSix";
 import ComponentThree from "@/src/components/Three/ComponentThree";
 import ComponentOne from "@/src/components/One/ComponentOne";
-
-export async function generateMetadata() {
-  const t = await getTranslations("homePage.metadata");
-  return {
-    metadataBase: new URL(companyDomain),
-    title: t("title"),
-    description: t("description"),
-    openGraph: {
-      title: companyName,
-      description: t("description"),
-      url: companyDomain,
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: companyDomain, // Same as above
-    },
-  };
-}
 
 export default function Home() {
   const t = useTranslations("homePage");

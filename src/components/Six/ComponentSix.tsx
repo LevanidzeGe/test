@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./ComponentSix.module.css";
 import Hours from "./components/Hours";
 import Text from "./components/Text";
-import { mapLocation } from "@/Manager/info";
 
 export default function ComponentSix() {
   return (

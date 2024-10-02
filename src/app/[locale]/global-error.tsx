@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "@/src/app/globals.css";
+import "./globals.css";
 
 // Error boundaries must be Client Components
 
