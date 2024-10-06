@@ -13,11 +13,10 @@ export async function generateMetadata() {
       template: `%s | ${t("title")}`,
     },
     description: t("description"),
-    // openGraph: {
-    //   title: companyName,
-    //   description: t("description"),
-    //   url: companyDomain,
-    // },
+    openGraph: {
+      description: t("description"),
+      url: companyDomain,
+    },
   };
 }
 
