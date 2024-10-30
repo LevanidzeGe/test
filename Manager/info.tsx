@@ -1,5 +1,5 @@
 export const companyDomain = "http://toisondor.ch";
-export const companyName = "Toison d'or ";
+export const companyName = "Toison D'or ";
 export const phoneNumber: string = "+41 79 566 69 16";
 export const phoneNumber2: string = "+41 79 913 70 44";
 export const instagramUrl: string = "";
