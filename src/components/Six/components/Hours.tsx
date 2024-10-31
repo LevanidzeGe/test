@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Hours.module.css";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Hours() {
+  const locale = useLocale();
   const t = useTranslations("homePage.componentSix");
 
   return (
@@ -52,7 +53,7 @@ export default function Hours() {
           </div>
         </div>
         <div className={styles.hoursReserv}>
-          <Link className="button" href="/reservation">
+          <Link className="button" href={`${locale}/reservation`}>
             {t("button")}
           </Link>
         </div>

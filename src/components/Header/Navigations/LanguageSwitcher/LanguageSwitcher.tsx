@@ -39,6 +39,7 @@ export default function LanguageSwitcher() {
                 <Flag
                   code={lang === "en" ? "gb" : lang}
                   className={styles.flags}
+                  alt={`${lang} flag`}
                 />
               </button>
             </li>

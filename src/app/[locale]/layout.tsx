@@ -22,7 +22,7 @@ export async function generateMetadata({
     },
     description: t("description"),
     alternates: {
-      canonical: canonicalUrl, // Dynamic canonical URL based on locale
+      canonical: canonicalUrl,
     },
     openGraph: {
       description: t("description"),
@@ -71,7 +71,6 @@ import Footer from "@/src/components/Footer/Footer";
 import LowerFoot from "@/src/components/LowerFooter/LowerFoot";
 import { redirect } from "next/navigation";
 import { defaultLocale, supportedLocales } from "@/Manager/navigation"; // Import supported locales
-import { useLocale } from "next-intl";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -87,7 +86,7 @@ export default function LangLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale || defaultLocale}>
       <body
         className={` ${inter.className} ${oswald.variable}  ${greatVibes.variable} ${gabriola.variable}   `}
       >
