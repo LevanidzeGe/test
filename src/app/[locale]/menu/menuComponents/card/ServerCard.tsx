@@ -30,8 +30,8 @@ export default function ServerCard({
       <Link href={`/${locale}/${dynamicPageRoute}/${id}`}>
         <Image
           src={image || menuCarPlaceHoldImg}
-          width={600}
-          height={600}
+          width={1000}
+          height={700}
           alt={displayName}
           loading="lazy"
         />
