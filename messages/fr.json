@@ -60,7 +60,7 @@
       "description": "Parcourez notre menu et savourez le meilleur de nos créations géorgiennes, préparées avec des ingrédients frais et des saveurs traditionnelles."
     },
     "headComponent": {
-      "title": "Notre Délicieux Menu"
+      "title": "Notre Menu"
     },
     "menu": {
       "underCategory": "menu"

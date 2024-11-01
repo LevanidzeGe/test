@@ -35,10 +35,10 @@
 .twoLines {
   margin: auto;
   width: 70px;
-  height: 4px;
+  height: 5px;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-top: 1px solid #dfa25f;
-  border-bottom: 1px solid #dfa25f;
+  border-top: 1px solid var(--color2);
+  border-bottom: 2px solid var(--color2);
   max-width: 150px;
 }
