@@ -26,8 +26,8 @@ export default function ServerCard({
     descriptions?.[locale] || "No description available"; // Multilingual descriptions, fallback to single description
 
   return (
-    <div className={` ${styles.cardWrapper}`}>
-      <Link href={`/${locale}/${dynamicPageRoute}/${id}`}>
+    <Link href={`/${locale}/${dynamicPageRoute}/${id}`}>
+      <div className={` ${styles.cardWrapper}`}>
         <Image
           src={image || menuCarPlaceHoldImg}
           width={1000}
@@ -35,36 +35,36 @@ export default function ServerCard({
           alt={displayName}
           loading="lazy"
         />
-      </Link>
-      <div className={styles.cardInfoDiv}>
-        <div>
-          <div className={styles.titlePrice}>
-            <h2 className="caption color4 ">
-              {displayName.length > 40
-                ? `${displayName.substring(0, 40)}...`
-                : displayName}
-            </h2>{" "}
-            <div className={styles.priceWrap}>
-              <p className={styles.price}>{price} </p>
-              <span>CHF</span>
+        <div className={styles.cardInfoDiv}>
+          <div>
+            <div className={styles.titlePrice}>
+              <h2 className="caption color4 ">
+                {displayName.length > 40
+                  ? `${displayName.substring(0, 40)}...`
+                  : displayName}
+              </h2>{" "}
+              <div className={styles.priceWrap}>
+                <p className={styles.price}>{price} </p>
+                <span>CHF</span>
+              </div>
             </div>
+            <h3 className="paragraph gray7 ">
+              {displayDescription.length > 60
+                ? `${displayDescription.substring(0, 60)}...`
+                : displayDescription}
+            </h3>
           </div>
-          <h3 className="paragraph gray7 ">
-            {displayDescription.length > 60
-              ? `${displayDescription.substring(0, 60)}...`
-              : displayDescription}
-          </h3>
-        </div>
 
-        <div className={` ${styles.tagseWrap}`}>
-          <div className={styles.details}>
-            {option1 && <p className={styles.new}>new</p>}
-            {option2 && <p className={styles.favorite}>favorite</p>}
-            {option3 && <p className={styles.vegan}>vegetarian</p>}
+          <div className={` ${styles.tagseWrap}`}>
+            <div className={styles.details}>
+              {option1 && <p className={styles.new}>new</p>}
+              {option2 && <p className={styles.favorite}>favorite</p>}
+              {option3 && <p className={styles.vegan}>vegetarian</p>}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 /* Group 98 */

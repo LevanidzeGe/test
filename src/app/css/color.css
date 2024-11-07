@@ -26,6 +26,7 @@
   --color3: #6bd839;
   --color4: #002e5b;
 
+  --color2-10: hsla(31, 78%, 65%, 0.2);
   --color4-10: rgba(63, 76, 57, 0.1); /*opacity 10*/
   --color4-20: rgba(63, 76, 57, 0.2); /*opacity 10*/
   --color4-40: rgba(63, 76, 57, 0.4); /*opacity 40*/
