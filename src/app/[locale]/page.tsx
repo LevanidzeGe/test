@@ -15,27 +15,27 @@ export default function Home() {
   return (
     <div className="fadeOut">
       <Hero />
-      <ComponentOne image={chefImage} />
-      <ComponentTwo />
-      <ComponentFour
+      {/* <ComponentOne image={chefImage} /> */}
+      {/* <ComponentTwo /> */}
+      {/* <ComponentFour
         icon={instagram1}
         image={instagram2}
         title={t("componentFour.1.title")}
         text={t("componentFour.1.text")}
-      />
-      <ComponentFour
+      /> */}
+      {/* <ComponentFour
         icon={instagram2}
         image={instagram1}
         title={t("componentFour.2.title")}
         text={t("componentFour.2.text")}
         reverse
-      />
+      /> */}
       <ComponentFive />
 
-      <Testimonials
+      {/* <Testimonials
         title1={t("testimonials.title1")}
         title2={t("testimonials.title2")}
-      />
+      /> */}
       <ComponentSix />
     </div>
   );
