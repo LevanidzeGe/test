@@ -15,25 +15,25 @@ export const navItems: { [key: string]: NavItemProps[] } = {
   en: [
     { title: "Home", url: "/" },
     { title: "Menu", url: "/menu" },
-    // { title: "Our Story", url: "/story" },
+    { title: "Our Story", url: "/story" },
     { title: "Reservation", url: "/reservation", button: true },
   ],
   fr: [
     { title: "Accueil", url: "/" },
     { title: "Menu", url: "/menu" },
-    // { title: "À propos", url: "/story" },
+    { title: "À propos", url: "/story" },
     { title: "Réservation", url: "/reservation", button: true },
   ],
   de: [
     { title: "Startseite", url: "/" },
     { title: "Speisekarte", url: "/menu" },
-    // { title: "Über uns", url: "/story" },
+    { title: "Über uns", url: "/story" },
     { title: "Reservierung", url: "/reservation", button: true },
   ],
   it: [
     { title: "Home", url: "/" },
     { title: "Menu", url: "/menu" },
-    // { title: "Chi siamo", url: "/story" },
+    { title: "Chi siamo", url: "/story" },
     { title: "Prenotazione", url: "/reservation", button: true },
   ],
 };
