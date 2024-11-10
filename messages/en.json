@@ -74,6 +74,35 @@
     "headComponent": {
       "title": "Our Story"
     },
+    "componentTwo": {
+      "title1": "Heritage of Georgian Winemaking",
+      "title2": "A Tradition Spanning 8,000 Years",
+      "text1": "Georgia's viticulture is among the oldest in the world, with evidence of winemaking dating back 8,000 years. The use of kvevri, large clay jars for wine production, marks the earliest known winemaking technique, establishing Georgia as the birthplace of wine and domesticated vines.",
+      "text2": "Today, Georgian vineyards span 100,000 hectares, with 540 authenticated grape varieties. Much of the wine is still made using the traditional kvevri method, preserving the rich heritage and unique flavors of Georgian viticulture.",
+      "button": ""
+    },
+    "componentFour": {
+      "1": {
+        "title": "Traditional Kvevri Method",
+        "text": "The unique quality of Georgian wine lies in the kvevri method. Grapes, including skins, seeds, and sometimes even stems, are fermented in large clay jars buried in the ground to maintain a consistent temperature. This technique produces wines with rich and complex flavors, often with pronounced tannins, especially in amber-colored white wines."
+      },
+      "2": {
+        "title": "Regions and Typical Grape Varieties",
+        "text": "Georgia boasts 18 distinct wine appellations, with regions like Kakheti, Kartli, and Imereti being the most renowned. Georgia has numerous indigenous grape varieties, but some of the most famous include Saperavi (an intense red grape) and Rkatsiteli (a white grape with delicate aromas). These varieties give Georgian wine its unique characteristics."
+      },
+      "3": {
+        "title": "Cultural Significance",
+        "text": "In Georgia, wine is more than just a drink; it is at the heart of Georgian culture and social rituals. The Supra (Georgian banquet) is a cherished event where wine is shared under the guidance of the tamada (master of ceremonies), who offers poetic toasts celebrating friendship, family, and life."
+      },
+      "4": {
+        "title": "Expression of Georgian Identity",
+        "text": "In essence, Georgian wine is a profound expression of Georgian identity, combining ancient techniques, unique grape varieties, and an essential role in local culture and traditions."
+      },
+      "5": {
+        "title": "Cultural Significance",
+        "text": "In Georgia, wine is more than just a drink; it is at the heart of Georgian culture and social rituals. The Supra (Georgian banquet) is a cherished event where wine is shared under the guidance of the tamada (master of ceremonies), who offers poetic toasts celebrating friendship, family, and life."
+      }
+    },
     "componentSeven": {
       "title": "Experience",
       "caption": "Patience",

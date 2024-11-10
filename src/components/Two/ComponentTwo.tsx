@@ -1,31 +1,45 @@
 import React from "react";
 import styles from "./ComponentTwo.module.css";
 import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+interface componentTwoProps {
+  title1: string;
+  title2: string;
+  text1: string;
+  text2: string;
+  button?: string;
+}
 
-export default function ComponentTwo() {
-  const t = useTranslations("homePage.componentTwo");
+export default function ComponentTwo({
+  title1,
+  title2,
+  text1,
+  text2,
+  button,
+}: componentTwoProps) {
   const locale = useLocale();
   return (
     <section className="section ">
       <div className="container">
         <div className={styles.TwoTextWrapper}>
           <div className={` ${styles.head}`}>
-            <h4 className={`heading6 color2`}>{t("title1")}</h4>
-            <h2 className={`heading2`}>{t("title2")}</h2>
+            <h3 className={`heading6 color2`}>{title1}</h3>
+            <h2 className={`heading2`}>{title2}</h2>
             <p className={` twoLines `}></p>
           </div>
           <div className={`paragraph gray7  ${styles.textWrap}`}>
             <div>
-              <p>{t("text1")}</p>
+              <p>{text1}</p>
             </div>
             <div>
-              <p>{t("text2")}</p>
+              <p>{text2}</p>
             </div>
           </div>
-          <Link href={`/${locale}/story`} className={` button  `}>
-            {t("button")}
-          </Link>
+          {button && (
+            <Link href={`/${locale}/story`} className={` button  `}>
+              {button}
+            </Link>
+          )}
         </div>
       </div>
     </section>

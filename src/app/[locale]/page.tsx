@@ -16,7 +16,13 @@ export default function Home() {
     <div className="fadeOut">
       <Hero />
       <ComponentOne image={chefImage} />
-      <ComponentTwo />
+      <ComponentTwo
+        title1={t("componentTwo.title1")}
+        title2={t("componentTwo.title2")}
+        text1={t("componentTwo.text1")}
+        text2={t("componentTwo.text2")}
+        button={t("componentTwo.button")}
+      />
       <ComponentFour
         icon={dishIcon}
         image={khachapuri1}

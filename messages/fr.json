@@ -74,6 +74,35 @@
     "headComponent": {
       "title": "Notre Histoire"
     },
+    "componentTwo": {
+      "title1": "L'Héritage de la Viticulture Géorgienne",
+      "title2": "Une Tradition de 8 000 Ans",
+      "text1": "La viticulture géorgienne est parmi les plus anciennes du monde, avec des preuves de vinification remontant à 8 000 ans. L'utilisation du kvevri, de grandes jarres en argile pour la production de vin, marque la plus ancienne technique de vinification connue, établissant la Géorgie comme le berceau du vin et de la vigne domestiquée.",
+      "text2": "Aujourd'hui, les vignobles géorgiens s'étendent sur 100 000 hectares, avec 540 variétés de raisins authentifiées. Une grande partie du vin est encore produite selon la méthode traditionnelle du kvevri, préservant l'héritage riche et les saveurs uniques de la viticulture géorgienne.",
+      "button": ""
+    },
+    "componentFour": {
+      "1": {
+        "title": "Méthode Traditionnelle du Kvevri",
+        "text": "La qualité unique du vin géorgien réside dans la méthode du kvevri. Les raisins, y compris les peaux, les pépins, et parfois même les tiges, sont fermentés dans de grandes jarres en argile enterrées dans le sol pour maintenir une température constante. Cette technique produit des vins aux saveurs riches et complexes, souvent avec des tanins prononcés, en particulier dans les vins blancs de couleur ambrée."
+      },
+      "2": {
+        "title": "Régions et Cépages Typiques",
+        "text": "La Géorgie compte 18 appellations viticoles distinctes, avec des régions comme Kakheti, Kartli et Imereti parmi les plus renommées. La Géorgie possède de nombreuses variétés de raisins indigènes, dont les plus célèbres incluent le Saperavi (un raisin rouge intense) et le Rkatsiteli (un raisin blanc aux arômes délicats). Ces variétés donnent au vin géorgien ses caractéristiques uniques."
+      },
+      "3": {
+        "title": "Signification Culturelle",
+        "text": "En Géorgie, le vin est bien plus qu'une simple boisson ; il est au cœur de la culture géorgienne et des rituels sociaux. Le Supra (banquet géorgien) est un événement précieux où le vin est partagé sous la direction du tamada (maître de cérémonie), qui propose des toasts poétiques célébrant l'amitié, la famille et la vie."
+      },
+      "4": {
+        "title": "Expression de l'Identité Géorgienne",
+        "text": "En essence, le vin géorgien est une expression profonde de l'identité géorgienne, combinant des techniques anciennes, des cépages uniques et un rôle essentiel dans la culture et les traditions locales."
+      },
+      "5": {
+        "title": "Importance Culturelle",
+        "text": "En Géorgie, le vin est bien plus qu'une simple boisson ; il est au cœur de la culture et des rituels sociaux géorgiens. Le Supra (banquet géorgien) est un événement précieux où le vin est partagé sous la direction du tamada (maître de cérémonie), qui propose des toasts poétiques célébrant l'amitié, la famille et la vie."
+      }
+    },
     "componentSeven": {
       "title": "Expérience",
       "caption": "Patience",

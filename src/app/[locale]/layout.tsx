@@ -40,7 +40,13 @@ export async function generateMetadata({
 }
 
 //fonts
-import { Oswald, Gabriela, Great_Vibes, Inter } from "next/font/google";
+import {
+  Oswald,
+  Gabriela,
+  Great_Vibes,
+  Inter,
+  Dancing_Script,
+} from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,9 +64,10 @@ const gabriola = Gabriela({
   variable: "--font2",
 });
 
-const greatVibes = Great_Vibes({
+// const greatVibes = Great_Vibes
+const dancingScript = Dancing_Script({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["500"],
   variable: "--font3",
 });
 
@@ -88,7 +95,7 @@ export default function LangLayout({
   return (
     <html lang={locale || defaultLocale}>
       <body
-        className={` ${inter.className} ${oswald.variable}  ${greatVibes.variable} ${gabriola.variable}   `}
+        className={` ${inter.className} ${oswald.variable}  ${dancingScript.variable} ${gabriola.variable}   `}
       >
         <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
           <Header />

@@ -74,6 +74,35 @@
     "headComponent": {
       "title": "Unsere Geschichte"
     },
+    "componentTwo": {
+      "title1": "Das Erbe der Georgischen Weinherstellung",
+      "title2": "Eine 8.000 Jahre Alte Tradition",
+      "text1": "Die georgische Weinkultur ist eine der ältesten der Welt, mit Nachweisen für Weinherstellung, die 8.000 Jahre zurückreichen. Die Verwendung von Kvevri, großen Tonkrügen zur Weinproduktion, markiert die früheste bekannte Weinherstellungstechnik und etabliert Georgien als Ursprungsland des Weins und der domestizierten Reben.",
+      "text2": "Heute erstrecken sich die georgischen Weinberge über 100.000 Hektar, mit 540 authentifizierten Traubensorten. Ein großer Teil des Weins wird immer noch nach der traditionellen Kvevri-Methode hergestellt und bewahrt das reiche Erbe und die einzigartigen Aromen der georgischen Weinbaukultur.",
+      "button": ""
+    },
+    "componentFour": {
+      "1": {
+        "title": "Traditionelle Kvevri-Methode",
+        "text": "Die einzigartige Qualität des georgischen Weins liegt in der Kvevri-Methode. Trauben, einschließlich Schalen, Samen und manchmal sogar Stiele, werden in großen Tonkrügen vergoren, die im Boden vergraben sind, um eine konstante Temperatur zu halten. Diese Technik erzeugt Weine mit reichen und komplexen Aromen, oft mit ausgeprägten Tanninen, besonders in bernsteinfarbenen Weißweinen."
+      },
+      "2": {
+        "title": "Regionen und Typische Rebsorten",
+        "text": "Georgien verfügt über 18 verschiedene Weinappellationen, wobei die Regionen Kachetien, Kartli und Imereti am bekanntesten sind. Georgien hat zahlreiche einheimische Traubensorten, aber einige der bekanntesten sind Saperavi (eine intensive rote Traube) und Rkatsiteli (eine weiße Traube mit zarten Aromen). Diese Sorten verleihen dem georgischen Wein seine einzigartigen Eigenschaften."
+      },
+      "3": {
+        "title": "Kulturelle Bedeutung",
+        "text": "In Georgien ist Wein mehr als nur ein Getränk; er steht im Mittelpunkt der georgischen Kultur und sozialen Rituale. Das Supra (georgisches Festmahl) ist ein geschätztes Ereignis, bei dem Wein unter der Leitung des Tamada (Zeremonienmeister) geteilt wird, der poetische Trinksprüche bietet, die Freundschaft, Familie und Leben feiern."
+      },
+      "4": {
+        "title": "Ausdruck der Georgischen Identität",
+        "text": "Im Kern ist der georgische Wein ein tiefer Ausdruck der georgischen Identität, der alte Techniken, einzigartige Rebsorten und eine wesentliche Rolle in der lokalen Kultur und Tradition vereint."
+      },
+      "5": {
+        "title": "Kulturelle Bedeutung",
+        "text": "In Georgien ist Wein mehr als nur ein Getränk; er steht im Mittelpunkt der georgischen Kultur und sozialen Rituale. Das Supra (georgisches Festmahl) ist ein geschätztes Ereignis, bei dem Wein unter der Leitung des Tamada (Zeremonienmeister) geteilt wird, der poetische Trinksprüche bietet, die Freundschaft, Familie und Leben feiern."
+      }
+    },
     "componentSeven": {
       "title": "Erfahrung",
       "caption": "Geduld",
