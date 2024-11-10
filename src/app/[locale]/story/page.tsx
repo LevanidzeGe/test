@@ -64,12 +64,7 @@ export default async function StoryPage() {
         text={t("componentFour.4.text")}
         reverse
       />
-      <ComponentFour
-        icon={dishIcon}
-        image={dumplings}
-        title={t("componentFour.5.title")}
-        text={t("componentFour.5.text")}
-      />
+
       {/* 
       <Testimonials
         title1={t("homePage.testimonials.title1")}
