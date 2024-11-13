@@ -21,7 +21,7 @@
       "title2": "Flessibilità per Ogni Occasione",
       "text1": "Da Toison D'or offriamo la possibilità di affittare una parte del ristorante con ingresso privato. Goditi la massima flessibilità: scegli i nostri piatti georgiani autentici per i tuoi ospiti o porta il tuo menu per utilizzare lo spazio in un ambiente accogliente.",
       "text2": "Per eventi privati, mettiamo a disposizione un’area riservata all'interno del nostro ristorante. Che desideriate il nostro servizio completo con specialità georgiane o preferiate portare i vostri piatti, garantiamo un’esperienza unica e calorosa per i vostri ospiti.",
-      "button": "Scopri di più"
+      "button": ""
     },
     "componentFour": {
       "1": {
@@ -49,6 +49,12 @@
       "closed": "Chiuso",
       "button": "Prenota un Tavolo"
     },
+    "componentSeven": {
+      "title1": "Patrimonio della Vinificazione Georgiana",
+      "title2": "Una Tradizione di 8.000 Anni",
+      "text1": "La viticoltura georgiana è tra le più antiche al mondo, con radici che risalgono a oltre 8.000 anni fa. Le prime testimonianze di vinificazione mostrano l'uso di kvevri, grandi anfore di argilla interrate, una delle prime tecniche di vinificazione al mondo. Scoperte archeologiche suggeriscono che questa regione potrebbe essere la culla del vino e della vite domestica. Oggi, i vigneti georgiani coprono circa 100.000 ettari e il paese vanta 540 varietà di uva autentiche. Gran parte del vino è ancora prodotto secondo questo antico metodo, preservando un know-how unico e un profondo legame con la tradizione.",
+      "button": "Scopri di più"
+    },
     "testimonials": {
       "title1": "Un po' d'amore",
       "title2": "Cosa dicono di noi i nostri ospiti"
@@ -75,11 +81,24 @@
       "title": "La Nostra Storia"
     },
     "componentTwo": {
-      "title1": "Uno Spazio Privato per i Tuoi Eventi",
-      "title2": "Flessibilità per Ogni Occasione",
-      "text1": "Da Toison D'or offriamo la possibilità di affittare una parte del ristorante con ingresso privato. Goditi la massima flessibilità: scegli i nostri piatti georgiani autentici per i tuoi ospiti o porta il tuo menu per utilizzare lo spazio in un ambiente accogliente.",
-      "text2": "Per eventi privati, mettiamo a disposizione un’area riservata all'interno del nostro ristorante. Che desideriate il nostro servizio completo con specialità georgiane o preferiate portare i vostri piatti, garantiamo un’esperienza unica e calorosa per i vostri ospiti.",
+      "title1": "La Georgia a Ginevra",
+      "title2": "Cultura, sapori e passione",
+      "text1": "La cultura e la cucina georgiane sono le mie passioni, e condividerle è un sogno. Questa volta porto i sapori della Georgia a Ginevra, Svizzera, sperando di trasmettere il calore, la tradizione e i sapori unici della nostra cucina a tutti coloro che ci visitano da Toison D'or.",
+      "text2": "Dal 2004 la Svizzera è la mia casa, e ho partecipato attivamente agli incontri ed eventi georgiani come chef. Ora sono entusiasta di fare un passo avanti e far conoscere qui a Ginevra il ricco patrimonio culinario della Georgia.",
       "button": ""
+    },
+    "componentThree": {
+      "title1": "Siamo Esperti in",
+      "title2": "Quello che Amiamo Fare",
+      "caption": "Scopri di più",
+      "services": {
+        "ser1": "Specialità dello Chef",
+        "ser2": "La Nostra Storia",
+        "ser3": "Menu",
+        "ser4": "Prenotazioni",
+        "ser5": "Servizi di Catering",
+        "ser6": "Contattaci"
+      }
     },
     "componentFour": {
       "1": {
@@ -112,19 +131,6 @@
       "title2": "Una Tradizione di 8.000 Anni",
       "text1": "La viticoltura georgiana è tra le più antiche al mondo, con radici che risalgono a oltre 8.000 anni fa. Le prime testimonianze di vinificazione mostrano l'uso di kvevri, grandi anfore di argilla interrate, una delle prime tecniche di vinificazione al mondo. Scoperte archeologiche suggeriscono che questa regione potrebbe essere la culla del vino e della vite domestica. Oggi, i vigneti georgiani coprono circa 100.000 ettari e il paese vanta 540 varietà di uva autentiche. Gran parte del vino è ancora prodotto secondo questo antico metodo, preservando un know-how unico e un profondo legame con la tradizione.",
       "button": ""
-    },
-    "componentThree": {
-      "title1": "Siamo Esperti in",
-      "title2": "Quello che Amiamo Fare",
-      "caption": "Scopri di più",
-      "services": {
-        "ser1": "Specialità dello Chef",
-        "ser2": "La Nostra Storia",
-        "ser3": "Menu",
-        "ser4": "Prenotazioni",
-        "ser5": "Servizi di Catering",
-        "ser6": "Contattaci"
-      }
     }
   },
   "reservationPage": {

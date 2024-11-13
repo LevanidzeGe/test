@@ -21,7 +21,7 @@
       "title2": "Flexibilité pour Vos Événements",
       "text1": "Toison D'or vous propose de louer une partie du restaurant avec une entrée indépendante. Nous offrons une grande flexibilité : vous pouvez opter pour nos spécialités géorgiennes pour régaler vos invités ou bien apporter vos propres plats et profiter de l’espace dans une ambiance chaleureuse.",
       "text2": "Pour vos événements privés, nous mettons à disposition un espace dédié dans notre restaurant. Que vous souhaitiez un service complet avec nos plats géorgiens ou que vous préfériez utiliser vos propres préparations, nous vous garantissons une expérience unique et accueillante.",
-      "button": "En Savoir Plus"
+      "button": ""
     },
     "componentFour": {
       "1": {
@@ -49,6 +49,12 @@
       "closed": "Fermé",
       "button": "Réserver une Table"
     },
+    "componentSeven": {
+      "title1": "Héritage de la Vinification Géorgienne",
+      "title2": "Une Tradition de 8 000 Ans",
+      "text1": "La viticulture géorgienne est parmi les plus anciennes au monde, avec des racines remontant à plus de 8 000 ans. Les premières traces de vinification révèlent l'utilisation du kvevri, de grandes jarres en argile enterrées, marquant l'une des premières méthodes de vinification au monde. Des découvertes archéologiques suggèrent que cette région pourrait être le berceau du vin et de la vigne domestiquée. Aujourd'hui, les vignobles géorgiens couvrent environ 100 000 hectares, et le pays compte 540 cépages authentifiés. Une grande partie des vins est encore produite selon cette méthode ancestrale, perpétuant un savoir-faire unique et un lien fort avec ses traditions.",
+      "button": "En Savoir Plus"
+    },
     "testimonials": {
       "title1": "Un Peu d'Amour",
       "title2": "Ce que nos invités disent de nous"
@@ -75,11 +81,24 @@
       "title": "Notre Histoire"
     },
     "componentTwo": {
-      "title1": "Un Espace Privé à Votre Disposition",
-      "title2": "Flexibilité pour Vos Événements",
-      "text1": "Toison D'or vous propose de louer une partie du restaurant avec une entrée indépendante. Nous offrons une grande flexibilité : vous pouvez opter pour nos spécialités géorgiennes pour régaler vos invités ou bien apporter vos propres plats et profiter de l’espace dans une ambiance chaleureuse.",
-      "text2": "Pour vos événements privés, nous mettons à disposition un espace dédié dans notre restaurant. Que vous souhaitiez un service complet avec nos plats géorgiens ou que vous préfériez utiliser vos propres préparations, nous vous garantissons une expérience unique et accueillante.",
+      "title1": "La Géorgie à Genève",
+      "title2": "Culture, saveurs et passion",
+      "text1": "La culture et la cuisine géorgiennes sont mes passions, et les partager est un rêve. Cette fois, j’apporte les saveurs de la Géorgie à Genève, en Suisse, avec l’espoir de transmettre la chaleur, la tradition et les goûts uniques de notre cuisine à tous ceux qui nous visitent chez Toison D'or.",
+      "text2": "Depuis 2004, la Suisse est mon chez-moi, et j’ai participé activement aux rencontres et événements géorgiens en tant que chef. Maintenant, je suis ravi de franchir une nouvelle étape et de faire découvrir ici, à Genève, le riche patrimoine culinaire de la Géorgie.",
       "button": ""
+    },
+    "componentThree": {
+      "title1": "Nous Sommes Experts en",
+      "title2": "Ce Que Nous Aimons Faire",
+      "caption": "En savoir plus",
+      "services": {
+        "ser1": "Spécialités du Chef",
+        "ser2": "Notre Histoire",
+        "ser3": "Menu",
+        "ser4": "Réservations",
+        "ser5": "Services de Traiteur",
+        "ser6": "Contactez-nous"
+      }
     },
     "componentFour": {
       "1": {
@@ -112,19 +131,6 @@
       "title2": "Une Tradition de 8 000 Ans",
       "text1": "La viticulture géorgienne est parmi les plus anciennes au monde, avec des racines remontant à plus de 8 000 ans. Les premières traces de vinification révèlent l'utilisation du kvevri, de grandes jarres en argile enterrées, marquant l'une des premières méthodes de vinification au monde. Des découvertes archéologiques suggèrent que cette région pourrait être le berceau du vin et de la vigne domestiquée. Aujourd'hui, les vignobles géorgiens couvrent environ 100 000 hectares, et le pays compte 540 cépages authentifiés. Une grande partie des vins est encore produite selon cette méthode ancestrale, perpétuant un savoir-faire unique et un lien fort avec ses traditions.",
       "button": ""
-    },
-    "componentThree": {
-      "title1": "Nous Sommes Experts en",
-      "title2": "Ce Que Nous Aimons Faire",
-      "caption": "En savoir plus",
-      "services": {
-        "ser1": "Spécialités du Chef",
-        "ser2": "Notre Histoire",
-        "ser3": "Menu",
-        "ser4": "Réservations",
-        "ser5": "Services de Traiteur",
-        "ser6": "Contactez-nous"
-      }
     }
   },
   "reservationPage": {

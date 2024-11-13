@@ -21,7 +21,7 @@
       "title2": "Flexibilität für jeden Anlass",
       "text1": "Im Toison D'or bieten wir die Möglichkeit, einen Teil des Restaurants mit einem eigenen Eingang zu mieten. Genießen Sie maximale Flexibilität: Wählen Sie unsere authentischen georgischen Gerichte für Ihre Gäste oder bringen Sie Ihre eigenen Speisen mit und nutzen Sie den Raum in einer gemütlichen Atmosphäre.",
       "text2": "Für private Veranstaltungen bieten wir Ihnen einen separaten Bereich in unserem Restaurant. Ob Sie unseren vollen Service mit georgischen Spezialitäten wünschen oder lieber eigene Gerichte mitbringen – wir garantieren ein einzigartiges und einladendes Erlebnis für Ihre Gäste.",
-      "button": "Mehr erfahren"
+      "button": ""
     },
     "componentFour": {
       "1": {
@@ -36,6 +36,7 @@
     "componentFive": {
       "title4": "Kontaktieren Sie uns"
     },
+
     "componentSix": {
       "title1": "Willkommen",
       "title2": "Öffnungszeiten",
@@ -48,6 +49,12 @@
       "sunday": "Sonntag",
       "closed": "Geschlossen",
       "button": "Tisch reservieren"
+    },
+    "componentSeven": {
+      "title1": "Das Erbe des georgischen Weinbaus",
+      "title2": "Eine 8.000 Jahre alte Tradition",
+      "text1": "Die georgische Weinbaukunst gehört zu den ältesten der Welt, mit Wurzeln, die mehr als 8.000 Jahre zurückreichen. Die frühesten Belege der Weinherstellung zeigen die Verwendung von Kvevri, großen Tonkrügen, die in den Boden eingegraben wurden. Dies gilt als eine der weltweit ersten Weinherstellungsmethoden. Archäologische Entdeckungen deuten darauf hin, dass diese Region die Wiege des Weins und der domestizierten Rebe sein könnte. Heute erstrecken sich die georgischen Weinberge über etwa 100.000 Hektar, und das Land verfügt über 540 authentifizierte Rebsorten. Ein großer Teil des Weins wird noch immer nach dieser alten Methode hergestellt, was ein einzigartiges Know-how und eine tiefe Verbindung zur Tradition bewahrt.",
+      "button": "Mehr erfahren"
     },
     "testimonials": {
       "title1": "Ein wenig Liebe",
@@ -75,11 +82,24 @@
       "title": "Unsere Geschichte"
     },
     "componentTwo": {
-      "title1": "Ein Privater Raum für Ihre Veranstaltungen",
-      "title2": "Flexibilität für jeden Anlass",
-      "text1": "Im Toison D'or bieten wir die Möglichkeit, einen Teil des Restaurants mit einem eigenen Eingang zu mieten. Genießen Sie maximale Flexibilität: Wählen Sie unsere authentischen georgischen Gerichte für Ihre Gäste oder bringen Sie Ihre eigenen Speisen mit und nutzen Sie den Raum in einer gemütlichen Atmosphäre.",
-      "text2": "Für private Veranstaltungen bieten wir Ihnen einen separaten Bereich in unserem Restaurant. Ob Sie unseren vollen Service mit georgischen Spezialitäten wünschen oder lieber eigene Gerichte mitbringen – wir garantieren ein einzigartiges und einladendes Erlebnis für Ihre Gäste.",
+      "title1": "Georgien in Genf",
+      "title2": "Kultur, Geschmack und Leidenschaft",
+      "text1": "Die georgische Kultur und Küche sind meine Leidenschaft, und es ist ein Traum, sie zu teilen. Dieses Mal bringe ich die Aromen Georgiens nach Genf, Schweiz, in der Hoffnung, die Wärme, Tradition und einzigartigen Geschmäcker unserer Küche mit allen zu teilen, die uns bei Toison D'or besuchen.",
+      "text2": "Seit 2004 ist die Schweiz mein Zuhause, und ich habe aktiv an georgischen Zusammenkünften und Veranstaltungen als Koch teilgenommen. Jetzt freue ich mich, den nächsten Schritt zu machen und das reiche kulinarische Erbe Georgiens hier in Genf vorzustellen.",
       "button": ""
+    },
+    "componentThree": {
+      "title1": "Wir sind Experten in",
+      "title2": "Was wir lieben zu tun",
+      "caption": "Mehr erfahren",
+      "services": {
+        "ser1": "Spezialitäten des Küchenchefs",
+        "ser2": "Unsere Geschichte",
+        "ser3": "Speisekarte",
+        "ser4": "Reservierungen",
+        "ser5": "Catering Services",
+        "ser6": "Kontaktieren Sie uns"
+      }
     },
     "componentFour": {
       "1": {
@@ -112,19 +132,6 @@
       "title2": "Eine 8.000 Jahre alte Tradition",
       "text1": "Die georgische Weinbaukunst gehört zu den ältesten der Welt, mit Wurzeln, die mehr als 8.000 Jahre zurückreichen. Die frühesten Belege der Weinherstellung zeigen die Verwendung von Kvevri, großen Tonkrügen, die in den Boden eingegraben wurden. Dies gilt als eine der weltweit ersten Weinherstellungsmethoden. Archäologische Entdeckungen deuten darauf hin, dass diese Region die Wiege des Weins und der domestizierten Rebe sein könnte. Heute erstrecken sich die georgischen Weinberge über etwa 100.000 Hektar, und das Land verfügt über 540 authentifizierte Rebsorten. Ein großer Teil des Weins wird noch immer nach dieser alten Methode hergestellt, was ein einzigartiges Know-how und eine tiefe Verbindung zur Tradition bewahrt.",
       "button": ""
-    },
-    "componentThree": {
-      "title1": "Wir sind Experten in",
-      "title2": "Was wir lieben zu tun",
-      "caption": "Mehr erfahren",
-      "services": {
-        "ser1": "Spezialitäten des Küchenchefs",
-        "ser2": "Unsere Geschichte",
-        "ser3": "Speisekarte",
-        "ser4": "Reservierungen",
-        "ser5": "Catering Services",
-        "ser6": "Kontaktieren Sie uns"
-      }
     }
   },
   "reservationPage": {

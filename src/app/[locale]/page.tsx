@@ -8,6 +8,7 @@ import ComponentTwo from "@/src/components/Two/ComponentTwo";
 import ComponentSix from "@/src/components/Six/ComponentSix";
 
 import ComponentOne from "@/src/components/One/ComponentOne";
+import ComponentSeven from "@/src/components/Seven/ComponentSeven";
 
 export default function Home() {
   const t = useTranslations("homePage");
@@ -16,13 +17,13 @@ export default function Home() {
     <div className="fadeOut">
       <Hero />
       <ComponentOne image={chefImage} />
-      <ComponentTwo
-        title1={t("componentTwo.title1")}
-        title2={t("componentTwo.title2")}
-        text1={t("componentTwo.text1")}
-        text2={t("componentTwo.text2")}
-        button={t("componentTwo.button")}
+      <ComponentSeven
+        title1={t("componentSeven.title1")}
+        title2={t("componentSeven.title2")}
+        text1={t("componentSeven.text1")}
+        button={t("componentSeven.button")}
       />
+
       <ComponentFour
         icon={dishIcon}
         image={khachapuri1}
@@ -35,6 +36,13 @@ export default function Home() {
         image={instagram1}
         title={t("componentFour.1.title")}
         text={t("componentFour.1.text")}
+      />
+      <ComponentTwo
+        title1={t("componentTwo.title1")}
+        title2={t("componentTwo.title2")}
+        text1={t("componentTwo.text1")}
+        text2={t("componentTwo.text2")}
+        button={t("componentTwo.button")}
       />
 
       <ComponentFive />
