@@ -26,13 +26,15 @@ export default function ComponentFour({
           }`}
         >
           <Image
-            className={` fadeUp ${styles.image}`}
+            // classname="fadeUp"
+            className={`  ${styles.image}`}
             src={image}
             width={1000}
             height={1000}
             alt=""
           ></Image>
-          <div className={`${styles.slideSide} ${styles.textDivWrapper}`}>
+          <div className={`${styles.textDivWrapper}`}>
+            {/* ${styles.slideSide} */}
             <div className={` ${styles.textDiv}`}>
               <Image src={icon} alt="chair" width={60} height={60}></Image>
               <h2 className="heading3 font1 ">{title}</h2>

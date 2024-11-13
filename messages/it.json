@@ -1,43 +1,43 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Toison D'or Café e Ristorante Georgiano a Ginevra",
-      "description": "Scopri un'esperienza culinaria autentica e indimenticabile, ispirata alla tradizione georgiana e preparata con amore. Da Toison d'Or a Ginevra, assapora le migliori specialità georgiane, dai piatti tradizionali alle innovazioni culinarie, in un'atmosfera accogliente e raffinata."
+      "title": "Toison D'or Caffè e Ristorante Georgiano a Ginevra",
+      "description": "Scopri un'esperienza culinaria autentica e indimenticabile, ispirata alla tradizione georgiana e realizzata con amore. Da Toison D'or a Ginevra, gusta le migliori specialità georgiane, dai piatti tradizionali alle creazioni moderne, in un'atmosfera calda ed elegante."
     },
     "hero": {
-      "title1": "Benvenuti a",
-      "title2": "Caffè e Ristorante Georgiano",
-      "text": "Immergiti in un mondo culinario georgiano unico dove ogni piatto è preparato con cura utilizzando i migliori ingredienti, portando i sapori della Georgia a Ginevra.",
+      "title1": "Benvenuti al",
+      "title2": "Caffè & Ristorante Georgiano",
+      "text": "Immergiti in un mondo culinario unico georgiano, dove ogni piatto è preparato con cura utilizzando i migliori ingredienti, portando i sapori della Georgia a Ginevra.",
       "button1": "Visualizza il Menu",
       "button2": "Prenota un Tavolo"
     },
     "componentOne": {
-      "title1": "La Parola dello Chef",
-      "title2": "Fatto con il Cuore",
-      "text": "Incontra la Chef, i suoi piatti portano il calore dei sapori georgiani fatti in casa in ogni portata. Ogni ricetta, preparata con cura e un tocco di nostalgia, ha il sapore di un piatto cucinato da una nonna amorevole. La sua dedizione alla freschezza e all'autenticità rende ogni pasto un'esperienza confortante e indimenticabile."
+      "title1": "Parola dello Chef",
+      "title2": "Creato con il Cuore",
+      "text": "Incontra il nostro chef, che porta il calore dei sapori casalinghi georgiani in ogni piatto. Ogni ricetta, preparata con cura e un tocco di nostalgia, sa di un piatto fatto da una nonna amorevole. La sua dedizione alla freschezza e all'autenticità rende ogni pasto un’esperienza indimenticabile."
     },
     "componentTwo": {
-      "title1": "La Parola dello Chef",
-      "title2": "Creato per il Futuro",
-      "text1": "Gli ingredienti georgiani di alta qualità sono al centro della nostra cucina. I nostri chef lavorano instancabilmente per creare piatti che onorano le tradizioni georgiane con un tocco moderno.",
-      "text2": "Che si tratti di gustare un khachapuri appena sfornato o di uno stufato georgiano classico, il nostro menu ti farà scoprire nuovi sapori in un ambiente accogliente.",
-      "button": "Scopri di più su di noi"
+      "title1": "Uno Spazio Privato per i Tuoi Eventi",
+      "title2": "Flessibilità per Ogni Occasione",
+      "text1": "Da Toison D'or offriamo la possibilità di affittare una parte del ristorante con ingresso privato. Goditi la massima flessibilità: scegli i nostri piatti georgiani autentici per i tuoi ospiti o porta il tuo menu per utilizzare lo spazio in un ambiente accogliente.",
+      "text2": "Per eventi privati, mettiamo a disposizione un’area riservata all'interno del nostro ristorante. Che desideriate il nostro servizio completo con specialità georgiane o preferiate portare i vostri piatti, garantiamo un’esperienza unica e calorosa per i vostri ospiti.",
+      "button": "Scopri di più"
     },
     "componentFour": {
       "1": {
-        "title": "Un Croissant Caldo",
-        "text": "Appena sfornato, dorato e burroso, croccante fuori e morbido dentro. Inizia la giornata con la calda bontà di un croissant che regala un attimo di gioia ad ogni morso."
+        "title": "Viaggio Gastronomico in Georgia",
+        "text": "La cucina georgiana è un viaggio vibrante e colorato basato su ricette tramandate da generazioni. Ogni piatto combina ingredienti freschi, spezie e tradizioni per creare un'esperienza unica, dove il cibo non è solo un pasto, ma un'espressione culturale."
       },
       "2": {
-        "title": "Imeruli Khachapuri",
-        "text": "Dorato e ripieno di formaggio saporito, l'Imeruli Khachapuri è un classico della cucina georgiana. Morbido, caldo e delizioso, questo pane tradizionale porta il cuore della Georgia sulla tua tavola."
+        "title": "Scopri la Georgia da Toison D'or",
+        "text": "Da Toison D'or ti invitiamo a gustare il patrimonio georgiano con i nostri piatti autentici e l'atmosfera amichevole. Ogni boccone è un passo nell'anima della Georgia, dove tradizione e modernità si fondono per celebrare i sapori e le storie di questo paese magico."
       }
     },
     "componentFive": {
       "title4": "Contattaci"
     },
     "componentSix": {
-      "title1": "Benvenuti",
+      "title1": "Benvenuto",
       "title2": "Orari di Apertura",
       "monday": "Lunedì",
       "tusday": "Martedì",
@@ -50,14 +50,14 @@
       "button": "Prenota un Tavolo"
     },
     "testimonials": {
-      "title1": "Un po' d'Amore",
-      "title2": "Cosa dicono di noi i nostri clienti"
+      "title1": "Un po' d'amore",
+      "title2": "Cosa dicono di noi i nostri ospiti"
     }
   },
   "menuPage": {
     "metadata": {
       "title": "Scopri il Nostro Menu",
-      "description": "Sfoglia il nostro menu e gusta il meglio delle nostre creazioni georgiane, preparate con ingredienti freschi e sapori tradizionali."
+      "description": "Sfoglia il nostro menu e goditi il meglio delle nostre creazioni georgiane, preparate con ingredienti freschi e un tocco di sapori tradizionali."
     },
     "headComponent": {
       "title": "Il Nostro Menu"
@@ -75,40 +75,48 @@
       "title": "La Nostra Storia"
     },
     "componentTwo": {
-      "title1": "Il Patrimonio della Vinificazione Georgiana",
-      "title2": "Una Tradizione di 8.000 Anni",
-      "text1": "La viticoltura georgiana è una delle più antiche al mondo, con prove di vinificazione che risalgono a 8.000 anni fa. L'uso del kvevri, grandi anfore di argilla per la produzione del vino, rappresenta la prima tecnica di vinificazione conosciuta, stabilendo la Georgia come luogo di origine del vino e delle viti domestiche.",
-      "text2": "Oggi i vigneti georgiani coprono 100.000 ettari, con 540 varietà di uva autentiche. Gran parte del vino viene ancora prodotto con il metodo tradizionale del kvevri, preservando il ricco patrimonio e i sapori unici della viticoltura georgiana.",
+      "title1": "Uno Spazio Privato per i Tuoi Eventi",
+      "title2": "Flessibilità per Ogni Occasione",
+      "text1": "Da Toison D'or offriamo la possibilità di affittare una parte del ristorante con ingresso privato. Goditi la massima flessibilità: scegli i nostri piatti georgiani autentici per i tuoi ospiti o porta il tuo menu per utilizzare lo spazio in un ambiente accogliente.",
+      "text2": "Per eventi privati, mettiamo a disposizione un’area riservata all'interno del nostro ristorante. Che desideriate il nostro servizio completo con specialità georgiane o preferiate portare i vostri piatti, garantiamo un’esperienza unica e calorosa per i vostri ospiti.",
       "button": ""
     },
     "componentFour": {
       "1": {
-        "title": "Metodo Tradizionale del Kvevri",
-        "text": "La qualità unica del vino georgiano risiede nel metodo del kvevri. L'uva, compresa di bucce, semi e talvolta anche di gambi, viene fermentata in grandi anfore di argilla interrate per mantenere una temperatura costante. Questa tecnica produce vini dai sapori ricchi e complessi, spesso con tannini pronunciati, specialmente nei vini bianchi ambrati."
+        "title": "Georgia: Terra di Cultura e Gastronomia",
+        "text": "Situata tra Europa e Asia, la Georgia è un paese dalle antiche radici e dalle tradizioni uniche. Unificata nel IV secolo con l'unione di Colchide e Iberia, la Georgia ha sviluppato un'identità forte e resiliente. Nonostante numerose invasioni, ha preservato il suo ricco patrimonio culturale nei secoli."
       },
       "2": {
-        "title": "Regioni e Varietà Tipiche di Uva",
-        "text": "La Georgia vanta 18 denominazioni di vino distinte, con regioni come Kakheti, Kartli e Imereti tra le più rinomate. La Georgia possiede numerose varietà di uva autoctone, ma alcune delle più famose sono Saperavi (un'uva rossa intensa) e Rkatsiteli (un'uva bianca dai delicati aromi). Queste varietà conferiscono al vino georgiano le sue caratteristiche uniche."
+        "title": "Storia e Unificazione",
+        "text": "La storia della Georgia è segnata da unità e resilienza. Nel IV secolo, Colchide e Iberia si unirono formando un paese definito da credenze e tradizioni durature. Nonostante le ripetute invasioni, l'identità unica della Georgia rimane forte, abbracciando il suo patrimonio diversificato e mantenendo la sua antica essenza."
       },
       "3": {
-        "title": "Significato Culturale",
-        "text": "In Georgia, il vino è molto più di una semplice bevanda; è al cuore della cultura e dei rituali sociali georgiani. Il Supra (banchetto georgiano) è un evento prezioso in cui il vino viene condiviso sotto la guida del tamada (maestro di cerimonie), che offre brindisi poetici celebrando l'amicizia, la famiglia e la vita."
+        "title": "Cultura e Leggende",
+        "text": "La Georgia è la terra della leggenda del Vello d'Oro, simbolo di sogni e abbondanza legato alla mitologia greca. Questa storia collega la Georgia alla Grecia antica, attirando gli amanti dei miti in questa terra incantata, dove cultura e storia si fondono armoniosamente nei suoi paesaggi e nelle sue tradizioni."
       },
       "4": {
-        "title": "Espressione dell'Identità Georgiana",
-        "text": "In sostanza, il vino georgiano è una profonda espressione dell'identità georgiana, che combina tecniche antiche, varietà di uva uniche e un ruolo essenziale nella cultura e nelle tradizioni locali."
+        "title": "Un Patrimonio Vivo",
+        "text": "Il patrimonio della Georgia vive nella sua architettura, nelle danze tradizionali, nei canti polifonici e nella sua cucina rinomata. Queste espressioni culturali non solo preservano l'identità georgiana, ma affascinano i visitatori, rivelando la ricca storia e lo spirito vibrante che rendono unica la Georgia."
+      },
+      "5": {
+        "title": "Cucina Georgiana",
+        "text": "Conosciuta per i suoi sapori e spezie, la cucina georgiana utilizza ingredienti freschi e ricette tramandate da generazioni. Ogni piatto ha un significato culturale, e alcuni come il khachapuri e il khinkali sono riconosciuti dall'UNESCO, come simboli della ricca tradizione culinaria del paese."
+      },
+      "6": {
+        "title": "Piatti Iconici della Georgia",
+        "text": "I piatti georgiani riflettono il patrimonio della nazione: khachapuri, una calda torta al formaggio; khinkali, ravioli succosi ripieni di carne; e pane cotto nei forni 'toned'. Ogni ricetta, preziosa da generazioni, porta a tavola i sapori unici e l'importanza culturale della Georgia."
       }
     },
-
     "componentSeven": {
-      "title": "Esperienza",
-      "caption": "Pazienza",
-      "text": "Il nostro obiettivo è offrire un'esperienza culinaria sostenibile e unica, servendo piatti preparati con ingredienti autentici georgiani."
+      "title1": "Patrimonio della Vinificazione Georgiana",
+      "title2": "Una Tradizione di 8.000 Anni",
+      "text1": "La viticoltura georgiana è tra le più antiche al mondo, con radici che risalgono a oltre 8.000 anni fa. Le prime testimonianze di vinificazione mostrano l'uso di kvevri, grandi anfore di argilla interrate, una delle prime tecniche di vinificazione al mondo. Scoperte archeologiche suggeriscono che questa regione potrebbe essere la culla del vino e della vite domestica. Oggi, i vigneti georgiani coprono circa 100.000 ettari e il paese vanta 540 varietà di uva autentiche. Gran parte del vino è ancora prodotto secondo questo antico metodo, preservando un know-how unico e un profondo legame con la tradizione.",
+      "button": ""
     },
     "componentThree": {
       "title1": "Siamo Esperti in",
-      "title2": "Cosa Amiamo Fare",
-      "caption": "Leggi di più",
+      "title2": "Quello che Amiamo Fare",
+      "caption": "Scopri di più",
       "services": {
         "ser1": "Specialità dello Chef",
         "ser2": "La Nostra Storia",
@@ -122,35 +130,35 @@
   "reservationPage": {
     "metadata": {
       "title": "Prenota un Tavolo",
-      "description": "Prenota un tavolo da noi oggi e gusta le migliori specialità georgiane in un'atmosfera calda nel cuore di Ginevra."
+      "description": "Prenota un tavolo da noi oggi e goditi le migliori specialità georgiane in un'atmosfera calda nel cuore di Ginevra."
     },
     "reservationForm": {
       "name": "Inserisci il tuo nome completo",
-      "email": "E-mail",
+      "email": "Email",
       "phone": "Numero di telefono",
       "people": "Numero di persone",
-      "text": "Richieste speciali?",
+      "text": "Richieste particolari?",
       "button": "INVIA",
       "thank": "Grazie per la tua richiesta",
       "wait": "Attendere la nostra conferma"
     },
     "headComponent": {
-      "title": "Prenota il Tuo Tavolo"
+      "title": "Prenota il tuo Tavolo"
     },
     "componentNine": {
-      "title": "Prenota il Tuo Tavolo",
+      "title": "Prenota il tuo Tavolo",
       "text": "Prenota il tuo posto e goditi la nostra cucina georgiana sostenibile preparata con amore. Non vediamo l'ora di accoglierti!"
     }
   },
   "forms": {
     "reservationForm": {
       "name": "Nome Completo",
-      "email": "E-mail",
+      "email": "Email",
       "phone": "Numero di Telefono",
       "date": "Data",
-      "time": "Orario",
+      "time": "Ora",
       "quantity": "Numero di Persone",
-      "message": "Richieste speciali?",
+      "message": "Richieste particolari?",
       "send": "Invia Richiesta di Prenotazione",
       "thankYou": "Grazie per la tua prenotazione!",
       "comfirmation": "Attendere la nostra conferma"
@@ -159,7 +167,7 @@
   "notFoundPage": {
     "title1": "La pagina che stai cercando non esiste",
     "title2": "La pagina che stai cercando non esiste",
-    "button": "Home"
+    "button": "Pagina iniziale"
   },
   "footer": {
     "title1": "Informazioni di Contatto",

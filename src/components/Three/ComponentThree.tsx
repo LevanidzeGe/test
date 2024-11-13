@@ -33,12 +33,12 @@ export default function ComponentThree({ image }: { image: StaticImageData }) {
               <EachService
                 icon={story}
                 title={t("services.ser2")}
-                url={`${locale}/story`}
+                url={`/${locale}/story`}
               />
               <EachService
                 icon={menu}
                 title={t("services.ser3")}
-                url={`${locale}/menu`}
+                url={`/${locale}/menu`}
               />
             </div>
             <Image
@@ -52,7 +52,7 @@ export default function ComponentThree({ image }: { image: StaticImageData }) {
               <EachService
                 icon={reservation}
                 title={t("services.ser4")}
-                url={`${locale}/reservation`}
+                url={`/${locale}/reservation`}
               />
               <EachService
                 icon={catering}
@@ -62,7 +62,7 @@ export default function ComponentThree({ image }: { image: StaticImageData }) {
               <EachService
                 icon={contact}
                 title={t("services.ser6")}
-                url={`${locale}/reservation`}
+                url={`/${locale}/reservation`}
               />
             </div>
           </div>

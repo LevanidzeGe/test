@@ -15,6 +15,7 @@ import {
 import ComponentTwo from "@/src/components/Two/ComponentTwo";
 import ComponentThree from "@/src/components/Three/ComponentThree";
 import ComponentFour from "@/src/components/Four/ComponentFour";
+import ComponentSeven from "@/src/components/Seven/ComponentSeven";
 
 export async function generateMetadata() {
   const t = await getTranslations("storyPage.metadata");
@@ -30,12 +31,11 @@ export default async function StoryPage() {
   return (
     <div className="fadeOut">
       <PageHeadImage image={heroStory} value={t("headComponent.title")} short />
-      <ComponentTwo
-        title1={t("componentTwo.title1")}
-        title2={t("componentTwo.title2")}
-        text1={t("componentTwo.text1")}
-        text2={t("componentTwo.text2")}
-        button={t("componentTwo.button")}
+      <ComponentSeven
+        title1={t("componentSeven.title1")}
+        title2={t("componentSeven.title2")}
+        text1={t("componentSeven.text1")}
+        button={t("componentSeven.button")}
       />
       <ComponentFour
         icon={dishIcon}
@@ -62,6 +62,26 @@ export default async function StoryPage() {
         image={heroReservation}
         title={t("componentFour.4.title")}
         text={t("componentFour.4.text")}
+        reverse
+      />
+      <ComponentTwo
+        title1={t("componentTwo.title1")}
+        title2={t("componentTwo.title2")}
+        text1={t("componentTwo.text1")}
+        text2={t("componentTwo.text2")}
+        button={t("componentTwo.button")}
+      />
+      <ComponentFour
+        icon={dishIcon}
+        image={heroStory}
+        title={t("componentFour.5.title")}
+        text={t("componentFour.5.text")}
+      />
+      <ComponentFour
+        icon={dishIcon}
+        image={heroReservation}
+        title={t("componentFour.6.title")}
+        text={t("componentFour.6.text")}
         reverse
       />
 

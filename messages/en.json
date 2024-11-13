@@ -17,20 +17,20 @@
       "text": "Meet Chef, her dishes bring the warmth of home-cooked Georgian flavors to every plate. Each recipe, crafted with care and a touch of nostalgia, tastes like it was made by a loving grandmother. Her dedication to freshness and authenticity turns every meal into a comforting, unforgettable experience."
     },
     "componentTwo": {
-      "title1": "Chef's Word",
-      "title2": "Crafted for the Future",
-      "text1": "High-quality Georgian ingredients are central to our cuisine. Our chefs work tirelessly to create dishes that honor Georgian traditions while bringing a modern twist.",
-      "text2": "Whether enjoying a freshly baked khachapuri or a classic Georgian stew, our menu introduces you to new flavors in a warm setting.",
-      "button": "Learn More About Us"
+      "title1": "A Private Space for Your Events",
+      "title2": "Flexibility for Every Occasion",
+      "text1": "At Toison D'or, we offer the option to rent part of the restaurant with a private entrance. Enjoy complete flexibility: choose from our authentic Georgian dishes to delight your guests or bring your own menu and make use of the space in a warm and inviting setting.",
+      "text2": "For private gatherings, we provide a dedicated area within our restaurant. Whether you’d like full service with our Georgian specialties or prefer to bring your own dishes, we ensure a unique and welcoming experience for your event.",
+      "button": ""
     },
     "componentFour": {
       "1": {
-        "title": "A Warm Croissant",
-        "text": "Freshly baked to golden perfection, buttery, flaky, and irresistibly soft inside. Start your day with the comforting warmth of a croissant that brings a little bit of joy with each delicious bite."
+        "title": "Gastronomic Journey Through Georgia",
+        "text": "Georgian cuisine is a vibrant and colorful journey that relies on recipes passed down through generations. Each dish combines fresh ingredients, spices, and traditions to create a unique experience where food is not merely a meal, but a cultural expression."
       },
       "2": {
-        "title": "Imeruli Khachapuri",
-        "text": "Golden and filled with savory cheese, Imeruli Khachapuri is a Georgian classic. Soft, warm, and irresistibly delicious, this traditional bread brings the heart of Georgia to your table, creating joy with every bite."
+        "title": "Experience Georgia at Toison D'or",
+        "text": "At Toison D'or, we invite you to savor Georgia's heritage with our authentic dishes and friendly ambiance. Each bite is a step into the soul of Georgia, where tradition and modernity blend together, celebrating the flavors and stories of this magical country."
       }
     },
     "componentFive": {
@@ -75,34 +75,43 @@
       "title": "Our Story"
     },
     "componentTwo": {
-      "title1": "Heritage of Georgian Winemaking",
-      "title2": "A Tradition Spanning 8,000 Years",
-      "text1": "Georgia's viticulture is among the oldest in the world, with evidence of winemaking dating back 8,000 years. The use of kvevri, large clay jars for wine production, marks the earliest known winemaking technique, establishing Georgia as the birthplace of wine and domesticated vines.",
-      "text2": "Today, Georgian vineyards span 100,000 hectares, with 540 authenticated grape varieties. Much of the wine is still made using the traditional kvevri method, preserving the rich heritage and unique flavors of Georgian viticulture.",
+      "title1": "A Private Space for Your Events",
+      "title2": "Flexibility for Every Occasion",
+      "text1": "At Toison D'or, we offer the option to rent part of the restaurant with a private entrance. Enjoy complete flexibility: choose from our authentic Georgian dishes to delight your guests or bring your own menu and make use of the space in a warm and inviting setting.",
+      "text2": "For private gatherings, we provide a dedicated area within our restaurant. Whether you’d like full service with our Georgian specialties or prefer to bring your own dishes, we ensure a unique and welcoming experience for your event.",
       "button": ""
     },
     "componentFour": {
       "1": {
-        "title": "Traditional Kvevri Method",
-        "text": "The unique quality of Georgian wine lies in the kvevri method. Grapes, including skins, seeds, and sometimes even stems, are fermented in large clay jars buried in the ground to maintain a consistent temperature. This technique produces wines with rich and complex flavors, often with pronounced tannins, especially in amber-colored white wines."
+        "title": "Georgia: Land of Culture and Gastronomy",
+        "text": "Nestled between Europe and Asia, Georgia is a country with ancient roots and unique traditions. Unified in the 4th century through the union of Colchis and Iberia, Georgia developed a strong, resilient identity. Despite facing numerous invasions, it has safeguarded its rich cultural heritage across the centuries."
       },
       "2": {
-        "title": "Regions and Typical Grape Varieties",
-        "text": "Georgia boasts 18 distinct wine appellations, with regions like Kakheti, Kartli, and Imereti being the most renowned. Georgia has numerous indigenous grape varieties, but some of the most famous include Saperavi (an intense red grape) and Rkatsiteli (a white grape with delicate aromas). These varieties give Georgian wine its unique characteristics."
+        "title": "History and Unification",
+        "text": "Georgia’s history is marked by unity and resilience. In the 4th century, Colchis and Iberia united, forming a country defined by lasting beliefs and traditions. Despite repeated invasions, Georgia’s unique identity remains strong, embracing its diverse heritage while retaining its ancient essence."
       },
       "3": {
-        "title": "Cultural Significance",
-        "text": "In Georgia, wine is more than just a drink; it is at the heart of Georgian culture and social rituals. The Supra (Georgian banquet) is a cherished event where wine is shared under the guidance of the tamada (master of ceremonies), who offers poetic toasts celebrating friendship, family, and life."
+        "title": "Culture and Legends",
+        "text": "Georgia is home to the legend of the Golden Fleece, a symbol of dreams and abundance tied to Greek mythology. This story connects Georgia to ancient Greece, drawing lovers of myths to this enchanting land, where culture and history blend beautifully in its landscapes and traditions."
       },
       "4": {
-        "title": "Expression of Georgian Identity",
-        "text": "In essence, Georgian wine is a profound expression of Georgian identity, combining ancient techniques, unique grape varieties, and an essential role in local culture and traditions."
+        "title": "A Living Heritage",
+        "text": "Georgia’s heritage lives through its architecture, traditional dances, polyphonic songs, and renowned cuisine. These cultural expressions not only preserve Georgian identity but also captivate visitors, revealing the rich history and vibrant spirit that make Georgia unique."
+      },
+      "5": {
+        "title": "Georgian Cuisine",
+        "text": "Known for its flavors and spices, Georgian cuisine uses fresh ingredients and recipes passed down for generations. Each dish holds cultural significance, with some like khachapuri and khinkali recognized by UNESCO, making them symbols of the country’s rich culinary tradition."
+      },
+      "6": {
+        "title": "Iconic Dishes of Georgia",
+        "text": "Georgian dishes reflect the nation’s heritage: khachapuri, a warm cheese pie; khinkali, juicy dumplings filled with meat; and bread baked in 'toned' ovens. Each recipe, treasured for generations, brings Georgia’s unique flavors and cultural importance to the table."
       }
     },
     "componentSeven": {
-      "title": "Experience",
-      "caption": "Patience",
-      "text": "Our goal is to offer a sustainable and unique culinary experience by serving dishes prepared with authentic Georgian ingredients."
+      "title1": "Heritage of Georgian Winemaking",
+      "title2": "A Tradition Spanning 8,000 Years",
+      "text1": "Georgian viticulture is among the oldest in the world, with roots stretching back over 8,000 years. The earliest traces of winemaking reveal the use of kvevri, large clay jars buried underground, marking one of the world’s first winemaking methods. Archaeological discoveries suggest that this region may be the birthplace of wine and the domesticated vine. Today, Georgian vineyards cover approximately 100,000 hectares, and the country boasts 540 authenticated grape varieties. Much of the wine is still produced using this ancient method, preserving a unique expertise and a deep connection to tradition.",
+      "button": ""
     },
     "componentThree": {
       "title1": "We are Experts in",

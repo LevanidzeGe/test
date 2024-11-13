@@ -2,35 +2,35 @@
   "homePage": {
     "metadata": {
       "title": "Toison D'or Georgisches Café & Restaurant in Genf",
-      "description": "Entdecken Sie ein authentisches und unvergessliches kulinarisches Erlebnis, inspiriert von der georgischen Tradition und mit Liebe zubereitet. Im Toison d'Or in Genf genießen Sie die besten georgischen Spezialitäten, von traditionellen Gerichten bis hin zu modernen Kreationen, in einer warmen und eleganten Atmosphäre."
+      "description": "Erleben Sie eine authentische und unvergessliche kulinarische Reise, inspiriert von der georgischen Tradition und mit Liebe zubereitet. Im Toison D'or in Genf genießen Sie die besten georgischen Spezialitäten, von traditionellen Gerichten bis hin zu modernen Kreationen, in einer warmen und eleganten Atmosphäre."
     },
     "hero": {
-      "title1": "Willkommen bei",
-      "title2": "Georgisches Café und Restaurant",
-      "text": "Tauchen Sie ein in eine einzigartige georgische kulinarische Welt, in der jedes Gericht mit den besten Zutaten sorgfältig zubereitet wird und die Aromen Georgiens nach Genf bringt.",
-      "button1": "Menü ansehen",
+      "title1": "Willkommen im",
+      "title2": "Georgisches Café & Restaurant",
+      "text": "Tauchen Sie ein in eine einzigartige Welt der georgischen Küche, in der jedes Gericht mit Sorgfalt und den besten Zutaten zubereitet wird, um die Aromen Georgiens nach Genf zu bringen.",
+      "button1": "Speisekarte ansehen",
       "button2": "Tisch reservieren"
     },
     "componentOne": {
-      "title1": "Das Wort des Küchenchefs",
-      "title2": "Mit Herz gemacht",
-      "text": "Lernen Sie Chefkoch, ihre Gerichte bringen die Wärme hausgemachter georgischer Aromen auf jeden Teller. Jedes Rezept, mit Sorgfalt und einer Prise Nostalgie zubereitet, schmeckt, als hätte es eine liebevolle Großmutter gemacht. Ihre Hingabe an Frische und Authentizität macht jede Mahlzeit zu einem gemütlichen, unvergesslichen Erlebnis."
+      "title1": "Worte des Küchenchefs",
+      "title2": "Mit Herz zubereitet",
+      "text": "Treffen Sie unseren Chefkoch, der die Wärme georgischer Hausmannskost auf jeden Teller bringt. Jedes Rezept, liebevoll und mit einem Hauch von Nostalgie zubereitet, schmeckt wie ein Gericht von einer liebevollen Großmutter. Die Hingabe zu Frische und Authentizität macht jede Mahlzeit zu einem unvergesslichen Erlebnis."
     },
     "componentTwo": {
-      "title1": "Das Wort des Küchenchefs",
-      "title2": "Für die Zukunft geschaffen",
-      "text1": "Hochwertige georgische Zutaten stehen im Mittelpunkt unserer Küche. Unsere Köche arbeiten unermüdlich daran, Gerichte zu kreieren, die georgische Traditionen ehren und eine moderne Note hinzufügen.",
-      "text2": "Ob frisches Khachapuri oder ein klassisches georgisches Eintopfgericht – unser Menü lädt Sie ein, neue Aromen in einer warmen Umgebung zu entdecken.",
-      "button": "Erfahren Sie mehr über uns"
+      "title1": "Ein Privater Raum für Ihre Veranstaltungen",
+      "title2": "Flexibilität für jeden Anlass",
+      "text1": "Im Toison D'or bieten wir die Möglichkeit, einen Teil des Restaurants mit einem eigenen Eingang zu mieten. Genießen Sie maximale Flexibilität: Wählen Sie unsere authentischen georgischen Gerichte für Ihre Gäste oder bringen Sie Ihre eigenen Speisen mit und nutzen Sie den Raum in einer gemütlichen Atmosphäre.",
+      "text2": "Für private Veranstaltungen bieten wir Ihnen einen separaten Bereich in unserem Restaurant. Ob Sie unseren vollen Service mit georgischen Spezialitäten wünschen oder lieber eigene Gerichte mitbringen – wir garantieren ein einzigartiges und einladendes Erlebnis für Ihre Gäste.",
+      "button": "Mehr erfahren"
     },
     "componentFour": {
       "1": {
-        "title": "Ein Warmer Croissant",
-        "text": "Frisch gebacken, goldbraun, buttrig und herrlich zart. Beginnen Sie den Tag mit einem Croissant, das Wärme und Freude in jedem köstlichen Bissen schenkt und die Sinne verwöhnt."
+        "title": "Gastronomische Reise durch Georgien",
+        "text": "Die georgische Küche ist eine lebendige und farbenfrohe Reise, die auf Rezepten basiert, die von Generation zu Generation weitergegeben werden. Jedes Gericht vereint frische Zutaten, Gewürze und Traditionen, um eine einzigartige Erfahrung zu schaffen, bei der Essen nicht nur eine Mahlzeit, sondern ein kultureller Ausdruck ist."
       },
       "2": {
-        "title": "Imeruli Khachapuri",
-        "text": "Goldbraun und gefüllt mit würzigem Käse, ist das Imeruli Khachapuri ein georgischer Klassiker. Warm, weich und einfach köstlich – dieses traditionelle Brot bringt georgisches Flair auf Ihren Teller."
+        "title": "Erleben Sie Georgien im Toison D'or",
+        "text": "Im Toison D'or laden wir Sie ein, das georgische Erbe durch unsere authentischen Gerichte und die freundliche Atmosphäre zu erleben. Jeder Bissen ist ein Schritt in die Seele Georgiens, wo Tradition und Moderne zusammenkommen, um die Aromen und Geschichten dieses magischen Landes zu feiern."
       }
     },
     "componentFive": {
@@ -56,64 +56,73 @@
   },
   "menuPage": {
     "metadata": {
-      "title": "Entdecken Sie unser Menü",
-      "description": "Durchstöbern Sie unser Menü und genießen Sie das Beste unserer georgischen Kreationen, zubereitet mit frischen Zutaten und einem Hauch traditioneller Aromen."
+      "title": "Entdecken Sie unsere Speisekarte",
+      "description": "Stöbern Sie in unserer Speisekarte und genießen Sie das Beste unserer georgischen Kreationen, zubereitet mit frischen Zutaten und einem Hauch traditioneller Aromen."
     },
     "headComponent": {
-      "title": "Unser Menü"
+      "title": "Unsere Speisekarte"
     },
     "menu": {
-      "underCategory": "menü"
+      "underCategory": "Speisekarte"
     }
   },
   "storyPage": {
     "metadata": {
       "title": "Unsere Geschichte",
-      "description": "Entdecken Sie die Wurzeln unserer Leidenschaft für die georgische Küche und wie wir in Genf zu einem ikonischen Restaurant geworden sind, das Tradition und Innovation vereint."
+      "description": "Entdecken Sie die Wurzeln unserer Leidenschaft für die georgische Küche und wie wir ein ikonisches Restaurant in Genf wurden, das Tradition und Innovation verbindet."
     },
     "headComponent": {
       "title": "Unsere Geschichte"
     },
     "componentTwo": {
-      "title1": "Das Erbe der Georgischen Weinherstellung",
-      "title2": "Eine 8.000 Jahre Alte Tradition",
-      "text1": "Die georgische Weinkultur ist eine der ältesten der Welt, mit Nachweisen für Weinherstellung, die 8.000 Jahre zurückreichen. Die Verwendung von Kvevri, großen Tonkrügen zur Weinproduktion, markiert die früheste bekannte Weinherstellungstechnik und etabliert Georgien als Ursprungsland des Weins und der domestizierten Reben.",
-      "text2": "Heute erstrecken sich die georgischen Weinberge über 100.000 Hektar, mit 540 authentifizierten Traubensorten. Ein großer Teil des Weins wird immer noch nach der traditionellen Kvevri-Methode hergestellt und bewahrt das reiche Erbe und die einzigartigen Aromen der georgischen Weinbaukultur.",
+      "title1": "Ein Privater Raum für Ihre Veranstaltungen",
+      "title2": "Flexibilität für jeden Anlass",
+      "text1": "Im Toison D'or bieten wir die Möglichkeit, einen Teil des Restaurants mit einem eigenen Eingang zu mieten. Genießen Sie maximale Flexibilität: Wählen Sie unsere authentischen georgischen Gerichte für Ihre Gäste oder bringen Sie Ihre eigenen Speisen mit und nutzen Sie den Raum in einer gemütlichen Atmosphäre.",
+      "text2": "Für private Veranstaltungen bieten wir Ihnen einen separaten Bereich in unserem Restaurant. Ob Sie unseren vollen Service mit georgischen Spezialitäten wünschen oder lieber eigene Gerichte mitbringen – wir garantieren ein einzigartiges und einladendes Erlebnis für Ihre Gäste.",
       "button": ""
     },
     "componentFour": {
       "1": {
-        "title": "Traditionelle Kvevri-Methode",
-        "text": "Die einzigartige Qualität des georgischen Weins liegt in der Kvevri-Methode. Trauben, einschließlich Schalen, Samen und manchmal sogar Stiele, werden in großen Tonkrügen vergoren, die im Boden vergraben sind, um eine konstante Temperatur zu halten. Diese Technik erzeugt Weine mit reichen und komplexen Aromen, oft mit ausgeprägten Tanninen, besonders in bernsteinfarbenen Weißweinen."
+        "title": "Georgien: Land der Kultur und Gastronomie",
+        "text": "Zwischen Europa und Asien gelegen, ist Georgien ein Land mit alten Wurzeln und einzigartigen Traditionen. Im 4. Jahrhundert vereinten sich Kolchis und Iberien, und Georgien entwickelte eine starke, widerstandsfähige Identität. Trotz zahlreicher Invasionen hat das Land sein reiches kulturelles Erbe bewahrt."
       },
       "2": {
-        "title": "Regionen und Typische Rebsorten",
-        "text": "Georgien verfügt über 18 verschiedene Weinappellationen, wobei die Regionen Kachetien, Kartli und Imereti am bekanntesten sind. Georgien hat zahlreiche einheimische Traubensorten, aber einige der bekanntesten sind Saperavi (eine intensive rote Traube) und Rkatsiteli (eine weiße Traube mit zarten Aromen). Diese Sorten verleihen dem georgischen Wein seine einzigartigen Eigenschaften."
+        "title": "Geschichte und Vereinigung",
+        "text": "Die Geschichte Georgiens ist geprägt von Einheit und Widerstandsfähigkeit. Im 4. Jahrhundert vereinten sich Kolchis und Iberien und bildeten ein Land mit dauerhaften Überzeugungen und Traditionen. Trotz wiederholter Invasionen bleibt Georgiens einzigartige Identität stark und bewahrt seine alte Essenz."
       },
       "3": {
-        "title": "Kulturelle Bedeutung",
-        "text": "In Georgien ist Wein mehr als nur ein Getränk; er steht im Mittelpunkt der georgischen Kultur und sozialen Rituale. Das Supra (georgisches Festmahl) ist ein geschätztes Ereignis, bei dem Wein unter der Leitung des Tamada (Zeremonienmeister) geteilt wird, der poetische Trinksprüche bietet, die Freundschaft, Familie und Leben feiern."
+        "title": "Kultur und Legenden",
+        "text": "Georgien ist das Heimatland der Legende des Goldenen Vlieses, ein Symbol für Träume und Fülle, das mit der griechischen Mythologie verbunden ist. Diese Geschichte verbindet Georgien mit dem antiken Griechenland und zieht Mythologie-Liebhaber in dieses verzauberte Land."
       },
       "4": {
-        "title": "Ausdruck der Georgischen Identität",
-        "text": "Im Kern ist der georgische Wein ein tiefer Ausdruck der georgischen Identität, der alte Techniken, einzigartige Rebsorten und eine wesentliche Rolle in der lokalen Kultur und Tradition vereint."
+        "title": "Lebendiges Kulturerbe",
+        "text": "Das georgische Erbe zeigt sich in seiner Architektur, seinen traditionellen Tänzen, polyphonen Liedern und seiner renommierten Küche. Diese kulturellen Ausdrücke bewahren die georgische Identität und faszinieren Besucher durch die reiche Geschichte und den lebendigen Geist des Landes."
+      },
+      "5": {
+        "title": "Georgische Küche",
+        "text": "Die georgische Küche ist für ihre Aromen und Gewürze bekannt und verwendet frische Zutaten sowie traditionelle Rezepte, die über Generationen weitergegeben wurden. Gerichte wie Khachapuri und Khinkali haben kulturelle Bedeutung und sind Symbole der reichen kulinarischen Tradition des Landes."
+      },
+      "6": {
+        "title": "Ikonische Gerichte Georgiens",
+        "text": "Georgische Gerichte spiegeln das Erbe des Landes wider: Khachapuri, eine warme Käsepastete; Khinkali, saftige Fleischklöße; und Brot, das in 'toned' Öfen gebacken wird. Jede Rezeptur, die seit Generationen geschätzt wird, bringt die einzigartigen Aromen Georgiens auf den Tisch."
       }
     },
     "componentSeven": {
-      "title": "Erfahrung",
-      "caption": "Geduld",
-      "text": "Unser Ziel ist es, ein nachhaltiges und einzigartiges kulinarisches Erlebnis zu bieten, indem wir Gerichte mit authentischen georgischen Zutaten servieren."
+      "title1": "Das Erbe des georgischen Weinbaus",
+      "title2": "Eine 8.000 Jahre alte Tradition",
+      "text1": "Die georgische Weinbaukunst gehört zu den ältesten der Welt, mit Wurzeln, die mehr als 8.000 Jahre zurückreichen. Die frühesten Belege der Weinherstellung zeigen die Verwendung von Kvevri, großen Tonkrügen, die in den Boden eingegraben wurden. Dies gilt als eine der weltweit ersten Weinherstellungsmethoden. Archäologische Entdeckungen deuten darauf hin, dass diese Region die Wiege des Weins und der domestizierten Rebe sein könnte. Heute erstrecken sich die georgischen Weinberge über etwa 100.000 Hektar, und das Land verfügt über 540 authentifizierte Rebsorten. Ein großer Teil des Weins wird noch immer nach dieser alten Methode hergestellt, was ein einzigartiges Know-how und eine tiefe Verbindung zur Tradition bewahrt.",
+      "button": ""
     },
     "componentThree": {
       "title1": "Wir sind Experten in",
       "title2": "Was wir lieben zu tun",
-      "caption": "Mehr lesen",
+      "caption": "Mehr erfahren",
       "services": {
         "ser1": "Spezialitäten des Küchenchefs",
         "ser2": "Unsere Geschichte",
-        "ser3": "Menü",
+        "ser3": "Speisekarte",
         "ser4": "Reservierungen",
-        "ser5": "Catering-Dienste",
+        "ser5": "Catering Services",
         "ser6": "Kontaktieren Sie uns"
       }
     }
@@ -121,14 +130,14 @@
   "reservationPage": {
     "metadata": {
       "title": "Tisch reservieren",
-      "description": "Reservieren Sie noch heute einen Tisch bei uns und genießen Sie die besten georgischen Spezialitäten in einer warmen Atmosphäre im Herzen von Genf."
+      "description": "Reservieren Sie heute einen Tisch und genießen Sie die besten georgischen Spezialitäten in einer warmen Atmosphäre im Herzen von Genf."
     },
     "reservationForm": {
       "name": "Geben Sie Ihren vollständigen Namen ein",
-      "email": "E-Mail",
+      "email": "Email",
       "phone": "Telefonnummer",
       "people": "Anzahl der Personen",
-      "text": "Besondere Anforderungen?",
+      "text": "Besondere Wünsche?",
       "button": "SENDEN",
       "thank": "Vielen Dank für Ihre Anfrage",
       "wait": "Bitte warten Sie auf unsere Bestätigung"
@@ -138,13 +147,13 @@
     },
     "componentNine": {
       "title": "Reservieren Sie Ihren Tisch",
-      "text": "Reservieren Sie Ihren Platz und genießen Sie unsere nachhaltige georgische Küche, die mit Liebe zubereitet wird. Wir freuen uns auf Ihren Besuch!"
+      "text": "Reservieren Sie Ihren Platz und genießen Sie unsere nachhaltige georgische Küche, die mit Liebe zubereitet wird. Wir freuen uns darauf, Sie willkommen zu heißen!"
     }
   },
   "forms": {
     "reservationForm": {
       "name": "Vollständiger Name",
-      "email": "E-Mail",
+      "email": "Email",
       "phone": "Telefonnummer",
       "date": "Datum",
       "time": "Uhrzeit",
@@ -156,8 +165,8 @@
     }
   },
   "notFoundPage": {
-    "title1": "Die gesuchte Seite existiert nicht",
-    "title2": "Die gesuchte Seite existiert nicht",
+    "title1": "Die Seite, die Sie suchen, existiert nicht",
+    "title2": "Die Seite, die Sie suchen, existiert nicht",
     "button": "Startseite"
   },
   "footer": {
