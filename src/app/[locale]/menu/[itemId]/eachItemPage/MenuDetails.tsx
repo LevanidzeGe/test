@@ -50,7 +50,14 @@ export default function MenuDetails({ item }: MenuDetailsProps) {
         <p className={`paragraph ${styles.description}`}>{itemDescription}</p>
 
         <div className={` ${styles.tagsPriceWrap}`}>
-          <div className={styles.details}>
+          <div className={` ${styles.tagseWrap}`}>
+            <div className={styles.details}>
+              {item.option1 && <p className={styles.favorite}>favorite</p>}
+              {item.option2 && <p className={styles.new}>new</p>}
+              {item.option3 && <p className={styles.vegan}>vegetarian</p>}
+            </div>
+          </div>
+          {/* <div className={styles.details}>
             {item.option1 && (
               <div className={styles.new}>
                 <Image
@@ -72,7 +79,7 @@ export default function MenuDetails({ item }: MenuDetailsProps) {
                 <LuVegan className={styles.eachItem} />
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className={styles.priceWrap}>
             <p className={styles.price}>{item.price.toFixed(2)}</p>

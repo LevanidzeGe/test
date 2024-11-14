@@ -69,22 +69,6 @@
   justify-content: center; /* Center the content horizontally */
   height: 100%; /* Ensure the container takes full height */
 }
-.details img,
-.details svg,
-.details path {
-  width: 30px;
-}
-/* .new img {
-} */
-
-.heart {
-  color: rgb(255, 27, 27);
-
-  /* color: rgba(255, 0, 0, 0.815); */
-}
-.vegan {
-  color: hsla(144, 100%, 38%);
-}
 
 .priceWrap {
   /* width: 90px; */
@@ -105,6 +89,39 @@
   font-size: 13px;
   margin-top: 14px;
   margin-left: 2px;
+}
+.tagsWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  align-items: flex-end; /* Align the items at the bottom of their container */
+  gap: 10px;
+  margin-top: 10px;
+}
+.details p {
+  font-family: var(--font1);
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 700;
+  /* margin: auto 0; */
+  color: var(--white);
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.favorite {
+  background-color: red;
+}
+.vegan {
+  background-color: hsla(144, 100%, 38%);
+}
+.new {
+  background-color: var(--color2);
 }
 
 @media (max-width: 992px) {
