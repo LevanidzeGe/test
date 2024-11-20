@@ -10,5 +10,5 @@ export const googleUrl: string = "";
 export const address: string = "Square des Nénuphars 1, 1219 Vernier";
 export const addressLink: string = "https://maps.app.goo.gl/R8rEehPaT3jrJM5o9";
 
-export const email: string = "gogoladze.j.mari@gmail.com";
+export const email: string = "toisondor.mari@gmail.com";
 //must fix
