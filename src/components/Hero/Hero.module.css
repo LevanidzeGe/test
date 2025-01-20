@@ -3,7 +3,7 @@
   position: relative;
   height: 100vh;
   max-height: 1500px;
-  min-height: 600px;
+  min-height: 844px;
   margin: 0 auto;
 }
 
@@ -20,6 +20,7 @@
 .overlay {
   display: flex;
   position: relative;
+  height: 100%;
 }
 .leftDiv {
   margin-top: 100px;
@@ -29,7 +30,7 @@
 
 .leftDiv h1 {
   color: var(--color4);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .leftDiv h2 {
   line-height: 150%;
@@ -37,20 +38,22 @@
 }
 .leftDiv h2:nth-child(2) {
   color: var(--color6);
+  padding-bottom: 20px;
 }
 .buttonContainer {
   display: flex;
   gap: 15px;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .rightDiv {
   width: 50%;
-  position: relative;
+  height: 100%;
 }
 .topDiv {
   position: absolute;
-  right: 100px;
+  right: 80px;
+  margin-top: -20px;
 }
 .topDiv p {
   color: var(--color4);
@@ -65,14 +68,15 @@
   color: var(--gray7);
 }
 
-.imagesDiv img {
-  margin-right: -10px;
+.imagesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: auto 0;
+  padding-bottom: 100px;
 }
-.bottomDiv {
-  position: absolute;
-  left: -250px;
-  bottom: 0px;
-}
+
 .blueDiv {
   color: var(--color1);
   max-width: max-content;
@@ -105,7 +109,7 @@
     display: none;
   }
   .imagesDiv {
-    margin-left: -50px;
+    margin-left: -100px;
   }
   .title {
     max-width: 400px;
@@ -113,13 +117,16 @@
 }
 
 @media (max-width: 992px) {
-  .rightDiv {
+  .imagesDiv {
     display: none;
   }
   .title {
     max-width: auto;
   }
+  .rightDiv {
+    width: 0;
+  }
   .leftDiv {
-    width: auto;
+    width: 100%;
   }
 }

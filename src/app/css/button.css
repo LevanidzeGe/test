@@ -12,7 +12,7 @@
   justify-content: center;
   padding: 8px 20px;
   transition: all 0.2s;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -29,6 +29,7 @@
 .button-reverse {
   color: var(--white);
   background-color: var(--color4);
+  border: 2px solid var(--color4);
 }
 .button-reverse:hover {
   background-color: var(--color2);

@@ -3,28 +3,30 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { giIconSvg, judoChildren } from "@/public/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function MainImage() {
+  const t = useTranslations("homePage.hero");
   return (
     <div
       className={` section no-padding ${styles.mainWrapper} ${styles.outline}`}
     >
       <div className="container">
-        <div className={` ${styles.overlay}`}>
+        <div className={styles.overlay}>
           <div className={styles.leftDiv}>
             <div>
               <h1 className="heading1">GEO JUDO</h1>
               <div className={styles.title}>
-                <h2 className="heading2">Study the art of judo in</h2>
-                <h2 className="heading2">Geneva</h2>
+                <h2 className="heading2">{t("title1")}</h2>
+                <h2 className="heading2">{t("title2")}</h2>
               </div>
             </div>
             <div className={styles.buttonContainer}>
-              <Link className="button" href="/">
-                Contact
-              </Link>
               <Link className="button button-reverse" href="/">
-                Roll in
+                {t("button1")}
+              </Link>
+              <Link className="button" href="/">
+                {t("button2")}
               </Link>
             </div>
           </div>
@@ -32,11 +34,11 @@ export default function MainImage() {
             <div className={styles.topDiv}>
               <div>
                 <p>95+</p>
-                <span>Student</span>
+                <span>{t("text1")}</span>
               </div>
               <div>
                 <p>15+</p>
-                <span>Years in Geneva</span>
+                <span>{t("text2")}</span>
               </div>
             </div>
             <div className={styles.imagesDiv}>

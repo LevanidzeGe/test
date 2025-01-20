@@ -5,11 +5,12 @@
       "description": "Geo Judo"
     },
     "hero": {
-      "title1": "Bienvenue chez",
-      "title2": "Café & Restaurant Géorgien",
-      "text": "Plongez dans un monde culinaire géorgien unique où chaque plat est préparé avec soin à partir des meilleurs ingrédients, apportant les saveurs de la Géorgie à Genève.",
-      "button1": "Voir le Menu",
-      "button2": "Réserver une Table"
+      "title1": "Étudiez l'art du judo à",
+      "title2": "Genève",
+      "text1": "Étudiants",
+      "text2": "Années à Genève",
+      "button1": "Contact",
+      "button2": "Inscription"
     },
     "componentOne": {
       "title1": "Mot du Chef",

@@ -22,42 +22,31 @@
   font-family: var(--font1);
   font-size: 15px;
   transition: all 0.2s;
-  color: var(--color4);
+  color: var(--color1);
   text-transform: uppercase;
   font-weight: 500;
 }
 .burger-link:hover {
-  text-decoration: underline;
+  color: var(--color2);
 }
 .active-burger-link {
-  text-decoration: underline;
   color: var(--color2);
 }
 
 /* standart Nav link */
 .link {
   font-family: var(--font1);
-  font-size: 15px;
-  transition: all 0.2s;
-  color: var(--color1);
-  text-transform: uppercase;
-  font-weight: 500;
-  /* მთავარი */
-
-  /* font-family: 'Poppins'; */
-  font-weight: 600;
   font-size: 14px;
-  line-height: 21px;
+  transition: all 0.2s;
+  color: var(--color3);
   text-transform: uppercase;
-
-  color: #003d73;
+  font-weight: 600;
 }
 .active-link {
-  /* text-decoration: underline; */
-  color: var(--color2);
+  color: var(--color5);
 }
 .link:hover {
-  text-decoration: underline;
+  color: var(--color5);
 }
 
 /* typography */
@@ -130,6 +119,7 @@
 /* Break point 1200px */
 @media (max-width: 1200px) {
   .heading1 {
+    font-size: 60px;
   }
 }
 
