@@ -11,10 +11,6 @@ import {
   khachapuri2,
   womanChef,
 } from "@/public/image";
-import ComponentTwo from "@/src/components/Two/ComponentTwo";
-import ComponentThree from "@/src/components/Three/ComponentThree";
-import ComponentFour from "@/src/components/Four/ComponentFour";
-import ComponentSeven from "@/src/components/Seven/ComponentSeven";
 
 export async function generateMetadata() {
   const t = await getTranslations("storyPage.metadata");
