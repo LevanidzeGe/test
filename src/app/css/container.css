@@ -31,8 +31,8 @@
   background-color: var(--color4-10);
 }
 .section-medium {
-  background-image: url("/assets/background/white-graysh.jpeg");
-  /* background-color: var(--color4-20); */
+  /* background-image: url("/assets/background/white-graysh.jpeg"); */
+  background-color: var(--color4-20);
 
   /* must fix */
 }

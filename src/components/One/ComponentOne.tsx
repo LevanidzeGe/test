@@ -11,20 +11,24 @@ export default function ComponentOne({ image, reverse }: ComponentOne) {
   const t = useTranslations("homePage.componentOne");
 
   return (
-    <section className="section section-medium">
+    <section className="section section-light">
       <div className="container">
         <div
           className={` ${reverse ? styles.reverse : ""}  ${
             styles.photoTextWrapper
           }`}
         >
-          <Image src={image} height={1500} width={1000} alt="ss" />
+          <Image
+            src={image}
+            height={1500}
+            width={1000}
+            alt="ss"
+            className={styles.test}
+          />
           <div className={` ${styles.textDiv}`}>
-            <h2 className="color2 heading6"> {t("title1")}</h2>
-            <h2 className="heading3 ">{t("title2")}</h2>
-            <p className="twoLines"></p>
+            <h2 className="heading2 color6 blueBg">Geo Judo</h2>
+            <h2 className="heading3 ">{t("title1")}</h2>
             <h3 className="paragraph">{t("text")}</h3>
-            <h4 className="heading6">Mari</h4>
           </div>
         </div>
       </div>

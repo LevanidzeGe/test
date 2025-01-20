@@ -1,14 +1,8 @@
-import ComponentFive from "@/src/components/Five/ComponentFive";
 import Hero from "@/src/components/Hero/Hero";
 import { chefImage, khachapuri1, dishIcon, dumplings } from "@/public/image";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { useTranslations } from "next-intl";
-import ComponentFour from "@/src/components/Four/ComponentFour";
-import ComponentTwo from "@/src/components/Two/ComponentTwo";
-import ComponentSix from "@/src/components/Six/ComponentSix";
-
 import ComponentOne from "@/src/components/One/ComponentOne";
-import ComponentSeven from "@/src/components/Seven/ComponentSeven";
 
 export default function Home() {
   const t = useTranslations("homePage");
@@ -16,37 +10,7 @@ export default function Home() {
   return (
     <div className="fadeOut">
       <Hero />
-      {/* <ComponentOne image={chefImage} />
-      <ComponentSeven
-        title1={t("componentSeven.title1")}
-        title2={t("componentSeven.title2")}
-        text1={t("componentSeven.text1")}
-        button={t("componentSeven.button")}
-      />
-
-      <ComponentFour
-        icon={dishIcon}
-        image={khachapuri1}
-        title={t("componentFour.2.title")}
-        text={t("componentFour.2.text")}
-        reverse
-      />
-      <ComponentFour
-        icon={dishIcon}
-        image={dumplings}
-        title={t("componentFour.1.title")}
-        text={t("componentFour.1.text")}
-      />
-      <ComponentTwo
-        title1={t("componentTwo.title1")}
-        title2={t("componentTwo.title2")}
-        text1={t("componentTwo.text1")}
-        text2={t("componentTwo.text2")}
-        button={t("componentTwo.button")}
-      />
-
-      <ComponentFive /> */}
-
+      <ComponentOne image={chefImage} />
       <Testimonials
         title1={t("testimonials.title1")}
         title2={t("testimonials.title2")}

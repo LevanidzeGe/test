@@ -29,10 +29,10 @@
   --color6: #e20001;
 
   --color2-10: hsla(214, 100%, 68%, 0.1);
-  --color4-10: rgba(63, 76, 57, 0.1); /*opacity 10*/
-  --color4-20: rgba(63, 76, 57, 0.2); /*opacity 10*/
-  --color4-40: rgba(63, 76, 57, 0.4); /*opacity 40*/
-  --color4-80: rgba(63, 76, 57, 0.8); /*opacity 80*/
+  --color4-10: hsla(208, 100%, 23%, 0.05); /*opacity 10*/
+  --color4-20: hsla(208, 100%, 23%, 0.1); /*opacity 20*/
+  --color4-40: hsla(208, 100%, 23%, 0.4); /*opacity 40*/
+  --color4-80: hsla(208, 100%, 23%, 0.8); /*opacity 80*/
 }
 
 /* Classes */

@@ -41,18 +41,20 @@ export default function LanguageSwitcher() {
       </button>
       {flagShow && (
         <ul className={styles.languageDropdown}>
-          {supportedLocales.map((lang) => (
-            <li key={lang} className={styles.languageOption}>
-              <button onClick={() => handleLocaleSwitch(lang)}>
-                <Flag
-                  code={lang === "en" ? "gb" : lang}
-                  className={styles.flags}
-                  aria-label="Select Language"
-                  alt={`${lang} flag`}
-                />
-              </button>
-            </li>
-          ))}
+          {supportedLocales
+            .filter((lang) => lang !== locale)
+            .map((lang) => (
+              <li key={lang} className={styles.languageOption}>
+                <button onClick={() => handleLocaleSwitch(lang)}>
+                  <Flag
+                    code={lang === "en" ? "gb" : lang}
+                    className={styles.flags}
+                    aria-label="Select Language"
+                    alt={`${lang} flag`}
+                  />
+                </button>
+              </li>
+            ))}
         </ul>
       )}
     </div>
