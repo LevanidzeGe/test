@@ -47,10 +47,6 @@ export default function MainImage() {
                 alt="children judo"
               ></Image>
             </div>
-            <div className={styles.bottomDiv}>
-              <div className={`heading2 ${styles.blueDiv}`}>Geneva 1506</div>
-              <div className={`heading2 ${styles.redDiv}`}>School Geneva</div>
-            </div>
           </div>
         </div>
         <Image
