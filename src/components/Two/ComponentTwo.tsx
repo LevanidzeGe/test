@@ -3,29 +3,8 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { childrenTeam } from "@/public/image";
-interface componentTwoProps {
-  title1: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  title5: string;
-  text1: string;
-  text2: string;
-  text3: string;
-  button?: string;
-}
 
-export default function ComponentTwo({
-  title1,
-  title2,
-  title3,
-  title4,
-  title5,
-  text1,
-  text2,
-  text3,
-  button,
-}: componentTwoProps) {
+export default function ComponentTwo() {
   const locale = useLocale();
   const t = useTranslations("homePage.componentTwo");
   return (

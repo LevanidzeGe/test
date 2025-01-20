@@ -58,3 +58,34 @@
   width: 34%;
   border-radius: 20px;
 }
+
+@media (max-width: 1200px) {
+  .firstBox {
+    width: 39%;
+  }
+  .secondBox {
+    width: 59%;
+  }
+  .thirdBox {
+    display: none;
+  }
+  .fourthBox {
+  }
+  .fifthBox {
+  }
+  .lowerDiv,
+  .middleDiv,
+  .middleDiv img,
+  .lowerDiv img {
+    height: 300px;
+  }
+  .upperDiv h3 {
+    display: none;
+  }
+}
+/* --break-xl: 1200px;
+--break-lg: 992px;
+--break-md: 768px;
+--break-sm: 576px;
+--break-xs: 400px;
+--break-xxs: 300px; */
