@@ -2,14 +2,17 @@
 //
 // hero images
 import giIconSvg from "@/public/images/heros/Gi-icon.svg";
+import judoChildren from "@/public/images/heros/judoChildren.png";
+// xxx
 import heroMenu from "@/public/images/heros/heroMenu.jpg";
 import heroStory from "@/public/images/heros/heroStory.jpg";
 import heroReservation from "@/public/images/heros/heroReservation.jpg";
-import judoChildren from "@/public/images/heros/judoChildren.png";
 
 //
 //
 //homepage Images
+import childrenTeam from "@/public/images/children-team.jpg";
+
 import croisant from "@/public/images/heros/heroHome.jpg";
 import pizza from "@/public/images/ComponentThree.jpg";
 import pizza2 from "@/public/images/ComponentSix.jpg";
@@ -63,4 +66,5 @@ export {
   khachapuri2,
   badrijani,
   dishIcon,
+  childrenTeam,
 };

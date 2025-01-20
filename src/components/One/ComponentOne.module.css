@@ -14,6 +14,9 @@
   border-radius: 20px;
 }
 
+.textDiv h3 {
+  margin-top: 70px;
+}
 .textDiv {
   width: 45%;
   display: flex;
@@ -21,12 +24,12 @@
   justify-content: center;
 }
 
-.textDiv h3 {
+.textDiv p {
   padding-bottom: 50px;
   color: var(--gray7);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 772px) {
   .photoTextWrapper {
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -41,8 +44,12 @@
     margin: 0 auto;
     text-align: center;
   }
-  .textDiv h2 {
+  .textDiv h3 {
     margin-top: 40px;
+  }
+
+  .textDiv h2 {
+    margin: 0 auto;
   }
 }
 

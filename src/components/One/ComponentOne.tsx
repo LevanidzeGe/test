@@ -25,10 +25,10 @@ export default function ComponentOne({ image, reverse }: ComponentOne) {
             alt="ss"
             className={styles.test}
           />
-          <div className={` ${styles.textDiv}`}>
+          <div className={styles.textDiv}>
             <h2 className="heading2 color6 blueBg">Geo Judo</h2>
-            <h2 className="heading3 ">{t("title1")}</h2>
-            <h3 className="paragraph">{t("text")}</h3>
+            <h3 className="heading3 color3">{t("title1")}</h3>
+            <p className="paragraph">{t("text")}</p>
           </div>
         </div>
       </div>
