@@ -5,12 +5,12 @@
   gap: 5%;
 }
 
-.photoTextWrapper img {
+.image {
   width: 50%;
   height: auto;
   object-fit: cover;
   border: 3px solid #013d73;
-  filter: drop-shadow(-30px -30px 0px #013d73);
+  filter: drop-shadow(-30px -30px #013d73);
   border-radius: 20px;
 }
 
@@ -28,13 +28,17 @@
   padding-bottom: 50px;
   color: var(--gray7);
 }
+.iconTextDiv {
+  display: flex;
+  gap: 20px;
+}
 
 @media (max-width: 772px) {
   .photoTextWrapper {
     flex-direction: column-reverse;
     margin: 0 auto;
   }
-  .photoTextWrapper img {
+  .image {
     width: 100%;
     margin: 0 auto;
     margin-right: -10px;
@@ -48,7 +52,7 @@
     margin-top: 40px;
   }
 
-  .textDiv h2 {
+  .iconTextDiv {
     margin: 0 auto;
   }
 }

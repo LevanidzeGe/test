@@ -37,8 +37,8 @@
   padding: 10px 25px;
   background: linear-gradient(
     100.09deg,
-    rgba(1, 60, 112, 0.72) 7.55%,
-    rgba(2, 115, 214, 0.72) 98.78%
+    var(--color5) 27.55%,
+    var(--color3) 98.78%
   );
   border-radius: 11px;
 }

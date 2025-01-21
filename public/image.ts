@@ -12,6 +12,7 @@ import heroReservation from "@/public/images/heros/heroReservation.jpg";
 //
 //homepage Images
 import childrenTeam from "@/public/images/children-team.jpg";
+import giorgiSofia from "@/public/images/giorgi-sofia.jpg";
 
 import croisant from "@/public/images/heros/heroHome.jpg";
 import pizza from "@/public/images/ComponentThree.jpg";
@@ -39,9 +40,14 @@ import badrijani from "@/public/images/ComponentFourImages/badrijani.jpg";
 //
 //
 // assets
+import giSvg from "@/public/assets/svg/giSvg.svg";
+
+//
 import newItem from "@/public/assets/svg/new.svg";
 import dishIcon from "@/public/assets/icons/dish-icon.png";
 export {
+  giorgiSofia,
+  giSvg,
   judoChildren,
   giIconSvg,
   heroMenu,
