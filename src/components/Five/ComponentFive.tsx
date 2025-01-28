@@ -6,10 +6,8 @@ import phoneIcon from "./icons/phone-call.svg";
 import addresslIcon from "./icons/address.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
 
 export default function ComponentFive() {
-  const locale = useLocale();
   const t = useTranslations("homePage.componentFive");
   return (
     <section className="section ">
@@ -24,21 +22,21 @@ export default function ComponentFive() {
                 height={70}
                 alt="Location Icon"
               />
-              <h3 className="heading4">ჩვენი დარბაზი</h3>
+              <h3 className="heading4">{t("title1")}</h3>
               <p className="paragraph gray7">{address}</p>
             </Link>
 
             {/* Email Box */}
             <Link href={`mailto: ${email}`}>
               <Image src={emailIcon} width={70} height={70} alt="Email Icon" />
-              <h3 className="heading4">მოგვწერეთ ემაილზე</h3>
+              <h3 className="heading4">{t("title2")}</h3>
               <p className="paragraph gray7">{email}</p>
             </Link>
 
             {/* phone number box */}
             <Link href={`tel: ${phoneNumber}`}>
               <Image src={phoneIcon} width={70} height={70} alt="Mobile Icon" />
-              <h3 className="heading4">დაგვირეკეთ</h3>
+              <h3 className="heading4">{t("title3")}</h3>
               <p className="paragraph gray7">{phoneNumber}</p>
             </Link>
           </div>

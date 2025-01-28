@@ -39,7 +39,11 @@
       "text1": "Schwarze Judo-Uniform",
       "text2": "Weiße Judo-Uniform"
     },
-    "componentFive": {},
+    "componentFive": {
+      "title1": "Adresse",
+      "title2": "Schreiben Sie uns per E-Mail",
+      "title3": "Rufen Sie uns an"
+    },
     "componentSix": {},
     "componentSeven": {},
     "testimonials": {

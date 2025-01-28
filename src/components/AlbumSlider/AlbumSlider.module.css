@@ -24,8 +24,10 @@
   align-items: center;
 }
 .mainWrapper > div > ::after {
-  color: rgba(141, 141, 141, 0.378);
+  color: rgba(186, 186, 186, 0.378);
   padding: 20px;
+  background-color: rgba(165, 165, 165, 0.295);
+  border-radius: 20px;
 }
 /* .mainWrapper > div > ::after:hover {
 } */

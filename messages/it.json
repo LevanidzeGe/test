@@ -39,7 +39,11 @@
       "text1": "Uniforme da Judo Nera",
       "text2": "Uniforme da Judo Bianca"
     },
-    "componentFive": {},
+    "componentFive": {
+      "title1": "Indirizzo",
+      "title2": "Scrivici via email",
+      "title3": "Chiamaci"
+    },
     "componentSix": {},
     "componentSeven": {},
     "testimonials": {

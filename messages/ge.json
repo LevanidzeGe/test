@@ -39,7 +39,11 @@
       "text1": "ძიუდოს შავი უნიფორმა",
       "text2": "ძიუდოს თეთრი უნიფორმა"
     },
-    "componentFive": {},
+    "componentFive": {
+      "title1": "მისამართი",
+      "title2": "მოგვწერეთ ემაილზე",
+      "title3": "დაგვირეკეთ"
+    },
     "componentSix": {},
     "componentSeven": {},
     "testimonials": {
