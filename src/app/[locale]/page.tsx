@@ -1,5 +1,5 @@
 import Hero from "@/src/components/Hero/Hero";
-import { chefImage } from "@/public/image";
+import { oldImage } from "@/public/image";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { useTranslations } from "next-intl";
 import ComponentOne from "@/src/components/One/ComponentOne";
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="fadeOut">
       <Hero />
-      <ComponentOne image={chefImage} />
+      <ComponentOne image={oldImage} />
       <ComponentTwo />
       <ComponentThree />
       <AlbumSlider />

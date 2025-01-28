@@ -5,57 +5,43 @@
       "description": "Geo Judo"
     },
     "hero": {
-      "title1": "Willkommen im",
-      "title2": "Georgisches Café & Restaurant",
-      "text": "Tauchen Sie ein in eine einzigartige Welt der georgischen Küche, in der jedes Gericht mit Sorgfalt und den besten Zutaten zubereitet wird, um die Aromen Georgiens nach Genf zu bringen.",
-      "button1": "Speisekarte ansehen",
-      "button2": "Tisch reservieren"
+      "title1": "Lernen Sie die Kunst des Judo in",
+      "title2": "Genf",
+      "text1": "Schüler",
+      "text2": "Jahre in Genf",
+      "button1": "Kontakt",
+      "button2": "Einschreiben"
     },
     "componentOne": {
-      "title1": "Worte des Küchenchefs",
-      "title2": "Mit Herz zubereitet",
-      "text": "Treffen Sie unseren Chefkoch, der die Wärme georgischer Hausmannskost auf jeden Teller bringt. Jedes Rezept, liebevoll und mit einem Hauch von Nostalgie zubereitet, schmeckt wie ein Gericht von einer liebevollen Großmutter. Die Hingabe zu Frische und Authentizität macht jede Mahlzeit zu einem unvergesslichen Erlebnis."
+      "title1": "In Genf seit 2010",
+      "text": "Unsere Judoschule, die vor 15 Jahren in Genf gegründet wurde, ist ein wichtiger Ort für junge Athleten geworden. Mit Leidenschaft und Professionalität fördern wir unsere Schüler, indem wir ihnen Disziplin, Stärke und Einheit durch die Kunst des Judo beibringen. Treten Sie noch heute unserem Erbe bei!"
     },
     "componentTwo": {
-      "title1": "Ein Privater Raum für Ihre Veranstaltungen",
-      "title2": "Flexibilität für jeden Anlass",
-      "text1": "Im Toison D'or bieten wir die Möglichkeit, einen Teil des Restaurants mit einem eigenen Eingang zu mieten. Genießen Sie maximale Flexibilität: Wählen Sie unsere authentischen georgischen Gerichte für Ihre Gäste oder bringen Sie Ihre eigenen Speisen mit und nutzen Sie den Raum in einer gemütlichen Atmosphäre.",
-      "text2": "Für private Veranstaltungen bieten wir Ihnen einen separaten Bereich in unserem Restaurant. Ob Sie unseren vollen Service mit georgischen Spezialitäten wünschen oder lieber eigene Gerichte mitbringen – wir garantieren ein einzigartiges und einladendes Erlebnis für Ihre Gäste.",
-      "button": ""
+      "text1": "Warum unsere Schule?",
+      "text2": "Garantierte Ergebnisse, sportliche Aktivitäten und eine freundliche Atmosphäre",
+      "text3": "Warum unsere Schule?",
+      "text4": "Garantierte Ergebnisse, sportliche Aktivitäten und eine freundliche Atmosphäre",
+      "text5": "Freundliche Atmosphäre",
+      "text6": "Entwicklung durch Freundschaft, sportliche Aktivitäten und Disziplin",
+      "text7": "Wettbewerbe im letzten Jahr",
+      "text8": "Im letzten Jahr haben unsere Schüler an zahlreichen Wettbewerben teilgenommen und verdient Gold-, Silber- und Bronzemedaillen gewonnen!"
+    },
+    "componentThree": {
+      "title1": "Lehrer",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, ein erfahrener Judo-Lehrer aus Georgien, zeichnet sich durch über 20 Jahre Erfahrung im Sport aus. Seit 15 Jahren unterrichtet er in Genf und hilft Kindern im Alter von 2 bis 15 Jahren, Judotechniken und Werte wie Respekt und Teamarbeit zu entwickeln. Giorgis Engagement und Professionalität haben ihn zu einer angesehenen Persönlichkeit in der lokalen Gemeinschaft gemacht.",
+      "button": "Registrieren",
+      "title3": "100+ Aktive Schüler",
+      "text2": "Das über 15 Jahre gesammelte Wissen und die Erfahrung sind der größte Schatz unserer Schule."
     },
     "componentFour": {
-      "1": {
-        "title": "Gastronomische Reise durch Georgien",
-        "text": "Die georgische Küche ist eine lebendige und farbenfrohe Reise, die auf Rezepten basiert, die von Generation zu Generation weitergegeben werden. Jedes Gericht vereint frische Zutaten, Gewürze und Traditionen, um eine einzigartige Erfahrung zu schaffen, bei der Essen nicht nur eine Mahlzeit, sondern ein kultureller Ausdruck ist."
-      },
-      "2": {
-        "title": "Erleben Sie Georgien im Toison D'or",
-        "text": "Im Toison D'or laden wir Sie ein, das georgische Erbe durch unsere authentischen Gerichte und die freundliche Atmosphäre zu erleben. Jeder Bissen ist ein Schritt in die Seele Georgiens, wo Tradition und Moderne zusammenkommen, um die Aromen und Geschichten dieses magischen Landes zu feiern."
-      }
+      "title1": "Kaufen Sie Uniformen bei Geo Judo",
+      "text1": "Schwarze Judo-Uniform",
+      "text2": "Weiße Judo-Uniform"
     },
-    "componentFive": {
-      "title4": "Kontaktieren Sie uns"
-    },
-
-    "componentSix": {
-      "title1": "Willkommen",
-      "title2": "Öffnungszeiten",
-      "monday": "Montag",
-      "tusday": "Dienstag",
-      "wednsday": "Mittwoch",
-      "thursday": "Donnerstag",
-      "friday": "Freitag",
-      "saturday": "Samstag",
-      "sunday": "Sonntag",
-      "closed": "Geschlossen",
-      "button": "Tisch reservieren"
-    },
-    "componentSeven": {
-      "title1": "Das Erbe des georgischen Weinbaus",
-      "title2": "Eine 8.000 Jahre alte Tradition",
-      "text1": "Die georgische Weinbaukunst gehört zu den ältesten der Welt, mit Wurzeln, die mehr als 8.000 Jahre zurückreichen. Die frühesten Belege der Weinherstellung zeigen die Verwendung von Kvevri, großen Tonkrügen, die in den Boden eingegraben wurden. Dies gilt als eine der weltweit ersten Weinherstellungsmethoden. Archäologische Entdeckungen deuten darauf hin, dass diese Region die Wiege des Weins und der domestizierten Rebe sein könnte. Heute erstrecken sich die georgischen Weinberge über etwa 100.000 Hektar, und das Land verfügt über 540 authentifizierte Rebsorten. Ein großer Teil des Weins wird noch immer nach dieser alten Methode hergestellt, was ein einzigartiges Know-how und eine tiefe Verbindung zur Tradition bewahrt.",
-      "button": "Mehr erfahren"
-    },
+    "componentFive": {},
+    "componentSix": {},
+    "componentSeven": {},
     "testimonials": {
       "title1": "Ein wenig Liebe",
       "title2": "Was unsere Gäste über uns sagen"
@@ -63,117 +49,37 @@
   },
   "menuPage": {
     "metadata": {
-      "title": "Entdecken Sie unsere Speisekarte",
-      "description": "Stöbern Sie in unserer Speisekarte und genießen Sie das Beste unserer georgischen Kreationen, zubereitet mit frischen Zutaten und einem Hauch traditioneller Aromen."
-    },
-    "headComponent": {
-      "title": "Unsere Speisekarte"
-    },
-    "menu": {
-      "underCategory": "Speisekarte"
+      "title": "",
+      "description": ""
     }
   },
   "storyPage": {
     "metadata": {
       "title": "Unsere Geschichte",
-      "description": "Entdecken Sie die Wurzeln unserer Leidenschaft für die georgische Küche und wie wir ein ikonisches Restaurant in Genf wurden, das Tradition und Innovation verbindet."
+      "description": "Entdecken Sie die Wurzeln unserer Leidenschaft für die georgische Küche und wie wir ein ikonisches Restaurant in Genf wurden, das Tradition und Innovation vereint."
     },
-    "headComponent": {
-      "title": "Unsere Geschichte"
-    },
-    "componentTwo": {
-      "title1": "Georgien ins Herz von Genf bringen",
-      "title2": "Eine Reise voller Geschmack und Tradition",
-      "text1": "Die georgische Kultur und Küche sind meine wahren Leidenschaften, und es ist ein erfüllter Traum, sie zu teilen. Hier in Genf freue ich mich, ein Stück meiner Heimat zu präsentieren und jedem Gast ein authentisches Erlebnis voller Wärme, Tradition und einzigartiger georgischer Aromen zu bieten.",
-      "text2": "Mit langjähriger Erfahrung als Chefkoch hatte ich die Ehre, die georgische Gastronomie bei zahlreichen Veranstaltungen zu repräsentieren. Jetzt lade ich Sie ein, das reiche kulinarische Erbe Georgiens bei Toison D'or zu entdecken, wo jedes Gericht eine Geschichte erzählt und ein unvergessliches kulinarisches Erlebnis schafft.",
-      "button": ""
-    },
-    "componentThree": {
-      "title1": "Wir sind Experten in",
-      "title2": "Was wir lieben zu tun",
-      "caption": "Mehr erfahren",
-      "services": {
-        "ser1": "Spezialitäten des Küchenchefs",
-        "ser2": "Unsere Geschichte",
-        "ser3": "Speisekarte",
-        "ser4": "Reservierungen",
-        "ser5": "Catering Services",
-        "ser6": "Kontaktieren Sie uns"
-      }
-    },
-    "componentFour": {
-      "1": {
-        "title": "Georgien: Land der Kultur und Gastronomie",
-        "text": "Zwischen Europa und Asien gelegen, ist Georgien ein Land mit alten Wurzeln und einzigartigen Traditionen. Im 4. Jahrhundert vereinten sich Kolchis und Iberien, und Georgien entwickelte eine starke, widerstandsfähige Identität. Trotz zahlreicher Invasionen hat das Land sein reiches kulturelles Erbe bewahrt."
-      },
-      "2": {
-        "title": "Geschichte und Vereinigung",
-        "text": "Die Geschichte Georgiens ist geprägt von Einheit und Widerstandsfähigkeit. Im 4. Jahrhundert vereinten sich Kolchis und Iberien und bildeten ein Land mit dauerhaften Überzeugungen und Traditionen. Trotz wiederholter Invasionen bleibt Georgiens einzigartige Identität stark und bewahrt seine alte Essenz."
-      },
-      "3": {
-        "title": "Kultur und Legenden",
-        "text": "Georgien ist das Heimatland der Legende des Goldenen Vlieses, ein Symbol für Träume und Fülle, das mit der griechischen Mythologie verbunden ist. Diese Geschichte verbindet Georgien mit dem antiken Griechenland und zieht Mythologie-Liebhaber in dieses verzauberte Land."
-      },
-      "4": {
-        "title": "Lebendiges Kulturerbe",
-        "text": "Das georgische Erbe zeigt sich in seiner Architektur, seinen traditionellen Tänzen, polyphonen Liedern und seiner renommierten Küche. Diese kulturellen Ausdrücke bewahren die georgische Identität und faszinieren Besucher durch die reiche Geschichte und den lebendigen Geist des Landes."
-      },
-      "5": {
-        "title": "Georgische Küche",
-        "text": "Die georgische Küche ist für ihre Aromen und Gewürze bekannt und verwendet frische Zutaten sowie traditionelle Rezepte, die über Generationen weitergegeben wurden. Gerichte wie Khachapuri und Khinkali haben kulturelle Bedeutung und sind Symbole der reichen kulinarischen Tradition des Landes."
-      },
-      "6": {
-        "title": "Ikonische Gerichte Georgiens",
-        "text": "Georgische Gerichte spiegeln das Erbe des Landes wider: Khachapuri, eine warme Käsepastete; Khinkali, saftige Fleischklöße; und Brot, das in 'toned' Öfen gebacken wird. Jede Rezeptur, die seit Generationen geschätzt wird, bringt die einzigartigen Aromen Georgiens auf den Tisch."
-      }
-    },
-    "componentSeven": {
-      "title1": "Das Erbe des georgischen Weinbaus",
-      "title2": "Eine 8.000 Jahre alte Tradition",
-      "text1": "Die georgische Weinbaukunst gehört zu den ältesten der Welt, mit Wurzeln, die mehr als 8.000 Jahre zurückreichen. Die frühesten Belege der Weinherstellung zeigen die Verwendung von Kvevri, großen Tonkrügen, die in den Boden eingegraben wurden. Dies gilt als eine der weltweit ersten Weinherstellungsmethoden. Archäologische Entdeckungen deuten darauf hin, dass diese Region die Wiege des Weins und der domestizierten Rebe sein könnte. Heute erstrecken sich die georgischen Weinberge über etwa 100.000 Hektar, und das Land verfügt über 540 authentifizierte Rebsorten. Ein großer Teil des Weins wird noch immer nach dieser alten Methode hergestellt, was ein einzigartiges Know-how und eine tiefe Verbindung zur Tradition bewahrt.",
-      "button": ""
-    }
-  },
-  "reservationPage": {
-    "metadata": {
-      "title": "Tisch reservieren",
-      "description": "Reservieren Sie heute einen Tisch und genießen Sie die besten georgischen Spezialitäten in einer warmen Atmosphäre im Herzen von Genf."
-    },
-    "reservationForm": {
-      "name": "Geben Sie Ihren vollständigen Namen ein",
-      "email": "Email",
-      "phone": "Telefonnummer",
-      "people": "Anzahl der Personen",
-      "text": "Besondere Wünsche?",
-      "button": "SENDEN",
-      "thank": "Vielen Dank für Ihre Anfrage",
-      "wait": "Bitte warten Sie auf unsere Bestätigung"
-    },
-    "headComponent": {
-      "title": "Reservieren Sie Ihren Tisch"
-    },
-    "componentNine": {
-      "title": "Reservieren Sie Ihren Tisch",
-      "text": "Reservieren Sie Ihren Platz und genießen Sie unsere nachhaltige georgische Küche, die mit Liebe zubereitet wird. Wir freuen uns darauf, Sie willkommen zu heißen!"
-    }
+    "componentTwo": {},
+    "componentThree": {},
+    "componentFour": {},
+    "componentSeven": {}
   },
   "forms": {
     "reservationForm": {
       "name": "Vollständiger Name",
-      "email": "Email",
+      "email": "E-Mail",
       "phone": "Telefonnummer",
       "date": "Datum",
       "time": "Uhrzeit",
       "quantity": "Anzahl der Personen",
       "message": "Besondere Wünsche?",
       "send": "Reservierungsanfrage senden",
-      "thankYou": "Vielen Dank für Ihre Reservierung!",
+      "thankYou": "Danke für Ihre Reservierung!",
       "comfirmation": "Bitte warten Sie auf unsere Bestätigung"
     }
   },
   "notFoundPage": {
-    "title1": "Die Seite, die Sie suchen, existiert nicht",
-    "title2": "Die Seite, die Sie suchen, existiert nicht",
+    "title1": "Die gesuchte Seite existiert nicht",
+    "title2": "Die gesuchte Seite existiert nicht",
     "button": "Startseite"
   },
   "footer": {

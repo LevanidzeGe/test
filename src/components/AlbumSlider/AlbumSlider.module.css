@@ -24,7 +24,7 @@
   align-items: center;
 }
 .mainWrapper > div > ::after {
-  color: rgba(255, 255, 255, 0.378);
+  color: rgba(141, 141, 141, 0.378);
   padding: 20px;
 }
 /* .mainWrapper > div > ::after:hover {

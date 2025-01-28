@@ -5,56 +5,43 @@
       "description": "Geo Judo"
     },
     "hero": {
-      "title1": "Benvenuti al",
-      "title2": "Caffè & Ristorante Georgiano",
-      "text": "Immergiti in un mondo culinario unico georgiano, dove ogni piatto è preparato con cura utilizzando i migliori ingredienti, portando i sapori della Georgia a Ginevra.",
-      "button1": "Visualizza il Menu",
-      "button2": "Prenota un Tavolo"
+      "title1": "Impara l'arte del judo a",
+      "title2": "Ginevra",
+      "text1": "Studenti",
+      "text2": "Anni a Ginevra",
+      "button1": "Contatto",
+      "button2": "Iscriviti"
     },
     "componentOne": {
-      "title1": "Parola dello Chef",
-      "title2": "Creato con il Cuore",
-      "text": "Incontra il nostro chef, che porta il calore dei sapori casalinghi georgiani in ogni piatto. Ogni ricetta, preparata con cura e un tocco di nostalgia, sa di un piatto fatto da una nonna amorevole. La sua dedizione alla freschezza e all'autenticità rende ogni pasto un’esperienza indimenticabile."
+      "title1": "A Ginevra dal 2010",
+      "text": "La nostra scuola di judo, fondata 15 anni fa a Ginevra, è diventata un luogo importante per i giovani atleti. Con passione e professionalità, formiamo i nostri studenti insegnando loro disciplina, forza e unità attraverso l'arte del judo. Unisciti alla nostra eredità oggi stesso!"
     },
     "componentTwo": {
-      "title1": "Uno Spazio Privato per i Tuoi Eventi",
-      "title2": "Flessibilità per Ogni Occasione",
-      "text1": "Da Toison D'or offriamo la possibilità di affittare una parte del ristorante con ingresso privato. Goditi la massima flessibilità: scegli i nostri piatti georgiani autentici per i tuoi ospiti o porta il tuo menu per utilizzare lo spazio in un ambiente accogliente.",
-      "text2": "Per eventi privati, mettiamo a disposizione un’area riservata all'interno del nostro ristorante. Che desideriate il nostro servizio completo con specialità georgiane o preferiate portare i vostri piatti, garantiamo un’esperienza unica e calorosa per i vostri ospiti.",
-      "button": ""
+      "text1": "Perché la nostra scuola?",
+      "text2": "Risultati garantiti, attività sportive e un'atmosfera amichevole",
+      "text3": "Perché la nostra scuola?",
+      "text4": "Risultati garantiti, attività sportive e un'atmosfera amichevole",
+      "text5": "Atmosfera amichevole",
+      "text6": "Sviluppo attraverso amicizia, attività sportive e disciplina",
+      "text7": "Competizioni nell'ultimo anno",
+      "text8": "Nell'ultimo anno, i nostri studenti hanno partecipato a numerose competizioni e hanno meritato medaglie d'oro, d'argento e di bronzo!"
+    },
+    "componentThree": {
+      "title1": "Insegnante",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, un esperto istruttore di judo proveniente dalla Georgia, si distingue per oltre 20 anni di esperienza nello sport. Negli ultimi 15 anni ha insegnato a Ginevra, aiutando bambini di età compresa tra i 2 e i 15 anni a sviluppare tecniche di judo e valori come il rispetto e il lavoro di squadra. La dedizione e la professionalità di Giorgi lo hanno reso una figura rispettata nella comunità locale.",
+      "button": "Registrati",
+      "title3": "100+ Studenti Attivi",
+      "text2": "Le conoscenze e l'esperienza accumulate in 15 anni sono il più grande patrimonio della nostra scuola."
     },
     "componentFour": {
-      "1": {
-        "title": "Viaggio Gastronomico in Georgia",
-        "text": "La cucina georgiana è un viaggio vibrante e colorato basato su ricette tramandate da generazioni. Ogni piatto combina ingredienti freschi, spezie e tradizioni per creare un'esperienza unica, dove il cibo non è solo un pasto, ma un'espressione culturale."
-      },
-      "2": {
-        "title": "Scopri la Georgia da Toison D'or",
-        "text": "Da Toison D'or ti invitiamo a gustare il patrimonio georgiano con i nostri piatti autentici e l'atmosfera amichevole. Ogni boccone è un passo nell'anima della Georgia, dove tradizione e modernità si fondono per celebrare i sapori e le storie di questo paese magico."
-      }
+      "title1": "Acquista Uniformi da Geo Judo",
+      "text1": "Uniforme da Judo Nera",
+      "text2": "Uniforme da Judo Bianca"
     },
-    "componentFive": {
-      "title4": "Contattaci"
-    },
-    "componentSix": {
-      "title1": "Benvenuto",
-      "title2": "Orari di Apertura",
-      "monday": "Lunedì",
-      "tusday": "Martedì",
-      "wednsday": "Mercoledì",
-      "thursday": "Giovedì",
-      "friday": "Venerdì",
-      "saturday": "Sabato",
-      "sunday": "Domenica",
-      "closed": "Chiuso",
-      "button": "Prenota un Tavolo"
-    },
-    "componentSeven": {
-      "title1": "Patrimonio della Vinificazione Georgiana",
-      "title2": "Una Tradizione di 8.000 Anni",
-      "text1": "La viticoltura georgiana è tra le più antiche al mondo, con radici che risalgono a oltre 8.000 anni fa. Le prime testimonianze di vinificazione mostrano l'uso di kvevri, grandi anfore di argilla interrate, una delle prime tecniche di vinificazione al mondo. Scoperte archeologiche suggeriscono che questa regione potrebbe essere la culla del vino e della vite domestica. Oggi, i vigneti georgiani coprono circa 100.000 ettari e il paese vanta 540 varietà di uva autentiche. Gran parte del vino è ancora prodotto secondo questo antico metodo, preservando un know-how unico e un profondo legame con la tradizione.",
-      "button": "Scopri di più"
-    },
+    "componentFive": {},
+    "componentSix": {},
+    "componentSeven": {},
     "testimonials": {
       "title1": "Un po' d'amore",
       "title2": "Cosa dicono di noi i nostri ospiti"
@@ -62,99 +49,19 @@
   },
   "menuPage": {
     "metadata": {
-      "title": "Scopri il Nostro Menu",
-      "description": "Sfoglia il nostro menu e goditi il meglio delle nostre creazioni georgiane, preparate con ingredienti freschi e un tocco di sapori tradizionali."
-    },
-    "headComponent": {
-      "title": "Il Nostro Menu"
-    },
-    "menu": {
-      "underCategory": "menu"
+      "title": "",
+      "description": ""
     }
   },
   "storyPage": {
     "metadata": {
       "title": "La Nostra Storia",
-      "description": "Scopri le radici della nostra passione per la cucina georgiana e come siamo diventati un ristorante iconico a Ginevra, unendo tradizione e innovazione."
+      "description": "Scopri le radici della nostra passione per la cucina georgiana e come siamo diventati un ristorante iconico a Ginevra, mescolando tradizione e innovazione."
     },
-    "headComponent": {
-      "title": "La Nostra Storia"
-    },
-    "componentTwo": {
-      "title1": "Portare la Georgia nel cuore di Ginevra",
-      "title2": "Un viaggio di sapori e tradizioni",
-      "text1": "La cultura e la cucina georgiane sono le mie vere passioni, e condividerle è un sogno realizzato. Qui a Ginevra, sono felice di portare un assaggio della mia terra natale, offrendo a ogni ospite un'esperienza autentica ricca di calore, tradizione e sapori unici della Georgia.",
-      "text2": "Con anni di esperienza come chef, ho avuto l'onore di rappresentare la gastronomia georgiana in numerosi eventi. Ora vi invito a esplorare il ricco patrimonio culinario della Georgia da Toison D'or, dove ogni piatto è creato per raccontare una storia e offrire un'esperienza culinaria memorabile.",
-      "button": ""
-    },
-    "componentThree": {
-      "title1": "Siamo Esperti in",
-      "title2": "Quello che Amiamo Fare",
-      "caption": "Scopri di più",
-      "services": {
-        "ser1": "Specialità dello Chef",
-        "ser2": "La Nostra Storia",
-        "ser3": "Menu",
-        "ser4": "Prenotazioni",
-        "ser5": "Servizi di Catering",
-        "ser6": "Contattaci"
-      }
-    },
-    "componentFour": {
-      "1": {
-        "title": "Georgia: Terra di Cultura e Gastronomia",
-        "text": "Situata tra Europa e Asia, la Georgia è un paese dalle antiche radici e dalle tradizioni uniche. Unificata nel IV secolo con l'unione di Colchide e Iberia, la Georgia ha sviluppato un'identità forte e resiliente. Nonostante numerose invasioni, ha preservato il suo ricco patrimonio culturale nei secoli."
-      },
-      "2": {
-        "title": "Storia e Unificazione",
-        "text": "La storia della Georgia è segnata da unità e resilienza. Nel IV secolo, Colchide e Iberia si unirono formando un paese definito da credenze e tradizioni durature. Nonostante le ripetute invasioni, l'identità unica della Georgia rimane forte, abbracciando il suo patrimonio diversificato e mantenendo la sua antica essenza."
-      },
-      "3": {
-        "title": "Cultura e Leggende",
-        "text": "La Georgia è la terra della leggenda del Vello d'Oro, simbolo di sogni e abbondanza legato alla mitologia greca. Questa storia collega la Georgia alla Grecia antica, attirando gli amanti dei miti in questa terra incantata, dove cultura e storia si fondono armoniosamente nei suoi paesaggi e nelle sue tradizioni."
-      },
-      "4": {
-        "title": "Un Patrimonio Vivo",
-        "text": "Il patrimonio della Georgia vive nella sua architettura, nelle danze tradizionali, nei canti polifonici e nella sua cucina rinomata. Queste espressioni culturali non solo preservano l'identità georgiana, ma affascinano i visitatori, rivelando la ricca storia e lo spirito vibrante che rendono unica la Georgia."
-      },
-      "5": {
-        "title": "Cucina Georgiana",
-        "text": "Conosciuta per i suoi sapori e spezie, la cucina georgiana utilizza ingredienti freschi e ricette tramandate da generazioni. Ogni piatto ha un significato culturale, e alcuni come il khachapuri e il khinkali sono riconosciuti dall'UNESCO, come simboli della ricca tradizione culinaria del paese."
-      },
-      "6": {
-        "title": "Piatti Iconici della Georgia",
-        "text": "I piatti georgiani riflettono il patrimonio della nazione: khachapuri, una calda torta al formaggio; khinkali, ravioli succosi ripieni di carne; e pane cotto nei forni 'toned'. Ogni ricetta, preziosa da generazioni, porta a tavola i sapori unici e l'importanza culturale della Georgia."
-      }
-    },
-    "componentSeven": {
-      "title1": "Patrimonio della Vinificazione Georgiana",
-      "title2": "Una Tradizione di 8.000 Anni",
-      "text1": "La viticoltura georgiana è tra le più antiche al mondo, con radici che risalgono a oltre 8.000 anni fa. Le prime testimonianze di vinificazione mostrano l'uso di kvevri, grandi anfore di argilla interrate, una delle prime tecniche di vinificazione al mondo. Scoperte archeologiche suggeriscono che questa regione potrebbe essere la culla del vino e della vite domestica. Oggi, i vigneti georgiani coprono circa 100.000 ettari e il paese vanta 540 varietà di uva autentiche. Gran parte del vino è ancora prodotto secondo questo antico metodo, preservando un know-how unico e un profondo legame con la tradizione.",
-      "button": ""
-    }
-  },
-  "reservationPage": {
-    "metadata": {
-      "title": "Prenota un Tavolo",
-      "description": "Prenota un tavolo da noi oggi e goditi le migliori specialità georgiane in un'atmosfera calda nel cuore di Ginevra."
-    },
-    "reservationForm": {
-      "name": "Inserisci il tuo nome completo",
-      "email": "Email",
-      "phone": "Numero di telefono",
-      "people": "Numero di persone",
-      "text": "Richieste particolari?",
-      "button": "INVIA",
-      "thank": "Grazie per la tua richiesta",
-      "wait": "Attendere la nostra conferma"
-    },
-    "headComponent": {
-      "title": "Prenota il tuo Tavolo"
-    },
-    "componentNine": {
-      "title": "Prenota il tuo Tavolo",
-      "text": "Prenota il tuo posto e goditi la nostra cucina georgiana sostenibile preparata con amore. Non vediamo l'ora di accoglierti!"
-    }
+    "componentTwo": {},
+    "componentThree": {},
+    "componentFour": {},
+    "componentSeven": {}
   },
   "forms": {
     "reservationForm": {
@@ -164,16 +71,16 @@
       "date": "Data",
       "time": "Ora",
       "quantity": "Numero di Persone",
-      "message": "Richieste particolari?",
+      "message": "Richieste speciali?",
       "send": "Invia Richiesta di Prenotazione",
       "thankYou": "Grazie per la tua prenotazione!",
-      "comfirmation": "Attendere la nostra conferma"
+      "comfirmation": "Attendi la nostra conferma"
     }
   },
   "notFoundPage": {
     "title1": "La pagina che stai cercando non esiste",
     "title2": "La pagina che stai cercando non esiste",
-    "button": "Pagina iniziale"
+    "button": "Pagina Iniziale"
   },
   "footer": {
     "title1": "Informazioni di Contatto",

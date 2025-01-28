@@ -1,12 +1,11 @@
 import Image from "next/image";
 import styles from "./ComponentThree.module.css";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { giSvg, giorgiSofia } from "@/public/image";
 import Link from "next/link";
 
 export default function ComponentThree() {
-  const t = useTranslations("storyPage.componentThree");
-  const locale = useLocale();
+  const t = useTranslations("homePage.componentThree");
   return (
     <section className="section">
       <div className="container">
@@ -14,29 +13,18 @@ export default function ComponentThree() {
           <div className={styles.leftDiv}>
             <div className={styles.iconTextDiv}>
               <Image src={giSvg} height={50} width={50} alt="" />
-              <h2 className="heading3 color4">მასწავლებელი</h2>
+              <h2 className="heading3 color4">{t("title1")}</h2>
             </div>
             <div className={styles.middleDiv}>
-              <h2 className="heading2 color4">გიორგი კურტანიძე</h2>
-              <p className="paragraph">
-                გიორგი კურტანიძე, ძიუდოს გამოცდილი ინსტრუქტორი საქართველოდან,
-                სპორტში 20 წელზე მეტი გამოცდილებით გამოირჩევა. ბოლო 15 წლის
-                განმავლობაში იგი ჟენევაში ასწავლის და 2-15 წლის ასაკის ბავშვებს
-                უვითარებს ძიუდოს ტექნიკასა და ღირებულებებს, როგორიცაა
-                პატივისცემა და გუნდური მუშაობა. გიორგის ერთგულება და
-                პროფესიონალიზმი მას ადგილობრივი საზოგადოების პატივცემულ ფიგურად
-                აქცევს.
-              </p>
+              <h2 className="heading2 color4">{t("title2")}</h2>
+              <p className="paragraph">{t("text1")}</p>
               <Link className="button button-reverse heading4" href="/">
-                რეგისტრაცია
+                {t("button")}
               </Link>
             </div>
             <div className={styles.lowerDiv}>
-              <h4 className="heading3 white">100+ აქტიური მოსწავლე</h4>
-              <p className="paragraph gray3">
-                15 წლის მანძილზე დაგროვილი ცოდნა და გამოცდილება ჩვენი სკოლის
-                მთავარი სიმდიდრეა
-              </p>
+              <h4 className="heading3 white">{t("title3")}</h4>
+              <p className="paragraph gray3">{t("text2")}</p>
             </div>
           </div>
           <div className={styles.rightDiv}>

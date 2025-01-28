@@ -17,13 +17,28 @@
       "text": "Our judo school, founded 15 years ago in Geneva, has become a significant place for young athletes. With passion and professionalism, we nurture our students, teaching them discipline, strength, and unity through the art of judo. Join our legacy today!"
     },
     "componentTwo": {
-      "title1": "",
-      "title2": "",
-      "text1": "",
-      "text2": "",
-      "button": ""
+      "text1": "Why our school?",
+      "text2": "Guaranteed results, sports activities, and a friendly atmosphere",
+      "text3": "Why our school?",
+      "text4": "Guaranteed results, sports activities, and a friendly atmosphere",
+      "text5": "Friendly atmosphere",
+      "text6": "Development through friendliness, sports activities, and discipline",
+      "text7": "Competitions in the past year",
+      "text8": "In the past year, our students participated in numerous competitions and deservedly won gold, silver, and bronze medals!"
     },
-    "componentFour": {},
+    "componentThree": {
+      "title1": "Teacher",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, an experienced judo instructor from Georgia, stands out with over 20 years of experience in sports. For the past 15 years, he has been teaching in Geneva, helping children aged 2-15 develop judo techniques and values such as respect and teamwork. Giorgi's dedication and professionalism have made him a respected figure in the local community.",
+      "button": "Register",
+      "title3": "100+ Active Students",
+      "text2": "The knowledge and experience accumulated over 15 years is the greatest asset of our school."
+    },
+    "componentFour": {
+      "title1": "Purchase Uniforms from Geo Judo",
+      "text1": "Black Judo Uniform",
+      "text2": "White Judo Uniform"
+    },
     "componentFive": {},
     "componentSix": {},
     "componentSeven": {},
@@ -47,14 +62,6 @@
     "componentThree": {},
     "componentFour": {},
     "componentSeven": {}
-  },
-  "reservationPage": {
-    "metadata": {
-      "title": "Book a Table",
-      "description": "Reserve a table with us today and enjoy the finest Georgian specialties in a warm atmosphere at the heart of Geneva."
-    },
-
-    "componentNine": {}
   },
   "forms": {
     "reservationForm": {
