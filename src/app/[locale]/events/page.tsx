@@ -1,8 +1,9 @@
 import { heroMenu } from "@/public/image";
-import Menu from "./menuComponents/menu";
+import Menu from "./menuComponents/events";
 import { getTranslations } from "next-intl/server";
 import PageHeadImage from "@/src/components/PageHeadImage/PageHeadImage";
 import { useTranslations } from "next-intl";
+import Events from "./menuComponents/events";
 
 export async function generateMetadata() {
   const t = await getTranslations("menuPage.metadata");
@@ -18,7 +19,7 @@ export default function MenuPage() {
   return (
     <div className="fadeOut">
       {/* <PageHeadImage image={heroMenu} value={t("headComponent.title")} short /> */}
-      {/* <Menu /> */}
+      <Events />
     </div>
   );
 }
