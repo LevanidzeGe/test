@@ -50,10 +50,13 @@
       "title1": "Un peu d'amour"
     }
   },
-  "menuPage": {
+  "eventsPage": {
     "metadata": {
       "title": "",
       "description": ""
+    },
+    "events": {
+      "title": "Événements récents"
     }
   },
   "storyPage": {

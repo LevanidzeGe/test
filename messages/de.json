@@ -47,12 +47,16 @@
     "componentSix": {},
     "componentSeven": {},
     "testimonials": {
-      "title1": "Ein wenig Liebe"    }
+      "title1": "Ein wenig Liebe"
+    }
   },
-  "menuPage": {
+  "eventsPage": {
     "metadata": {
       "title": "",
       "description": ""
+    },
+    "events": {
+      "title": "Kürzliche Veranstaltungen"
     }
   },
   "storyPage": {

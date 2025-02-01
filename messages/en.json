@@ -50,10 +50,13 @@
       "title1": "What do parents say"
     }
   },
-  "menuPage": {
+  "eventsPage": {
     "metadata": {
       "title": "",
       "description": ""
+    },
+    "events": {
+      "title": "Recent Events"
     }
   },
   "storyPage": {

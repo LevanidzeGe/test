@@ -50,10 +50,13 @@
       "title1": "მცირე ოდენი სიყვარული"
     }
   },
-  "menuPage": {
+  "eventsPage": {
     "metadata": {
       "title": "",
       "description": ""
+    },
+    "events": {
+      "title": "უახლოესი ღონისძიებები"
     }
   },
   "storyPage": {

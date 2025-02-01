@@ -50,10 +50,13 @@
       "title1": "Un po' d'amore"
     }
   },
-  "menuPage": {
+  "eventsPage": {
     "metadata": {
       "title": "",
       "description": ""
+    },
+    "events": {
+      "title": "Eventi recenti"
     }
   },
   "storyPage": {
