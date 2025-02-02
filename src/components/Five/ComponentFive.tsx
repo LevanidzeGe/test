@@ -1,5 +1,11 @@
 import styles from "./ComponentFive.module.css";
-import { address, addressLink, email, phoneNumber } from "@/Manager/info";
+import {
+  address,
+  address2,
+  addressLink,
+  email,
+  phoneNumber,
+} from "@/Manager/info";
 import { useTranslations } from "next-intl";
 import emailIcon from "./icons/email.svg";
 import phoneIcon from "./icons/phone-call.svg";
@@ -24,6 +30,7 @@ export default function ComponentFive() {
               />
               <h3 className="heading4">{t("title1")}</h3>
               <p className="paragraph gray7">{address}</p>
+              <p className="paragraph gray7">{address2}</p>
             </Link>
 
             {/* Email Box */}

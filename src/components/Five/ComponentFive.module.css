@@ -24,8 +24,8 @@
   word-break: break-word;
   border-radius: 10px;
 }
-.FourBoxMainWrapper p {
-  margin-bottom: 40px;
+.FourBoxMainWrapper a {
+  padding-bottom: 40px;
 }
 .FourBoxMainWrapper h3 {
   margin: 20px 0;

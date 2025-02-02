@@ -5,7 +5,7 @@ import PageHeadImage from "@/src/components/PageHeadImage/PageHeadImage";
 import ReservationContactForm from "@/src/components/ReservationContactForm/ReservationContactForm";
 
 export async function generateMetadata() {
-  const t = await getTranslations("reservationPage.metadata");
+  const t = await getTranslations("contactPage.metadata");
   return {
     title: t("title"),
     description: t("description"),

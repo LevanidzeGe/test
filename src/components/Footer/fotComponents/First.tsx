@@ -8,6 +8,7 @@ import {
   phoneNumber,
   addressLink,
   phoneNumber2,
+  address2,
 } from "@/Manager/info";
 interface props {
   title: string;
@@ -20,6 +21,9 @@ export default function First({ title }: props) {
       <address className={styles.contactInfo}>
         <Link target="_blank" href={addressLink} className="paragraph ">
           {address}
+        </Link>
+        <Link target="_blank" href={addressLink} className="paragraph ">
+          {address2}
         </Link>
         <Link href={`mailto:${email}`} className={styles.email}>
           {email}

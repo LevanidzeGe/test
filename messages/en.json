@@ -65,15 +65,17 @@
       "past": "past"
     }
   },
-  "storyPage": {
+  "contactPage": {
     "metadata": {
-      "title": "Our Story",
-      "description": "Discover the roots of our passion for Georgian cuisine and how we became an iconic restaurant in Geneva, blending tradition and innovation."
-    },
-    "componentTwo": {},
-    "componentThree": {},
-    "componentFour": {},
-    "componentSeven": {}
+      "title": "",
+      "description": ""
+    }
+  },
+  "registrationPage": {
+    "metadata": {
+      "title": "",
+      "description": ""
+    }
   },
   "forms": {
     "reservationForm": {
