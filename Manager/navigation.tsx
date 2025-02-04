@@ -1,9 +1,4 @@
-export const supportedLocales = [
-  // "fr",
-  "en",
-  // "de", "it",
-  "ge",
-];
+export const supportedLocales = ["fr", "en", "de", "it", "ge"];
 export const defaultLocale = "fr";
 export const dynamicPageRoute = "menu"; // [slug]
 export const fireBaseRoute = "toisondor"; //firebase route

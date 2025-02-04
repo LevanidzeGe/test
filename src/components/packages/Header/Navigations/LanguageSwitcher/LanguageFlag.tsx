@@ -1,4 +1,4 @@
-import styles from "./LanguageSwitcher.module.css";
+import styles from "./LanguageFlag.module.css";
 import Flag from "react-world-flags"; // Assuming you're using this package for flags
 import { useState } from "react";
 import { useLocale } from "next-intl";
@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { supportedLocales } from "@/Manager/navigation";
 
-export default function LanguageSwitcher() {
+export default function LanguageFlag() {
   const [flagShow, setFlagShow] = useState<boolean>(false);
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
