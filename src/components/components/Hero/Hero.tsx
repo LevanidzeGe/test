@@ -26,9 +26,9 @@ export default function MainImage() {
             <Link className="button button-reverse" href={`${locale}/contact`}>
               {t("button1")}
             </Link>
-            <Link className="button" href={`${locale}/registration`}>
+            {/* <Link className="button" href={`${locale}/registration`}>
               {t("button2")}
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className={styles.imageWrapper}>
@@ -46,6 +46,7 @@ export default function MainImage() {
           width={1000}
           height={500}
         />
+        <div className={styles.overlay}></div>
       </div>
       <div className={styles.circles}>
         <Image

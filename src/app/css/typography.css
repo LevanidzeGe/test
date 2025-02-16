@@ -58,7 +58,7 @@
 
 .heading2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 38px;
   letter-spacing: 0.02em;
   font-family: var(--font1);
@@ -115,19 +115,19 @@
 
 @media (max-width: 1000px) {
   .paragraph {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 }
 @media (max-width: 600px) {
   .paragraph {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 }
 
 /* Break point 1200px */
 @media (max-width: 1200px) {
   .heading1 {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
 }
 
@@ -148,7 +148,7 @@
   /* .heading1 {
   } */
   .heading2 {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
 }
 

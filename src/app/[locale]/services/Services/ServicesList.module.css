@@ -10,7 +10,8 @@
 
 .serviceCard {
   width: 32%;
-  height: 500px;
+  aspect-ratio: 1 / 1.3;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 4%;
   position: relative;
@@ -28,10 +29,23 @@
   position: absolute;
   bottom: 0;
   height: 40%;
+  width: 100%;
   background-color: var(--color4-80);
   padding: 20px 20px;
 }
 
 .textWrapper h2 {
   padding-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .serviceCard {
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceCard {
+    width: 100%;
+  }
 }
