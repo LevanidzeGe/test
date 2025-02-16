@@ -1,13 +1,13 @@
 import styles from "./EventDetails.module.css";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { EventProps } from "../../projectsData";
+import { ProjectProps } from "../../projectsData";
 import { defaultLocale } from "@/Manager/navigation";
 import AlbumSlider from "@/src/components/packages/AlbumSlider/AlbumSlider";
 import { babyIcon } from "@/public/image";
 
 interface EventDetailsProps {
-  event: EventProps;
+  event: ProjectProps;
 }
 
 export default function EventDetails({ event }: EventDetailsProps) {
