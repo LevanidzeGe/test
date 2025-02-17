@@ -17,7 +17,7 @@ export const flooring: Service = {
     ge: "პროფესიონალური იატაკის მონტაჟისა და შეკეთების სერვისები.",
   },
   image:
-    "https://raw.githubusercontent.com/levanydze/SUP/refs/heads/main/ksm/Images/garden-building-10-april.webp",
+    "https://github.com/levanydze/SUP/blob/main/Geo-Renovations/flooring.jpg?raw=true",
   subServices: [
     {
       title: {

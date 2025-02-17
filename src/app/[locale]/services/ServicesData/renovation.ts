@@ -17,7 +17,7 @@ export const renovation: Service = {
     ge: "მაღალი ხარისხის სახლის და ოფისის რემონტი.",
   },
   image:
-    "https://raw.githubusercontent.com/levanydze/SUP/refs/heads/main/ksm/Images/garden-building-10-april.webp",
+    "https://github.com/levanydze/SUP/blob/main/Geo-Renovations/renovation.jpg?raw=true",
   subServices: [
     {
       title: {

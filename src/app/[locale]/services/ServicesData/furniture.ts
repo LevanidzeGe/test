@@ -17,7 +17,7 @@ export const furniture: Service = {
     ge: "პროფესიონალური ავეჯის მონტაჟი და აწყობა.",
   },
   image:
-    "https://raw.githubusercontent.com/levanydze/SUP/refs/heads/main/ksm/Images/garden-building-10-april.webp",
+    "https://raw.githubusercontent.com/levanydze/SUP/refs/heads/main/Geo-Renovations/furniture.webp",
   subServices: [
     {
       title: {
