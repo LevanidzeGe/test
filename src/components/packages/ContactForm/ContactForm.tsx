@@ -88,71 +88,73 @@ export default function ContactForm({
   };
 
   return (
-    <div className="container1">
-      <div className={styles.reservationWrapper}>
-        <div className={styles.reservation}>
-          <h3 className="heading3 color4">{head}</h3>
-          <form
-            className={`${styles.form} ${emailSent ? styles.none : ""}`}
-            ref={form}
-            onSubmit={sendEmail}
-          >
-            <input
-              className={`${styles.input} ${styles.miniInput} ${
-                nameError ? styles.inputRed : ""
-              }`}
-              type="text"
-              name="user_name"
-              placeholder={name}
-              value={nameValue}
-              onChange={(e) => setNameValue(e.target.value)}
-            />
-            <div>
+    <section className="section ">
+      <div className="container ">
+        <div className={styles.reservationWrapper}>
+          <div className={styles.reservation}>
+            <h3 className="heading3 color4">{head}</h3>
+            <form
+              className={`${styles.form} ${emailSent ? styles.none : ""}`}
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <input
                 className={`${styles.input} ${styles.miniInput} ${
-                  emailError ? styles.inputRed : ""
+                  nameError ? styles.inputRed : ""
                 }`}
-                type="email"
-                name="user_email"
-                placeholder={email}
-                value={emailValue}
-                onChange={(e) => setEmailValue(e.target.value)}
+                type="text"
+                name="user_name"
+                placeholder={name}
+                value={nameValue}
+                onChange={(e) => setNameValue(e.target.value)}
               />
-              <input
-                className={`${styles.input}`}
-                type="tel"
-                name="user_phone"
-                placeholder={phone}
-              />
-            </div>
+              <div>
+                <input
+                  className={`${styles.input} ${styles.miniInput} ${
+                    emailError ? styles.inputRed : ""
+                  }`}
+                  type="email"
+                  name="user_email"
+                  placeholder={email}
+                  value={emailValue}
+                  onChange={(e) => setEmailValue(e.target.value)}
+                />
+                <input
+                  className={`${styles.input}`}
+                  type="tel"
+                  name="user_phone"
+                  placeholder={phone}
+                />
+              </div>
 
-            <textarea
-              className={`${styles.textArea} ${styles.input}`}
-              name="message"
-              placeholder={text}
-            />
-            <button
-              type={nameValue && emailValue ? "submit" : "button"}
-              className={`button ${styles.button} ${
-                !buttonDisable ? "button" : "button1Disabled"
-              } w-full
+              <textarea
+                className={`${styles.textArea} ${styles.input}`}
+                name="message"
+                placeholder={text}
+              />
+              <button
+                type={nameValue && emailValue ? "submit" : "button"}
+                className={`button-reverse ${styles.button} ${
+                  !buttonDisable ? "button" : "button1Disabled"
+                } w-full
                 styles.buttonSend
               `}
-              onClick={
-                !nameValue || !emailValue
-                  ? handleErrors
-                  : () => setButtonDisable(true)
-              }
-            >
-              {button}
-            </button>
-          </form>
-          <div className={emailSent ? styles.formSent : styles.hide}>
-            <h6>{thank}</h6>
-            <h5>{wait}</h5>
+                onClick={
+                  !nameValue || !emailValue
+                    ? handleErrors
+                    : () => setButtonDisable(true)
+                }
+              >
+                {button}
+              </button>
+            </form>
+            <div className={emailSent ? styles.formSent : styles.hide}>
+              <h6>{thank}</h6>
+              <h5>{wait}</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

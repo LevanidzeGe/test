@@ -18,10 +18,10 @@ export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
-      <PageHeadImage
+      {/* <PageHeadImage
         image={childrenTeam}
-        // value={t("forms.headComponent.title")}
-      />
+        value={t("forms.headComponent.title")}
+      /> */}
       <ContactForm
         head={t("forms.contactForm.head1")}
         name={t("forms.contactForm.name")}

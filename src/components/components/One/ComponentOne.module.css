@@ -48,6 +48,7 @@
   justify-content: center;
   padding-right: 50px;
   margin-left: 50px;
+  text-align: left;
 }
 
 .textDiv p {
@@ -75,9 +76,8 @@
   .textDiv {
     width: 90%;
     margin: 0 auto;
-    text-align: center;
+    width: 100%;
   }
   .textDiv h3 {
-    margin-top: 40px;
   }
 }

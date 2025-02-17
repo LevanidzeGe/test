@@ -14,9 +14,9 @@ export default function Accordion({ title }: { title: string }) {
   };
 
   return (
-    <section className="section">
+    <section className="section no-padding-y">
       <div className="container">
-        <h5 className={`heading3 color4 ${styles.headTitle}`}>{title}</h5>
+        <h5 className={`heading2 color4 ${styles.headTitle}`}>{title}</h5>
         <div className={styles.accordion}>
           {accordionItems.map((item, index) => (
             <div
