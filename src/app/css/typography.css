@@ -51,21 +51,21 @@
 
 /* typography */
 .heading1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 46px;
   line-height: 54px;
+  font-family: var(--font1);
 }
 
 .heading2 {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 30px;
   line-height: 38px;
   letter-spacing: 0.02em;
   font-family: var(--font1);
 }
 
 .heading3 {
-  font-family: var(--font1);
   font-weight: 700;
   font-size: 24px;
   line-height: 108%;

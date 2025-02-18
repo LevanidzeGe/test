@@ -10,6 +10,7 @@ import { renovation } from "../ServicesData/renovation";
 import { defaultLocale } from "@/Manager/navigation";
 import { companyDomain } from "@/Manager/info";
 import Image from "next/image";
+import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 const services = [flooring, furniture, gardening, renovation];
 
@@ -65,36 +66,40 @@ export default function ServiceDetailsPage({ params }: Props) {
   if (!service) return notFound(); // If service not found, return 404
 
   return (
-    <section className="section fadeOut">
-      <div className="container">
-        <h1 className={`heading1 color4 ${styles.title}`}>
-          {service.title[locale]}
-        </h1>
-        <ul className={styles.servicesWrapper}>
-          {service.subServices.map((sub) => (
-            <li
-              className={`container ${styles.cardWrapper}`}
-              key={sub.title[locale]}
-            >
-              <Image
-                src={sub.image}
-                width={500}
-                height={500}
-                alt={sub.title[locale]}
-              />
+    <>
+      <Pageshead
+        value1={service.title[locale]}
+        value2="everythhing that we do"
+      />
 
-              <div className={styles.cardTextWrap}>
-                <div className="sideLineWrap">
-                  <div className="sideLine"></div>
-                  <h2 className="heading4">{service.title[locale]}</h2>
+      <section className="section fadeOut">
+        <div className="container">
+          <ul className={styles.servicesWrapper}>
+            {service.subServices.map((sub) => (
+              <li
+                className={`container ${styles.cardWrapper}`}
+                key={sub.title[locale]}
+              >
+                <Image
+                  src={sub.image}
+                  width={500}
+                  height={500}
+                  alt={sub.title[locale]}
+                />
+
+                <div className={styles.cardTextWrap}>
+                  <div className="sideLineWrap">
+                    <div className="sideLine"></div>
+                    <h2 className="heading4">{service.title[locale]}</h2>
+                  </div>
+                  <h3 className="heading2 color4">{sub.title[locale]}</h3>
+                  <p className="paragraph gray7">{sub.description[locale]}</p>
                 </div>
-                <h3 className="heading2 color4">{sub.title[locale]}</h3>
-                <p className="paragraph gray7">{sub.description[locale]}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }

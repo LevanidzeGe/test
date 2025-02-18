@@ -92,7 +92,6 @@ export default function ContactForm({
       <div className="container ">
         <div className={styles.reservationWrapper}>
           <div className={styles.reservation}>
-            <h3 className="heading3 color4">{head}</h3>
             <form
               className={`${styles.form} ${emailSent ? styles.none : ""}`}
               ref={form}

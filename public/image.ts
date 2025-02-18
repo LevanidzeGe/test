@@ -4,6 +4,7 @@
 import judoChildren from "@/public/images/heros/judoChildren.png";
 import wave from "@/public/assets/svg/wave-vector.svg";
 import footerWave from "@/public/assets/svg/footer-vector.svg";
+import pageHead from "@/public/assets/svg/pageHead.svg";
 import renovationHero from "@/public/images/heros/renovation-hero.png";
 
 // xxx
@@ -17,6 +18,7 @@ import giorgiSofia from "@/public/images/giorgi-sofia.jpg";
 import giSale1 from "@/public/images/giSale1.png";
 import giSale2 from "@/public/images/giSale2.png";
 import brush from "@/public/images/brush.jpg";
+import team from "@/public/images/team.jpg";
 
 //
 //
@@ -32,6 +34,8 @@ import circleL from "@/public/assets/svg/circle-large.svg";
 //
 import dishIcon from "@/public/assets/icons/dish-icon.png";
 export {
+  pageHead,
+  team,
   brush,
   renovationHero,
   circleL,

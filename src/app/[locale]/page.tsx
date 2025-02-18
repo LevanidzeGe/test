@@ -11,6 +11,7 @@ import ComponentFive from "@/src/components/components/Five/ComponentFive";
 import { images } from "@/src/components/packages/AlbumSlider/images-data";
 import ServicesList from "./services/Services/ServicesList";
 import Projects from "./projects/menuComponents/Projects";
+import ComponentSix from "@/src/components/components/Six/ComponentSix";
 
 export default function Home() {
   const t = useTranslations("homePage");
@@ -21,12 +22,9 @@ export default function Home() {
       <ComponentOne image={brush} />
       <Projects mini={true} />
       <ServicesList />
-      {/* <ComponentTwo /> */}
-      {/* <ComponentThree /> */}
-      {/* <AlbumSlider images={images} /> */}
-      {/* <ComponentFour /> */}
       <Testimonials title1={t("testimonials.title1")} />
-      {/* <ComponentFive /> */}
+      <ComponentSix />
+      <ComponentFive />
     </div>
   );
 }

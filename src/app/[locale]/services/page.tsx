@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import ServicesList from "./Services/ServicesList";
+import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 export async function generateMetadata() {
   const t = await getTranslations("registrationPage.metadata");
@@ -14,6 +15,7 @@ export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
+      <Pageshead value1="Services" value2="everythhing that we do" />
       <ServicesList />
     </div>
   );

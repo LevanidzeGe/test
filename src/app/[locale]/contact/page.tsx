@@ -4,6 +4,7 @@ import { childrenTeam } from "@/public/image";
 import PageHeadImage from "@/src/components/components/PageHeadImage/PageHeadImage";
 import ContactForm from "@/src/components/packages/ContactForm/ContactForm";
 import Accordion from "@/src/components/packages/Accordion/Accordion";
+import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 export async function generateMetadata() {
   const t = await getTranslations("contactPage.metadata");
@@ -18,10 +19,8 @@ export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
-      {/* <PageHeadImage
-        image={childrenTeam}
-        value={t("forms.headComponent.title")}
-      /> */}
+      <Pageshead value1="Contact us" value2="everythhing that we do" />
+
       <ContactForm
         head={t("forms.contactForm.head1")}
         name={t("forms.contactForm.name")}

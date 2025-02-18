@@ -38,35 +38,19 @@ export async function generateMetadata({
     },
   };
 }
-import image from "@/public/images/openGraph/mainOpenGraph.jpg";
 
 //fonts
-import { Poppins, Gabriela, Inter, Dancing_Script } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 
-const inter = Inter({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font1",
 });
-
-const gabriola = Gabriela({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font2",
-});
-
-// const greatVibes = Great_Vibes
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: ["500"],
-  variable: "--font3",
-});
-
-//components
 
 import Header from "@/src/components/packages/Header/Header";
 import Footer from "@/src/components/packages/Footer/Footer";
@@ -89,9 +73,7 @@ export default function LangLayout({
 
   return (
     <html lang={locale || defaultLocale}>
-      <body
-        className={` ${inter.className} ${poppins.variable}  ${dancingScript.variable} ${gabriola.variable}   `}
-      >
+      <body className={` ${roboto.className} ${poppins.variable}    `}>
         <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
           <Header />
           {children}
