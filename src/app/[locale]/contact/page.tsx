@@ -1,7 +1,7 @@
 import Testimonials from "@/src/components/packages/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
 import { childrenTeam } from "@/public/image";
-import PageHeadImage from "@/src/components/components/PageHeadImage/PageHeadImage";
+import PageHeadImage from "@/src/components/old components/PageHeadImage/PageHeadImage";
 import ContactForm from "@/src/components/packages/ContactForm/ContactForm";
 import Accordion from "@/src/components/packages/Accordion/Accordion";
 import Pageshead from "@/src/components/components/PagesHead/Pageshead";
@@ -15,7 +15,7 @@ export async function generateMetadata() {
 }
 
 // Dynamic server-side rendering function that accepts params
-export default async function StoryPage() {
+export default async function ContactPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">

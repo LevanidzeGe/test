@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Projects from "./menuComponents/Projects";
 import Pageshead from "@/src/components/components/PagesHead/Pageshead";
+import ComponentSeven from "@/src/components/components/Seven/ComponentSeven";
 
 export async function generateMetadata() {
   const t = await getTranslations("eventsPage.metadata");

@@ -22,7 +22,7 @@ export default async function Projects({ mini }: { mini?: boolean }) {
     .slice(0, 3);
 
   return (
-    <section className="section section-light">
+    <section className="section ">
       <div className={`container ${!mini && styles.container}`}>
         <div className={`${!mini && styles.paddingTop}`}>
           <div className="sideLineWrap">

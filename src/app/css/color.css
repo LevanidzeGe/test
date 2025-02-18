@@ -15,7 +15,7 @@
   --gray3: rgb(200, 200, 200);
   --gray5: rgb(150, 150, 150);
   --gray7: rgb(90, 90, 90);
-  --gray9: rgb(40, 40, 40);
+  --gray9: rgb(48, 59, 71);
   --black: #25313c;
 
   /* project colors */
@@ -50,6 +50,9 @@
 }
 .gray7 {
   color: var(--gray7);
+}
+.gray9 {
+  color: var(--gray9);
 }
 
 .black {

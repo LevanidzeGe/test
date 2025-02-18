@@ -1,11 +1,8 @@
 import image1 from "@/public/images/testimonial/1-man.png";
 import image2 from "@/public/images/testimonial/2-girl.png";
-import image3 from "@/public/images/testimonial/3-man.png";
 import image4 from "@/public/images/testimonial/4-man.png";
 import image5 from "@/public/images/testimonial/5-girl.png";
 import image6 from "@/public/images/testimonial/6-girl.png";
-import image7 from "@/public/images/testimonial/7-man.png";
-import image8 from "@/public/images/testimonial/8-man.png";
 
 import { StaticImageData } from "next/image";
 interface reviewsDataProps {

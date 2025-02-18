@@ -11,7 +11,7 @@ export async function generateMetadata() {
 }
 
 // Dynamic server-side rendering function that accepts params
-export default async function StoryPage() {
+export default async function ServicesPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
