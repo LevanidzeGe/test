@@ -1,9 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import ServicesList from "./Services/ServicesList";
+import ServicesList from "./ServicesComponent/ServicesList";
 import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 export async function generateMetadata() {
-  const t = await getTranslations("registrationPage.metadata");
+  const t = await getTranslations("servicesPage.metadata");
   return {
     title: t("title"),
     description: t("description"),

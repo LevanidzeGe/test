@@ -1,31 +1,29 @@
 import { Metadata } from "next";
-import { useLocale } from "next-intl";
-import { notFound } from "next/navigation";
 import styles from "./page.module.css";
-
 import { flooring } from "../ServicesData/flooring";
 import { furniture } from "../ServicesData/furniture";
 import { gardening } from "../ServicesData/gardening";
 import { renovation } from "../ServicesData/renovation";
-import { defaultLocale } from "@/Manager/navigation";
 import { companyDomain } from "@/Manager/info";
 import Image from "next/image";
 import Pageshead from "@/src/components/components/PagesHead/Pageshead";
+import { defaultLocale } from "@/Manager/navigation";
 
 const services = [flooring, furniture, gardening, renovation];
 
 type Props = {
   params: {
-    lang: string;
+    locale: string; // Changed from lang to locale
     slug: string;
   };
 };
 
-// Generate dynamic metadata for SEO
+// **Generate dynamic metadata for SEO**
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   const service = services.find((s) => s.slug === params.slug);
+  const locale = params.locale; // Ensure a valid locale
 
   if (!service) {
     return {
@@ -34,69 +32,82 @@ export const generateMetadata = async ({
     };
   }
 
+  // Ensure translations exist and provide a fallback
+  const title = service.title[locale] ?? service.title[defaultLocale];
+  const description =
+    service.description[locale] ?? service.description[defaultLocale];
+
   return {
-    title: service.title[params.lang] || service.title[defaultLocale],
-    description:
-      service.description[params.lang] || service.description[defaultLocale],
+    title,
+    description,
     alternates: {
-      canonical: `/${params.lang}/services/${params.slug}`,
+      canonical: `/${locale}/services/${params.slug}`,
     },
     openGraph: {
-      title: service.title[params.lang] || service.title[defaultLocale],
-      description:
-        service.description[params.lang] || service.description[defaultLocale],
-      url: `${companyDomain}/${params.lang}/services/${params.slug}`,
+      title,
+      description,
+      url: `${companyDomain}/${locale}/services/${params.slug}`,
       images: [
         {
           url: service.image || `${companyDomain}/images/openGraph/default.jpg`,
           width: 500,
           height: 300,
-          alt: service.title[params.lang] || service.title[defaultLocale],
+          alt: title,
         },
       ],
     },
   };
 };
 
-// Dynamic Service Page
+// **Dynamic Service Page**
 export default function ServiceDetailsPage({ params }: Props) {
-  const locale = useLocale();
   const service = services.find((s) => s.slug === params.slug);
+  const locale = params.locale || defaultLocale; // Ensure locale is always valid
 
-  if (!service) return notFound(); // If service not found, return 404
+  if (!service) {
+    return {
+      title: "Not Found",
+      description: "The service you are looking for does not exist",
+    };
+  }
 
+  // Ensure translations exist and provide a fallback
+  const title = service.title[locale] ?? service.title[defaultLocale];
   return (
     <>
-      <Pageshead
-        value1={service.title[locale]}
-        value2="everythhing that we do"
-      />
+      <Pageshead value1={title} value2="everything that we do" />
 
       <section className="section fadeOut">
         <div className="container">
           <ul className={styles.servicesWrapper}>
-            {service.subServices.map((sub) => (
-              <li
-                className={`container ${styles.cardWrapper}`}
-                key={sub.title[locale]}
-              >
-                <Image
-                  src={sub.image}
-                  width={500}
-                  height={500}
-                  alt={sub.title[locale]}
-                />
+            {service.subServices.map((sub) => {
+              const subTitle = sub.title[locale] ?? sub.title[defaultLocale];
+              const subDescription =
+                sub.description[locale] ?? sub.description[defaultLocale];
 
-                <div className={styles.cardTextWrap}>
-                  <div className="sideLineWrap">
-                    <div className="sideLine"></div>
-                    <h2 className="heading4">{service.title[locale]}</h2>
+              return (
+                <li
+                  className={`container ${styles.cardWrapper}`}
+                  key={subTitle}
+                >
+                  <Image
+                    src={sub.image}
+                    width={500}
+                    height={500}
+                    alt={subTitle}
+                  />
+
+                  <div className={styles.cardTextWrap}>
+                    <div className="sideLineWrap">
+                      <div className="sideLine"></div>
+                      <h2 className="heading4">{title}</h2>
+                    </div>
+                    <h3 className="heading2 color4">{subTitle}</h3>
+                    <p className="paragraph gray7">{subDescription}</p>
                   </div>
-                  <h3 className="heading2 color4">{sub.title[locale]}</h3>
-                  <p className="paragraph gray7">{sub.description[locale]}</p>
-                </div>
-              </li>
-            ))}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>

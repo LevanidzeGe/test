@@ -1,0 +1,13 @@
+.projectDetailsWrapper {
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.title {
+  margin: 10px 0 40px 0;
+}
+.description {
+  margin-bottom: 40px;
+}

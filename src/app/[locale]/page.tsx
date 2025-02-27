@@ -4,8 +4,8 @@ import Testimonials from "@/src/components/packages/Testimonials/Testimonials";
 import { useTranslations } from "next-intl";
 import ComponentOne from "@/src/components/components/One/ComponentOne";
 import ComponentFive from "@/src/components/components/Five/ComponentFive";
-import ServicesList from "./services/Services/ServicesList";
-import Projects from "./projects/menuComponents/Projects";
+import ServicesList from "./services/ServicesComponent/ServicesList";
+import Projects from "./projects/projectsComponent/Projects";
 import ComponentSix from "@/src/components/components/Six/ComponentSix";
 
 export default function Home() {
