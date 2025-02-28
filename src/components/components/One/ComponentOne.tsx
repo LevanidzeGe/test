@@ -14,7 +14,7 @@ export default function ComponentOne({ image }: ComponentOne) {
       <div className="container no-padding-x">
         <div className={styles.wrapper}>
           <div className={styles.leftDiv}>
-            <Image width={1500} height={1000} src={image} alt={t("title1")} />
+            <Image width={1500} height={1000} src={image} alt={t("title2")} />
             <div className={styles.boxOne}>
               <h4 className="heading2 white">+200</h4>
               <span className="heading4 white">{t("title3")}</span>

@@ -29,7 +29,7 @@ export default async function ContactPage() {
         people={t("forms.contactForm.people")}
         text={t("forms.contactForm.message")}
         button={t("forms.contactForm.button")}
-        thank={t("forms.contactForm.thank")}
+        thank={t("forms.contactForm.thankYou")}
         title1={t("contactPage.contactForm.title1")}
         title2={t("contactPage.contactForm.title2")}
         title3={t("contactPage.contactForm.title3")}
