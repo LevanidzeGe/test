@@ -16,7 +16,7 @@ export default function MainImage() {
   const locale = useLocale();
   return (
     <section
-      className={`section section-medium no-padding-x no-padding-y relative`}
+      className={`section section-medium no-padding-x no-padding-y relative hidden`}
     >
       <div className={styles.wrapper}>
         <div className={`section ${styles.leftDiv}`}>
