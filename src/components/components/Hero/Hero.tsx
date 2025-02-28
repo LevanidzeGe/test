@@ -28,7 +28,7 @@ export default function MainImage() {
             <Link className="button button-reverse" href={`${locale}/contact`}>
               {t("button1")}
             </Link>
-            <Link className="button" href={`${locale}/registration`}>
+            <Link className="button" href={`${locale}/projects`}>
               {t("button2")}
             </Link>
           </div>
