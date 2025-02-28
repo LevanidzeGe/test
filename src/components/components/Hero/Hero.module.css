@@ -3,11 +3,12 @@
   height: 100vh;
   position: relative;
   max-height: 1500px;
+  min-height: 800px;
   margin: 0 auto;
 }
 
 .leftDiv {
-  margin-top: 50px;
+  margin-top: 7vh;
   padding-right: 0;
   width: 40%;
   z-index: 5;
@@ -63,16 +64,19 @@
   top: 30%;
   left: 25%;
   height: 50vh;
+  max-height: 800px;
 }
 .circleM {
   top: 10%;
-  left: -10%;
+  left: -50px;
   height: 30vh;
+  max-height: 500px;
 }
 .circleS {
   bottom: 10%;
-  left: -10%;
-  height: 10vh;
+  left: 50px;
+  height: 15vh;
+  max-height: 300px;
 }
 
 .overlay {

@@ -34,10 +34,8 @@ export default function StandartNav() {
             <li
               key={item.url}
               className={`${styles.navItem} ${
-                hasDropdown ? styles.dropdownParent : ""
+                hasDropdown ? styles.dropdownParent : " "
               }`}
-              onMouseEnter={() => hasDropdown && setOpenDropdown(item.title)}
-              onMouseLeave={() => hasDropdown && setOpenDropdown(null)}
             >
               {/* If there is a dropdown, use <span> instead of <Link> */}
               {hasDropdown ? (
@@ -53,8 +51,11 @@ export default function StandartNav() {
                 <Link
                   href={localizedUrl}
                   className={`${
-                    item.button ? "button button-small button-reverse" : "link"
-                  } ${isActive && !item.button ? "active-link" : ""}`}
+                    item.button && "button button-small button-reverse"
+                  }
+                  ${!item.button && "link link-animate"}
+
+                   ${isActive && !item.button ? "active-link " : ""}`}
                 >
                   {item.title}
                 </Link>

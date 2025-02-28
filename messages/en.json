@@ -48,7 +48,7 @@
       "title1": "What our clients say"
     }
   },
-  "eventsPage": {
+  "projectsPage": {
     "metadata": {
       "title": "Upcoming Renovation Projects and Events",
       "description": "Stay updated on our latest renovation projects and events. Explore our portfolio and see how we transform spaces."
@@ -63,6 +63,13 @@
       "past": "completed",
       "seeAll": "View All Projects"
     }
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Contact Renovation Experts Geneva",
+      "description": "Get in touch with Renovation Experts Geneva for inquiries or to schedule a consultation. We're here to help with all your renovation needs."
+    },
+    "faq": "Frequently Asked Questions"
   },
   "contactPage": {
     "metadata": {

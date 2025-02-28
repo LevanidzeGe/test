@@ -34,22 +34,60 @@
 }
 
 /* standart Nav link */
+/* Base Link Styles */
 .link {
   font-family: var(--font1);
   font-size: 14px;
   transition: all 0.2s;
   text-transform: uppercase;
   color: var(--color4);
-
   font-weight: 600;
-}
-.active-link {
-  color: var(--color3);
+  text-decoration: none;
 }
 .link:hover {
-  color: var(--color3);
+  color: var(--color4);
 }
 
+/* Active Link Style */
+.active-link {
+  color: var(--color4);
+  position: relative;
+}
+
+/* Permanent Blurry Underline for Active Link */
+.active-link.link-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color4);
+  box-shadow: 0px 1.5px 4px var(--color4); /* Blur effect */
+}
+
+/* Animated Underline on Hover (With Blur) */
+.link-animate {
+  position: relative;
+}
+
+.link-animate::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color4);
+  box-shadow: 0px 1.5px 4px var(--color4); /* Blur effect */
+  /* filter: blur(0.5px); */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.link-animate:hover::after {
+  width: 100%;
+  left: 0;
+}
 /* typography */
 .heading1 {
   font-weight: 700;
@@ -102,7 +140,6 @@
   font-family: var(--font1);
   font-weight: 500;
   line-height: 150%;
-  text-decoration: underline;
   transition: all 0.3s;
 }
 .caption:hover {
@@ -110,7 +147,7 @@
 }
 .caption-mini {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--font1);
 }
 

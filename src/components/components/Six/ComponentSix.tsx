@@ -29,7 +29,7 @@ export default function ComponentSix() {
               </p>
               <Link
                 className="button button-reverse"
-                href={`${locale}/contact`}
+                href={`/${locale}/contact`}
               >
                 Contact us
               </Link>

@@ -10,7 +10,7 @@ export default function ComponentOne({ image }: ComponentOne) {
   const t = useTranslations("homePage.componentOne");
 
   return (
-    <section className="section  ">
+    <section className="section">
       <div className="container no-padding-x">
         <div className={styles.wrapper}>
           <div className={styles.leftDiv}>

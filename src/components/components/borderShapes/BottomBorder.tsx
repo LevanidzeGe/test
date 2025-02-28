@@ -3,15 +3,17 @@ import Image from "next/image";
 
 export default function BottomBorder() {
   return (
-    <Image
-      style={{
-        width: "100vwgit ",
-        marginTop: "-1px",
-      }}
-      src={bottomVector}
-      alt=""
-      width={1400}
-      height={300}
-    />
+    <div className="section no-padding-x no-padding-y">
+      <Image
+        style={{
+          width: "100vw ",
+          marginTop: "-2px",
+        }}
+        src={bottomVector}
+        alt=""
+        width={1400}
+        height={300}
+      />
+    </div>
   );
 }

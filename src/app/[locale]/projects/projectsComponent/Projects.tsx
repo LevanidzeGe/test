@@ -51,9 +51,11 @@ export default function Projects({ mini }: { mini?: boolean }) {
               Completed Projects
             </h3>
             <div className={styles.eventsWrapper}>
-              {paginatedProjects.map((event: ProjectProps) => (
-                <ServerCard key={event.id} {...event} />
-              ))}
+              {(mini ? paginatedProjects.slice(0, 3) : paginatedProjects).map(
+                (event: ProjectProps) => (
+                  <ServerCard key={event.id} {...event} />
+                )
+              )}
             </div>
             {/* Pagination Controls */}
             {!mini && (

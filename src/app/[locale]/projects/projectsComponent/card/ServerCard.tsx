@@ -32,16 +32,14 @@ export default function ServerCard({
       </Link>
 
       <div className={styles.topDiv}>
-        {timestamp && (
-          <>
-            <p className={`gray7 ${styles.date}`}>
-              {new Date(timestamp).toLocaleDateString(locale)}
-            </p>
-            <p className={`gray7 caption-mini ${styles.caption}`}>
-              {category[locale]}
-            </p>
-          </>
-        )}
+        {/* {timestamp && (
+          <p className={`gray5 caption-mini ${styles.date}`}>
+            {new Date(timestamp).toLocaleDateString(locale)}
+          </p>
+        )} */}
+        <p className={`gray7 caption-mini ${styles.caption}`}>
+          {category[locale]}
+        </p>
       </div>
 
       <div>

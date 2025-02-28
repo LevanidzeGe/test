@@ -15,7 +15,9 @@ export default function MainImage() {
   const t = useTranslations("homePage.hero");
   const locale = useLocale();
   return (
-    <section className={`section section-medium no-padding-x no-padding-y`}>
+    <section
+      className={`section section-medium no-padding-x no-padding-y relative`}
+    >
       <div className={styles.wrapper}>
         <div className={`section ${styles.leftDiv}`}>
           <h1 className="heading1">{t("title1")}</h1>
@@ -26,9 +28,9 @@ export default function MainImage() {
             <Link className="button button-reverse" href={`${locale}/contact`}>
               {t("button1")}
             </Link>
-            {/* <Link className="button" href={`${locale}/registration`}>
+            <Link className="button" href={`${locale}/registration`}>
               {t("button2")}
-            </Link> */}
+            </Link>
           </div>
         </div>
         <div className={styles.imageWrapper}>

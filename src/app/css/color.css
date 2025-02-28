@@ -21,17 +21,17 @@
   /* project colors */
   /* color1 = bright color */
   /* color5 = dark color */
-  --color1: hsl(212, 100%, 89%);
-  --color2: hsl(214, 100%, 68%);
-  --color3: hsl(208, 100%, 39%);
-  --color4: hsl(208, 100%, 23%);
-  --color5: hsl(208, 100%, 13%);
+  --color1: #c7e1ff;
+  --color2: #5ca3ff;
+  --color3: #006ac7;
+  --color4: #003f75;
+  --color5: #002342;
 
-  --color2-10: hsl(214, 100%, 97%, 0.1);
-  --color4-10: hsl(208, 100%, 23%, 0.1);
-  --color4-20: rgba(136, 195, 246, 0.2);
-  --color4-40: hsl(208, 100%, 23%, 0.4);
-  --color4-80: hsl(208, 100%, 23%, 0.8);
+  --color2-10: #f0f6ff1a;
+  --color4-10: #003f751a;
+  --color4-20: #87c2f533;
+  --color4-40: #003f7566;
+  --color4-80: #003f75cc;
 
   --bg-light: #eff6ff;
   --bg-medium: #ebf3ff;

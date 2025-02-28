@@ -3,12 +3,14 @@ import Image from "next/image";
 
 export default function TopBorder() {
   return (
-    <Image
-      style={{ width: "100vw", marginBottom: "-1px", marginTop: "100px" }}
-      src={topVector}
-      alt=""
-      width={1400}
-      height={300}
-    />
+    <div className="section no-padding-x no-padding-y">
+      <Image
+        style={{ width: "100vw", marginBottom: "-2px", marginTop: "100px" }}
+        src={topVector}
+        alt=""
+        width={1400}
+        height={300}
+      />
+    </div>
   );
 }

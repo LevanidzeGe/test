@@ -1,43 +1,72 @@
-// components/Pagination/Pagination.tsx
-
-import React from "react";
-
-interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (newPage: number) => void;
+{
+  /* usage <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />; */
 }
 
-const Pagination: React.FC<PaginationProps> = ({
+import styles from "./Pagination.module.css";
+import { HiOutlineArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
+
+export default function Pagination({
   currentPage,
   totalPages,
   onPageChange,
-}) => {
-  const handlePrevious = () => {
-    if (currentPage > 1) {
-      onPageChange(currentPage - 1);
+}: {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}) {
+  const renderPageNumbers = () => {
+    const pages = [];
+    for (let i = 1; i <= totalPages; i++) {
+      if (
+        i === 1 ||
+        i === totalPages ||
+        (i >= currentPage - 1 && i <= currentPage + 1)
+      ) {
+        pages.push(
+          <button
+            key={i}
+            className={`${styles.pageButton} ${styles.navButton} ${
+              currentPage === i ? styles.active : ""
+            }`}
+            onClick={() => onPageChange(i)}
+          >
+            {i}
+          </button>
+        );
+      } else if (i === 2 && currentPage > 3) {
+        pages.push(
+          <span key="dots1" className={styles.dots}>
+            ...
+          </span>
+        );
+      } else if (i === totalPages - 1 && currentPage < totalPages - 2) {
+        pages.push(
+          <span key="dots2" className={styles.dots}>
+            ...
+          </span>
+        );
+      }
     }
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages) {
-      onPageChange(currentPage + 1);
-    }
+    return pages;
   };
 
   return (
-    <div className="pagination">
-      <button onClick={handlePrevious} disabled={currentPage === 1}>
-        Previous
+    <div className={styles.pagination}>
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className={styles.arrows}
+      >
+        <HiOutlineArrowSmLeft />
       </button>
-      <span>
-        {currentPage} of {totalPages}
-      </span>
-      <button onClick={handleNext} disabled={currentPage === totalPages}>
-        Next
+      {renderPageNumbers()}
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className={styles.arrows}
+      >
+        <HiArrowSmRight />
       </button>
     </div>
   );
-};
-
-export default Pagination;
+}

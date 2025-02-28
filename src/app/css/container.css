@@ -26,6 +26,7 @@
   padding: var(--section-padding-xl);
   width: 100%;
   margin: 0 auto;
+  max-width: 3000px;
 }
 .section-light {
   background-color: var(--bg-light);
