@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Third.module.css";
+import styles from "./WorkHours.module.css";
 import { useTranslations } from "next-intl";
 
-export default function Third() {
+export default function WorkHours() {
   const t = useTranslations("footer");
   return (
     <div className={styles.eachWrapper}>

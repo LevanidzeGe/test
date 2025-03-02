@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./First.module.css";
+import styles from "./ContactInfo.module.css";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import Link from "next/link";
 import {
@@ -14,7 +14,7 @@ interface props {
   title: string;
 }
 
-export default function First({ title }: props) {
+export default function ContactInfo({ title }: props) {
   return (
     <div className={styles.eachWrapper}>
       <h2 className="heading4">{title}</h2>

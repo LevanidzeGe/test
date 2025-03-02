@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LowerFoot.module.css";
 import { FaHeart } from "react-icons/fa";
 import Link from "next/link";

@@ -1,5 +1,6 @@
 .eachWrapper {
   max-width: 400px;
+  margin-bottom: 50px;
 }
 .eventWrap {
   margin: 0 0 20px 0;

@@ -1,13 +1,13 @@
 import { useLocale } from "next-intl";
 import React from "react";
-import styles from "./Second.module.css";
+import styles from "./Navigation.module.css";
 import Link from "next/link";
 import { navItems } from "@/Manager/navigation";
 import { NavItemProps } from "@/Manager/navigation";
 interface props {
   title: string;
 }
-export default function Second({ title }: props) {
+export default function Navigation({ title }: props) {
   const locale = useLocale(); // Get the current locale
   const items: NavItemProps[] = navItems[locale]; // Get items for the current locale
   return (

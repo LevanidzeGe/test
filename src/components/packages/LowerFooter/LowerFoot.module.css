@@ -37,7 +37,6 @@
   color: var(--white);
   opacity: 0.1;
   z-index: 10;
-  /* font-family: var(--fon); */
   transition: all 0.5s;
 }
 .domain:hover {
@@ -54,7 +53,8 @@
 .logo {
   object-fit: contain;
   height: 20px;
-  animation: rotateLogo 5s linear infinite;
+  animation: rotateLogo 8s linear infinite;
+  margin-left: 10px;
 }
 
 @keyframes rotateLogo {

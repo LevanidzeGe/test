@@ -1,5 +1,7 @@
 .eachWrapper {
-  max-width: 280px;
+  width: 280px;
+  margin-bottom: 50px;
+
 }
 .menuWrap {
   display: flex;

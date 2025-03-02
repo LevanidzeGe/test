@@ -7,6 +7,7 @@ import ComponentFive from "@/src/components/components/Five/ComponentFive";
 import ServicesList from "./services/ServicesComponent/ServicesList";
 import Projects from "./projects/projectsComponent/Projects";
 import ComponentSix from "@/src/components/components/Six/ComponentSix";
+import Levanidze from "@/src/components/packages/Levanidze.com/Levanidze";
 
 export default function Home() {
   const t = useTranslations();
@@ -15,6 +16,7 @@ export default function Home() {
     <div className="fadeOut">
       <Hero />
       <ComponentOne image={brush} />
+      <Levanidze />
       <Projects
         mini={true}
         title1={t("homePage.projects.title1")}

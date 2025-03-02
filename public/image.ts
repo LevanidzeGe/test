@@ -29,6 +29,7 @@ import giSvg from "@/public/assets/svg/giSvg.svg";
 import babyIcon from "@/public/assets/svg/baby-icon.svg";
 import oldImage from "@/public/images/componentOne.jpg";
 import logo from "@/public/images/logo.png";
+import logo2 from "@/public/images/logo2.png";
 import circleS from "@/public/assets/svg/circle-small.svg";
 import circleM from "@/public/assets/svg/circle-medium.svg";
 import circleL from "@/public/assets/svg/circle-large.svg";
@@ -57,5 +58,6 @@ export {
   childrenTeam,
   oldImage,
   logo,
+  logo2,
   gardeningTractor,
 };

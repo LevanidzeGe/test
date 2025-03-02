@@ -71,8 +71,14 @@
     padding-bottom: 50px;
     width: 100%;
   }
+  .leftDiv img {
+    width: 100vw;
+    object-fit: cover;
+    max-height: 400px;
+  }
   .leftDiv {
     margin-bottom: 50px;
+    margin-left: -30%;
   }
 }
 @media (max-width: 772px) {
@@ -81,6 +87,16 @@
     margin: 0 auto;
     width: 100%;
   }
-  .textDiv h3 {
+}
+@media (max-width: 567px) {
+  .boxOne,
+  .boxTwo {
+    display: none;
+  }
+  .leftDiv img {
+    height: 250px;
+  }
+  .textDiv p {
+    padding-bottom: 0;
   }
 }

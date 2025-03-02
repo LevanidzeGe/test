@@ -1,0 +1,157 @@
+.mainWrapper {
+  position: relative;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.background {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: blur(60px);
+  transform: translate(0, -50%);
+  top: 60%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textDiv span {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.textDiv h3 {
+  background: linear-gradient(
+    90deg,
+    #d7782d 0%,
+    #dbc68f 20%,
+    #62b3c5 40%,
+    #43778b 60%,
+    #c71107 80%,
+    #e73026 100%
+  );
+  background-size: 200% auto; /* Enables smooth movement */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  transition: background-position 0.7s ease-in-out; /* Smooth transition */
+}
+
+.textDiv h3:hover {
+  background-position: right center; /* Moves the gradient smoothly */
+}
+.textDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.domain {
+  display: flex;
+}
+.logo {
+  object-fit: contain;
+  height: 35px;
+  animation: rotateLogo 8s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cardDiv img {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+}
+
+.cardDiv {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: flipCard 10s infinite ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Pause animation on hover */
+.cardDiv:hover .cardInner {
+  animation-play-state: paused;
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: max-content;
+  }
+  .textDiv {
+    width: 100%;
+  }
+
+  .domain {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 567px) {
+  .cardDiv {
+    width: 100%;
+  }
+}

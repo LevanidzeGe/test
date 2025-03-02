@@ -1,5 +1,6 @@
 .eachWrapper {
-  max-width: 280px;
+  width: 280px;
+  margin-bottom: 50px;
 }
 .contactInfo {
   padding-bottom: 30px;

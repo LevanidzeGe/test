@@ -1,9 +1,9 @@
 import { navItems, NavItemProps } from "@/Manager/navigation";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import styles from "./Fourth.module.css"; // Assuming you have a Footer module CSS
+import styles from "./DropDownNav.module.css"; // Assuming you have a Footer module CSS
 
-export default function Fourth() {
+export default function DropDownNav() {
   const locale = useLocale();
   const items: NavItemProps[] = navItems[locale] || [];
 

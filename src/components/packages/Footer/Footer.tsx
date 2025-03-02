@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import First from "./fotComponents/First";
-import Second from "./fotComponents/Second";
-import Third from "./fotComponents/Third";
-// import Fourth from "./fotComponents/Fourth";
+import Navigation from "./fotComponents/Navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { footerWave } from "@/public/image";
 import { companyName } from "@/Manager/info";
-import Fourth from "./fotComponents/Fourth";
+import DropDownNav from "./fotComponents/DropDownNav";
+import ContactInfo from "./fotComponents/ContactInfo";
+import LogoFooter from "./fotComponents/LogoFooter";
+// import WorkHours from "./fotComponents/WorkHours";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -24,10 +24,11 @@ export default function Footer() {
       <section className="section">
         <div className="container">
           <div className={styles.footWrapper}>
-            <First title={t("title1")} />
-            <Fourth />
-            <Second title={t("title2")} />
-            {/* <Third /> */}
+            <LogoFooter />
+            <ContactInfo title={t("title1")} />
+            <DropDownNav />
+            <Navigation title={t("title2")} />
+            {/* <WorkHours /> */}
           </div>
           <div className={styles.copyRgiht}>
             <p className="heading5 white">Copyright </p>
