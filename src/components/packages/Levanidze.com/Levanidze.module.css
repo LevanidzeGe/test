@@ -163,6 +163,9 @@
     align-items: center; /* Ensures everything centers */
     text-align: center;
   }
+  .cardDiv:hover .cardInner {
+    animation-play-state: running;
+  }
 
   .textDiv {
     width: 100%;
