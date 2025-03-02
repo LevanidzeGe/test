@@ -15,8 +15,9 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
-  box-shadow: -3px 5px 7px -3px var(--color4-40),
-    -1px 1px 3px -2px var(--color4);
+  box-shadow: -3px 5px 10px var(--shadow1-hard),
+    -6px 10px 20px var(--shadow1-soft);
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.08));
 }
 
 /* Hover Effect */
@@ -24,8 +25,9 @@
   background-color: var(--color4);
   color: var(--white);
   transform: translateY(-3px);
-  box-shadow: -5px 10px 15px -5px var(--color4-40),
-    -1px 2px 6px -3px var(--color4);
+  box-shadow: -4px 7px 14px var(--shadow2-hard),
+    -8px 12px 25px var(--shadow2-soft);
+  filter: drop-shadow(0 12px 9px rgba(0, 0, 0, 0.1));
 }
 
 /* Click (Active) Effect */
