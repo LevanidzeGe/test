@@ -20,7 +20,7 @@ export default function ServerCard({
   // Fallback to the default locale if the translation is not available
 
   return (
-    <div className={styles.cardWrapper}>
+    <div className={`${styles.cardWrapper} `}>
       <Link href={`/${locale}/projects/${id}`} className={styles.imageWrapper}>
         <Image
           src={images[0]}

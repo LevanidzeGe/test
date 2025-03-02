@@ -32,7 +32,7 @@ export default function ServicesList({
             <Link
               href={`/${locale}/services/${slug}`}
               key={slug}
-              className={`shadow-black-s ${styles.serviceCard}`}
+              className={`shadow1 lift ${styles.serviceCard}`}
             >
               <Image
                 width={500}

@@ -24,7 +24,7 @@ export default function Levanidze() {
                 Our <p> website </p> and <p> photography </p> provided by
                 <p> Levanidze </p>
               </h2>
-              <div className={styles.domainWrapper}>
+              <div className={`${styles.domainWrapper} lift shadow2`}>
                 <Link className={styles.domain} href="https://levanidze.com">
                   <h3 className="heading2">
                     www.<span className="">Levanidze</span>.com
@@ -44,6 +44,7 @@ export default function Levanidze() {
                 <div className={styles.cardInner}>
                   <div className={styles.cardFront}>
                     <Image
+                      className="lift shadow2"
                       src={photo}
                       width={600}
                       height={400}
@@ -52,6 +53,7 @@ export default function Levanidze() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
+                      className="lift shadow2"
                       src={web}
                       width={600}
                       height={400}

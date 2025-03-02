@@ -1,9 +1,11 @@
+/* Main Wrapper */
 .mainWrapper {
   position: relative;
   margin: 0;
   margin-top: 50px;
 }
 
+/* Background Blur */
 .background {
   width: 100%;
   height: 450px;
@@ -15,41 +17,44 @@
   top: 60%;
 }
 
+/* Layout Wrappers */
 .wrapper {
   display: flex;
   justify-content: center;
 }
-.domainWrapper {
-  /* margin: 0 auto; */
-  width: max-content;
-  background: #1a1a1a; /* Dark background for contrast */
-  padding: 10px 20px;
-  border-radius: 10px; /* Smooth edges */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+.textDiv {
+  margin-right: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Hover Effect - Lifts the element with a stronger shadow */
-.domainWrapper:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9), 0 4px 15px rgba(0, 0, 0, 0.6);
-  transform: translateY(-5px); /* Slightly moves up */
+/* Domain Wrapper */
+.domainWrapper {
+  width: max-content;
+  background: #1a1a1a; /* Dark background for contrast */
+  padding: 15px 20px;
+  border-radius: 10px; /* Smooth edges */
 }
-.textDiv span {
-  font-size: 30px;
-  text-transform: uppercase;
+
+/* Domain Section */
+.domain {
+  display: flex;
+  background: #1a1a1a; /* Dark background for contrast */
+  border-radius: 10px; /* Smooth edges */
 }
-.textDiv p {
-  margin: 0 10px;
+
+/* Logo Animation */
+.logo {
+  object-fit: contain;
+  height: 35px;
+  margin-left: 10px;
+  animation: rotateLogo 8s linear infinite;
 }
-.textDiv p:nth-child(1) {
-  color: #5294ae;
-}
-.textDiv p:nth-child(2) {
-  color: #9f7f2e;
-}
-.textDiv p:nth-child(3) {
-  color: #c71107;
-}
+
+/* Text Styling */
 .textDiv h2 {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +63,23 @@
   color: rgb(98, 98, 98);
   margin-bottom: 30px;
 }
+
+.textDiv p {
+  margin: 0 10px;
+}
+
+.textDiv p:nth-child(1) {
+  color: #5294ae;
+}
+
+.textDiv p:nth-child(2) {
+  color: #9f7f2e;
+}
+
+.textDiv p:nth-child(3) {
+  color: #c71107;
+}
+
 .textDiv h3 {
   background: linear-gradient(
     90deg,
@@ -79,30 +101,8 @@
 .textDiv h3:hover {
   background-position: right center; /* Moves the gradient smoothly */
 }
-.textDiv {
-  margin-right: 30px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.domain {
-  display: flex;
-  .domain {
-    display: flex;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.5);
-    background: #1a1a1a; /* Dark background for contrast */
-    padding: 20px;
-    border-radius: 10px; /* Smooth edges */
-  }
-}
-.logo {
-  object-fit: contain;
-  height: 35px;
-  animation: rotateLogo 8s linear infinite;
-  margin-left: 10px;
-}
 
+/* Card Styling */
 .cardDiv {
   position: relative;
   width: 400px;
@@ -116,47 +116,9 @@
   height: max-content;
   object-fit: contain;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9), 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
-/* Lift Effect on Hover */
-.cardDiv:hover img {
-  transform: translateY(-10px); /* Lifts the card */
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 1), 0 8px 25px rgba(0, 0, 0, 0.7);
-}
-
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes flipCard {
-  0% {
-    transform: rotateY(0deg);
-  }
-  10% {
-    transform: rotateY(180deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  60% {
-    transform: rotateY(0deg);
-  }
-}
-
-.cardDiv {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  perspective: 1000px;
-}
-
+/* Card Flip Container */
 .cardInner {
   width: 100%;
   height: 100%;
@@ -171,6 +133,7 @@
   animation-play-state: paused;
 }
 
+/* Card Faces */
 .cardFront,
 .cardBack {
   position: absolute;
@@ -192,6 +155,7 @@
   justify-content: center;
 }
 
+/* Responsive Styles */
 @media (max-width: 992px) {
   .wrapper {
     flex-direction: column;
@@ -208,6 +172,7 @@
     flex-direction: column;
     align-items: center; /* Centers text */
   }
+
   .textDiv h2 {
     justify-content: center;
   }
@@ -224,5 +189,35 @@
 @media (max-width: 567px) {
   .cardDiv {
     width: 100%;
+  }
+}
+
+/* ============================== */
+/* Animations (Placed at Bottom) */
+/* ============================== */
+
+/* Rotate Logo */
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card Flip */
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  60% {
+    transform: rotateY(0deg);
   }
 }
