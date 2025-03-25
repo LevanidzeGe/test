@@ -3,7 +3,7 @@ import Collection from "./collection/Collection";
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata() {
-  const t = await getTranslations("projectsPage.metadata");
+  const t = await getTranslations("photographyPage.metadata");
   return {
     title: t("title"),
     description: t("description"),
@@ -16,8 +16,8 @@ export default function ProjectsPage() {
   return (
     <div className="fadeOut">
       <Collection
-        readMore={t("projectsPage.projects.readMore")}
-        seeAll={t("projects.seeAll")}
+        readMore={t("photographyPage.photography.readMore")}
+        seeAll={t("photographyPage.photography.seeAll")}
       />
     </div>
   );

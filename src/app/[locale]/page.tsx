@@ -17,8 +17,8 @@ export default function Home() {
       />
       {/* <Levanidze /> */}
       <Photography
-        readMore={t("projectsPage.projects.readMore")}
-        seeAll={t("projectsPage.projects.seeAll")}
+        readMore={t("photographyPage.photography.readMore")}
+        seeAll={t("photographyPage.photography.seeAll")}
         mini
       />
     </div>

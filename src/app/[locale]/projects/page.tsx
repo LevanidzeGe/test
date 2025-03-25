@@ -17,7 +17,7 @@ export default function ProjectsPage() {
     <div className="fadeOut">
       <Collection
         readMore={t("projectsPage.projects.readMore")}
-        seeAll={t("projects.seeAll")}
+        seeAll={t("projectsPage.projects.seeAll")}
       />
     </div>
   );

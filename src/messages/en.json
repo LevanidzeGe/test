@@ -16,6 +16,16 @@
       "seeAll": "see more"
     }
   },
+  "photographyPage": {
+    "metadata": {
+      "title": "Latest Sandblasting & Flooring Projects",
+      "description": "Stay updated on our recent renovation projects, including sandblasting, flooring, and gardening. See how we bring spaces back to life."
+    },
+    "photography": {
+      "readMore": "see photo project",
+      "seeAll": "see more"
+    }
+  },
 
   "forms": {
     "contactForm": {
