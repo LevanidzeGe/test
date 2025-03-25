@@ -1,3 +1,74 @@
+.button {
+  /* border: 2px solid var(--color4); */
+  background-color: var(--blue2-50);
+  /* color: var(--color5); */
+  font-family: var(--font1);
+  width: max-content;
+  /* border-radius: 4px; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 10px 25px;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: -3px 5px 10px var(--shadow1-hard),
+    -6px 10px 20px var(--shadow1-soft);
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.08));
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: var(--blue2);
+  /* color: var(--white); */
+  transform: translateY(-3px);
+  box-shadow: -4px 7px 14px var(--shadow2-hard),
+    -8px 12px 25px var(--shadow2-soft);
+  filter: drop-shadow(0 12px 9px rgba(0, 0, 0, 0.1));
+}
+
+/* Click (Active) Effect */
+.button:active {
+  transform: translateY(2px) scale(0.98); /* Pressed down effect */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2); /* Inner shadow */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.button-small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* button1 START */
+
+.button-reverse {
+  color: var(--white);
+  background-color: var(--color4);
+  border: 2px solid var(--color4);
+}
+.button-reverse:hover {
+  background-color: var(--color1);
+
+  color: var(--color5);
+}
+
+.button-bold {
+  font-weight: 700;
+}
+
+.buttonDisabled {
+  background-color: var(--gray3);
+  border: 2px solid var(--gray3);
+  color: var(--white);
+  cursor: default;
+}
+.buttonDisabled:hover {
+  background-color: var(--gray3);
+  border: 2px solid var(--gray3);
+}
+/* button1 END */
+
 /* <div className={`buttonCard ${styles.button}`}>
 <p></p>
 <span></span>

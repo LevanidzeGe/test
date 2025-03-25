@@ -1,5 +1,10 @@
 import "@/src/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Header from "@/src/components/packages/Header/Header";
+import { redirect } from "next/navigation";
+import { defaultLocale, supportedLocales } from "@/Manager/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
@@ -38,7 +43,6 @@ export async function generateMetadata({
     },
   };
 }
-
 //fonts
 import { Bebas_Neue, Poppins, Roboto } from "next/font/google";
 
@@ -56,14 +60,6 @@ const bebas = Bebas_Neue({
   weight: ["400"],
   variable: "--font3",
 });
-
-import Header from "@/src/components/packages/Header/Header";
-// import Footer from "@/src/components/packages/Footer/Footer";
-import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
-import { redirect } from "next/navigation";
-import { defaultLocale, supportedLocales } from "@/Manager/navigation"; // Import supported locales
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getLocale } from "next-intl/server";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -83,13 +79,9 @@ export default async function LangLayout({
     <html lang={locale || defaultLocale}>
       <body className={` ${bebas.className} ${poppins.variable}    `}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
-            <Header />
-            {children}
-            <Analytics />
-            {/* <Footer /> */}
-            <LowerFoot />
-          </div>
+          <Header />
+          {children}
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

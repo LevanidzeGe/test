@@ -13,3 +13,7 @@ export const address2: string = "";
 export const addressLink: string = "https://maps.app.goo.gl/Ri1cvhLMv1MGjrtRA";
 
 export const email: string = "Levanydze@gmail.com";
+
+export const companyRoute = "levanidze-2025-03-19";
+export const collectionRoute1 = "levanidze-web-projects";
+export const collectionRoute2 = "levanidze-com-photo-projects";

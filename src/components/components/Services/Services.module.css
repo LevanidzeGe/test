@@ -2,6 +2,7 @@
 
 .mainWrapper {
   position: absolute;
+  z-index: 1;
   bottom: 2vw;
 }
 .socialCard {
@@ -41,7 +42,7 @@
     rgba(40, 40, 40, 0.85),
     rgba(15, 15, 15, 0.85)
   );
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
   cursor: pointer;

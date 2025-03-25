@@ -1,13 +1,83 @@
-.projectDetailsWrapper {
+.mainWrapper {
+  padding: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.imageWrapper {
+  height: 100%;
+  position: relative;
+  margin-top: 20px;
 }
 
-.container {
-  max-width: 800px;
+.textWrapper {
   margin: 0 auto;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  width: 100%;
 }
-.title {
-  margin: 10px 0 40px 0;
+.mainWrapper h1 {
+  color: var(--gray5);
+  padding-bottom: 20px;
 }
-.description {
-  margin-bottom: 40px;
+.textWrapper div {
+  padding-bottom: 50px;
+  width: 45%;
+}
+.textWrapper div h3 {
+  margin-bottom: 10px;
+  color: var(--gray7);
+  font-weight: 700;
+}
+
+.liveButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.liveButton svg {
+  rotate: -40deg;
+  font-size: 20px;
+  margin-right: -5px;
+  transition: all 0.1s;
+}
+.liveButton:hover svg {
+  transform: translate(8px, 0px);
+}
+
+.imageWrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.272);
+}
+.imageWrapper img {
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 950px) {
+  .textWrapper {
+    flex-direction: column;
+  }
+  .textWrapper div {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .textWrapper div h3 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 730px) {
+  .mainWrapper {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainWrapper {
+    margin-top: 90px;
+  }
 }

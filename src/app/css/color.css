@@ -1,11 +1,7 @@
 /* Variables */
 :root {
+  --bodyColor: #c8c5b9;
   --bodyBackgroundColor: #111213;
-  --bodyColor: #ffffff;
-  --blue: #007bff;
-  --green: #28a745;
-  --red: #dc1c2f;
-  --yellow: #ffc107;
 
   /* used for photo overlay to write text over */
   --overlayLight: rgba(255, 255, 255, 0.612);
@@ -20,17 +16,16 @@
   --gray9: rgb(48, 59, 71);
   --black: #0b0e11;
 
-  /* project colors */
-  /* color1 = bright color */
-  /* color5 = dark color */
-  --color1: #62b3c5;
+  /* --color1: #c7e1ff;
   --color2: #5ca3ff;
-  --color3: #1d6894;
-  --color4: rgb(0, 47, 88);
-  --color5: rgb(0, 21, 40);
+  --color3: #006ac7;
+  --color4: #003f75;
+  --color5: #002342; */
 
   --blue1: #2d9bdb;
   --blue2: #1d6894;
+  --blue2-50: #1d68947e;
+
   --red1: #e73026;
   --red2: #c71107;
   --yellow1: #ddac2f;

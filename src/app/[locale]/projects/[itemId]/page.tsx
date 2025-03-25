@@ -1,9 +1,12 @@
 import { Metadata } from "next";
-import { projects } from "../projectsData";
-import { companyDomain } from "@/Manager/info";
-import AlbumSlider from "@/src/components/packages/AlbumSlider/AlbumSlider";
-import styles from "./page.module.css";
+import { fetchCollectionIfUpdated } from "../getFirebaseData";
+import { collectionRoute1, companyRoute, companyDomain } from "@/Manager/info";
 import { defaultLocale } from "@/Manager/navigation";
+import { extractCollectionFields } from "../types";
+import styles from "./page.module.css";
+import Image from "next/image";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Link from "next/link";
 
 interface Props {
   params: {
@@ -12,41 +15,44 @@ interface Props {
   };
 }
 
-// Generate metadata for SEO
+// SEO Metadata
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
-  const project = projects.find((e) => e.id === params.itemId);
-  const locale = params.locale;
+  const collection = await fetchCollectionIfUpdated(
+    companyRoute,
+    collectionRoute1
+  );
 
-  if (!project) {
+  const item = collection?.items?.[params.itemId];
+
+  if (!item) {
     return {
       title: "Not Found",
       description: "The project you are looking for does not exist",
     };
   }
 
-  // Ensure translations exist and provide a fallback
-  // const title = project.title[locale] ?? project.title[defaultLocale];
+  const extracted = extractCollectionFields(item, params.locale);
 
   return {
-    title: project.title[locale] || defaultLocale,
-    description: project.description[locale] || defaultLocale,
+    title: extracted.transTitle || defaultLocale,
+    description: extracted.transDescription || defaultLocale,
     alternates: {
-      canonical: `/${locale}/projects/${params.itemId}`,
+      canonical: `/${params.locale}/projects/${params.itemId}`,
     },
     openGraph: {
-      title: project.title[locale] || defaultLocale,
-      description: project.description[locale] || defaultLocale,
-      url: `${companyDomain}/${locale}/projects/${params.itemId}`,
+      title: extracted.transTitle,
+      description: extracted.transDescription,
+      url: `${companyDomain}/${params.locale}/projects/${params.itemId}`,
       images: [
         {
           url:
-            project.images[0] ||
+            extracted.images?.[0] ||
             `${companyDomain}/images/openGraph/mainOpenGraph.jpg`,
           width: 500,
           height: 300,
-          alt: project.title[locale] || defaultLocale,
+          alt: extracted.transTitle,
         },
       ],
     },
@@ -54,44 +60,64 @@ export const generateMetadata = async ({
 };
 
 export default async function EventDetailsPage({ params }: Props) {
-  const project = projects.find((e) => e.id === params.itemId);
-  const locale = params.locale;
+  const collection = await fetchCollectionIfUpdated(
+    companyRoute,
+    collectionRoute1
+  );
 
-  if (!project) {
-    return {
-      title: "Not Found",
-      description: "The project you are looking for does not exist",
-    };
+  const raw = collection?.items?.[params.itemId];
+  const locale = params.locale;
+  if (!raw) {
+    return <div>Project not found</div>;
   }
 
+  const item = extractCollectionFields(raw, locale);
+  console.log("🈯 Locale in details page:", locale);
+  console.log("🔠 Text1 keys:", Object.keys(raw.transTexts?.text1 || {}));
+  console.log("🈯 Requested locale:", locale);
+
   return (
-    <>
-      <section className={`section ${styles.eventDetailsWrapper}`}>
-        <div className="">
-          <div className={styles.container}>
-            <div className="sideLineWrap">
-              <div className="sideLine"></div>
-              <p className="heading4">{project.category[locale]}</p>
+    <section className={`section ${styles.eventDetailsWrapper}`}>
+      <div>
+        <div className={styles.container}>
+          <div className={styles.mainWrapper}>
+            <h1 className="header4">{item.transTag}</h1>
+            <div className={styles.textWrapper}>
+              <div>
+                <h3 className="header6 font2">Project Overview</h3>
+                <p className="paragraph">{item.transText1}</p>
+              </div>
+              <div>
+                <h3 className="header6 font2">Innovative Solutions</h3>
+                <p className="paragraph">{item.transText2}</p>
+              </div>
             </div>
-            <h2 className={`heading3 font1 color3 ${styles.title}`}>
-              {project.title[locale]}
-            </h2>
-            <div className={styles.infoWrapper}>
-              <p className={`paragraph gray7 ${styles.description}`}>
-                {project.description[locale]}
-              </p>
+            <div className={styles.liveButtonWrapper}>
+              {item.noTransLink1 && (
+                <Link
+                  className={`button ${styles.liveButton}`}
+                  href={item.noTransLink1}
+                  target="_blank"
+                >
+                  Preview in browser
+                  <HiOutlineArrowNarrowRight />
+                </Link>
+              )}
             </div>
-          </div>
-          {project.timestamp && (
-            <p className={`gray5 paragraph ${styles.date}`}>
-              {new Date(project.timestamp).toLocaleDateString(locale)}
-            </p>
-          )}
-          <div className={styles.imgWrapper}>
-            <AlbumSlider images={project.images} />
+
+            <div className={styles.imageWrapper}>
+              <Image
+                width={1000}
+                height={3000}
+                alt={item.transTitle}
+                src={item.images[1]}
+                title={item.transTitle}
+                priority
+              />
+            </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import Projects from "./projects/projectsComponent/Projects";
+import Projects from "./projects/collection/Collection";
+import Photography from "./photography/collection/Collection";
 import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
 import Hero from "@/src/components/components/Hero";
 
@@ -8,14 +9,17 @@ export default function Home() {
 
   return (
     <div className="fadeOut">
-      <Hero />
-      {/* <Levanidze /> */}
+      {/* <Hero /> */}
       <Projects
-        mini={true}
-        title1={t("homePage.projects.title1")}
-        title2={t("homePage.projects.title2")}
         readMore={t("projectsPage.projects.readMore")}
         seeAll={t("projectsPage.projects.seeAll")}
+        mini
+      />
+      {/* <Levanidze /> */}
+      <Photography
+        readMore={t("projectsPage.projects.readMore")}
+        seeAll={t("projectsPage.projects.seeAll")}
+        mini
       />
     </div>
   );

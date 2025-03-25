@@ -1,7 +1,7 @@
 .paddingBottom {
   padding-bottom: 70px;
 }
-.eventsWrapper {
+.collectionWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,6 +20,7 @@
 .button {
   margin-left: auto;
 }
+
 @media (max-width: 992px) {
   .container {
     padding-top: 50px;

@@ -4,111 +4,19 @@
       "title": "Geo Renovations - Sandblasting, Flooring & Gardening",
       "description": "Geo Renovations specializes in sandblasting, air pressure paint removal, flooring, and gardening services. Located in France near the Geneva border, we provide reliable and affordable solutions for clients in both France and Geneva."
     },
-    "hero": {
-      "title1": "With us, renovation is effortless",
-      "title2": "Top-notch sandblasting, flooring & gardening at fair rates",
-      "button1": "Contact",
-      "button2": "Get a Quote"
-    },
-    "componentOne": {
-      "title2": "Who we are",
-      "title3": "Happy Clients",
-      "title4": "Years in Business",
-      "text1": "Expert Services Near Geneva Since 2010",
-      "text2": "For 15 years, Geo Renovations has been a trusted name in home and business renovations. Based in France near the Geneva border, we excel in sandblasting, flooring, and gardening, ensuring quality, efficiency, and customer satisfaction."
-    },
-    "projects": {
-      "title1": "our work",
-      "title2": "recent jobs"
-    },
-    "services": {
-      "title1": "What we do",
-      "title2": "Our Specialties",
-      "readMore": "Learn More",
-      "seeAll": "View All Works"
-    },
-    "componentFive": {
-      "title1": "Address",
-      "title2": "Email Us",
-      "title3": "Call Now"
-    },
-    "componentSix": {
-      "title1": "Join us",
-      "title2": "Our Crew",
-      "title3": "We always welcome skilled workers",
-      "text": "We believe in building a dedicated team where everyone contributes with their expertise and passion. Join us to work in an inspiring environment and grow your skills!",
-      "button": "Contact us"
-    },
-    "testimonials": {
-      "title1": "Our customers say"
-    }
+    "hero": {}
   },
   "projectsPage": {
     "metadata": {
       "title": "Latest Sandblasting & Flooring Projects",
       "description": "Stay updated on our recent renovation projects, including sandblasting, flooring, and gardening. See how we bring spaces back to life."
     },
-    "pageHead": {
-      "title1": "Projects",
-      "title2": "Latest Works"
-    },
     "projects": {
-      "title1": "Recent Works",
-      "title2": "Our Portfolio",
-      "readMore": "Learn More",
-      "seeAll": "View More"
+      "readMore": "see web project",
+      "seeAll": "see more"
     }
   },
-  "servicesPage": {
-    "metadata": {
-      "title": "Expert Renovation Services",
-      "description": "Get in touch for professional sandblasting, flooring installation, and gardening solutions tailored to your needs in France and Geneva."
-    },
-    "pageHead": {
-      "title1": "Services",
-      "title2": "What We Offer"
-    },
-    "services": {
-      "title1": "Our Work",
-      "title2": "What We Do",
-      "readMore": "Discover More",
-      "seeAll": "All Services"
-    },
-    "faq": "Common Questions"
-  },
-  "contactPage": {
-    "metadata": {
-      "title": "Contact Geo Renovations",
-      "description": "Reach out to us for consultations or inquiries regarding sandblasting, flooring, and gardening services in France and Geneva."
-    },
-    "pageHead": {
-      "title1": "Contact",
-      "title2": "Get in Touch"
-    },
-    "contactForm": {
-      "title1": "Custom Solutions for Your Needs",
-      "title2": "Always Ready for New Challenges",
-      "title3": "With our expertise in flooring and gardening, we ensure every detail is handled efficiently. Our tailored solutions are designed to exceed expectations and create functional outdoor spaces."
-    },
-    "faq": "Common Questions"
-  },
-  "aboutPage": {
-    "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Book a consultation with Geo Renovations and start transforming your property with our specialized services."
-    },
-    "pageHead": {
-      "title1": "About Us",
-      "title2": "Our Story"
-    },
-    "componentSeven": {
-      "title1": "History of the company",
-      "title2": "Your reliable partner for expert renovation, sandblasting, flooring, and landscaping services."
-    },
-    "ourTeam": {
-      "team": "Team Members"
-    }
-  },
+
   "forms": {
     "contactForm": {
       "head1": "Get in Touch",
@@ -131,20 +39,11 @@
     "title2": "This page does not exist",
     "button": "Go Home"
   },
-  "footer": {
-    "title1": "Contact Us",
-    "title2": "Quick Links",
-    "title3": "Working Hours",
-    "monday": "Monday",
-    "wednsday": "Wednesday",
-    "thursday": "Thursday",
-    "friday": "Friday"
-  },
   "levanidze": {
-    "title1": "Our",
-    "title2": "website",
-    "title3": "and",
-    "title4": "photography",
-    "title5": "provider"
+    "title1": "",
+    "title2": "",
+    "title3": "",
+    "title4": "",
+    "title5": ""
   }
 }

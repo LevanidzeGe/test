@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Projects from "./projectsComponent/Projects";
+import Collection from "./collection/Collection";
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata() {
@@ -12,13 +12,11 @@ export async function generateMetadata() {
 
 // Dynamic server-side rendering function that accepts params
 export default function ProjectsPage() {
-  const t = useTranslations("projectsPage");
+  const t = useTranslations();
   return (
     <div className="fadeOut">
-      <Projects
-        title1={t("projects.title1")}
-        title2={t("projects.title2")}
-        readMore={t("projects.readMore")}
+      <Collection
+        readMore={t("projectsPage.projects.readMore")}
         seeAll={t("projects.seeAll")}
       />
     </div>

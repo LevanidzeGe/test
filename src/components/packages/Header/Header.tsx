@@ -39,7 +39,10 @@ export default function Header() {
             </div>
 
             {/* <LanguageAlphabet /> */}
-            <Link className={styles.loginIcon} href="">
+            <Link
+              className={styles.loginIcon}
+              href="https://levanidze.vercel.app"
+            >
               <MdManageAccounts />
             </Link>
             {/* buurger menu opener - closer */}
