@@ -17,6 +17,10 @@
   gap: 10px;
 }
 
+.levani {
+  color: var(--blue1);
+}
+
 @media (max-width: 480px) {
   .sayHiLeo {
     flex-direction: column;

@@ -2,7 +2,6 @@ import { fetchCollectionIfUpdated } from "../../../../../lib/firebase/getFirebas
 
 import ServerCard from "./card/ServerCard";
 import { collectionRoute2, companyRoute } from "@/Manager/info";
-import Link from "next/link";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "../../../../../lib/firebase/types";
 import { getLocale } from "next-intl/server";
@@ -57,17 +56,16 @@ export default async function Collection({
     : sortedCollection;
 
   return (
-    <div className={` ${!mini && styles.container}`}>
-      <div className={`${!mini && styles.paddingBottom}`}>
-        <h2 className={`heading2 font2 ${styles.title}`}>photography</h2>
-        <div className={styles.collectionWrapper}>
-          {(mini ? paginatedCollection.slice(0, 1) : paginatedCollection).map(
-            (item) => (
-              <ServerCard key={item.id} {...item} readMore={readMore} />
-            )
-          )}
-        </div>
-        {/* {mini && (
+    <div className={`${!mini && styles.paddingBottom}`}>
+      <h2 className={`heading2 font2 ${styles.title}`}>photography projects</h2>
+      <div className={styles.collectionWrapper}>
+        {(mini ? paginatedCollection.slice(0, 1) : paginatedCollection).map(
+          (item) => (
+            <ServerCard key={item.id} {...item} readMore={readMore} />
+          )
+        )}
+      </div>
+      {/* {mini && (
             <Link
               className={` button  button-small ${styles.button} `}
               href={`/${locale}/photography`}
@@ -75,7 +73,6 @@ export default async function Collection({
               {seeAll}
             </Link>
           )} */}
-      </div>
     </div>
   );
 }

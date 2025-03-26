@@ -4,7 +4,7 @@ import { collectionRoute2, companyRoute, companyDomain } from "@/Manager/info";
 import { defaultLocale } from "@/Manager/navigation";
 import { extractCollectionFields } from "../../../../../lib/firebase/types";
 import styles from "./page.module.css";
-import AlbumSlider from "../collection/card/AlbumSlider/AlbumSlider";
+import AlbumSlider from "../collection/AlbumSlider/AlbumSlider";
 
 interface Props {
   params: {

@@ -3,7 +3,6 @@ import Projects from "./projects/collection/Collection";
 import Photography from "./photography/collection/Collection";
 import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
 import Hero from "@/src/components/components/Hero/Hero";
-import SayHi from "@/src/components/packages/ContactForm/SayHi";
 import WhatIDo from "@/src/components/components/WhatIDo/WhatIDo";
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
       />
       <WhatIDo />
       <Levanidze />
-      <SayHi />
     </div>
   );
 }

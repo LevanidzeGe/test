@@ -38,7 +38,7 @@ export default function WhatIDo() {
         <div className={styles.whatIDoWrapper}>
           <div className={styles.h3}>
             <h3 className={`heading2 font2 ${styles.whatI}`}> What I</h3>
-            <h3 className={`heading2 gray7 font2 ${styles.do}`}> do.</h3>
+            <h3 className={`heading2 font2 ${styles.do}`}> do.</h3>
           </div>
           <div className={styles.sections}>
             {sections.map((section, index) => (

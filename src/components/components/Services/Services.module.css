@@ -25,6 +25,15 @@
 }
 
 /************** Individual Card **************/
+.card:nth-child(1) {
+  color: var(--blue1);
+}
+.card:nth-child(2) {
+  color: var(--yellow1);
+}
+.card:nth-child(3) {
+  color: var(--red2);
+}
 .card {
   display: flex;
   justify-content: space-evenly;
@@ -90,7 +99,7 @@
 .card h3 {
   font-size: 20px;
   /* font-weight: 600; */
-  color: rgba(255, 255, 255, 0.95);
+  /* color: rgba(255, 255, 255, 0.95); */
   letter-spacing: 1px;
   /* margin-bottom: 5px; */
 }

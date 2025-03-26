@@ -10,7 +10,7 @@ export default async function SayHi() {
         <div className={styles.sayHiWrapper}>
           <div className={styles.sayHiLeo}>
             <span className={`heading2 font2 gray7`}>Say hi to </span>
-            <span className={`heading2 font2`}>levani</span>
+            <span className={`heading2 font2 ${styles.levani}`}>levani</span>
           </div>
           <p className="header6">
             If you need a designer for your project send me an email.

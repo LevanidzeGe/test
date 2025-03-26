@@ -10,6 +10,9 @@
 .whatIDoWrapper h3 {
   text-align: center;
 }
+.do {
+  color: var(--yellow2);
+}
 
 .whatIDoWrapper img {
   margin: 0 auto;

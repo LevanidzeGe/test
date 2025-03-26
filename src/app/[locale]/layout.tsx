@@ -47,6 +47,7 @@ export async function generateMetadata({
 }
 //fonts
 import { Bebas_Neue, Poppins, Roboto, Shantell_Sans } from "next/font/google";
+import SayHi from "@/src/components/packages/ContactForm/SayHi";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -93,6 +94,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
+          <SayHi />
+
           <Analytics />
         </NextIntlClientProvider>
       </body>
