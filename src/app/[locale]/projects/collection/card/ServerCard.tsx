@@ -1,11 +1,9 @@
-"use client";
-
 import React from "react";
 import styles from "./ServerCard.module.css";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { ReturnTypeOfExtract } from "../../types"; // or define inline
+import { ReturnTypeOfExtract } from "@/lib/firebase/types"; // or define inline
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 export default function ServerCard({
@@ -26,9 +24,11 @@ export default function ServerCard({
   return (
     <div className={styles.mainWrap}>
       <div className={styles.textWrap}>
-        <span className={` gray5 ${styles.date}`}>{noTransDate}</span>
-        <p className="heading2 gray5">{transTag}</p>
-        <h2 className="paragraph gray5">{transTitle}</h2>
+        <span className={` caption-mini gray7  ${styles.date}`}>
+          {noTransDate}
+        </span>
+        <p className="heafing4 gray5">{transTag}</p>
+        <h2 className="heading2 gray7">{transTitle}</h2>
         <div className={styles.spans}>
           {boolOption1 && <span>Web Design</span>}
           {boolOption2 && <span>Next Js</span>}

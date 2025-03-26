@@ -109,9 +109,11 @@
   text-decoration: underline;
 }
 .caption-mini {
-  font-size: 12px;
-  font-weight: 600;
-  font-family: var(--font1);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 10px;
+
+  color: #878787;
 }
 
 /* Breakpoint 1200px */

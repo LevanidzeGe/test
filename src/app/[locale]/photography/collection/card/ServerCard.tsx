@@ -1,13 +1,10 @@
-"use client";
-
 import React from "react";
 import styles from "./ServerCard.module.css";
-import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { ReturnTypeOfExtract } from "../../types"; // or define inline
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { ReturnTypeOfExtract } from "../../../../../../lib/firebase/types";
 import AlbumSlider from "./AlbumSlider/AlbumSlider";
+import { GrBottomCorner } from "react-icons/gr";
 
 export default function ServerCard({
   id,
@@ -30,12 +27,21 @@ export default function ServerCard({
 
       {/* </Link> */}
       <div className={styles.textWrap}>
-        <span className={`gray7  ${styles.date}`}>{noTransDate}</span>
-        <h2 className="heading2 gray7">{transTitle}</h2>
-        <p className="paragraph gray5">{transDescription}</p>
-        <div className={styles.buttonPhoto}>
-          <Link href={`/${locale}/photography/${id}`}>{readMore}</Link>
-        </div>
+        <span className={`gray7 caption-mini  ${styles.date}`}>
+          {noTransDate}
+        </span>
+        <h2 className="heading2 gray5">{transTitle}</h2>
+        <p className="paragraph gray7">{transDescription}</p>
+        <Link
+          href={`/${locale}/photography/${id}`}
+          className={styles.buttonPhoto}
+        >
+          <GrBottomCorner className="svg" />
+          <GrBottomCorner className="svg" />
+          <GrBottomCorner className="svg" />
+          <GrBottomCorner className="svg" />
+          {readMore}
+        </Link>
       </div>
     </div>
   );

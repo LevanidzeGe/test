@@ -1,12 +1,10 @@
 import { Metadata } from "next";
-import { fetchCollectionIfUpdated } from "../getFirebaseData";
+import { fetchCollectionIfUpdated } from "../../../../../lib/firebase/getFirebaseData";
 import { collectionRoute2, companyRoute, companyDomain } from "@/Manager/info";
 import { defaultLocale } from "@/Manager/navigation";
-import { extractCollectionFields } from "../types";
+import { extractCollectionFields } from "../../../../../lib/firebase/types";
 import styles from "./page.module.css";
-import Image from "next/image";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import Link from "next/link";
+import AlbumSlider from "../collection/card/AlbumSlider/AlbumSlider";
 
 interface Props {
   params: {
@@ -72,51 +70,23 @@ export default async function EventDetailsPage({ params }: Props) {
   }
 
   const item = extractCollectionFields(raw, locale);
-  console.log("🈯 Locale in details page:", locale);
-  console.log("🔠 Text1 keys:", Object.keys(raw.transTexts?.text1 || {}));
-  console.log("🈯 Requested locale:", locale);
 
   return (
-    <section className={`section ${styles.eventDetailsWrapper}`}>
-      <div>
-        <div className={styles.container}>
-          <div className={styles.mainWrapper}>
-            <h1 className="header4">{item.transTag}</h1>
-            <div className={styles.textWrapper}>
-              <div>
-                <h3 className="header6 font2">Project Overview</h3>
-                <p className="paragraph">{item.transText1}</p>
-              </div>
-              <div>
-                <h3 className="header6 font2">Innovative Solutions</h3>
-                <p className="paragraph">{item.transText2}</p>
-              </div>
-            </div>
-            <div className={styles.liveButtonWrapper}>
-              {item.noTransLink1 && (
-                <Link
-                  className={`button ${styles.liveButton}`}
-                  href={item.noTransLink1}
-                  target="_blank"
-                >
-                  Preview in browser
-                  <HiOutlineArrowNarrowRight />
-                </Link>
-              )}
-            </div>
-
-            <div className={styles.imageWrapper}>
-              <Image
-                width={1000}
-                height={3000}
-                alt={item.transTitle}
-                src={item.images[1]}
-                title={item.transTitle}
-                priority
-              />
-            </div>
-          </div>
+    <section className={`section`}>
+      <div className={styles.mainWrapper}>
+        <div className={styles.textWrapper}>
+          <span className={`gray7 caption-mini  ${styles.date}`}>
+            {item.noTransDate}
+          </span>
+          <h1 className="heading2 gray3">{item.transTitle}</h1>
+          <p className="paragraph gray5">{item.transDescription}</p>
         </div>
+
+        {item.images && (
+          <div className={styles.albumWrapper}>
+            <AlbumSlider title={item.transTitle} images={item.images} />
+          </div>
+        )}
       </div>
     </section>
   );

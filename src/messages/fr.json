@@ -4,54 +4,22 @@
       "title": "Geo Rénovations - Sablage, Revêtements de Sol & Jardinage",
       "description": "Geo Rénovations est spécialisé dans le sablage, l’enlèvement de peinture sous pression, les revêtements de sol et le jardinage. Situé en France à la frontière de Genève, nous proposons des solutions fiables et abordables pour nos clients en France et à Genève."
     },
-    "hero": {
-      "title1": "Avec nous, la rénovation est facile",
-      "title2": "Sablage, revêtements de sol & jardinage de qualité à prix justes",
-      "button1": "Contact",
-      "button2": "Projets"
-    },
-    "componentOne": {
-      "title2": "Qui sommes-nous",
-      "title3": "Clients satisfaits",
-      "title4": "Années d’expérience",
-      "text1": "Services experts près de Genève depuis 2010",
-      "text2": "Depuis 15 ans, Geo Rénovations est un acteur de confiance dans la rénovation de maisons et d'entreprises. Basés en France près de Genève, nous excellons dans le sablage, les revêtements de sol et le jardinage, garantissant qualité, efficacité et satisfaction client."
-    },
+
     "projects": {
       "title1": "Nos travaux",
       "title2": "Réalisations récentes"
     },
-    "services": {
+    "photography": {
       "title1": "Nos services",
       "title2": "Nos spécialités",
       "readMore": "En savoir plus",
       "seeAll": "Voir tous les travaux"
-    },
-    "componentFive": {
-      "title1": "Adresse",
-      "title2": "Email",
-      "title3": "Appelez-nous"
-    },
-    "componentSix": {
-      "title1": "Rejoignez-nous",
-      "title2": "Notre équipe",
-      "title3": "Nous accueillons toujours des professionnels qualifiés",
-      "text": "Nous croyons en la construction d'une équipe dédiée où chacun apporte son expertise et sa passion. Rejoignez-nous pour travailler dans un environnement inspirant et développer vos compétences !",
-      "button": "Contactez-nous"
-    },
-    "componentSeven": {},
-    "testimonials": {
-      "title1": "Nos clients témoignent"
     }
   },
   "projectsPage": {
     "metadata": {
       "title": "Derniers projets de sablage & revêtements de sol",
       "description": "Restez informé de nos récents projets de rénovation, incluant le sablage, les revêtements de sol et le jardinage. Découvrez comment nous redonnons vie aux espaces."
-    },
-    "pageHead": {
-      "title1": "Projets",
-      "title2": "Nos réalisations"
     },
     "projects": {
       "title1": "Travaux récents",
@@ -60,16 +28,12 @@
       "seeAll": "Voir plus"
     }
   },
-  "servicesPage": {
+  "photographyPage": {
     "metadata": {
       "title": "Services de rénovation professionnelle",
       "description": "Contactez-nous pour des solutions professionnelles de sablage, de revêtements de sol et de jardinage adaptées à vos besoins en France et à Genève."
     },
-    "pageHead": {
-      "title1": "Services",
-      "title2": "Nos prestations"
-    },
-    "services": {
+    "photography": {
       "title1": "Nos prestations",
       "title2": "Ce que nous faisons",
       "readMore": "Découvrir",

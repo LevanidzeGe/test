@@ -4,80 +4,32 @@
   margin: 0 auto;
   text-align: center;
 }
-.imageWrapper {
-  height: 100%;
+.albumWrapper {
   position: relative;
-  margin-top: 20px;
+  max-width: 100vw;
 }
 
 .textWrapper {
-  margin: 0 auto;
   display: flex;
-  text-align: left;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
   width: 100%;
+  margin-bottom: 5%;
 }
 .mainWrapper h1 {
-  color: var(--gray5);
   padding-bottom: 20px;
-}
-.textWrapper div {
-  padding-bottom: 50px;
-  width: 45%;
-}
-.textWrapper div h3 {
-  margin-bottom: 10px;
-  color: var(--gray7);
-  font-weight: 700;
+  padding-top: 10px;
+  min-width: 300px;
+  max-width: 700px;
+  width: max-content;
+  margin: 0 auto;
 }
 
-.liveButtonWrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-.liveButton svg {
-  rotate: -40deg;
-  font-size: 20px;
-  margin-right: -5px;
-  transition: all 0.1s;
-}
-.liveButton:hover svg {
-  transform: translate(8px, 0px);
-}
-
-.imageWrapper {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.272);
-}
-.imageWrapper img {
-  height: 100%;
-  width: 1000px;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 950px) {
-  .textWrapper {
-    flex-direction: column;
-  }
-  .textWrapper div {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
-  }
-
-  .textWrapper div h3 {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 730px) {
-  .mainWrapper {
-    margin-top: 70px;
-  }
-}
-
-@media (max-width: 420px) {
-  .mainWrapper {
-    margin-top: 90px;
-  }
+.mainWrapper p {
+  padding-bottom: 20px;
+  min-width: 300px;
+  max-width: 500px;
+  width: max-content;
+  margin: 0 auto;
 }

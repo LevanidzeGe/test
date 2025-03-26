@@ -2,7 +2,8 @@ import { useTranslations } from "next-intl";
 import Projects from "./projects/collection/Collection";
 import Photography from "./photography/collection/Collection";
 import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
-import Hero from "@/src/components/components/Hero";
+import Hero from "@/src/components/components/Hero/Hero";
+import SayHi from "@/src/components/packages/ContactForm/SayHi";
 
 export default function Home() {
   const t = useTranslations();
@@ -21,6 +22,7 @@ export default function Home() {
         seeAll={t("photographyPage.photography.seeAll")}
         mini
       />
+      <SayHi />
     </div>
   );
 }

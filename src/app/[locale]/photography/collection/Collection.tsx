@@ -1,10 +1,10 @@
-import { fetchCollectionIfUpdated } from "../getFirebaseData";
+import { fetchCollectionIfUpdated } from "../../../../../lib/firebase/getFirebaseData";
 
 import ServerCard from "./card/ServerCard";
 import { collectionRoute2, companyRoute } from "@/Manager/info";
 import Link from "next/link";
 import styles from "./Collection.module.css";
-import { extractCollectionFields } from "../types";
+import { extractCollectionFields } from "../../../../../lib/firebase/types";
 import { getLocale } from "next-intl/server";
 
 export default async function Collection({
@@ -33,8 +33,15 @@ export default async function Collection({
     .filter((item) => !item.itemActive);
 
   const sortedCollection = extractedCollection.sort((a, b) => {
-    const aHasTrue = Object.values(a.boolOption1 || {}).some((v) => v === true);
-    const bHasTrue = Object.values(b.boolOption1 || {}).some((v) => v === true);
+    const aHasTrue =
+      typeof a.boolOption1 === "object"
+        ? Object.values(a.boolOption1 || {}).some((v) => v === true)
+        : a.boolOption1 === true;
+
+    const bHasTrue =
+      typeof b.boolOption1 === "object"
+        ? Object.values(b.boolOption1 || {}).some((v) => v === true)
+        : b.boolOption1 === true;
 
     if (aHasTrue && !bHasTrue) return -1;
     if (!aHasTrue && bHasTrue) return 1;
@@ -60,14 +67,14 @@ export default async function Collection({
               )
             )}
           </div>
-          {mini && (
+          {/* {mini && (
             <Link
               className={` button  button-small ${styles.button} `}
-              href={`/${locale}/projects`}
+              href={`/${locale}/photography`}
             >
               {seeAll}
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </section>

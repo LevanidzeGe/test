@@ -1,10 +1,12 @@
 import "@/src/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/src/components/packages/Header/Header";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { defaultLocale, supportedLocales } from "@/Manager/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { routing } from "@/src/i18n/routing";
+import { SupportedLocale } from "@/src/i18n/routing";
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
@@ -44,7 +46,7 @@ export async function generateMetadata({
   };
 }
 //fonts
-import { Bebas_Neue, Poppins, Roboto } from "next/font/google";
+import { Bebas_Neue, Poppins, Roboto, Shantell_Sans } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -54,6 +56,11 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font1",
+});
+const shantel = Shantell_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font2",
 });
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -66,19 +73,22 @@ interface RootLayoutProps {
   params: { locale: string };
 }
 
-export default async function LangLayout({
+export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: RootLayoutProps) {
-  if (!supportedLocales.includes(locale)) {
-    return redirect(`/${defaultLocale}`);
+  const { locale } = params;
+
+  if (!routing.locales.includes(locale as SupportedLocale)) {
+    notFound();
   }
+
   const messages = await getMessages();
 
   return (
     <html lang={locale || defaultLocale}>
       <body
-        className={` ${bebas.variable} ${poppins.variable} ${poppins.className}    `}
+        className={` ${bebas.variable} ${poppins.variable} ${shantel.variable} ${poppins.className}    `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

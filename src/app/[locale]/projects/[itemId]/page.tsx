@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import { fetchCollectionIfUpdated } from "../getFirebaseData";
+import { fetchCollectionIfUpdated } from "@/lib/firebase/getFirebaseData";
 import { collectionRoute1, companyRoute, companyDomain } from "@/Manager/info";
 import { defaultLocale } from "@/Manager/navigation";
-import { extractCollectionFields } from "../types";
+import { extractCollectionFields } from "@/lib/firebase/types";
 import styles from "./page.module.css";
 import Image from "next/image";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
@@ -72,10 +72,6 @@ export default async function EventDetailsPage({ params }: Props) {
   }
 
   const item = extractCollectionFields(raw, locale);
-  console.log("🈯 Locale in details page:", locale);
-  console.log("🔠 Text1 keys:", Object.keys(raw.transTexts?.text1 || {}));
-  console.log("🈯 Requested locale:", locale);
-
   return (
     <section className={`section ${styles.eventDetailsWrapper}`}>
       <div>

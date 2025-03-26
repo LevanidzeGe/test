@@ -1,5 +1,5 @@
 export const supportedLocales = ["en", "fr", "de", "it"];
-export const defaultLocale = "en";
+export const defaultLocale = supportedLocales[0];
 // export const dynamicPageRoute = "menu"; // [slug]
 // export const fireBaseRoute = "toisondor"; //firebase route
 // export const menuCarPlaceHoldImg =

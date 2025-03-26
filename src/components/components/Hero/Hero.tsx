@@ -8,8 +8,8 @@ import {
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import { companyDomain } from "@/Manager/info";
-import Services from "./Services/Services";
-import SocialMedia from "./SocMedia/SocialMedia";
+import Services from "../Services/Services";
+import SocialMedia from "../SocMedia/SocialMedia";
 
 export default function Hero() {
   return (
