@@ -35,13 +35,13 @@
 
 .loginIcon {
   font-size: 32px;
-  color: var(--gray9);
+  color: var(--gray5);
   display: flex;
   transition: all 0.3s;
 }
 
 .openCloseIcon {
-  color: var(--gray9);
+  color: var(--gray5);
   font-size: 30px;
   cursor: pointer;
   z-index: 100;

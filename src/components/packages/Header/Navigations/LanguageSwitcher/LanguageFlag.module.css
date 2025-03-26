@@ -1,7 +1,7 @@
 .languageSwitcher {
   margin: auto 0;
   margin-left: 10px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .languageDropdown {
@@ -36,8 +36,9 @@
 }
 
 .flags {
-  width: 22px;
-  height: 14px;
+  /* width: 22px; */
+  height: 15px;
+  aspect-ratio: 2 / 1.2;
   border: 0.5px solid var(--gray5);
   object-fit: cover;
 }

@@ -17,13 +17,16 @@
 .paddingBottom {
   padding-bottom: 70px;
 }
+.meCamera {
+  position: absolute;
+  right: 10vw;
+  margin-top: -80px;
+  transform: scaleX(-1);
+  z-index: -1;
+}
 
 @media (max-width: 992px) {
-  .container {
-    padding-top: 50px;
-  }
-
-  .eventsWrapper {
-    flex-direction: column;
+  .meCamera {
+    display: none;
   }
 }

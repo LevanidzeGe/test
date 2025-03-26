@@ -34,8 +34,8 @@ export default function ServerCard({
               <span className={`gray7 caption-mini  ${styles.date}`}>
                 {noTransDate}
               </span>
-              <h2 className="heading3 gray5">{transTitle}</h2>
-              <p className="paragraph gray7">{transDescription}</p>
+              <h2 className="heading3 gray3">{transTitle}</h2>
+              <p className="paragraph gray5">{transDescription}</p>
               <Link
                 href={`/${locale}/photography/${id}`}
                 className={styles.buttonPhoto}

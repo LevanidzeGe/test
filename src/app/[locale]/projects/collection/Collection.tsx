@@ -4,6 +4,8 @@ import { collectionRoute1, companyRoute } from "@/Manager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/lib/firebase/types";
 import { getLocale } from "next-intl/server";
+import Image from "next/image";
+import { meMonitor } from "@/public/image";
 
 export default async function Collection({
   mini,
@@ -53,6 +55,13 @@ export default async function Collection({
     <div className={` ${!mini && styles.container}`}>
       <div className={`${!mini && styles.paddingBottom}`}>
         <h2 className={`heading2 font2 ${styles.title}`}>web projects</h2>
+        <Image
+          src={meMonitor}
+          width={150}
+          height={200}
+          alt="levanidze cartoon"
+          className={styles.meMonitor}
+        />
         <div className={styles.collectionWrapper}>
           {(mini ? paginatedCollection.slice(0, 3) : paginatedCollection).map(
             (item) => (
