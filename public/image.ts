@@ -8,8 +8,8 @@ import heroScreens from "@/public/images/hero/responsive-screens.png";
 import meBuble from "@/public/images/hero/me-cartoon-bulb.png";
 import meCamera from "@/public/images/hero/meCamera.png";
 import meCactus from "@/public/images/hero/meCactusComputer.png";
-import meMonitor from "@/public/images/meCartoons/meMonitor.png";
-import meCamera2 from "@/public/images/meCartoons/meCamera.png";
+import meMonitor2 from "@/public/images/meCartoons/meMonitor2.png";
+import meCamera2 from "@/public/images/meCartoons/meCamera2.png";
 
 //assets
 import logo from "@/public/images/logo.png";
@@ -30,7 +30,7 @@ export {
   monitor,
   development,
   meCactus,
-  meMonitor,
+  meMonitor2,
   meCamera2,
 };
 //
