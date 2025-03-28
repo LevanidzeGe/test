@@ -132,8 +132,8 @@ export const plans: Plan[] = [
         fr: "Hébergement & domaine",
       }),
       available(<FaTools />, {
-        en: "2h/month maintenance included",
-        fr: "2h/mois de maintenance incluse",
+        en: "Ongoing maintenance",
+        fr: "maintenance",
       }),
     ],
     popular: true,
