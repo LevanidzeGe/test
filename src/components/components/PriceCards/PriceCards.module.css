@@ -1,0 +1,172 @@
+.mainWrapper {
+  position: relative;
+  margin: 0;
+}
+
+/* Background Blur */
+.background {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: blur(60px);
+  transform: translate(0, -50%);
+  top: 60%;
+}
+/* PriceCards.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  cursor: default;
+}
+
+.card:nth-child(2) {
+  scale: 1.15;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.735);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 40, 40, 0.35),
+    rgba(15, 15, 15, 0.55)
+  );
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(149, 149, 149, 0.37);
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  position: relative;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  scale: 1.02;
+}
+.card:hover:nth-child(2) {
+  scale: 1.17;
+}
+
+.svgLogo {
+  position: absolute;
+  top: 50px;
+  right: -150px;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.svgLight {
+  filter: blur(60px);
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+
+.popular {
+}
+
+.popularMark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--blue2);
+  padding: 4px 15px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+.blue {
+  color: var(--blue1);
+}
+.yellow {
+  color: var(--yellow1);
+}
+.red {
+  color: var(--red2);
+}
+
+.price {
+  margin-bottom: 10px;
+  color: var(--gray3);
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}
+
+.mainFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mainFeatures li {
+  display: flex;
+  gap: 15px;
+  /* align-items: center; */
+}
+.mainFeatures svg {
+  font-size: 17px;
+  margin-bottom: -3px;
+}
+
+.dividerWrapper {
+  overflow: hidden;
+  border-radius: 40px;
+  margin: 20px auto;
+  width: 50%;
+}
+.divider1 {
+  height: 1px;
+  background-color: rgb(15, 15, 15);
+}
+.divider2 {
+  height: 1px;
+  background-color: rgba(37, 37, 37, 0.7);
+}
+.divider3 {
+  height: 1px;
+  background-color: rgb(62, 62, 62);
+}
+.divider4 {
+  height: 1px;
+  background-color: rgba(31, 31, 31, 0.7);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.features li {
+  display: flex;
+  gap: 15px;
+}
+
+.features svg {
+}
+
+.button {
+  margin-top: 30px;
+  width: 100%;
+}

@@ -52,11 +52,11 @@ import SayHi from "@/src/components/packages/ContactForm/SayHi";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font1",
 });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
-  variable: "--font1",
 });
 const shantel = Shantell_Sans({
   subsets: ["latin"],
@@ -89,7 +89,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale || defaultLocale}>
       <body
-        className={` ${bebas.variable} ${poppins.variable} ${shantel.variable} ${poppins.className}    `}
+        className={` ${bebas.variable} ${roboto.variable} ${shantel.variable} ${poppins.className}    `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

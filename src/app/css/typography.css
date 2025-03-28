@@ -95,20 +95,15 @@
   font-weight: 700;
 }
 .caption {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 150%;
   transition: all 0.3s;
-}
-.caption:hover {
-  text-decoration: underline;
 }
 .caption-mini {
   font-weight: 800;
   font-size: 14px;
   letter-spacing: 10px;
-
-  color: #878787;
 }
 
 /* Breakpoint 1200px */
