@@ -1,149 +1,56 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Renovations - Sabbiatura, Pavimentazione & Giardinaggio",
-      "description": "Geo Renovations è specializzata in sabbiatura, rimozione di vernice a pressione, pavimentazione e giardinaggio. Situata in Francia al confine con Ginevra, offriamo soluzioni affidabili e convenienti per i nostri clienti in Francia e a Ginevra."
+      "title": "Levanidze – Web designer e fotografo a Ginevra",
+      "description": "Ciao, sono Levani. Sono un designer UX/UI, sviluppatore Webflow/Next.js e fotografo professionista con oltre 13 anni di esperienza. Aiuto le aziende, soprattutto i ristoranti a Ginevra e in tutta la Svizzera, a migliorare la loro presenza online attraverso siti moderni e immagini di qualità."
     },
-    "hero": {
-      "title1": "Con noi, la ristrutturazione è facile",
-      "title2": "Sabbiatura, pavimentazione & giardinaggio di qualità a prezzi equi",
-      "button1": "Contatto",
-      "button2": "Progetti"
-    },
-    "componentOne": {
-      "title2": "Chi siamo",
-      "title3": "Clienti soddisfatti",
-      "title4": "Anni di esperienza",
-      "text1": "Servizi esperti vicino a Ginevra dal 2010",
-      "text2": "Da 15 anni, Geo Ristrutturazioni è un nome di fiducia nella ristrutturazione di case e aziende. Con sede in Francia vicino a Ginevra, eccelliamo nella sabbiatura, nella pavimentazione e nel giardinaggio, garantendo qualità, efficienza e soddisfazione del cliente."
-    },
-    "projects": {
-      "title1": "i nostri lavori",
-      "title2": "progetti recenti"
-    },
-    "services": {
-      "title1": "I nostri servizi",
-      "title2": "Le nostre specialità",
-      "readMore": "Scopri di più",
-      "seeAll": "Vedi tutti i lavori"
-    },
-    "componentFive": {
-      "title1": "Indirizzo",
-      "title2": "Email",
-      "title3": "Chiamaci"
-    },
-    "componentSix": {
-      "title1": "Unisciti a noi",
-      "title2": "Il nostro team",
-      "title3": "Accogliamo sempre professionisti qualificati",
-      "text": "Crediamo nella costruzione di un team dedicato in cui ognuno contribuisce con la propria esperienza e passione. Unisciti a noi per lavorare in un ambiente stimolante e sviluppare le tue competenze!",
-      "button": "Contattaci"
-    },
-    "componentSeven": {},
-    "testimonials": {
-      "title1": "Cosa dicono i nostri clienti"
-    }
+    "hero": {}
   },
   "projectsPage": {
     "metadata": {
-      "title": "Ultimi progetti di sabbiatura & pavimentazione",
-      "description": "Rimani aggiornato sui nostri ultimi progetti di ristrutturazione, tra cui sabbiatura, pavimentazione e giardinaggio. Scopri come trasformiamo gli spazi."
-    },
-    "pageHead": {
-      "title1": "Progetti",
-      "title2": "Le nostre realizzazioni"
+      "title": "Ultimi progetti web e fotografici a Ginevra",
+      "description": "Scopri i progetti più recenti di siti web e fotografia professionale per ristoranti e aziende in Svizzera. Qualità, design e visibilità online per il tuo business."
     },
     "projects": {
-      "title1": "Lavori recenti",
-      "title2": "Il nostro portfolio",
-      "readMore": "Scopri di più",
-      "seeAll": "Vedi altro"
+      "readMore": "Vedi progetto",
+      "seeAll": "Vedi tutti"
     }
   },
-  "servicesPage": {
+  "photographyPage": {
     "metadata": {
-      "title": "Servizi di ristrutturazione professionale",
-      "description": "Contattaci per soluzioni professionali di sabbiatura, pavimentazione e giardinaggio su misura per le tue esigenze in Francia e a Ginevra."
+      "title": "Progetti fotografici – Ginevra e Svizzera",
+      "description": "Servizi fotografici professionali per ristoranti, aziende e marchi. Guarda gli ultimi lavori realizzati a Ginevra e in tutta la Svizzera."
     },
-    "pageHead": {
-      "title1": "Servizi",
-      "title2": "Cosa offriamo"
-    },
-    "services": {
-      "title1": "Le nostre prestazioni",
-      "title2": "Cosa facciamo",
-      "readMore": "Scopri",
-      "seeAll": "Tutti i servizi"
-    },
-    "faq": "Domande frequenti"
-  },
-  "contactPage": {
-    "metadata": {
-      "title": "Contatta Geo Ristrutturazioni",
-      "description": "Contattaci per una consulenza o qualsiasi richiesta sui nostri servizi di sabbiatura, pavimentazione e giardinaggio in Francia e a Ginevra."
-    },
-    "pageHead": {
-      "title1": "Contatto",
-      "title2": "Mettiti in contatto"
-    },
-    "contactForm": {
-      "title1": "Soluzioni su misura per le tue esigenze",
-      "title2": "Sempre pronti per nuove sfide",
-      "title3": "Con la nostra esperienza in pavimentazione e giardinaggio, ci assicuriamo che ogni dettaglio venga gestito in modo efficiente. Le nostre soluzioni personalizzate sono progettate per superare le aspettative e creare spazi funzionali."
-    },
-    "faq": "Domande frequenti"
-  },
-  "aboutPage": {
-    "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Prenota una consulenza con Geo Renovations e inizia a trasformare la tua proprietà con i nostri servizi specializzati."
-    },
-    "pageHead": {
-      "title1": "Chi siamo",
-      "title2": "La nostra storia"
-    },
-    "componentSeven": {
-      "title1": "Storia dell'azienda",
-      "title2": "Il tuo partner affidabile per ristrutturazioni esperte, sabbiatura, pavimentazione e paesaggistica."
-    },
-    "ourTeam": {
-      "team": "Membri del team"
+    "photography": {
+      "readMore": "Vedi progetto",
+      "seeAll": "Vedi tutti"
     }
   },
   "contactForm": {
-    "head1": "Contattaci",
+    "head1": "Contattami",
     "head2": "Richiedi un preventivo",
     "name": "Nome completo",
     "email": "Email",
     "phone": "Telefono",
     "date": "Data",
     "time": "Ora",
-    "quantity": "Numero di stanze",
-    "message": "Inserisci qui la tua richiesta",
+    "quantity": "Numero di ambienti",
+    "message": "Scrivi la tua richiesta qui",
     "button": "Invia",
     "send": "Invia richiesta",
-    "thankYou": "Grazie per averci contattato!",
-    "comfirmation": "Ti risponderemo al più presto."
+    "thankYou": "Grazie per avermi contattato!",
+    "comfirmation": "Risponderò il prima possibile."
   },
   "notFoundPage": {
     "title1": "Pagina non trovata",
     "title2": "Questa pagina non esiste",
     "button": "Torna alla home"
   },
-  "footer": {
-    "title1": "Contattaci",
-    "title2": "Link rapidi",
-    "title3": "Orari di apertura",
-    "monday": "Lunedì",
-    "wednsday": "Mercoledì",
-    "thursday": "Giovedì",
-    "friday": "Venerdì"
-  },
   "levanidze": {
-    "title1": "Il nostro",
-    "title2": "sito web",
-    "title3": "e",
-    "title4": "fotografia",
-    "title5": "fornitore"
+    "title1": "Ciao! Sono Levani.",
+    "title2": "UX/UI designer, sviluppatore Webflow/Next.js e fotografo",
+    "title3": "Creo siti moderni, eleganti e facili da usare su ogni dispositivo.",
+    "title4": "Fotografia a Ginevra",
+    "title5": "13+ anni di esperienza & vincitore della Golden Camera (FEP 2017)"
   }
 }

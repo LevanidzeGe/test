@@ -1,32 +1,41 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Renovations - Sandblasting, Flooring & Gardening",
-      "description": "Geo Renovations specializes in sandblasting, air pressure paint removal, flooring, and gardening services. Located in France near the Geneva border, we provide reliable and affordable solutions for clients in both France and Geneva."
+      "title": "Levani Levanidze – Web Developer & Photographer in Switzerland",
+      "description": "Boost your online presence with Levani – expert in Webflow/Next.js websites and professional photography. Serving businesses across Geneva and Switzerland."
     },
-    "hero": {}
+    "hero": {
+      "intro": "Hi, I'm Levani.",
+      "headline": "I design user-friendly websites and take professional photographs for businesses in Switzerland.",
+      "cta": "Get in touch"
+    },
+    "services": {
+      "title": "Our Services",
+      "web": "Websites",
+      "photo": "Photography",
+      "branding": "Branding"
+    }
   },
   "projectsPage": {
     "metadata": {
-      "title": "Latest Sandblasting & Flooring Projects",
-      "description": "Stay updated on our recent renovation projects, including sandblasting, flooring, and gardening. See how we bring spaces back to life."
+      "title": "Latest Web Design & Photography Projects",
+      "description": "Explore recent website and photography projects by Levani. Modern, responsive, and tailored for businesses in Switzerland."
     },
     "projects": {
-      "readMore": "see web project",
-      "seeAll": "see more"
+      "readMore": "See project",
+      "seeAll": "See more"
     }
   },
   "photographyPage": {
     "metadata": {
-      "title": "Latest Sandblasting & Flooring Projects",
-      "description": "Stay updated on our recent renovation projects, including sandblasting, flooring, and gardening. See how we bring spaces back to life."
+      "title": "Professional Photography in Geneva & Switzerland",
+      "description": "Levani offers high-end business photography across Geneva and Switzerland. Enhance your website and branding with impactful visuals."
     },
     "photography": {
-      "readMore": "see project",
-      "seeAll": "see more"
+      "readMore": "See gallery",
+      "seeAll": "See more"
     }
   },
-
   "contactForm": {
     "head1": "Get in Touch",
     "head2": "Request a Quote",
@@ -48,10 +57,10 @@
     "button": "Go Home"
   },
   "levanidze": {
-    "title1": "",
-    "title2": "",
-    "title3": "",
-    "title4": "",
-    "title5": ""
+    "title1": "Modern, stylish websites",
+    "title2": "Responsive and user-friendly on any device",
+    "title3": "Clean code using Webflow or Next.js",
+    "title4": "Professional photography to enhance your website",
+    "title5": "Winner of the Golden Camera Award (2017)"
   }
 }

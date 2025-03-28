@@ -1,113 +1,56 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Rénovations - Sablage, Revêtements de Sol & Jardinage",
-      "description": "Geo Rénovations est spécialisé dans le sablage, l’enlèvement de peinture sous pression, les revêtements de sol et le jardinage. Situé en France à la frontière de Genève, nous proposons des solutions fiables et abordables pour nos clients en France et à Genève."
+      "title": "Levanidze - Créateur de sites Web & Photographe à Genève",
+      "description": "Je suis Levani, développeur Webflow/Next.js et photographe professionnel avec plus de 13 ans d'expérience. J'aide les entreprises, en particulier les restaurants à Genève et en Suisse, à améliorer leur présence en ligne grâce à des sites modernes et des photos professionnelles."
     },
-
-    "projects": {
-      "title1": "Nos travaux",
-      "title2": "Réalisations récentes"
-    },
-    "photography": {
-      "title1": "Nos services",
-      "title2": "Nos spécialités",
-      "readMore": "En savoir plus",
-      "seeAll": "Voir tous les travaux"
-    }
+    "hero": {}
   },
   "projectsPage": {
     "metadata": {
-      "title": "Derniers projets de sablage & revêtements de sol",
-      "description": "Restez informé de nos récents projets de rénovation, incluant le sablage, les revêtements de sol et le jardinage. Découvrez comment nous redonnons vie aux espaces."
+      "title": "Derniers Projets Web & Photos à Genève",
+      "description": "Découvrez nos derniers projets de création de sites web et de photographie à Genève et en Suisse. Qualité, design, performance."
     },
     "projects": {
-      "title1": "Travaux récents",
-      "title2": "Notre portfolio",
-      "readMore": "En savoir plus",
-      "seeAll": "Voir plus"
+      "readMore": "voir projet web",
+      "seeAll": "voir plus"
     }
   },
   "photographyPage": {
     "metadata": {
-      "title": "Services de rénovation professionnelle",
-      "description": "Contactez-nous pour des solutions professionnelles de sablage, de revêtements de sol et de jardinage adaptées à vos besoins en France et à Genève."
+      "title": "Photographe à Genève - Projets Récents",
+      "description": "Découvrez les projets récents de photographie professionnelle pour les entreprises, restaurants, et marques locales à Genève et en Suisse."
     },
     "photography": {
-      "title1": "Nos prestations",
-      "title2": "Ce que nous faisons",
-      "readMore": "Découvrir",
-      "seeAll": "Tous les services"
-    },
-    "faq": "Questions fréquentes"
-  },
-  "contactPage": {
-    "metadata": {
-      "title": "Contactez Geo Rénovations",
-      "description": "Contactez-nous pour une consultation ou toute demande concernant nos services de sablage, revêtements de sol et jardinage en France et à Genève."
-    },
-    "pageHead": {
-      "title1": "Contact",
-      "title2": "Nous contacter"
-    },
-    "contactForm": {
-      "title1": "Solutions sur mesure pour vos besoins",
-      "title2": "Toujours prêts pour de nouveaux défis",
-      "title3": "Avec notre expertise en revêtements de sol et jardinage, nous nous assurons que chaque détail est pris en charge efficacement. Nos solutions personnalisées sont conçues pour dépasser vos attentes et créer des espaces fonctionnels."
-    },
-    "faq": "Questions fréquentes"
-  },
-  "aboutPage": {
-    "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Réservez une consultation avec Geo Renovations et commencez à transformer votre propriété avec nos services spécialisés."
-    },
-    "pageHead": {
-      "title1": "À propos de nous",
-      "title2": "Notre histoire"
-    },
-    "componentSeven": {
-      "title1": "Histoire de l'entreprise",
-      "title2": "Votre partenaire de confiance pour des rénovations expertes, le sablage, les revêtements de sol et l'aménagement paysager."
-    },
-    "ourTeam": {
-      "team": "Membres de l'équipe"
+      "readMore": "voir projet",
+      "seeAll": "voir plus"
     }
   },
   "contactForm": {
-    "head1": "Nous contacter",
+    "head1": "Contactez-moi",
     "head2": "Demander un devis",
     "name": "Nom complet",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "Téléphone",
     "date": "Date",
     "time": "Heure",
     "quantity": "Nombre de pièces",
     "message": "Votre demande ici",
     "button": "Envoyer",
-    "send": "Envoyer la demande",
-    "thankYou": "Merci de nous avoir contactés !",
-    "comfirmation": "Nous vous répondrons dès que possible."
+    "send": "Soumettre la demande",
+    "thankYou": "Merci pour votre message !",
+    "comfirmation": "Je vous répondrai dès que possible."
   },
   "notFoundPage": {
-    "title1": "Page non trouvée",
-    "title2": "Cette page n’existe pas",
+    "title1": "Page introuvable",
+    "title2": "Cette page n'existe pas",
     "button": "Retour à l'accueil"
   },
-  "footer": {
-    "title1": "Contactez-nous",
-    "title2": "Liens rapides",
-    "title3": "Horaires d'ouverture",
-    "monday": "Lundi",
-    "wednsday": "Mercredi",
-    "thursday": "Jeudi",
-    "friday": "Vendredi"
-  },
   "levanidze": {
-    "title1": "Notre",
-    "title2": "site web",
-    "title3": "et",
-    "title4": "photographie",
-    "title5": "fournisseur"
+    "title1": "Bonjour. Je suis Levani.",
+    "title2": "Designer UX/UI, développeur Webflow/Next.js, photographe",
+    "title3": "Je conçois des sites web modernes, responsives et sur mesure.",
+    "title4": "Photographie à Genève",
+    "title5": "Plus de 13 ans d’expérience, gagnant de la Golden Camera par la FEP (2017)."
   }
 }
