@@ -7,6 +7,7 @@ import {
   FaTools,
   FaServer,
   FaCalendarCheck,
+  FaTimesCircle,
 } from "react-icons/fa";
 import { supportedLocales } from "@/Manager/navigation";
 
@@ -15,225 +16,170 @@ export type Locale = (typeof supportedLocales)[number];
 export interface Feature {
   text: Record<Locale, string>;
   icon: JSX.Element;
+  available: boolean;
 }
 
 export interface Plan {
+  id: string;
   name: Record<Locale, string>;
-  price?: string; // Made optional to accommodate plans with hidden prices
+  price?: string;
+  salePrice?: string;
   subtitle: Record<Locale, string>;
-  main: Feature[]; // Core offerings of the plan
-  features: Feature[]; // Additional features included
+  main: Feature[];
+  features: Feature[];
   popular: boolean;
 }
 
+const unavailable = (text: Record<Locale, string>): Feature => ({
+  text,
+  icon: <FaTimesCircle color="var(--red1)" />,
+  available: false,
+});
+
+const available = (
+  icon: JSX.Element,
+  text: Record<Locale, string>
+): Feature => ({
+  icon,
+  text,
+  available: true,
+});
+
 export const plans: Plan[] = [
   {
-    name: {
-      en: "Starter",
-      fr: "Débutant",
-    },
+    id: "starter",
+    name: { en: "Starter", fr: "Débutant" },
     price: "CHF 1,200",
+    salePrice: "CHF 800",
     subtitle: {
       en: "Great for small businesses starting out",
       fr: "Idéal pour les petites entreprises débutantes",
     },
     main: [
-      {
-        text: {
-          en: "Pre-created website",
-          fr: "Site web basé sur un modèle",
-        },
-        icon: <FaEdit />,
-      },
-      {
-        text: {
-          en: "2 languages support",
-          fr: "Support multilingue",
-        },
-        icon: <FaGlobe />,
-      },
-      {
-        text: {
-          en: "1 collection management",
-          fr: "1 gestion de collection",
-        },
-        icon: <FaProjectDiagram />,
-      },
+      available(<FaEdit />, {
+        en: "Pre-created website",
+        fr: "Site web préconçu",
+      }),
+      available(<FaGlobe />, {
+        en: "2 languages support",
+        fr: "Support en 2 langues",
+      }),
+
+      unavailable({ en: "Onsite photographer", fr: "Photographe sur site" }),
     ],
     features: [
-      {
-        text: {
-          en: "Blog/News/Project page",
-          fr: "Page Blog/Actualités/Projets",
-        },
-        icon: <FaCogs />,
-      },
-      {
-        text: {
-          en: "Booking/contact form",
-          fr: "Formulaire de réservation/contact",
-        },
-        icon: <FaCalendarCheck />,
-      },
-      {
-        text: {
-          en: "Hosting & domain setup",
-          fr: "Hébergement & configuration du domaine",
-        },
-        icon: <FaServer />,
-      },
-      {
-        text: {
-          en: "Ongoing maintenance",
-          fr: "Maintenance continue",
-        },
-        icon: <FaTools />,
-      },
+      available(<FaProjectDiagram />, {
+        en: "1 collection management",
+        fr: "1 gestion de collection",
+      }),
+      available(<FaCogs />, {
+        en: "Blog/News/Project page",
+        fr: "Page Blog/Actualités/Projets",
+      }),
+      available(<FaCalendarCheck />, {
+        en: "Booking/contact form",
+        fr: "Formulaire de contact/réservation",
+      }),
+      available(<FaServer />, {
+        en: "Hosting & domain setup",
+        fr: "Hébergement & domaine",
+      }),
+      available(<FaTools />, {
+        en: "Ongoing maintenance",
+        fr: "Maintenance continue",
+      }),
     ],
     popular: false,
   },
   {
-    name: {
-      en: "Pro",
-      fr: "Pro",
-    },
-    // Price is intentionally omitted to keep it hidden
+    id: "pro",
+    name: { en: "Pro", fr: "Pro" },
     price: "CHF 2,200",
+    salePrice: "CHF 1,500",
     subtitle: {
       en: "Custom design with professional photography",
       fr: "Design personnalisé avec photographie professionnelle",
     },
     main: [
-      {
-        text: {
-          en: "Custom website design",
-          fr: "Design de site web personnalisé",
-        },
-        icon: <FaEdit />,
-      },
-      {
-        text: {
-          en: "Multilingual support",
-          fr: "Support multilingue",
-        },
-        icon: <FaGlobe />,
-      },
-      {
-        text: {
-          en: "Onsite photography in Geneva (20+ photos)",
-          fr: "Photographie sur site à Genève (20+ photos)",
-        },
-        icon: <FaCamera />,
-      },
+      available(<FaEdit />, {
+        en: "Custom website design",
+        fr: "Design de site personnalisé",
+      }),
+      available(<FaGlobe />, {
+        en: "Multilingual support",
+        fr: "Support multilingue",
+      }),
+      available(<FaCamera />, {
+        en: "Onsite photographer 4hr",
+        fr: "Photographe sur site 4h",
+      }),
     ],
     features: [
-      {
-        text: {
-          en: "2 collection management dashboard",
-          fr: "2 tableau de bord de gestion de collection",
-        },
-        icon: <FaProjectDiagram />,
-      },
-      {
-        text: {
-          en: "Blog/News/Project page",
-          fr: "Page Blog/Actualités/Projets",
-        },
-        icon: <FaCogs />,
-      },
-      {
-        text: {
-          en: "Booking/contact form",
-          fr: "Formulaire de réservation/contact",
-        },
-        icon: <FaCalendarCheck />,
-      },
-      {
-        text: {
-          en: "Hosting & domain setup",
-          fr: "Hébergement & configuration du domaine",
-        },
-        icon: <FaServer />,
-      },
-      {
-        text: {
-          en: "2h/month maintenance included",
-          fr: "2h/mois de maintenance incluse",
-        },
-        icon: <FaTools />,
-      },
+      available(<FaProjectDiagram />, {
+        en: "2 collection management dashboards",
+        fr: "2 tableaux de bord",
+      }),
+      available(<FaCogs />, {
+        en: "Blog/News/Project page",
+        fr: "Page Blog/Actualités/Projets",
+      }),
+      available(<FaCalendarCheck />, {
+        en: "Booking/contact form",
+        fr: "Formulaire de contact/réservation",
+      }),
+      available(<FaServer />, {
+        en: "Hosting & domain setup",
+        fr: "Hébergement & domaine",
+      }),
+      available(<FaTools />, {
+        en: "2h/month maintenance included",
+        fr: "2h/mois de maintenance incluse",
+      }),
     ],
     popular: true,
   },
   {
-    name: {
-      en: "Elite",
-      fr: "Élite",
-    },
-    price: "Contact us",
+    id: "elite",
+    name: { en: "Elite", fr: "Élite" },
     subtitle: {
-      en: "Advanced features with double management dashboards",
-      fr: "Fonctionnalités avancées avec doubles tableaux de bord de gestion",
+      en: "Advanced features and premium customization",
+      fr: "Fonctionnalités avancées et personnalisation premium",
     },
     main: [
-      {
-        text: {
-          en: "Fully custom website design",
-          fr: "Design de site web entièrement personnalisé",
-        },
-        icon: <FaEdit />,
-      },
-      {
-        text: {
-          en: "Multilingual support",
-          fr: "Support multilingue",
-        },
-        icon: <FaGlobe />,
-      },
-      {
-        text: {
-          en: "Onsite photography in Geneva (40+ photos)",
-          fr: "Photographie sur site à Genève (40+ photos)",
-        },
-        icon: <FaCamera />,
-      },
+      available(<FaEdit />, {
+        en: "Fully custom website design",
+        fr: "Design entièrement personnalisé",
+      }),
+      available(<FaGlobe />, {
+        en: "Unlimited multilingual support",
+        fr: "Support multilingue",
+      }),
+      available(<FaCamera />, {
+        en: "Onsite photographer",
+        fr: "hotographe sur site",
+      }),
     ],
     features: [
-      {
-        text: {
-          en: " collection management dashboards",
-          fr: " tableaux de bord de gestion de collection",
-        },
-        icon: <FaProjectDiagram />,
-      },
-      {
-        text: {
-          en: "Blog/News/Project page",
-          fr: "Page Blog/Actualités/Projets",
-        },
-        icon: <FaCogs />,
-      },
-      {
-        text: {
-          en: "Booking/contact form",
-          fr: "Formulaire de réservation/contact",
-        },
-        icon: <FaCalendarCheck />,
-      },
-      {
-        text: {
-          en: "Hosting & domain setup",
-          fr: "Hébergement & configuration du domaine",
-        },
-        icon: <FaServer />,
-      },
-      {
-        text: {
-          en: "4h/month maintenance included",
-          fr: "4h/mois de maintenance incluse",
-        },
-        icon: <FaTools />,
-      },
+      available(<FaProjectDiagram />, {
+        en: "Multiple dashboards",
+        fr: "Tableaux de bord multiples",
+      }),
+      available(<FaCogs />, {
+        en: "Blog/News/Project page",
+        fr: "Page Blog/Actualités/Projets",
+      }),
+      available(<FaCalendarCheck />, {
+        en: "Booking/contact form",
+        fr: "Formulaire de contact/réservation",
+      }),
+      available(<FaServer />, {
+        en: "Hosting & domain setup",
+        fr: "Hébergement & domaine",
+      }),
+      available(<FaTools />, {
+        en: "month maintenance included",
+        fr: "mois de maintenance incluse",
+      }),
     ],
     popular: false,
   },

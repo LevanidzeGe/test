@@ -19,27 +19,20 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
   flex-wrap: wrap;
-  margin-top: 150px;
+  margin-top: 100px;
   cursor: default;
 }
 
-.card:nth-child(2) {
-  scale: 1.15;
-}
 .card {
-  background-color: rgba(0, 0, 0, 0.735);
+  background-color: rgba(2, 18, 25, 0.656);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   padding: 25px;
   border-radius: 15px;
-  background: linear-gradient(
-    135deg,
-    rgba(40, 40, 40, 0.35),
-    rgba(15, 15, 15, 0.55)
-  );
   backdrop-filter: blur(50px);
   border: 1px solid rgba(149, 149, 149, 0.37);
   transition: all 0.3s ease-in-out;
@@ -48,13 +41,12 @@
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  margin: 40px 0;
 }
-
-.card:hover {
-  scale: 1.02;
-}
-.card:hover:nth-child(2) {
-  scale: 1.17;
+.card:nth-child(2) {
+  padding: 40px;
+  width: 340px;
+  margin: 0;
 }
 
 .svgLogo {
@@ -75,42 +67,38 @@
   width: 300px;
   height: 300px;
   transform: translate(-50%, -50%);
-  opacity: 0.2;
-}
-
-.popular {
-}
-
-.popularMark {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: var(--blue2);
-  padding: 4px 15px;
-  border-radius: 4px;
-  z-index: 2;
+  opacity: 0.3;
 }
 
 .title {
   margin-bottom: 20px;
 }
-.blue {
-  color: var(--blue1);
-}
-.yellow {
-  color: var(--yellow1);
-}
-.red {
-  color: var(--red2);
-}
 
 .price {
   margin-bottom: 10px;
   color: var(--gray3);
+  position: relative;
+}
+.price span {
+  position: absolute;
+  width: 120px;
+  height: 8px;
+  background-color: red;
+  opacity: 0.8;
+  left: 0;
+  top: 8px;
+  transform: rotate(-7deg);
+}
+.card:nth-child(1) > div > .price span {
+  background-color: var(--blue2);
+}
+.card:nth-child(2) > div > .price span {
+  background-color: var(--yellow2);
 }
 
 .subtitle {
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 .mainFeatures {
@@ -169,4 +157,14 @@
 .button {
   margin-top: 30px;
   width: 100%;
+}
+
+.blue {
+  color: var(--blue1);
+}
+.yellow {
+  color: var(--yellow1);
+}
+.red {
+  color: var(--red2);
 }

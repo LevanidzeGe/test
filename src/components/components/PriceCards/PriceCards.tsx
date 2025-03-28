@@ -8,7 +8,6 @@ import logoBlue from "./blue-logo.svg";
 import logoYellow from "./yellow-logo.svg";
 import logoRed from "./red-logo.svg";
 import logo from "./logo.svg";
-
 export default async function PricingCards() {
   const locale = await getLocale();
 
@@ -27,7 +26,7 @@ export default async function PricingCards() {
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`shadow5  ${styles.card} ${
+                className={`shadow5 lift ${styles.card} ${
                   plan.popular ? styles.popular : ""
                 }`}
               >
@@ -47,11 +46,6 @@ export default async function PricingCards() {
                   height={100}
                   className={styles.svgLight}
                 />
-                {plan.popular && (
-                  <span className={`heading5 font2 ${styles.popularMark}`}>
-                    Most Popular
-                  </span>
-                )}
                 <h3
                   className={`heading3 font2 ${styles.title} ${
                     index === 0
@@ -63,8 +57,26 @@ export default async function PricingCards() {
                 >
                   {plan.name[locale]}
                 </h3>
-                {plan.price && (
-                  <p className={`heading3 ${styles.price}`}>{plan.price}</p>
+                {plan.price ? (
+                  <div>
+                    <p className={`heading3 ${styles.price}`}>
+                      {plan.price}
+                      <span></span>
+                    </p>
+                    <p
+                      className={`heading5 ${styles.price} ${
+                        index === 0
+                          ? styles.blue
+                          : index === 1
+                          ? styles.yellow
+                          : styles.red
+                      }`}
+                    >
+                      {plan.salePrice}
+                    </p>
+                  </div>
+                ) : (
+                  <p className={`heading3 ${styles.price}`}>Contact us</p>
                 )}
                 <p className={`gray3 ${styles.subtitle}`}>
                   {plan.subtitle[locale]}
