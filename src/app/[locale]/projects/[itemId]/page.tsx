@@ -61,7 +61,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function EventDetailsPage({ params }: Props) {
+export default async function DynamicPage({
+  params,
+}: {
+  params: { itemId: string; locale: string };
+}) {
   const collection = await fetchCollectionIfUpdated(
     companyRoute,
     collectionRoute1
@@ -74,6 +78,7 @@ export default async function EventDetailsPage({ params }: Props) {
   }
 
   const item = extractCollectionFields(raw, locale);
+
   return (
     <section className={`section ${styles.eventDetailsWrapper}`}>
       <div>
