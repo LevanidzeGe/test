@@ -158,7 +158,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
         </form>
 
         <div className={emailSent ? styles.formSent : styles.hide}>
-          <h6 className="heading4 blue2">{thankYou}</h6>
+          <h6 className="heading4 blue1">{thankYou}</h6>
         </div>
       </div>
     </div>

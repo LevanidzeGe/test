@@ -50,7 +50,6 @@ export async function fetchCollectionIfUpdated(
   const isUpdated = await hasCollectionUpdated(companyRoute, collectionRoute);
 
   if (!isUpdated && cachedCollections[cacheKey]) {
-    console.log(`✅ Returning cached collection for ${cacheKey}`);
     return cachedCollections[cacheKey];
   }
   const collectionRef = ref(

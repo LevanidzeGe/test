@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.365);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(15px);
   z-index: 99;
   display: flex;
 }
@@ -19,7 +19,6 @@
   max-width: 600px;
   width: 100%;
   margin: auto;
-  max-width: 100vw;
 }
 .sayHiWrapper svg {
   position: absolute;

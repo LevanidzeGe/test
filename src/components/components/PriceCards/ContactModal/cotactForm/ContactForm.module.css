@@ -11,6 +11,7 @@
 
 .rightSide {
   width: 100%;
+  max-width: 700px;
 }
 .form input,
 .form textarea {
@@ -93,7 +94,6 @@
 .buttonSend {
   margin: 0 auto;
   width: 200px;
-  background-color: var(--blue1);
 }
 
 .inputRed::placeholder,
