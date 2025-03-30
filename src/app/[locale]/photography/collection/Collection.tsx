@@ -72,9 +72,14 @@ export default async function Collection({
             className={styles.meCamera}
           />
           <div className={styles.collectionWrapper}>
-            {(mini ? paginatedCollection.slice(0, 1) : paginatedCollection).map(
-              (item) => (
-                <ServerCard key={item.id} {...item} readMore={readMore} />
+            {(mini ? paginatedCollection.slice(0, 3) : paginatedCollection).map(
+              (item, index, arr) => (
+                <ServerCard
+                  key={item.id}
+                  {...item}
+                  readMore={readMore}
+                  isLast={index === arr.length - 1} // 👈 add this
+                />
               )
             )}
           </div>

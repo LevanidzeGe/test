@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ReturnTypeOfExtract } from "../../../../../../lib/firebase/types";
 import AlbumSlider from "../AlbumSlider/AlbumSlider";
 import { GrBottomCorner } from "react-icons/gr";
-import Divider from "@/src/components/components/Divider/Divider";
 
 export default function ServerCard({
   id,
@@ -14,7 +13,8 @@ export default function ServerCard({
   noTransDate,
   transDescription,
   readMore,
-}: ReturnTypeOfExtract & { readMore: string }) {
+  isLast,
+}: ReturnTypeOfExtract & { readMore: string; isLast: boolean }) {
   const locale = useLocale();
 
   return (
@@ -50,7 +50,7 @@ export default function ServerCard({
           </div>
         </div>
       </section>
-      <Divider />
+      {!isLast && <div className="thinLine"></div>}
     </>
   );
 }

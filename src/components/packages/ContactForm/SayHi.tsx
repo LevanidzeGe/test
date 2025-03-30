@@ -88,7 +88,7 @@ export default function SayHi() {
       <div className="container">
         <div className={styles.sayHiWrapper}>
           <div className={styles.sayHiLeo}>
-            <span className={`heading2 font2 gray7`}>{translates.title1}</span>
+            <span className={`heading2 font2 gray5`}>{translates.title1}</span>
             <span className={`heading2 font2 ${styles.levani}`}>
               {translates.title2}
             </span>

@@ -44,8 +44,8 @@ export default function WhatIDo() {
             {sections.map((section, index) => (
               <div key={index}>
                 <Image src={section.image} width={100} height={100} alt="" />
-                <h4 className="header5">{section.subtitle}</h4>
-                <p className="header5">
+                <h4 className="heading5">{section.subtitle}</h4>
+                <p className="paragraph gray5">
                   {section.description}
                   {section.link ? (
                     <Link target="_blank" href={section.link}>

@@ -5,7 +5,6 @@ import { useLocale } from "next-intl";
 import Link from "next/link";
 import { ReturnTypeOfExtract } from "@/lib/firebase/types"; // or define inline
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import Divider from "@/src/components/components/Divider/Divider";
 
 export default function ServerCard({
   id,
@@ -14,13 +13,13 @@ export default function ServerCard({
   noTransDate,
   transTag,
   readMore,
-  boolOption1,
-  boolOption2,
   boolOption3,
   boolOption4,
   boolOption5,
   boolOption6,
-}: ReturnTypeOfExtract & { readMore: string }) {
+  boolOption2,
+  isLast,
+}: ReturnTypeOfExtract & { readMore: string; isLast: boolean }) {
   const locale = useLocale();
 
   return (
@@ -63,7 +62,7 @@ export default function ServerCard({
           </div>
         </div>
       </section>
-      <Divider />
+      {!isLast && <div className="thinLine"></div>}
     </>
   );
 }

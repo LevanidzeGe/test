@@ -10,8 +10,8 @@ import { meMonitor2 } from "@/public/image";
 export default async function Collection({
   mini,
   readMore,
-  seeAll,
-}: {
+}: // seeAll,
+{
   mini?: boolean;
   readMore: string;
   seeAll?: string;
@@ -61,15 +61,20 @@ export default async function Collection({
               src={meMonitor2}
               alt=""
               width={130}
-              height={150}
+              height={130}
               className={styles.meMonitor}
             />
             <div className={styles.collectionWrapper}>
               {(mini
                 ? paginatedCollection.slice(0, 3)
                 : paginatedCollection
-              ).map((item) => (
-                <ServerCard key={item.id} {...item} readMore={readMore} />
+              ).map((item, index, arr) => (
+                <ServerCard
+                  key={item.id}
+                  {...item}
+                  readMore={readMore}
+                  isLast={index === arr.length - 1} // 👈 add this
+                />
               ))}
             </div>
             {/* {mini && (

@@ -11,31 +11,40 @@
   object-fit: cover;
   position: absolute;
   z-index: -1;
-  filter: blur(60px);
+  filter: blur(160px);
   transform: translate(0, -50%);
   top: 60%;
 }
-
+.shareDiv {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 20px;
+}
+.shareDiv svg {
+  cursor: pointer;
+}
 /* Layout Wrappers */
 .wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 100px 0;
 }
 
 /* Card Styling */
 .cardDiv {
   position: relative;
-  width: 400px;
-  height: 300px;
   perspective: 1000px;
+  width: 100%;
 }
 
 .cardDiv img {
   position: absolute;
-  width: max-content;
-  height: max-content;
   object-fit: contain;
   border-radius: 12px;
+  width: 400px;
+  height: auto;
 }
 
 /* Card Flip Container */
@@ -84,25 +93,6 @@
   }
   .cardDiv:hover .cardInner {
     animation-play-state: running;
-  }
-
-  .textDiv {
-    /* width: 100%; */
-    /* max-width: 600px; */
-    /* margin-right: 0; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers text */
-  }
-
-  .textDiv h2 {
-    justify-content: center;
-    line-height: 110%;
-  }
-
-  .domainWrapper {
-    margin: 0 auto; /* Centers the button */
   }
 
   .cardDiv:nth-child(2) {

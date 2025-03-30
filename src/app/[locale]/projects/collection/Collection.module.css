@@ -29,6 +29,8 @@
   left: 10vw;
   margin-top: -50px;
   z-index: -1;
+  width: 150px;
+  height: 150px;
 }
 
 @media (max-width: 992px) {
