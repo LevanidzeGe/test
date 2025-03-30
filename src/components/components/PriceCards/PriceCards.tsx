@@ -105,7 +105,7 @@ export default function PricingCards() {
                       <p
                         className={`heading3 ${styles.price} ${styles.priceWrap}`}
                       >
-                        Contact us
+                        {plan.contactUs?.[locale] || "Contact us"}
                       </p>
                     )}
                   </div>

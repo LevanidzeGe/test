@@ -7,10 +7,11 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
+import Script from "next/script";
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
-import { companyDomain } from "@/Manager/info";
+import { companyDomain, googleAnaliticId } from "@/Manager/info";
 
 export async function generateMetadata({
   params,
@@ -88,14 +89,29 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale || defaultLocale}>
+      {/* Google Analytics Scripts */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnaliticId}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${googleAnaliticId}, {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
       <body
-        className={` ${bebas.variable} ${roboto.variable} ${shantel.variable} ${poppins.className}    `}
+        className={`${bebas.variable} ${roboto.variable} ${shantel.variable} ${poppins.className}`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
           <SayHi />
-
           <Analytics />
         </NextIntlClientProvider>
       </body>

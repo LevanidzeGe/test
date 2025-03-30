@@ -10,8 +10,10 @@ import Image from "next/image";
 import { companyDomain } from "@/Manager/info";
 import Services from "../Services/Services";
 import SocialMedia from "../SocMedia/SocialMedia";
+import { getTranslations } from "next-intl/server";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("homePage.hero");
   return (
     <div className={styles.heroWrapper}>
       <Image
@@ -27,23 +29,20 @@ export default function Hero() {
             <div className={styles.topDiv}>
               <div className={styles.textDiv}>
                 <div>
-                  <span className="headin5 font2 gray3">hi, there!</span>
+                  <span className="headin5 font2 gray3">{t("span1")}</span>
                   <h1 className="heading1">
-                    <strong className="red2"> Levanidze </strong> here to
-                    increase <br />
-                    your online presence
+                    <strong className="red2"> {t("title1")} </strong>{" "}
+                    {t("title2")}
+                    <br />
+                    {t("title3")}
                   </h1>
 
-                  <h2 className="heading5 font2 gray5">
-                    gained skills years of experience in web design and
-                    photography are helping me to be doing high standard service
-                    in online world{" "}
-                  </h2>
+                  <h2 className="heading5 font2 gray5">{t("text1")}</h2>
 
                   <div className={`buttonCard ${styles.button}`}>
                     <span></span>
                     <p></p>
-                    <button>get in touch</button>
+                    <button>{t("button1")}</button>
                   </div>
                 </div>
                 <Image

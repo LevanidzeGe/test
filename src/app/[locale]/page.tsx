@@ -16,11 +16,13 @@ export default function Home() {
       <Projects
         readMore={t("projectsPage.projects.readMore")}
         seeAll={t("projectsPage.projects.seeAll")}
+        title1={t("projectsPage.projects.title1")}
         mini
       />
       <Photography
         readMore={t("photographyPage.photography.readMore")}
         seeAll={t("photographyPage.photography.seeAll")}
+        title1={t("photographyPage.photography.title1")}
         mini
       />
       <WhatIDo />

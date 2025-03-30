@@ -11,8 +11,10 @@ import { meCamera2 } from "@/public/image";
 export default async function Collection({
   mini,
   readMore,
-  seeAll,
+  // seeAll,
+  title1,
 }: {
+  title1: string;
   mini?: boolean;
   readMore: string;
   seeAll?: string;
@@ -61,9 +63,7 @@ export default async function Collection({
     <section className="section relative">
       <div className="container">
         <div className={`${!mini && styles.paddingBottom}`}>
-          <h2 className={`heading2 font2 ${styles.title}`}>
-            photography projects
-          </h2>
+          <h2 className={`heading2 font2 ${styles.title}`}>{title1}</h2>
           <Image
             src={meCamera2}
             width={100}

@@ -3,15 +3,17 @@ import ServerCard from "./card/ServerCard";
 import { collectionRoute1, companyRoute } from "@/Manager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/lib/firebase/types";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { meMonitor2 } from "@/public/image";
 
 export default async function Collection({
   mini,
   readMore,
-}: // seeAll,
-{
+  // seeAll,
+  title1,
+}: {
+  title1: string;
   mini?: boolean;
   readMore: string;
   seeAll?: string;
@@ -50,13 +52,13 @@ export default async function Collection({
   const paginatedCollection = mini
     ? sortedCollection.slice(0, 3)
     : sortedCollection;
-
+  const t = await getTranslations("");
   return (
     <section className="section relative">
       <div className="container ">
         <div className={` ${!mini && styles.container}`}>
           <div className={`${!mini && styles.paddingBottom}`}>
-            <h2 className={`heading2 font2 ${styles.title}`}>web projects</h2>
+            <h2 className={`heading2 font2 ${styles.title}`}>{title1}</h2>
             <Image
               src={meMonitor2}
               alt=""

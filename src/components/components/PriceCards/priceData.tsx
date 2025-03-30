@@ -28,6 +28,7 @@ export interface PlanProps {
   main: Feature[];
   features: Feature[];
   popular: boolean;
+  contactUs?: Record<Locale, string>;
 }
 
 const unavailable = (text: Record<Locale, string>): Feature => ({
@@ -141,6 +142,10 @@ export const plans: PlanProps[] = [
   {
     id: "elite",
     name: { en: "Elite", fr: "Élite" },
+    contactUs: {
+      en: "Contact us",
+      fr: "Contactez nous",
+    },
     subtitle: {
       en: "For dvanced features and premium customization feel freee to contact us we can make all you need for",
       fr: "Fonctionnalités avancées et personnalisation premium",

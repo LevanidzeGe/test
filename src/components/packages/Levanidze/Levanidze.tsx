@@ -7,25 +7,24 @@ import photo from "./photo.jpg";
 import web from "./web.jpg";
 import { useTranslations } from "next-intl";
 import { IoShareOutline } from "react-icons/io5";
+import { companyDomain } from "@/Manager/info";
+import image from "@/public/images/digitalBusinesCard.png";
 
 export default function Levanidze() {
   const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "Levanidze.com",
-          text: "Check out Levanidze – professional photographer and website designer.",
-          url: "https://levanidze.com",
-        });
-      } catch (err: any) {
-        if (err.name !== "AbortError") {
-          console.error("Share failed:", err);
-        }
+    try {
+      await navigator.share({
+        title: "Levanidze.com",
+        text: "Check out my digital business card:",
+        url: `${companyDomain}/@/public/images/digitalBusinesCard.png`, // ✅ Correct usage
+      });
+    } catch (err: any) {
+      if (err.name !== "AbortError") {
+        console.error("Share failed:", err);
       }
-    } else {
-      alert("Sharing is not supported on this device.");
     }
   };
+
   const t = useTranslations("levanidze");
   return (
     <div className={styles.mainWrapper}>

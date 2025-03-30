@@ -5,10 +5,18 @@
       "description": "Boost your online presence with Levani – expert in Webflow/Next.js websites and professional photography. Serving businesses across Geneva and Switzerland."
     },
     "hero": {
-      "intro": "Hi, I'm Levani.",
-      "headline": "I design user-friendly websites and take professional photographs for businesses in Switzerland.",
-      "cta": "Get in touch"
+      "span1": "hi, there!",
+      "title1": "Levanidze",
+      "title2": "here to increase",
+      "title3": "your online presence",
+      "text1": " gained skills years of experience in web design and photography are helping me to be doing high standard service in online world",
+      "button1": "get in touch",
+      "span2": "our services",
+      "title4": "Websites",
+      "title5": "photography",
+      "title6": "branding"
     },
+
     "services": {
       "title": "Our Services",
       "web": "Websites",
@@ -23,7 +31,8 @@
     },
     "projects": {
       "readMore": "See project",
-      "seeAll": "See more"
+      "seeAll": "See more",
+      "title1": "web projects"
     }
   },
   "photographyPage": {
@@ -33,7 +42,8 @@
     },
     "photography": {
       "readMore": "See gallery",
-      "seeAll": "See more"
+      "seeAll": "See more",
+      "title1": "photography"
     }
   },
   "contactForm": {
