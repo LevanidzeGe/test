@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./PriceCards.module.css";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PlanProps, plans } from "./priceData";
 import Image from "next/image";
 import bg from "./bg.svg";
@@ -18,6 +18,7 @@ export default function PricingCards() {
   const locale = useLocale();
   const [selectedPlan, setSelectedPlan] = useState<PlanProps | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const t = useTranslations("homePage.priceCard");
 
   useEffect(() => {
     if (modal) {
@@ -143,7 +144,7 @@ export default function PricingCards() {
                         setModal(true);
                       }}
                     >
-                      Choose {plan.name[locale]}
+                      {t("button1")} {plan.name[locale]}
                     </button>
                   </div>
                 </div>
@@ -155,7 +156,7 @@ export default function PricingCards() {
                       setModal(true);
                     }}
                   >
-                    Choose {plan.name[locale]}
+                    {t("button1")} {plan.name[locale]}
                   </button>
                 </div>
                 {modal && selectedPlan && selectedIndex !== null && (
