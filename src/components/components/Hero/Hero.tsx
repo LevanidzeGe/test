@@ -27,14 +27,14 @@ export default function Hero() {
             <div className={styles.topDiv}>
               <div className={styles.textDiv}>
                 <div>
-                  <span className="paragraph gray3">hi, there!</span>
+                  <span className="headin5 font2 gray3">hi, there!</span>
                   <h1 className="heading1">
                     <strong className="red2"> Levanidze </strong> here to
                     increase <br />
                     your online presence
                   </h1>
 
-                  <h2 className="paragraph gray3">
+                  <h2 className="heading5 font2 gray5">
                     gained skills years of experience in web design and
                     photography are helping me to be doing high standard service
                     in online world{" "}
