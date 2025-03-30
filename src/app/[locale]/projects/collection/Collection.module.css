@@ -1,6 +1,7 @@
 .collectionWrapper section {
   border-bottom: 1px solid var(--gray-700);
 }
+
 .collectionWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +10,7 @@
 }
 .title {
   text-align: center;
+  margin-top: 100px;
 }
 
 .pagination {
