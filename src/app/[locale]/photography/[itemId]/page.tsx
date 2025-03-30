@@ -6,18 +6,20 @@ import { extractCollectionFields } from "../../../../../lib/firebase/types";
 import styles from "./page.module.css";
 import AlbumSlider from "../collection/AlbumSlider/AlbumSlider";
 
-// SEO Metadata
+// ✅ SEO Metadata
 export async function generateMetadata({
   params,
 }: {
-  params: { itemId: string; locale: string };
+  params: Promise<{ itemId: string; locale: string }>;
 }): Promise<Metadata> {
+  const { itemId, locale } = await params;
+
   const collection = await fetchCollectionIfUpdated(
     companyRoute,
     collectionRoute2
   );
 
-  const item = collection?.items?.[params.itemId];
+  const item = collection?.items?.[itemId];
 
   if (!item) {
     return {
@@ -26,18 +28,18 @@ export async function generateMetadata({
     };
   }
 
-  const extracted = extractCollectionFields(item, params.locale);
+  const extracted = extractCollectionFields(item, locale);
 
   return {
     title: extracted.transTitle || defaultLocale,
     description: extracted.transDescription || defaultLocale,
     alternates: {
-      canonical: `/${params.locale}/projects/${params.itemId}`,
+      canonical: `/${locale}/projects/${itemId}`,
     },
     openGraph: {
       title: extracted.transTitle,
       description: extracted.transDescription,
-      url: `${companyDomain}/${params.locale}/photography/${params.itemId}`,
+      url: `${companyDomain}/${locale}/photography/${itemId}`,
       images: [
         {
           url:
@@ -52,18 +54,21 @@ export async function generateMetadata({
   };
 }
 
-export default async function DynamicPage({
+// ✅ Page
+export default async function Page({
   params,
 }: {
-  params: { itemId: string; locale: string };
+  params: Promise<{ itemId: string; locale: string }>;
 }) {
+  const { itemId, locale } = await params;
+
   const collection = await fetchCollectionIfUpdated(
     companyRoute,
     collectionRoute2
   );
 
-  const raw = collection?.items?.[params.itemId];
-  const locale = params.locale;
+  const raw = collection?.items?.[itemId];
+
   if (!raw) {
     return <div>Project not found</div>;
   }
