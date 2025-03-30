@@ -16,7 +16,7 @@ export default function Levanidze() {
       await navigator.share({
         title: "Levanidze.com",
         text: "Check out my digital business card:",
-        url: `${companyDomain}images/digitalBusinesCard.png`, // ✅ Correct usage
+        url: `${companyDomain}/images/digitalBusinesCard.png`, // ✅ Correct usage
       });
     } catch (err: any) {
       if (err.name !== "AbortError") {
