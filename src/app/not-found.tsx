@@ -7,8 +7,8 @@ export default function NotFoundPage() {
     <html>
       <body
         style={{
-          backgroundColor: "var(--color5)", // Dark blue background
-          color: "var(--color1)", // Yellow text color
+          backgroundColor: "var(--white)", // Dark blue background
+          color: "var(--gray9)", // Yellow text color
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -27,7 +27,10 @@ export default function NotFoundPage() {
           We could not find the requested resource.
         </p>
         <div style={{ display: "flex", gap: "20px", marginTop: "40px" }}>
-          <Link className="button button-reverse" href="/">
+          <Link
+            style={{ border: "solid 1px var(--gray9)", padding: " 8px 15px" }}
+            href="/"
+          >
             Return Home
           </Link>
         </div>

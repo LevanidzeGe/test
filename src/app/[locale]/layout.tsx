@@ -2,12 +2,14 @@ import "@/src/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/src/components/packages/Header/Header";
 import { notFound, redirect } from "next/navigation";
-import { defaultLocale, supportedLocales } from "@/Manager/navigation";
+import { defaultLocale } from "@/Manager/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Bebas_Neue, Poppins, Roboto, Shantell_Sans } from "next/font/google";
+import SayHi from "@/src/components/packages/ContactForm/SayHi";
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
@@ -16,9 +18,9 @@ import { companyDomain, googleAnaliticId } from "@/Manager/info";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations("homePage.metadata");
   const canonicalUrl = `${companyDomain}/${locale}`;
 
@@ -46,9 +48,6 @@ export async function generateMetadata({
     },
   };
 }
-//fonts
-import { Bebas_Neue, Poppins, Roboto, Shantell_Sans } from "next/font/google";
-import SayHi from "@/src/components/packages/ContactForm/SayHi";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -70,44 +69,27 @@ const bebas = Bebas_Neue({
   variable: "--font3",
 });
 
-interface RootLayoutProps {
-  children: React.ReactNode;
-  params: { locale: string };
-}
-
 export default async function LocaleLayout({
   children,
   params,
-}: RootLayoutProps) {
-  const { locale } = params;
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
   if (!routing.locales.includes(locale as SupportedLocale)) {
-    notFound();
+    redirect(`/${defaultLocale}`);
   }
 
   const messages = await getMessages();
 
   return (
     <html lang={locale || defaultLocale}>
-      {/* Google Analytics Scripts */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnaliticId}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', ${googleAnaliticId}, {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
-
       <body
         className={`${bebas.variable} ${roboto.variable} ${shantel.variable} ${poppins.className}`}
       >
+        <GoogleAnalytics gaId={googleAnaliticId} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}

@@ -37,7 +37,7 @@ export const services: ServiceProps[] = [
       it: "Sviluppo Web",
     },
     description: {
-      en: "Using Webflow or Next.js, I create fully responsive websites that work perfectly on any device, including mobile phones. My approach ensures your website is clean, fast, and provides a great user experience for all visitors.",
+      en: "Using Webflow or Next.js, I create fully responsive websites that work perfectly on any device, including mobile phones. My approach ensures your website is clean, fast, and provides a great user experience for all visitors. My backend system is planneed for my custmers to amange their website easy and keep it updated with google auth and easiest setup need to improve textes",
       fr: "Avec Webflow ou Next.js, je crée des sites entièrement responsives qui fonctionnent parfaitement sur tous les appareils, y compris les téléphones. Mon approche garantit un site propre, rapide et agréable à utiliser.",
       de: "Mit Webflow oder Next.js erstelle ich vollständig responsive Websites, die auf allen Geräten – auch Mobiltelefonen – perfekt funktionieren. Mein Ansatz sorgt für saubere, schnelle und benutzerfreundliche Seiten.",
       it: "Utilizzando Webflow o Next.js, realizzo siti completamente responsive che funzionano perfettamente su qualsiasi dispositivo, inclusi i telefoni. Il mio approccio garantisce un sito pulito, veloce e facile da usare per ogni visitatore.",

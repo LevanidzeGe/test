@@ -16,18 +16,19 @@
       "title5": "photography",
       "title6": "branding"
     },
-
-    "services": {
-      "title": "Our Services",
-      "web": "Websites",
-      "photo": "Photography",
-      "branding": "Branding"
+    "whatIdo": {
+      "title1": "What I",
+      "title2": "do."
     }
   },
   "projectsPage": {
     "metadata": {
       "title": "Latest Web Design & Photography Projects",
       "description": "Explore recent website and photography projects by Levani. Modern, responsive, and tailored for businesses in Switzerland."
+    },
+    "pageHero": {
+      "title1": "me as a webdeveloper",
+      "title2": "I’m a UX/UI designer, Webflow/Next.js developer, and professional photographer specializing in creating user-friendly and responsive websites for businesses, with a focus on helping restaurants across Switzerland."
     },
     "projects": {
       "readMore": "See project",
@@ -40,26 +41,15 @@
       "title": "Professional Photography in Geneva & Switzerland",
       "description": "Levani offers high-end business photography across Geneva and Switzerland. Enhance your website and branding with impactful visuals."
     },
+    "pageHero": {
+      "title1": "me as a photographer",
+      "title2": "Supporting businesses across Geneva and whole Switzerland with over 13 years of experience in professional photography. Winner of the Golden Camera by FEP in 2017, I specialize in creating stunning visuals that enhance your brand's online presence and attract more customers."
+    },
     "photography": {
       "readMore": "See gallery",
       "seeAll": "See more",
       "title1": "photography"
     }
-  },
-  "contactForm": {
-    "head1": "Get in Touch",
-    "head2": "Request a Quote",
-    "name": "Full Name",
-    "email": "Email",
-    "phone": "Phone",
-    "date": "Date",
-    "time": "Time",
-    "quantity": "Rooms Needed",
-    "message": "Your request here",
-    "button": "Submit",
-    "send": "Send Inquiry",
-    "thankYou": "Thanks for reaching out!",
-    "comfirmation": "We'll respond as soon as possible."
   },
   "notFoundPage": {
     "title1": "Page Not Found",
@@ -67,10 +57,6 @@
     "button": "Go Home"
   },
   "levanidze": {
-    "title1": "Modern, stylish websites",
-    "title2": "Responsive and user-friendly on any device",
-    "title3": "Clean code using Webflow or Next.js",
-    "title4": "Professional photography to enhance your website",
-    "title5": "Winner of the Golden Camera Award (2017)"
+    "title1": "digital business card"
   }
 }

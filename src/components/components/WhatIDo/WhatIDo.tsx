@@ -1,19 +1,19 @@
 import styles from "./WhatIDo.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { services } from "./dataWhatIdo";
 
 export default async function WhatIDo() {
-  const locale = await getLocale(); // ✅ Correct
-
+  const locale = await getLocale(); // ✅
+  const t = await getTranslations("homePage.whatIdo");
   return (
     <section className="section">
       <div className="container">
         <div className={styles.whatIDoWrapper}>
           <div className={styles.h3}>
-            <h3 className={`heading2 font2 ${styles.whatI}`}> What I</h3>
-            <h3 className={`heading2 font2 ${styles.do}`}> do.</h3>
+            <h3 className={`heading2 font2 ${styles.whatI}`}>{t("title1")}</h3>
+            <h3 className={`heading2 font2 ${styles.do}`}>{t("title2")}</h3>
           </div>
           <div className={styles.sections}>
             {services.map((section, index) => (

@@ -8,7 +8,7 @@ import {
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import { companyDomain } from "@/Manager/info";
-import Services from "../Services/Services";
+import Services from "./Services/Services";
 import SocialMedia from "../SocMedia/SocialMedia";
 import { getTranslations } from "next-intl/server";
 

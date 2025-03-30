@@ -31,8 +31,8 @@ export default function ServerCard({
               <span className={` caption-mini gray7  ${styles.date}`}>
                 {noTransDate}
               </span>
-              <p className="parargraph font1 gray5">{transTag}</p>
-              <h2 className="heading3 gray7">{transTitle}</h2>
+              <p className="heading5 font1 gray5">{transTag}</p>
+              <h2 className="heading2 gray7">{transTitle}</h2>
               <div className={styles.spans}>
                 {boolOption2 && <span>Web Design</span>}
                 {boolOption3 && <span>Next Js</span>}

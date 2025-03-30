@@ -3,6 +3,8 @@ import heroBG from "@/public/assets/svg/backgrounds/hero-bg.svg";
 
 //
 import heroScreens from "@/public/images/hero/responsive-screens.png";
+import projectHero from "@/public/images/meBeer.webp";
+import photographyHero from "@/public/images/meGomismta.webp";
 
 //cartoons
 import meBuble from "@/public/images/hero/me-cartoon-bulb.png";
@@ -20,6 +22,8 @@ import camera from "@/public/assets/icons/camera.png";
 import monitor from "@/public/assets/icons/monitor.png";
 import development from "@/public/assets/icons/development.png";
 export {
+  projectHero,
+  photographyHero,
   logo,
   logo2,
   heroBG,

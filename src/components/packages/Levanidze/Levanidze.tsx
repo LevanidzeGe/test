@@ -8,15 +8,14 @@ import web from "./web.jpg";
 import { useTranslations } from "next-intl";
 import { IoShareOutline } from "react-icons/io5";
 import { companyDomain } from "@/Manager/info";
-import image from "@/public/images/digitalBusinesCard.png";
 
 export default function Levanidze() {
   const handleShare = async () => {
     try {
       await navigator.share({
         title: "Levanidze.com",
-        text: "Check out my digital business card:",
-        url: `${companyDomain}/images/digitalBusinesCard.png`, // ✅ Correct usage
+        text: "Check out Levanidze's digital business card:",
+        url: `${companyDomain}/images/digitalBusinesCard.png`,
       });
     } catch (err: any) {
       if (err.name !== "AbortError") {
@@ -36,7 +35,7 @@ export default function Levanidze() {
         alt="levanidze.com vector background"
       />
       <div className={styles.shareDiv} onClick={handleShare}>
-        <p className="heading5 font2 yellow2">digital business card</p>
+        <p className="heading5 font2 yellow2">{t("title1")}</p>
         <IoShareOutline className="heading3" />
       </div>
       <section className={`section`}>
@@ -51,7 +50,7 @@ export default function Levanidze() {
                       src={photo}
                       width={600}
                       height={400}
-                      alt="Photographer Levanidze.com"
+                      alt={`Photographer ${companyDomain} ${t("title1")}`}
                     />
                   </div>
                   <div className={styles.cardBack}>
@@ -75,7 +74,7 @@ export default function Levanidze() {
                       src={web}
                       width={600}
                       height={400}
-                      alt="Photographer Levanidze.com"
+                      alt={`Photographer ${companyDomain}`}
                     />
                   </div>
                   <div className={styles.cardBack}>
@@ -84,7 +83,7 @@ export default function Levanidze() {
                       src={photo}
                       width={600}
                       height={400}
-                      alt="Website designer Levanidze.com"
+                      alt={`Website designer ${companyDomain}`}
                     />
                   </div>
                 </div>
