@@ -1,16 +1,16 @@
-.collectionWrapper section {
-  border-bottom: 1px solid var(--gray-700);
+.paddingBottom {
+  padding-bottom: 70px;
 }
-
-.collectionWrapper {
+.eventsWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2%;
 }
 .title {
-  text-align: center;
-  margin-top: 100px;
+  padding-top: 16px;
+  padding-bottom: 60px;
+  text-transform: capitalize;
 }
 
 .pagination {
@@ -21,18 +21,13 @@
 .button {
   margin-left: auto;
 }
-.meMonitor {
-  position: absolute;
-  object-fit: contain;
-  left: 10vw;
-  margin-top: -50px;
-  z-index: -1;
-  width: 150px;
-  height: 150px;
-}
 
 @media (max-width: 992px) {
-  .meMonitor {
-    display: none;
+  .container {
+    padding-top: 50px;
+  }
+
+  .eventsWrapper {
+    flex-direction: column;
   }
 }

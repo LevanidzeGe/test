@@ -2,10 +2,11 @@
 // npm install @types/swiper
 //npm i swiper
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperClass } from "swiper";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,7 +14,10 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import styles from "./AlbumSlider.module.css";
-import { companyDomain } from "@/Manager/info";
+
+//projects array with props
+// import { projects } from "../../WholeProjects/Donabygg/DoneProjects/TwoProjects/projects";
+// import { ProjectDetProps } from "../../WholeProjects/Donabygg/DoneProjects/TwoProjects/projects";
 
 interface AlbumProps {
   images: string[];
@@ -41,7 +45,7 @@ export default function AlbumSlider({ images }: AlbumProps) {
                 <div className={styles.mainImage}>
                   <Image
                     src={image}
-                    alt={`${companyDomain} Levani Levanidze photography`}
+                    alt=""
                     width={1300}
                     height={1000}
                     className="block h-full w-full object-cover"
@@ -64,12 +68,7 @@ export default function AlbumSlider({ images }: AlbumProps) {
             {images.map((image, index) => (
               <SwiperSlide key={index}>
                 <button className={styles.navImagesWrapper}>
-                  <Image
-                    src={image}
-                    alt={`${companyDomain} Levani Levanidze photography`}
-                    width={100}
-                    height={100}
-                  />
+                  <Image src={image} alt="" width={100} height={100} />
                 </button>
               </SwiperSlide>
             ))}

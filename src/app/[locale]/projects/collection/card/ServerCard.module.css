@@ -1,106 +1,66 @@
-.mainWrap {
+.cardWrapper {
+  width: 32%;
+  border-radius: 8px;
+  margin-bottom: 4%;
+  margin: 2% auto;
+}
+
+.cardWrapper img {
+  object-fit: cover;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.topDiv span {
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 25px;
+  padding: 0 7px;
+  border-radius: 4px;
+}
+.caption {
+  background-color: var(--color1);
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.topDiv {
+  margin: 20px 0 10px 0;
   display: flex;
   justify-content: space-between;
 }
-.mainWrap img {
-  height: 100%;
-  max-height: 600px;
-  object-fit: contain;
-  width: 900px;
-  max-width: 100%;
-}
 
-.textWrap {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.textWrap p {
-  max-width: 400px;
-}
-.textWrap h2 {
-  width: 350px;
-  font-weight: 900;
-  padding: 10px 0 20px 0;
-}
-
-.textWrap a {
-  margin-top: 40px;
-}
-.textWrap svg {
-  font-size: 20px;
-  margin-right: -10px;
+.button svg {
+  margin: auto 5px auto 10px;
+  rotate: -30deg;
   transition: all 0.3s;
 }
-.textWrap a:hover svg {
-  transform: translate(10px, 0);
-}
-
-.date {
-  margin-bottom: 20px;
-  margin-left: 3px;
-}
-.spans {
+.button {
+  margin-top: 20px;
+  width: max-content;
+  padding: 7px 12px;
+  padding-left: 20px;
+  border: 2px solid var(--gray3);
+  border-radius: 5px;
+  color: var(--gray7);
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
+  transition: all 0.3s;
+  background-color: var(--white);
 }
-.spans span {
-  margin-right: 8px;
-  margin-left: 3px;
-  font-size: 10px;
-  padding: 2px 7px;
-  background-color: var(--blue2-50);
-  font-weight: 700;
-  margin-bottom: 10px;
+.button:hover {
+  background-color: var(--gray3);
+}
+.button:hover svg {
+  transform: translateX(8px); /* Move the SVG 10px to the right */
 }
 
-@media (max-width: 800px) {
-  .mainWrap {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media (max-width: 992px) {
+  .cardWrapper {
     width: 100%;
-  }
-  .textWrap h2 {
-    width: 100%;
-  }
-  .mainWrap img {
-    margin: 0 auto;
-    padding-left: 0;
-    margin-left: -50px;
-  }
-  .textWrap a {
-    margin: 10px auto 30px auto;
-  }
-  .textWrap svg {
-    transform: rotate(90deg);
-    margin-right: -10px;
-    margin-left: 10px;
-  }
-  .textWrap a:hover svg {
-    transform: rotate(90deg) translate(10px, 0);
-  }
-  .textWrap {
-    margin: 0 auto;
-    align-items: center;
-  }
-}
-
-@media (max-width: 700px) {
-  .mainWrap img {
-    margin-left: -30px;
-  }
-}
-@media (max-width: 600px) {
-  .mainWrap img {
-    margin-left: -20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .textWrap h2 {
-    width: auto;
+    padding-bottom: 50px;
   }
 }

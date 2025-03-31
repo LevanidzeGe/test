@@ -1,20 +1,23 @@
 import { fetchCollectionIfUpdated } from "@/lib/firebase/getFirebaseData";
 import ServerCard from "./card/ServerCard";
-import { collectionRoute1, companyDomain, companyRoute } from "@/Manager/info";
+import { collectionRoute1, companyRoute } from "@/Manager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/lib/firebase/types";
 import { getLocale, getTranslations } from "next-intl/server";
-import Image from "next/image";
-import { meMonitor2 } from "@/public/image";
+import BottomBorder from "@/src/components/components/borderShapes/BottomBorder";
+import TopBorder from "@/src/components/components/borderShapes/TopBorder";
+import Link from "next/link";
 
-export default async function Collection({
+export default async function Collections({
   mini,
-  readMore,
-  // seeAll,
   title1,
+  title2,
+  readMore,
+  seeAll,
 }: {
-  title1: string;
   mini?: boolean;
+  title1: string;
+  title2: string;
   readMore: string;
   seeAll?: string;
 }) {
@@ -54,39 +57,49 @@ export default async function Collection({
     : sortedCollection;
   const t = await getTranslations("");
   return (
-    <section className="section relative">
-      <div className="container ">
-        <div className={` ${!mini && styles.container}`}>
-          <h2 className={`heading2 font2 ${styles.title}`}>{title1}</h2>
-          <Image
-            src={meMonitor2}
-            alt={` ${companyDomain} levanidze cartoon`}
-            width={130}
-            height={130}
-            className={styles.meMonitor}
-          />
-          <div className={styles.collectionWrapper}>
-            {(mini ? paginatedCollection.slice(0, 3) : paginatedCollection).map(
-              (item, index, arr) => (
+    <>
+      <TopBorder />
+      <section className="section section-medium no-padding-y">
+        <div className={`container ${!mini && styles.container}`}>
+          <div className={`${!mini && styles.paddingBottom}`}>
+            <div className="sideLineWrap">
+              <div className="sideLine"></div>
+              <h2 className="heading4">{title1}</h2>
+            </div>
+            <h3 className={`heading2 color4 ${styles.title}`}>{title2}</h3>
+            <div className={styles.eventsWrapper}>
+              {(mini
+                ? paginatedCollection.slice(0, 3)
+                : paginatedCollection
+              ).map((item, index, arr) => (
                 <ServerCard
                   key={item.id}
                   {...item}
                   readMore={readMore}
                   isLast={index === arr.length - 1}
                 />
-              )
+              ))}
+            </div>
+            {mini && (
+              <Link
+                className={` button button-reverse button-small ${styles.button} `}
+                href={`/${locale}/projects`}
+              >
+                {seeAll}
+              </Link>
             )}
+            {/* Pagination Controls */}
+            {/* {!mini && (
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={handlePageChange}
+              />
+            )} */}
           </div>
-          {/* {mini && (
-            <Link
-              className={` button  button-small ${styles.button} `}
-              href={`/${locale}/projects`}
-            >
-              {seeAll}
-            </Link>
-          )} */}
         </div>
-      </div>
-    </section>
+      </section>
+      {mini && <BottomBorder />}
+    </>
   );
 }

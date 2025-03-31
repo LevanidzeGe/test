@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import Collection from "./collection/Collection";
-import { useTranslations } from "next-intl";
-import PagesHero from "@/src/components/components/PagesHero/PagesHero";
-import { projectHero } from "@/public/image";
+import Collections from "./collection/Collection";
+import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 export async function generateMetadata() {
   const t = await getTranslations("projectsPage.metadata");
@@ -13,20 +11,16 @@ export async function generateMetadata() {
 }
 
 // Dynamic server-side rendering function that accepts params
-export default function ProjectsPage() {
-  const t = useTranslations("projectsPage");
+export default async function ProjectsPage() {
+  const t = await getTranslations("projectsPage");
   return (
     <div className="fadeOut">
-      <PagesHero
-        title1={t("pageHero.title1")}
-        title2={t("pageHero.title2")}
-        homepage
-        image={projectHero}
-      />
-      <Collection
+      <Pageshead value1={t("pageHead.title1")} value2={t("pageHead.title2")} />
+      <Collections
+        title1={t("projects.title1")}
+        title2={t("projects.title2")}
         readMore={t("projects.readMore")}
         seeAll={t("projects.seeAll")}
-        title1={t("projects.title1")}
       />
     </div>
   );

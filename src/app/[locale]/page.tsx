@@ -1,32 +1,36 @@
-import { useTranslations } from "next-intl";
-import Projects from "./projects/collection/Collection";
-import Photography from "./photography/collection/Collection";
-import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
 import Hero from "@/src/components/components/Hero/Hero";
-import WhatIDo from "@/src/components/components/WhatIDo/WhatIDo";
-import PriceCards from "@/src/components/components/PriceCards/PriceCards";
+import { brush } from "@/public/image";
+import Testimonials from "@/src/components/packages/Testimonials/Testimonials";
+import ComponentOne from "@/src/components/components/One/ComponentOne";
+import ComponentFive from "@/src/components/components/Five/ComponentFive";
+import ServicesList from "./services/ServicesComponent/ServicesList";
+import Collections from "./projects/collection/Collection";
+import ComponentSix from "@/src/components/components/Six/ComponentSix";
+import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
-  const t = useTranslations();
+export default async function Home() {
+  const t = await getTranslations();
 
   return (
     <div className="fadeOut">
       <Hero />
-      <PriceCards />
-      <Projects
+      <ComponentOne image={brush} />
+      <Levanidze />
+      <Collections
+        mini={true}
+        title1={t("homePage.projects.title1")}
+        title2={t("homePage.projects.title2")}
         readMore={t("projectsPage.projects.readMore")}
         seeAll={t("projectsPage.projects.seeAll")}
-        title1={t("projectsPage.projects.title1")}
-        mini
       />
-      <Photography
-        readMore={t("photographyPage.photography.readMore")}
-        seeAll={t("photographyPage.photography.seeAll")}
-        title1={t("photographyPage.photography.title1")}
-        mini
+      <ServicesList
+        title1={t("homePage.services.title1")}
+        title2={t("homePage.services.title2")}
       />
-      <WhatIDo />
-      <Levanidze />
+      <Testimonials title1={t("homePage.testimonials.title1")} />
+      <ComponentSix />
+      <ComponentFive />
     </div>
   );
 }

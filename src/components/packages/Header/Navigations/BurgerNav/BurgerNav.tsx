@@ -2,29 +2,29 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./BurgerNav.module.css";
 import { navItems, NavItemProps } from "@/Manager/navigation";
+import { IoClose } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocale } from "next-intl";
+import { useState } from "react";
 
 interface BurgerNavProps {
   isNavOpen: boolean;
   navClose: () => void;
   navToggler: () => void;
-  setOpenDropdown: (dropdown: string | null) => void;
-  openDropdown: string | null;
 }
 
 export default function BurgerNav({
   isNavOpen,
   navClose,
   navToggler,
-  setOpenDropdown,
-  openDropdown,
 }: BurgerNavProps) {
   const pathname = usePathname();
   const locale = useLocale();
   const items: NavItemProps[] = navItems[locale];
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleDropdown = (title: string) => {
-    setOpenDropdown(openDropdown === title ? null : title);
+    setOpenDropdown((prev) => (prev === title ? null : title));
   };
 
   return (
@@ -49,28 +49,11 @@ export default function BurgerNav({
             return (
               <li key={localizedUrl} className={styles.burgerLi}>
                 <div className={styles.burgerItemWrapper}>
-                  {item.url === "/contact" ? (
-                    <span
-                      className={`burger-link ${
-                        isActive ? "active-burger-link" : ""
-                      }`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navClose();
-                        window.scrollTo({
-                          top: document.body.scrollHeight,
-                          behavior: "smooth",
-                        });
-                      }}
-                      style={{ cursor: "pointer" }}
-                    >
-                      {item.title}
-                    </span>
-                  ) : hasDropdown ? (
+                  {hasDropdown ? (
                     <div className={styles.burgerDropdownHeader}>
                       <span
                         onClick={() => toggleDropdown(item.title)}
-                        className={`burger-link ${
+                        className={` burger-link ${
                           isActive ? "active-burger-link" : ""
                         }`}
                       >
@@ -115,6 +98,21 @@ export default function BurgerNav({
             );
           })}
         </ul>
+      </div>
+
+      {/* Burger Menu Open/Close Icons */}
+      <div
+        className={styles.openCloseIconDiv}
+        onClick={() => {
+          setOpenDropdown(null);
+          navToggler();
+        }}
+      >
+        {isNavOpen ? (
+          <IoClose className={styles.openCloseIcon} />
+        ) : (
+          <GiHamburgerMenu className={styles.openCloseIcon} />
+        )}
       </div>
     </div>
   );

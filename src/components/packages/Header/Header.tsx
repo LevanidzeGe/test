@@ -9,18 +9,14 @@ import { companyName } from "@/Manager/info";
 import StandartNav from "./Navigations/StandartNav/StandartNav";
 import BurgerNav from "./Navigations/BurgerNav/BurgerNav";
 // import LanguageAlphabet from "./Navigations/LanguageSwitcher/LanguageAlphabet";
-import { MdManageAccounts } from "react-icons/md";
-import { IoClose } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navToggler = () => setIsNavOpen((prev) => !prev);
   const navClose = () => setIsNavOpen(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className={styles.extraWrap}>
+    <header className={styles.headWrapper}>
       <section className="section header">
         <div className="container">
           <div className={styles.navigationWrapper}>
@@ -33,42 +29,17 @@ export default function Header() {
                 alt={`${companyName} logo`}
               />
             </Link>
-            <div className={styles.middleNav}>
-              <StandartNav />
-              <LanguageFlag />
-            </div>
-
+            <StandartNav />
+            <LanguageFlag />
             {/* <LanguageAlphabet /> */}
-            <Link
-              className={styles.loginIcon}
-              href="https://levanidze.vercel.app"
-            >
-              <MdManageAccounts />
-            </Link>
-            {/* buurger menu opener - closer */}
-            <div
-              className={styles.openCloseIconDiv}
-              onClick={() => {
-                setOpenDropdown(null);
-                navToggler();
-              }}
-            >
-              {isNavOpen ? (
-                <IoClose className={styles.openCloseIcon} />
-              ) : (
-                <GiHamburgerMenu className={styles.openCloseIcon} />
-              )}
-            </div>
+            <BurgerNav
+              navClose={navClose}
+              navToggler={navToggler}
+              isNavOpen={isNavOpen}
+            />
           </div>
         </div>
       </section>
-      <BurgerNav
-        navClose={navClose}
-        navToggler={navToggler}
-        isNavOpen={isNavOpen}
-        setOpenDropdown={setOpenDropdown}
-        openDropdown={openDropdown}
-      />
     </header>
   );
 }

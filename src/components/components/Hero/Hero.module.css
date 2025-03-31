@@ -1,169 +1,120 @@
-.heroWrapper {
+.wrapper {
+  display: flex;
   height: 100vh;
-  width: 100%;
   position: relative;
-  min-height: 700px;
-  max-height: 1300px;
-  max-width: 1400px;
+  max-height: 1500px;
+  min-height: 800px;
   margin: 0 auto;
-  padding-top: 10vh;
 }
-.bgImage {
-  height: 100%;
-  width: 100%;
-  filter: blur(120px);
-  position: absolute;
+
+.leftDiv {
+  margin-top: 7vh;
+  padding-right: 0;
+  width: 40%;
+  z-index: 5;
+  padding-right: 30px;
+  min-width: 450px;
+  max-width: 700px;
+}
+.imageWrapper {
+  padding-top: 80px;
+  width: 55%;
   object-fit: cover;
+  height: auto;
+}
 
-  z-index: -1;
-  opacity: 0.3;
+.leftDiv h1 {
+  color: var(--color4);
+  padding-bottom: 40px;
 }
-.topDiv {
+.leftDiv h2 {
+  line-height: 150%;
+}
+.leftDiv h2:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.buttonContainer {
+  margin-top: 15%;
   display: flex;
-  justify-content: space-between;
-}
-.textDiv {
+  gap: 15px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
+}
+
+.vector {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  transform: translate(0, 50%);
+  z-index: 3;
+}
+
+.imageWrapper img {
+  border-top-left-radius: 100px;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+  position: relative;
   z-index: 1;
-}
-.textDiv strong {
-  color: var(--red2);
-}
-.textDiv h1 {
-  flex-wrap: wrap;
-  text-wrap: noWrap;
-  color: var(--blue2);
-  font-size: 6vw;
-}
-.textDiv h2 {
-  max-width: 30vw;
 }
 
-.button {
-  margin-top: 5vh;
-}
-.middleDiv {
-  display: flex;
-}
-.buble {
-  height: 320px;
-  margin-top: -8vh;
-  margin-right: -4vw;
-  object-fit: contain;
-  right: 0vw;
-  top: 50px;
-}
-.monitors {
-  max-width: 800px;
+.circles img {
   position: absolute;
-  width: 63vw;
-  top: 23vh;
-  right: 1vw;
-  margin-right: 0;
 }
-.camera {
+.circleL {
+  top: 30%;
+  left: 25%;
+  height: 50vh;
+  max-height: 800px;
+}
+.circleM {
+  top: 10%;
+  left: -50px;
+  height: 30vh;
+  max-height: 500px;
+}
+.circleS {
+  bottom: 10%;
+  left: 50px;
+  height: 15vh;
+  max-height: 300px;
+}
+
+.overlay {
+  display: none;
   position: absolute;
-  left: 20vw;
-  bottom: 23vh;
-  width: 220px;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlayLight);
+  z-index: 2;
 }
-.cactus {
-  width: 300px;
-  height: 250px;
-  right: 150px;
-  position: absolute;
-  bottom: -40px;
+
+@media (max-width: 1300px) {
 }
-@media (min-width: 1600px) {
-  .textDiv h1 {
-    font-size: 95px;
-  }
-  .monitors {
-    top: 30vh;
-  }
-  .cactus {
-    bottom: 7vh;
-  }
-  .camera {
-    bottom: 30vh;
-  }
-}
+
 @media (max-width: 992px) {
-  .bgImage {
-    opacity: 0.5;
-  }
-  .cactus {
-    right: 10vw;
-    bottom: 14vh;
-  }
-}
-@media (max-width: 768px) {
-  .cactus {
-    bottom: 20vh;
-    right: 5vw;
+  .imageWrapper {
+    padding: 0;
   }
 
-  .cactus {
-    width: 35vw;
-    height: 28vw;
-    min-width: 180px;
+  .overlay {
+    display: block;
   }
-  .buble,
-  .camera {
-    width: 30vw;
-    min-width: 150px;
-  }
-  .buble {
+
+  .imageWrapper {
     position: absolute;
-    right: 5vw;
-    top: 18vh;
-  }
-
-  .monitors {
-    margin-top: 40px;
-    position: static;
     width: 100%;
-    top: auto;
-    bottom: 25vh;
+    height: 100%;
   }
-
-  .textDiv h1 {
-    font-size: 8vw;
+  .imageWrapper img {
+    border-radius: 0;
   }
-  .textDiv h2 {
-    max-width: unset;
+  .leftDiv {
     width: 100%;
-    font-size: 14px;
-    font-weight: 500;
+    margin-top: 20%;
+    min-width: 100%;
   }
-
-  .camera {
-    position: static;
-    margin-top: -80px;
-    object-fit: contain;
-  }
-  .cactus {
-    position: static;
-  }
-  .cameraCactus {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -40px;
-  }
-  .middleDiv {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 576px) {
-  .cactus {
-    margin-left: -30px;
-  }
-  .cameraCactus {
-    margin-top: 10px;
+  .circles {
+    display: none;
   }
 }

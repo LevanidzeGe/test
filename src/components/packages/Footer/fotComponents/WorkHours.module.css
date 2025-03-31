@@ -1,0 +1,17 @@
+.eachWrapper {
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+.eventWrap {
+  margin: 0 0 20px 0;
+  display: flex;
+}
+
+.eventWrap h3 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.eventWrap p {
+  margin-right: 10px;
+}

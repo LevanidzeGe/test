@@ -1,10 +1,10 @@
 :root {
-  --section-padding-xl: 150px 80px;
-  --section-padding-lg: 100px 70px;
-  --section-padding-md: 90px 60px;
-  --section-padding-sm: 90px 40px;
-  --section-padding-xs: 90px 30px;
-  --section-padding-xxs: 70px 20px;
+  --section-padding-xl: 110px 80px;
+  --section-padding-lg: 70px 70px;
+  --section-padding-md: 60px 60px;
+  --section-padding-sm: 40px 40px;
+  --section-padding-xs: 30px 30px;
+  --section-padding-xxs: 20px 20px;
 
   /* Breakpoints */
   --break-xl: 1200px;

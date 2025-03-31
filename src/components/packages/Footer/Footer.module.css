@@ -1,0 +1,38 @@
+.footMainWrapper {
+  background-color: var(--color4);
+  position: relative;
+}
+.wave {
+  position: absolute;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.footWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 8%;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.footWrapper h2 {
+  padding-bottom: 10px;
+}
+
+.copyRgiht {
+  display: flex;
+  margin: 100px 0 0 0;
+}
+.copyRgiht span {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .footWrapper {
+    flex-wrap: wrap;
+    gap: 10%;
+    position: relative;
+  }
+}

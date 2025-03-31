@@ -1,19 +1,19 @@
-export const companyDomain = "https://levanidze.com";
-export const companyName = "Levanidze";
-export const phoneNumber: string = "+46 707 17 40 30";
+export const companyDomain = "https://geo-renovations-ten.vercel.app";
+export const companyName = "Geo Renovations";
+export const phoneNumber: string = "+41 079 502 71 91";
 export const phoneNumber2: string = "";
-export const instagramUrl: string =
-  "https://www.instagram.com/levanidze_geneva/";
-export const facebookUrl: string = "https://www.facebook.com/levanidze";
-export const foodUrl: string = "";
-export const linkedinUrl: string = "https://www.linkedin.com/in/levanidze";
-export const googleUrl: string = "https://maps.app.goo.gl/Ri1cvhLMv1MGjrtRA";
-export const address: string = "Rue des Falaises 2, 1205 Genève, Switzerland";
+export const instagramUrl: string = "tets";
+export const facebookUrl: string = "test";
+export const foodUrl: string = "test";
+export const linkedinUrl: string = "test";
+export const googleUrl: string = "";
+export const address: string =
+  "Les Pratz, 55 Rue nationale, 74300 Magland, France";
 export const address2: string = "";
-export const addressLink: string = "https://maps.app.goo.gl/Ri1cvhLMv1MGjrtRA";
-export const email: string = "Levanydze@gmail.com";
+export const addressLink: string = "https://maps.app.goo.gl/DESU2u47ELQEvMFF6";
 
-export const googleAnaliticId = "G-WLD539E4DT"; // levanydze https://analytics.google.com/analytics/web/?authuser=1#/a329766923p480909701/admin/streams/table/
-export const companyRoute = "levanidze-2025-03-19";
-export const collectionRoute1 = "levanidze-web-projects";
-export const collectionRoute2 = "levanidze-com-photo-projects";
+export const email: string = "GeoRenovations@gmail.com";
+export const companyRoute = "geo-swiss-france-2025-03-23";
+export const collectionRoute1 = "geo-renovations";
+export const collectionRoute2 = "";
+export const googleAnaliticId = ""; // levanydze https://analytics.google.com/analytics/web/?authuser=1#/a329766923p480909701/admin/streams/table/

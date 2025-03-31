@@ -1,15 +1,16 @@
 import "@/src/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import Header from "@/src/components/packages/Header/Header";
-import { notFound, redirect } from "next/navigation";
-import { defaultLocale } from "@/Manager/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Bebas_Neue, Poppins, Roboto, Shantell_Sans } from "next/font/google";
-import SayHi from "@/src/components/packages/ContactForm/SayHi";
+import { Poppins, Roboto } from "next/font/google";
+import Header from "@/src/components/packages/Header/Header";
+import Footer from "@/src/components/packages/Footer/Footer";
+import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
+import { redirect } from "next/navigation";
+import { defaultLocale } from "@/Manager/navigation"; // Import supported locales
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
@@ -49,24 +50,15 @@ export async function generateMetadata({
   };
 }
 
+//fonts
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font1",
 });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
-});
-const shantel = Shantell_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font2",
-});
-const bebas = Bebas_Neue({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font3",
+  variable: "--font1",
 });
 
 export default async function LocaleLayout({
@@ -86,15 +78,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale || defaultLocale}>
-      <body
-        className={`${bebas.variable} ${roboto.variable} ${shantel.variable} ${poppins.className}`}
-      >
+      <body className={` ${roboto.className} ${poppins.variable}`}>
         <GoogleAnalytics gaId={googleAnaliticId} />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          {children}
-          <SayHi />
-          <Analytics />
+          <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
+            <Header />
+            {children}
+            <Analytics />
+            <Footer />
+            <LowerFoot />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

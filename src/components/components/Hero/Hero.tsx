@@ -1,89 +1,80 @@
-import {
-  heroBG,
-  heroScreens,
-  meBuble,
-  meCactus,
-  meCamera,
-} from "@/public/image";
-import styles from "./Hero.module.css";
 import Image from "next/image";
-import { companyDomain } from "@/Manager/info";
-import Services from "./Services/Services";
-import SocialMedia from "../SocMedia/SocialMedia";
-import { getTranslations } from "next-intl/server";
+import React from "react";
+import styles from "./Hero.module.css";
 
-export default async function Hero() {
+import {
+  circleL,
+  circleM,
+  circleS,
+  renovationHero,
+  wave,
+} from "@/public/image";
+import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
+
+export default async function MainImage() {
   const t = await getTranslations("homePage.hero");
+  const locale = await getLocale();
   return (
-    <div className={styles.heroWrapper}>
-      <Image
-        className={styles.bgImage}
-        alt="vector background"
-        src={heroBG}
-        width={1300}
-        height={1000}
-      />
-      <section className={`section no-padding-y  `}>
-        <div className="container">
-          <div className={styles.heroInnerWrapper}>
-            <div className={styles.topDiv}>
-              <div className={styles.textDiv}>
-                <div>
-                  <span className="headin5 font2 gray3">{t("span1")}</span>
-                  <h1 className="heading1">
-                    <strong className="red2"> {t("title1")} </strong>{" "}
-                    {t("title2")}
-                    <br />
-                    {t("title3")}
-                  </h1>
-
-                  <h2 className="heading5 font2 gray5">{t("text1")}</h2>
-
-                  <div className={`buttonCard ${styles.button}`}>
-                    <span></span>
-                    <p></p>
-                    <button>{t("button1")}</button>
-                  </div>
-                </div>
-                <Image
-                  className={styles.buble}
-                  src={meBuble}
-                  alt={`${companyDomain} 3d cartoon`}
-                  width={200}
-                  height={400}
-                />
-              </div>
-            </div>
-            <div className={styles.middleDiv}>
-              <Image
-                className={styles.monitors}
-                src={heroScreens}
-                width={1500}
-                height={700}
-                alt={`${companyDomain} hero responsive design `}
-              />
-              <div className={styles.cameraCactus}>
-                <Image
-                  className={styles.camera}
-                  src={meCamera}
-                  width={250}
-                  height={250}
-                  alt={`${companyDomain} levanidze cartoon`}
-                />
-                <Image
-                  className={styles.cactus}
-                  src={meCactus}
-                  alt="monitor icon"
-                  width={300}
-                  height={250}
-                />
-              </div>
-            </div>
-            <Services />
-            <SocialMedia />
+    <section
+      className={`section section-medium no-padding-x no-padding-y relative `}
+    >
+      <div className={styles.wrapper}>
+        <div className={`section ${styles.leftDiv}`}>
+          <h1 className="heading1">{t("title1")}</h1>
+          <div className={styles.title}>
+            <h2 className="heading2 gray7">{t("title2")}</h2>
+          </div>
+          <div className={styles.buttonContainer}>
+            <Link className="button button-reverse" href={`${locale}/contact`}>
+              {t("button1")}
+            </Link>
+            <Link className="button" href={`${locale}/projects`}>
+              {t("button2")}
+            </Link>
           </div>
         </div>
-      </section>
-    </div>
+        <div className={styles.imageWrapper}>
+          <Image
+            src={renovationHero}
+            width={1200}
+            height={2000}
+            alt="renovation hero image "
+            priority
+          />
+        </div>
+        <Image
+          className={styles.vector}
+          src={wave}
+          alt=""
+          width={1000}
+          height={500}
+        />
+        <div className={styles.overlay}></div>
+      </div>
+      <div className={styles.circles}>
+        <Image
+          className={styles.circleL}
+          src={circleL}
+          width={500}
+          height={500}
+          alt="vector circle"
+        />
+        <Image
+          className={styles.circleS}
+          src={circleS}
+          width={500}
+          height={500}
+          alt="vector circle"
+        />
+        <Image
+          className={styles.circleM}
+          src={circleM}
+          width={500}
+          height={500}
+          alt="vector circle"
+        />
+      </div>
+    </section>
   );
 }

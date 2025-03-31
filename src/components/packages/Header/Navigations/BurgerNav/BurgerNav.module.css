@@ -7,7 +7,6 @@
   height: 0;
   padding-top: 80px;
   margin-top: -460px;
-  z-index: 99;
 }
 .burgerActiveNav {
   transform: translateY(460px);
@@ -20,6 +19,7 @@
   width: 100%;
   text-align: center;
   transition: 0.5s cubic-bezier(1, 0.23, 0.59, 1.12);
+  z-index: 99;
 }
 .burgerLi span {
   cursor: pointer;
@@ -41,6 +41,16 @@
 
 .button {
   margin: 0 auto;
+}
+/* 
+.openCloseIconDiv {
+} */
+.openCloseIcon {
+  color: var(--color5);
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 100;
+  margin-bottom: -12px;
 }
 
 .dropdownMenu {

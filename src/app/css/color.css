@@ -1,7 +1,9 @@
 /* Variables */
 :root {
-  --bodyColor: #c8c5b9;
-  --bodyBackgroundColor: #111213;
+  --blue: #007bff;
+  --green: #28a745;
+  --red: #dc1c2f;
+  --yellow: #ffc107;
 
   /* used for photo overlay to write text over */
   --overlayLight: rgba(255, 255, 255, 0.612);
@@ -12,25 +14,18 @@
   --white: rgb(255, 255, 255);
   --gray3: rgb(200, 200, 200);
   --gray5: rgb(150, 150, 150);
-  --gray7: rgb(70, 70, 70);
-  --gray9: rgb(25, 29, 35);
+  --gray7: rgb(90, 90, 90);
+  --gray9: rgb(48, 59, 71);
   --black: #0b0e11;
 
+  /* project colors */
+  /* color1 = bright color */
+  /* color5 = dark color */
   --color1: #c7e1ff;
   --color2: #5ca3ff;
   --color3: #006ac7;
   --color4: #003f75;
   --color5: #002342;
-
-  --blue1: #2d9bdb;
-  --blue2: #1d6894;
-  --blue2-10: #1d68941c;
-  --blue2-50: #1d68947e;
-
-  --red1: #e73026;
-  --red2: #c71107;
-  --yellow1: #ddac2f;
-  --yellow2: #d7782d;
 
   --color2-10: #f0f6ff1a;
   --color4-10: #003f751a;
@@ -63,26 +58,6 @@
 .black {
   color: var(--black);
 }
-
-.blue2 {
-  color: var(--blue2);
-}
-.blue1 {
-  color: var(--blue1);
-}
-.yellow2 {
-  color: var(--yellow2);
-}
-.yellow1 {
-  color: var(--yellow1);
-}
-.red1 {
-  color: var(--red1);
-}
-.red2 {
-  color: var(--red2);
-}
-
 .color1 {
   color: var(--color1);
 }

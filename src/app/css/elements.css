@@ -1,8 +1,12 @@
-.thinLine {
-  background-color: var(--gray3);
-  opacity: 0.1;
-  width: 50%;
-  max-width: 400px;
-  height: 1px;
-  margin: 0 auto;
+.sideLineWrap {
+  display: flex;
+  color: var(--color4-80);
+  text-align: left;
+}
+.sideLine {
+  margin-left: 3px;
+  width: 5px;
+  height: 25px;
+  background-color: var(--color4-80);
+  margin-right: 20px;
 }

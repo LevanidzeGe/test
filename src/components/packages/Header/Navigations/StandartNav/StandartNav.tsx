@@ -37,21 +37,8 @@ export default function StandartNav() {
                 hasDropdown ? styles.dropdownParent : " "
               }`}
             >
-              {item.url === "/contact" ? ( //scroll down if urel === /contact
-                <span
-                  className={`link ${isActive ? "active-link" : ""}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({
-                      top: document.body.scrollHeight,
-                      behavior: "smooth",
-                    });
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  {item.title}
-                </span>
-              ) : hasDropdown ? (
+              {/* If there is a dropdown, use <span> instead of <Link> */}
+              {hasDropdown ? (
                 <Link
                   href={localizedUrl}
                   className={`link ${isActive ? "active-link" : ""}`}
@@ -65,14 +52,16 @@ export default function StandartNav() {
                   href={localizedUrl}
                   className={`${
                     item.button && "button button-small button-reverse"
-                  } ${!item.button && "link"} ${
-                    isActive && !item.button ? "active-link" : ""
-                  }`}
+                  }
+                  ${!item.button && "link link-animate"}
+
+                   ${isActive && !item.button ? "active-link " : ""}`}
                 >
                   {item.title}
                 </Link>
               )}
 
+              {/* Dropdown menu - separate from Link */}
               {hasDropdown && (
                 <ul
                   className={`${styles.dropdownMenu} ${

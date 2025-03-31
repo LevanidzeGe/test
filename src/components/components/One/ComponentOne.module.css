@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.leftDiv img {
+  border-radius: 30px;
+  height: 100%;
+  max-height: 80vh;
+  width: 70vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leftDiv {
+  max-height: 80vh;
+  object-fit: cover;
+  margin-left: -30%;
+  height: 100%;
+  position: relative;
+}
+.boxOne {
+  position: absolute;
+  background: var(--color4-80);
+  border-radius: 10px;
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 40%;
+  text-align: center;
+  padding: 30px 70px;
+}
+.boxTwo {
+  position: absolute;
+  background: var(--color4-80);
+  border-radius: 10px;
+  transform: translate(50%, 50%);
+  right: 25%;
+  text-align: center;
+  padding: 30px 40px;
+  bottom: 0;
+}
+
+.textDiv h3 {
+  margin-top: 20px;
+}
+.textDiv {
+  width: 70%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  margin-right: -50px;
+
+  text-align: left;
+}
+
+.textDiv p {
+  margin-top: 30px;
+  padding-bottom: 50px;
+  color: var(--gray7);
+}
+.textDiv h2 {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .textDiv {
+    padding-bottom: 50px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .leftDiv img {
+    width: 100vw;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  .leftDiv {
+    margin-bottom: 50px;
+    margin-left: -30%;
+  }
+}
+@media (max-width: 772px) {
+  .textDiv {
+    width: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 567px) {
+  .boxOne,
+  .boxTwo {
+    display: none;
+  }
+  .leftDiv img {
+    height: 250px;
+  }
+  .textDiv p {
+    padding-bottom: 0;
+  }
+}

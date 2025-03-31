@@ -6,7 +6,7 @@
 }
 .listWrap {
   display: flex;
-  /* gap: 30px; */
+  gap: 30px;
   align-items: center;
   height: 20px;
 }
@@ -14,7 +14,6 @@
 .navItem {
   position: relative;
   list-style: none;
-  margin: 0 7px;
 }
 
 /* Base styles for dropdown */

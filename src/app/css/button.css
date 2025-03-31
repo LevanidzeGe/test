@@ -1,8 +1,8 @@
 .button {
-  border: 2px solid var(--blue2-50);
-  background-color: var(--blue2-10);
-  color: var(--gray3);
-  font-family: var(--font);
+  border: 2px solid var(--color4);
+  background-color: var(--color1);
+  color: var(--color5);
+  font-family: var(--font1);
   width: max-content;
   border-radius: 4px;
   display: flex;
@@ -14,6 +14,7 @@
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   font-weight: 500;
+  text-transform: capitalize;
   box-shadow: -3px 5px 10px var(--shadow1-hard),
     -6px 10px 20px var(--shadow1-soft);
   filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.08));
@@ -21,8 +22,9 @@
 
 /* Hover Effect */
 .button:hover {
-  background-color: var(--blue2-50);
-  transform: translateY(-1px);
+  background-color: var(--color4);
+  color: var(--white);
+  transform: translateY(-3px);
   box-shadow: -4px 7px 14px var(--shadow2-hard),
     -8px 12px 25px var(--shadow2-soft);
   filter: drop-shadow(0 12px 9px rgba(0, 0, 0, 0.1));
@@ -67,79 +69,3 @@
   border: 2px solid var(--gray3);
 }
 /* button1 END */
-
-/* <div className={`buttonCard ${styles.button}`}>
-<p></p>
-<span></span>
-<button>get in touch</button>
-</div> */
-.buttonCard {
-  width: max-content;
-  height: max-content;
-  background: hsla(0, 0%, 28%, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: all 0.5s ease;
-  font-family: var(--font2);
-  font-size: 15px;
-  font-weight: 500;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(211, 211, 211, 0.145);
-}
-
-.buttonCard p {
-  background-color: var(--red2);
-  padding: 4px 35px;
-  position: absolute;
-  z-index: -1;
-  filter: blur(20px);
-  bottom: 0;
-  right: -20px;
-}
-
-.buttonCard span {
-  background-color: var(--yellow2);
-  padding: 4px 35px;
-  position: absolute;
-  z-index: -1;
-  filter: blur(20px);
-  top: 0;
-  left: 0;
-}
-.buttonCard button {
-  color: var(--blue1);
-  position: relative;
-  z-index: 2;
-  padding: 10px 15px;
-  transition: all 0.3s;
-}
-.buttonCard:hover button {
-  color: var(--blue1);
-}
-
-.buttonCard::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(0deg, transparent, transparent 30%, var(--blue1));
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
-.buttonCard:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px var(--blue1);
-}
-
-.buttonCard:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}

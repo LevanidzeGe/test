@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./Accordion.module.css";
 import { accordionItems } from "./dataAccordion";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 export default function Accordion({ title }: { title: string }) {
   const locale = useLocale();
