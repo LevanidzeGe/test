@@ -71,13 +71,8 @@ export default async function Collections({
               {(mini
                 ? paginatedCollection.slice(0, 3)
                 : paginatedCollection
-              ).map((item, index, arr) => (
-                <ServerCard
-                  key={item.id}
-                  {...item}
-                  readMore={readMore}
-                  isLast={index === arr.length - 1}
-                />
+              ).map((item) => (
+                <ServerCard key={item.id} {...item} readMore={readMore} />
               ))}
             </div>
             {mini && (
