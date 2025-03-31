@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./ComponentThree.module.css";
-import { useLocale, useTranslations } from "next-intl";
 import { giSvg, giorgiSofia } from "@/public/image";
 import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export default function ComponentThree() {
-  const t = useTranslations("homePage.componentThree");
-  const locale = useLocale();
+export default async function ComponentThree() {
+  const t = await getTranslations("homePage.componentThree");
+  const locale = await getLocale();
   return (
     <section className="section">
       <div className="container">

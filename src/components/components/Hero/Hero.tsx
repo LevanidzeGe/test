@@ -3,11 +3,11 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { giIconSvg, judoChildren } from "@/public/image";
 import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export default function MainImage() {
-  const t = useTranslations("homePage.hero");
-  const locale = useLocale();
+export default async function MainImage() {
+  const t = await getTranslations("homePage.hero");
+  const locale = await getLocale();
   return (
     <div
       className={` section no-padding ${styles.mainWrapper} ${styles.outline}`}

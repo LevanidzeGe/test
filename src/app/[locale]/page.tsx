@@ -10,6 +10,8 @@ import Collection from "@/src/app/[locale]/events/collection/Collection";
 import Levanidze from "@/src/components/packages/Levanidze/Levanidze";
 import { getTranslations } from "next-intl/server";
 import Album from "@/src/components/packages/Album/Album";
+import { GoogleMapsEmbed } from "@next/third-parties/google";
+import { googleAnaliticId } from "@/Manager/info";
 
 export default async function Home() {
   const t = await getTranslations("homePage");
@@ -26,6 +28,14 @@ export default async function Home() {
       <ComponentFour />
       <Testimonials title1={t("testimonials.title1")} />
       <ComponentFive />
+      <GoogleMapsEmbed
+        apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY || ""}
+        height={400}
+        width="100%"
+        mode="place"
+        maptype="satellite"
+        q="LevaniDze - Web Agency Geneva"
+      />
     </div>
   );
 }

@@ -15,4 +15,4 @@ export const email: string = "geojudogeneve@gmail.com";
 export const companyRoute = "geo-swiss-france-2025-03-23";
 export const collectionRoute1 = "geo-renovations";
 export const collectionRoute2 = "geojudo-album";
-export const googleAnaliticId = ""; // levanydze https://analytics.google.com/analytics/web/?authuser=1#/a329766923p480909701/admin/streams/table/
+export const googleAnaliticId = "G-WLD539E4DT"; // levanydze https://analytics.google.com/analytics/web/?authuser=1#/a329766923p480909701/admin/streams/table/
