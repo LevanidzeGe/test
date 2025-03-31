@@ -1,141 +1,110 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Rénovations - Sablage, Revêtements de Sol & Jardinage",
-      "description": "Geo Rénovations est spécialisé dans le sablage, l’enlèvement de peinture sous pression, les revêtements de sol et le jardinage. Situé en France à la frontière de Genève, nous proposons des solutions fiables et abordables pour nos clients en France et à Genève."
+      "title": "Geo Judo Club de Genève - École de Judo à Genève pour Enfants",
+      "description": "Rejoignez le Geo Judo Club de Genève pour un entraînement de judo de classe mondiale. Notre école est une institution de confiance à Genève depuis plus de 15 ans, offrant une formation professionnelle pour les enfants de 2 à 15 ans."
     },
     "hero": {
-      "title1": "Avec nous, la rénovation est facile",
-      "title2": "Sablage, revêtements de sol & jardinage de qualité à prix justes",
+      "title1": "Étudiez l'art du judo à",
+      "title2": "Genève",
+      "text1": " élèves",
+      "text2": "ans à Genève",
       "button1": "Contact",
-      "button2": "Projets"
+      "button2": "Inscrivez-vous maintenant"
     },
     "componentOne": {
-      "title2": "Qui sommes-nous",
-      "title3": "Clients satisfaits",
-      "title4": "Années d’expérience",
-      "text1": "Services experts près de Genève depuis 2010",
-      "text2": "Depuis 15 ans, Geo Rénovations est un acteur de confiance dans la rénovation de maisons et d'entreprises. Basés en France près de Genève, nous excellons dans le sablage, les revêtements de sol et le jardinage, garantissant qualité, efficacité et satisfaction client."
+      "title1": "Au service de Genève depuis 2010",
+      "text": "Notre école de judo, fondée il y a 15 ans à Genève, est un lieu important pour les jeunes athlètes. Avec passion et professionnalisme, nous cultivons nos élèves, leur enseignant la discipline, la force et l'unité à travers l'art du judo. Rejoignez notre héritage dès aujourd'hui !"
     },
-    "projects": {
-      "title1": "Nos travaux",
-      "title2": "Réalisations récentes"
+    "componentTwo": {
+      "text1": "Pourquoi notre école ?",
+      "text2": "Résultats garantis, activités sportives et une atmosphère conviviale",
+      "text3": "Pourquoi notre école ?",
+      "text4": "Résultats garantis, activités sportives et une atmosphère conviviale",
+      "text5": "Atmosphère conviviale",
+      "text6": "Développement grâce à la convivialité, aux activités sportives et à la discipline",
+      "text7": "Compétitions de l'année dernière",
+      "text8": "L'année dernière, nos élèves ont participé à de nombreuses compétitions et ont remporté des médailles d'or, d'argent et de bronze bien méritées !"
     },
-    "services": {
-      "title1": "Nos services",
-      "title2": "Nos spécialités",
-      "readMore": "En savoir plus",
-      "seeAll": "Voir tous les travaux"
+    "componentThree": {
+      "title1": "Enseignant",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, un instructeur de judo expérimenté en provenance de Géorgie, se distingue par plus de 20 ans d'expérience dans le sport. Depuis 15 ans, il enseigne à Genève et aide les enfants de 2 à 15 ans à développer des techniques de judo ainsi que des valeurs telles que le respect et le travail d'équipe. Le dévouement et le professionnalisme de Giorgi font de lui une figure respectée au sein de la communauté locale.",
+      "button": "Inscrivez-vous",
+      "title3": "100+ élèves actifs",
+      "text2": "Les connaissances et l'expérience acquises au cours de 15 années constituent le plus grand atout de notre école."
+    },
+    "componentFour": {
+      "title1": "Achetez des uniformes chez Geo Judo",
+      "text1": "Uniforme de Judo Noir",
+      "text2": "Uniforme de Judo Blanc"
     },
     "componentFive": {
       "title1": "Adresse",
-      "title2": "Email",
+      "title2": "Écrivez-nous par e-mail",
       "title3": "Appelez-nous"
     },
-    "componentSix": {
-      "title1": "Rejoignez-nous",
-      "title2": "Notre équipe",
-      "title3": "Nous accueillons toujours des professionnels qualifiés",
-      "text": "Nous croyons en la construction d'une équipe dédiée où chacun apporte son expertise et sa passion. Rejoignez-nous pour travailler dans un environnement inspirant et développer vos compétences !",
-      "button": "Contactez-nous"
-    },
+    "componentSix": {},
     "componentSeven": {},
     "testimonials": {
-      "title1": "Nos clients témoignent"
+      "title1": "Ce que disent les parents"
     }
   },
-  "projectsPage": {
+  "eventsPage": {
     "metadata": {
-      "title": "Derniers projets de sablage & revêtements de sol",
-      "description": "Restez informé de nos récents projets de rénovation, incluant le sablage, les revêtements de sol et le jardinage. Découvrez comment nous redonnons vie aux espaces."
+      "title": "Événements à venir au Geo Judo Club de Genève",
+      "description": "Découvrez les derniers événements à venir au Geo Judo Club de Genève. Restez informé sur nos compétitions et événements d'entraînement."
     },
-    "pageHead": {
-      "title1": "Projets",
-      "title2": "Nos réalisations"
-    },
-    "projects": {
-      "title1": "Travaux récents",
-      "title2": "Notre portfolio",
-      "readMore": "En savoir plus",
-      "seeAll": "Voir plus"
+    "events": {
+      "title": "Événements récents",
+      "button": "Lire la suite",
+      "upcomingEvents": "Événements à venir",
+      "pastEvents": "Événements passés",
+      "recentEvents": "Événements récents",
+      "upcoming": "à venir",
+      "past": "passés",
+      "seeAll": "Tous les événements"
     }
-  },
-  "servicesPage": {
-    "metadata": {
-      "title": "Services de rénovation professionnelle",
-      "description": "Contactez-nous pour des solutions professionnelles de sablage, de revêtements de sol et de jardinage adaptées à vos besoins en France et à Genève."
-    },
-    "pageHead": {
-      "title1": "Services",
-      "title2": "Nos prestations"
-    },
-    "services": {
-      "title1": "Nos prestations",
-      "title2": "Ce que nous faisons",
-      "readMore": "Découvrir",
-      "seeAll": "Tous les services"
-    },
-    "faq": "Questions fréquentes"
   },
   "contactPage": {
     "metadata": {
-      "title": "Contactez Geo Rénovations",
-      "description": "Contactez-nous pour une consultation ou toute demande concernant nos services de sablage, revêtements de sol et jardinage en France et à Genève."
-    },
-    "pageHead": {
-      "title1": "Contact",
-      "title2": "Nous contacter"
-    },
-    "contactForm": {
-      "title1": "Solutions sur mesure pour vos besoins",
-      "title2": "Toujours prêts pour de nouveaux défis",
-      "title3": "Avec notre expertise en revêtements de sol et jardinage, nous nous assurons que chaque détail est pris en charge efficacement. Nos solutions personnalisées sont conçues pour dépasser vos attentes et créer des espaces fonctionnels."
+      "title": "Contact Geo Judo Club de Genève",
+      "description": "Contactez le Geo Judo Club de Genève pour toute question ou inscription. Nous sommes là pour vous aider !"
     },
     "faq": "Questions fréquentes"
   },
-  "aboutPage": {
+  "registrationPage": {
     "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Réservez une consultation avec Geo Renovations et commencez à transformer votre propriété avec nos services spécialisés."
-    },
-    "pageHead": {
-      "title1": "À propos de nous",
-      "title2": "Notre histoire"
-    },
-    "componentSeven": {
-      "title1": "Histoire de l'entreprise",
-      "title2": "Votre partenaire de confiance pour des rénovations expertes, le sablage, les revêtements de sol et l'aménagement paysager."
-    },
-    "ourTeam": {
-      "team": "Membres de l'équipe"
+      "title": "Inscrivez-vous au Geo Judo Club de Genève",
+      "description": "Inscrivez-vous aux cours de judo au Geo Judo Club de Genève et commencez votre voyage dans le monde du judo."
     }
   },
   "forms": {
     "contactForm": {
-      "head1": "Nous contacter",
-      "head2": "Demander un devis",
+      "head1": "Contactez-nous",
+      "head2": "Inscription",
       "name": "Nom complet",
-      "email": "Email",
-      "phone": "Téléphone",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
       "date": "Date",
       "time": "Heure",
-      "quantity": "Nombre de pièces",
-      "message": "Votre demande ici",
+      "quantity": "Nombre de personnes",
+      "message": "Votre message ici",
       "button": "Envoyer",
-      "send": "Envoyer la demande",
-      "thankYou": "Merci de nous avoir contactés !",
-      "comfirmation": "Nous vous répondrons dès que possible."
+      "send": "Envoyer la demande de réservation",
+      "thankYou": "Merci pour votre contact !",
+      "comfirmation": "Nous vous contacterons dès que possible."
     }
   },
   "notFoundPage": {
-    "title1": "Page non trouvée",
-    "title2": "Cette page n’existe pas",
-    "button": "Retour à l'accueil"
+    "title1": "La page que vous recherchez n'existe pas",
+    "title2": "La page que vous recherchez n'existe pas",
+    "button": "Page d'accueil"
   },
   "footer": {
-    "title1": "Contactez-nous",
-    "title2": "Liens rapides",
-    "title3": "Horaires d'ouverture",
+    "title1": "Informations de contact",
+    "title2": "Navigation",
+    "title3": "Horaires de travail",
     "monday": "Lundi",
     "wednsday": "Mercredi",
     "thursday": "Jeudi",

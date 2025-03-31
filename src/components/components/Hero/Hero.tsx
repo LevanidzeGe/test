@@ -1,80 +1,69 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./Hero.module.css";
-
-import {
-  circleL,
-  circleM,
-  circleS,
-  renovationHero,
-  wave,
-} from "@/public/image";
+import { giIconSvg, judoChildren } from "@/public/image";
 import Link from "next/link";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 
-export default async function MainImage() {
-  const t = await getTranslations("homePage.hero");
-  const locale = await getLocale();
+export default function MainImage() {
+  const t = useTranslations("homePage.hero");
+  const locale = useLocale();
   return (
-    <section
-      className={`section section-medium no-padding-x no-padding-y relative `}
+    <div
+      className={` section no-padding ${styles.mainWrapper} ${styles.outline}`}
     >
-      <div className={styles.wrapper}>
-        <div className={`section ${styles.leftDiv}`}>
-          <h1 className="heading1">{t("title1")}</h1>
-          <div className={styles.title}>
-            <h2 className="heading2 gray7">{t("title2")}</h2>
+      <div className="container">
+        <div className={styles.overlay}>
+          <div className={styles.leftDiv}>
+            <div>
+              <h1 className="heading1">GEO JUDO</h1>
+              <div className={styles.title}>
+                <h2 className="heading2">{t("title1")}</h2>
+                <h2 className="heading2">{t("title2")}</h2>
+              </div>
+            </div>
+            <div className={styles.buttonContainer}>
+              <Link
+                className="button button-reverse"
+                href={`${locale}/contact`}
+              >
+                {t("button1")}
+              </Link>
+              <Link className="button" href={`${locale}/registration`}>
+                {t("button2")}
+              </Link>
+            </div>
           </div>
-          <div className={styles.buttonContainer}>
-            <Link className="button button-reverse" href={`${locale}/contact`}>
-              {t("button1")}
-            </Link>
-            <Link className="button" href={`${locale}/projects`}>
-              {t("button2")}
-            </Link>
+          <div className={styles.rightDiv}>
+            <div className={styles.topDiv}>
+              <div>
+                <p>95+</p>
+                <span>{t("text1")}</span>
+              </div>
+              <div>
+                <p>15+</p>
+                <span>{t("text2")}</span>
+              </div>
+            </div>
+            <div className={styles.imagesDiv}>
+              <Image
+                src={judoChildren}
+                width={1000}
+                height={1000}
+                alt="children judo"
+              ></Image>
+            </div>
           </div>
-        </div>
-        <div className={styles.imageWrapper}>
-          <Image
-            src={renovationHero}
-            width={1200}
-            height={2000}
-            alt="renovation hero image "
-            priority
-          />
         </div>
         <Image
-          className={styles.vector}
-          src={wave}
+          className={styles.mainImage}
+          src={giIconSvg}
           alt=""
-          width={1000}
-          height={500}
-        />
-        <div className={styles.overlay}></div>
-      </div>
-      <div className={styles.circles}>
-        <Image
-          className={styles.circleL}
-          src={circleL}
-          width={500}
-          height={500}
-          alt="vector circle"
-        />
-        <Image
-          className={styles.circleS}
-          src={circleS}
-          width={500}
-          height={500}
-          alt="vector circle"
-        />
-        <Image
-          className={styles.circleM}
-          src={circleM}
-          width={500}
-          height={500}
-          alt="vector circle"
+          width={1200}
+          height={800}
+          priority
         />
       </div>
-    </section>
+    </div>
   );
 }

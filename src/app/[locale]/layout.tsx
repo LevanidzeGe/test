@@ -5,7 +5,7 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Poppins, Roboto } from "next/font/google";
+import { Poppins, Gabriela, Inter, Dancing_Script } from "next/font/google";
 import Header from "@/src/components/packages/Header/Header";
 import Footer from "@/src/components/packages/Footer/Footer";
 import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
@@ -51,14 +51,28 @@ export async function generateMetadata({
 }
 
 //fonts
-const roboto = Roboto({
+
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font1",
+});
+
+const gabriola = Gabriela({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font2",
+});
+
+// const greatVibes = Great_Vibes
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font3",
 });
 
 export default async function LocaleLayout({
@@ -78,16 +92,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale || defaultLocale}>
-      <body className={` ${roboto.className} ${poppins.variable}`}>
+      <body
+        className={` ${inter.className} ${poppins.variable}  ${dancingScript.variable} ${gabriola.variable}   `}
+      >
         <GoogleAnalytics gaId={googleAnaliticId} />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
-            <Header />
-            {children}
-            <Analytics />
-            <Footer />
-            <LowerFoot />
-          </div>
+          <Header />
+          {children}
+          <Analytics />
+          <Footer />
+          <LowerFoot />
         </NextIntlClientProvider>
       </body>
     </html>

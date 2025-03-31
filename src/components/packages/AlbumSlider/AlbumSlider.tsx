@@ -20,7 +20,7 @@ import styles from "./AlbumSlider.module.css";
 // import { ProjectDetProps } from "../../WholeProjects/Donabygg/DoneProjects/TwoProjects/projects";
 
 interface AlbumProps {
-  images: string[];
+  images: { src: string; alt: string }[];
 }
 export default function AlbumSlider({ images }: AlbumProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
@@ -40,12 +40,12 @@ export default function AlbumSlider({ images }: AlbumProps) {
             modules={[FreeMode, Navigation, Thumbs]}
             className={styles.someMainImageDi}
           >
-            {images.map((image, index) => (
+            {images.map(({ src, alt }, index) => (
               <SwiperSlide key={index} className={styles.someMainDiv2}>
                 <div className={styles.mainImage}>
                   <Image
-                    src={image}
-                    alt=""
+                    src={src}
+                    alt={alt}
                     width={1300}
                     height={1000}
                     className="block h-full w-full object-cover"
@@ -65,10 +65,10 @@ export default function AlbumSlider({ images }: AlbumProps) {
             modules={[FreeMode, Navigation, Thumbs]}
             className={styles.navWrapper}
           >
-            {images.map((image, index) => (
+            {images.map(({ src, alt }, index) => (
               <SwiperSlide key={index}>
                 <button className={styles.navImagesWrapper}>
-                  <Image src={image} alt="" width={100} height={100} />
+                  <Image src={src} alt={alt} width={100} height={100} />
                 </button>
               </SwiperSlide>
             ))}

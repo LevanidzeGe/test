@@ -1,0 +1,12 @@
+.eventWrap {
+  margin: 0 0 20px 0;
+  display: flex;
+}
+
+.eventWrap h3 {
+  font-weight: 500;
+}
+
+.eventWrap p {
+  margin-right: 10px;
+}

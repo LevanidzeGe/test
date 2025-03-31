@@ -2,8 +2,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser"; //  npm install --save @emailjs/browser
 import styles from "./ContactForm.module.css";
-import TopBorder from "../../components/borderShapes/TopBorder";
-import BottomBorder from "../../components/borderShapes/BottomBorder";
 
 interface FormValues {
   user_name: string;
@@ -16,6 +14,7 @@ interface FormValues {
 }
 
 interface reservProps {
+  head: string;
   name: string;
   email: string;
   phone: string;
@@ -23,21 +22,17 @@ interface reservProps {
   text: string;
   button: string;
   thank: string;
-  title1: string;
-  title2: string;
-  title3: string;
+  wait: string;
 }
 
 export default function ContactForm({
+  head,
   name,
   email,
   phone,
   text,
   button,
   thank,
-  title1,
-  title2,
-  title3,
 }: reservProps) {
   const [nameValue, setNameValue] = useState<string>("");
   const [nameError, setNameError] = useState<boolean>(false);
@@ -92,83 +87,70 @@ export default function ContactForm({
   };
 
   return (
-    <>
-      <TopBorder />
-      <section className="section section-medium no-padding-y">
-        <div className="container ">
-          <div className={styles.reservationWrapper}>
-            <div className={styles.textDiv}>
-              <div className="sideLineWrap">
-                <div className="sideLine"></div>
-                <h3 className="heading4">{title1}</h3>
-              </div>
-              <h4 className="heading2 color4">{title2}</h4>
-              <p className="paragraph gray7">{title3}</p>
+    <div className="container1">
+      <div className={styles.reservationWrapper}>
+        <div className={styles.reservation}>
+          <h3 className="heading3 color4">{head}</h3>
+          <form
+            className={`${styles.form} ${emailSent ? styles.none : ""}`}
+            ref={form}
+            onSubmit={sendEmail}
+          >
+            <input
+              className={`${styles.input} ${styles.miniInput} ${
+                nameError ? styles.inputRed : ""
+              }`}
+              type="text"
+              name="user_name"
+              placeholder={name}
+              value={nameValue}
+              onChange={(e) => setNameValue(e.target.value)}
+            />
+            <div>
+              <input
+                className={`${styles.input} ${styles.miniInput} ${
+                  emailError ? styles.inputRed : ""
+                }`}
+                type="email"
+                name="user_email"
+                placeholder={email}
+                value={emailValue}
+                onChange={(e) => setEmailValue(e.target.value)}
+              />
+              <input
+                className={`${styles.input}`}
+                type="tel"
+                name="user_phone"
+                placeholder={phone}
+              />
             </div>
-            <div className={styles.reservation}>
-              <form
-                className={`${styles.form} ${emailSent ? styles.none : ""}`}
-                ref={form}
-                onSubmit={sendEmail}
-              >
-                <input
-                  className={`${styles.input} ${styles.miniInput} ${
-                    nameError ? styles.inputRed : ""
-                  }`}
-                  type="text"
-                  name="user_name"
-                  placeholder={name}
-                  value={nameValue}
-                  onChange={(e) => setNameValue(e.target.value)}
-                />
-                <div>
-                  <input
-                    className={`${styles.input} ${styles.miniInput} ${
-                      emailError ? styles.inputRed : ""
-                    }`}
-                    type="email"
-                    name="user_email"
-                    placeholder={email}
-                    value={emailValue}
-                    onChange={(e) => setEmailValue(e.target.value)}
-                  />
-                  <input
-                    className={`${styles.input}`}
-                    type="tel"
-                    name="user_phone"
-                    placeholder={phone}
-                  />
-                </div>
 
-                <textarea
-                  className={`${styles.textArea} ${styles.input}`}
-                  name="message"
-                  placeholder={text}
-                />
-                <button
-                  type={nameValue && emailValue ? "submit" : "button"}
-                  className={`button-reverse ${styles.button} ${
-                    !buttonDisable ? "button" : "button1Disabled"
-                  } w-full
+            <textarea
+              className={`${styles.textArea} ${styles.input}`}
+              name="message"
+              placeholder={text}
+            />
+            <button
+              type={nameValue && emailValue ? "submit" : "button"}
+              className={`button ${styles.button} ${
+                !buttonDisable ? "button" : "button1Disabled"
+              } w-full
                 styles.buttonSend
               `}
-                  onClick={
-                    !nameValue || !emailValue
-                      ? handleErrors
-                      : () => setButtonDisable(true)
-                  }
-                >
-                  {button}
-                </button>
-              </form>
-              <div className={emailSent ? styles.formSent : styles.hide}>
-                <h6>{thank}</h6>
-              </div>
-            </div>
+              onClick={
+                !nameValue || !emailValue
+                  ? handleErrors
+                  : () => setButtonDisable(true)
+              }
+            >
+              {button}
+            </button>
+          </form>
+          <div className={emailSent ? styles.formSent : styles.hide}>
+            <h6>{thank}</h6>
           </div>
         </div>
-      </section>
-      <BottomBorder />
-    </>
+      </div>
+    </div>
   );
 }

@@ -1,141 +1,110 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Renovations - Sandstrahlen, Bodenbeläge & Gartenarbeit",
-      "description": "Geo Renovations ist spezialisiert auf Sandstrahlen, Hochdruck-Farbenentfernung, Bodenbeläge und Gartenarbeit. Mit Sitz in Frankreich an der Grenze zu Genf bieten wir zuverlässige und erschwingliche Lösungen für Kunden in Frankreich und Genf."
+      "title": "Geo Judo Club de Genève - Judo-Schule in Genf für Kinder",
+      "description": "Treten Sie dem Geo Judo Club de Genève bei und genießen Sie professionelles Judo-Training. Unsere Schule ist seit über 15 Jahren eine vertrauenswürdige Institution in Genf und bietet erstklassiges Training für Kinder im Alter von 2 bis 15 Jahren."
     },
     "hero": {
-      "title1": "Mit uns wird Renovieren einfach",
-      "title2": "Hochwertiges Sandstrahlen, Bodenbeläge & Gartenarbeit zu fairen Preisen",
+      "title1": "Lernen Sie die Kunst des Judo in",
+      "title2": "Genf",
+      "text1": "Schüler",
+      "text2": "Jahre in Genf",
       "button1": "Kontakt",
-      "button2": "Projekte"
+      "button2": "Jetzt anmelden"
     },
     "componentOne": {
-      "title2": "Wer wir sind",
-      "title3": "Zufriedene Kunden",
-      "title4": "Jahre Erfahrung",
-      "text1": "Fachmännische Dienstleistungen nahe Genf seit 2010",
-      "text2": "Seit 15 Jahren ist Geo Renovierungen ein vertrauenswürdiger Name in der Renovierung von Wohn- und Geschäftsgebäuden. Mit Sitz in Frankreich nahe Genf sind wir Experten im Sandstrahlen, Bodenbeläge und Gartenarbeit und garantieren Qualität, Effizienz und Kundenzufriedenheit."
+      "title1": "Seit 2010 stolz in Genf tätig",
+      "text": "Unsere Judo-Schule, die vor 15 Jahren in Genf gegründet wurde, ist ein bedeutender Ort für junge Sportler. Mit Leidenschaft und Professionalität fördern wir unsere Schüler, indem wir ihnen Disziplin, Stärke und Einheit durch die Kunst des Judo vermitteln. Werden Sie Teil unseres Erbes!"
     },
-    "projects": {
-      "title1": "unsere Arbeiten",
-      "title2": "aktuelle Projekte"
+    "componentTwo": {
+      "text1": "Warum unsere Schule?",
+      "text2": "Garantierte Ergebnisse, sportliche Aktivitäten und eine freundliche Atmosphäre",
+      "text3": "Warum unsere Schule?",
+      "text4": "Garantierte Ergebnisse, sportliche Aktivitäten und eine freundliche Atmosphäre",
+      "text5": "Freundliche Atmosphäre",
+      "text6": "Entwicklung durch Freundlichkeit, sportliche Aktivitäten und Disziplin",
+      "text7": "Wettkämpfe im vergangenen Jahr",
+      "text8": "Im vergangenen Jahr nahmen unsere Schüler an zahlreichen Wettkämpfen teil und gewannen verdient Gold-, Silber- und Bronzemedaillen!"
     },
-    "services": {
-      "title1": "Unsere Dienstleistungen",
-      "title2": "Unsere Fachgebiete",
-      "readMore": "Mehr erfahren",
-      "seeAll": "Alle Arbeiten anzeigen"
+    "componentThree": {
+      "title1": "Lehrer",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, ein erfahrener Judo-Lehrer aus Georgien, hebt sich mit über 20 Jahren Erfahrung im Sport hervor. Seit 15 Jahren unterrichtet er in Genf und hilft Kindern im Alter von 2-15 Jahren, Judo-Techniken sowie Werte wie Respekt und Teamarbeit zu entwickeln. Giorgis Hingabe und Professionalität haben ihn zu einer respektierten Persönlichkeit in der lokalen Gemeinschaft gemacht.",
+      "button": "Anmelden",
+      "title3": "100+ Aktive Schüler",
+      "text2": "Das Wissen und die Erfahrung, die über 15 Jahre angesammelt wurden, sind der größte Schatz unserer Schule."
+    },
+    "componentFour": {
+      "title1": "Kaufen Sie Judo-Anzüge bei Geo Judo",
+      "text1": "Schwarzer Judo-Anzug",
+      "text2": "Weißer Judo-Anzug"
     },
     "componentFive": {
       "title1": "Adresse",
-      "title2": "E-Mail",
-      "title3": "Anrufen"
+      "title2": "Schreiben Sie uns per E-Mail",
+      "title3": "Rufen Sie uns an"
     },
-    "componentSix": {
-      "title1": "Arbeite mit uns",
-      "title2": "Unser Team",
-      "title3": "Wir heißen qualifizierte Fachkräfte willkommen",
-      "text": "Wir glauben an den Aufbau eines engagierten Teams, in dem jeder mit Fachwissen und Leidenschaft beiträgt. Werde Teil unseres Teams, arbeite in einer inspirierenden Umgebung und entwickle deine Fähigkeiten weiter!",
-      "button": "Kontaktiere uns"
-    },
+    "componentSix": {},
     "componentSeven": {},
     "testimonials": {
-      "title1": "Was unsere Kunden sagen"
+      "title1": "Was sagen Eltern?"
     }
   },
-  "projectsPage": {
+  "eventsPage": {
     "metadata": {
-      "title": "Neueste Sandstrahl- & Bodenbelagsprojekte",
-      "description": "Bleiben Sie auf dem Laufenden über unsere neuesten Renovierungsprojekte, darunter Sandstrahlen, Bodenbeläge und Gartenarbeit. Entdecken Sie, wie wir Räume verwandeln."
+      "title": "Bevorstehende Judo-Veranstaltungen im Geo Judo Club de Genève",
+      "description": "Entdecken Sie die neuesten und bevorstehenden Judo-Veranstaltungen im Geo Judo Club de Genève. Bleiben Sie auf dem Laufenden über unsere Wettkämpfe und Trainingsveranstaltungen."
     },
-    "pageHead": {
-      "title1": "Projekte",
-      "title2": "Unsere Arbeiten"
-    },
-    "projects": {
-      "title1": "Letzte Arbeiten",
-      "title2": "Unser Portfolio",
-      "readMore": "Mehr erfahren",
-      "seeAll": "Mehr anzeigen"
+    "events": {
+      "title": "Aktuelle Veranstaltungen",
+      "button": "Mehr lesen",
+      "upcomingEvents": "Bevorstehende Veranstaltungen",
+      "pastEvents": "Vergangene Veranstaltungen",
+      "recentEvents": "Aktuelle Veranstaltungen",
+      "upcoming": "bevorstehend",
+      "past": "vergangen",
+      "seeAll": "Alle Veranstaltungen"
     }
-  },
-  "servicesPage": {
-    "metadata": {
-      "title": "Professionelle Renovierungsdienstleistungen",
-      "description": "Kontaktieren Sie uns für professionelle Lösungen im Bereich Sandstrahlen, Bodenbeläge und Gartenarbeit, maßgeschneidert für Ihre Bedürfnisse in Frankreich und Genf."
-    },
-    "pageHead": {
-      "title1": "Dienstleistungen",
-      "title2": "Was wir bieten"
-    },
-    "services": {
-      "title1": "Unsere Arbeiten",
-      "title2": "Was wir tun",
-      "readMore": "Entdecken",
-      "seeAll": "Alle Dienstleistungen"
-    },
-    "faq": "Häufige Fragen"
   },
   "contactPage": {
     "metadata": {
-      "title": "Kontaktieren Sie Geo Renovierungen",
-      "description": "Kontaktieren Sie uns für eine Beratung oder Anfragen zu unseren Sandstrahl-, Bodenbelags- und Gartenarbeiten in Frankreich und Genf."
+      "title": "Kontakt Geo Judo Club de Genève",
+      "description": "Nehmen Sie Kontakt mit dem Geo Judo Club de Genève auf, wenn Sie Fragen haben oder sich anmelden möchten. Wir helfen Ihnen gerne weiter!"
     },
-    "pageHead": {
-      "title1": "Kontakt",
-      "title2": "Nehmen Sie Kontakt auf"
-    },
-    "contactForm": {
-      "title1": "Maßgeschneiderte Lösungen für Ihre Bedürfnisse",
-      "title2": "Immer bereit für neue Herausforderungen",
-      "title3": "Mit unserer Erfahrung in Bodenbelägen und Gartenarbeit stellen wir sicher, dass jedes Detail effizient gehandhabt wird. Unsere maßgeschneiderten Lösungen sind darauf ausgelegt, Erwartungen zu übertreffen und funktionale Räume zu schaffen."
-    },
-    "faq": "Häufige Fragen"
+    "faq": "Häufig gestellte Fragen"
   },
-  "aboutPage": {
+  "registrationPage": {
     "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Buchen Sie eine Beratung mit Geo Renovations und beginnen Sie, Ihre Immobilie mit unseren spezialisierten Dienstleistungen zu transformieren."
-    },
-    "pageHead": {
-      "title1": "Über uns",
-      "title2": "Unsere Geschichte"
-    },
-    "componentSeven": {
-      "title1": "Geschichte des Unternehmens",
-      "title2": "Ihr verlässlicher Partner für fachgerechte Renovierungen, Sandstrahlen, Bodenbeläge und Landschaftsgestaltung."
-    },
-    "ourTeam": {
-      "team": "Teammitglieder"
+      "title": "Melden Sie sich beim Geo Judo Club de Genève an",
+      "description": "Melden Sie sich für Judo-Kurse im Geo Judo Club de Genève an und starten Sie Ihre Reise in die Welt des Judo."
     }
   },
   "forms": {
     "contactForm": {
       "head1": "Kontaktieren Sie uns",
-      "head2": "Angebot anfordern",
+      "head2": "Anmeldung",
       "name": "Vollständiger Name",
       "email": "E-Mail",
       "phone": "Telefonnummer",
       "date": "Datum",
       "time": "Uhrzeit",
-      "quantity": "Anzahl der Räume",
-      "message": "Ihre Anfrage hier eingeben",
-      "button": "Senden",
-      "send": "Anfrage senden",
+      "quantity": "Anzahl der Personen",
+      "message": "Ihre Nachricht hier",
+      "button": "Absenden",
+      "send": "Reservierungsanfrage senden",
       "thankYou": "Vielen Dank für Ihre Kontaktaufnahme!",
-      "comfirmation": "Wir melden uns so schnell wie möglich bei Ihnen."
+      "comfirmation": "Wir werden uns so schnell wie möglich bei Ihnen melden."
     }
   },
   "notFoundPage": {
-    "title1": "Seite nicht gefunden",
-    "title2": "Diese Seite existiert nicht",
-    "button": "Zur Startseite"
+    "title1": "Die gesuchte Seite existiert nicht",
+    "title2": "Die gesuchte Seite existiert nicht",
+    "button": "Startseite"
   },
   "footer": {
-    "title1": "Kontakt",
-    "title2": "Schnellzugriff",
-    "title3": "Öffnungszeiten",
+    "title1": "Kontaktinformationen",
+    "title2": "Navigation",
+    "title3": "Arbeitszeiten",
     "monday": "Montag",
     "wednsday": "Mittwoch",
     "thursday": "Donnerstag",

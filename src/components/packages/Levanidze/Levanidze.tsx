@@ -51,7 +51,7 @@ export default function Levanidze() {
                 <div className={styles.cardInner}>
                   <div className={styles.cardFront}>
                     <Image
-                      className="lift shadow3"
+                      className="lift shadow2"
                       src={photo}
                       width={600}
                       height={400}
@@ -60,7 +60,7 @@ export default function Levanidze() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      className="lift shadow3"
+                      className="lift shadow2"
                       src={web}
                       width={600}
                       height={400}

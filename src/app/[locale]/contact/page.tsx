@@ -1,8 +1,9 @@
 import Testimonials from "@/src/components/packages/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
+import { childrenTeam } from "@/public/image";
+import PageHeadImage from "@/src/components/components/PageHeadImage/PageHeadImage";
 import ContactForm from "@/src/components/packages/ContactForm/ContactForm";
 import Accordion from "@/src/components/packages/Accordion/Accordion";
-import Pageshead from "@/src/components/components/PagesHead/Pageshead";
 
 export async function generateMetadata() {
   const t = await getTranslations("contactPage.metadata");
@@ -13,26 +14,24 @@ export async function generateMetadata() {
 }
 
 // Dynamic server-side rendering function that accepts params
-export default async function ContactPage() {
+export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
-      <Pageshead
-        value1={t("contactPage.pageHead.title1")}
-        value2={t("contactPage.pageHead.title2")}
+      <PageHeadImage
+        image={childrenTeam}
+        // value={t("forms.headComponent.title")}
       />
-
       <ContactForm
+        head={t("forms.contactForm.head1")}
         name={t("forms.contactForm.name")}
         email={t("forms.contactForm.email")}
         phone={t("forms.contactForm.phone")}
         people={t("forms.contactForm.people")}
         text={t("forms.contactForm.message")}
         button={t("forms.contactForm.button")}
-        thank={t("forms.contactForm.thankYou")}
-        title1={t("contactPage.contactForm.title1")}
-        title2={t("contactPage.contactForm.title2")}
-        title3={t("contactPage.contactForm.title3")}
+        thank={t("forms.contactForm.thank")}
+        wait={t("forms.contactForm.wait")}
       />
       <Accordion title={t("contactPage.faq")} />
 

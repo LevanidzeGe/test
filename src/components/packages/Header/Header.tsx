@@ -8,7 +8,7 @@ import LanguageFlag from "./Navigations/LanguageSwitcher/LanguageFlag";
 import { companyName } from "@/Manager/info";
 import StandartNav from "./Navigations/StandartNav/StandartNav";
 import BurgerNav from "./Navigations/BurgerNav/BurgerNav";
-// import LanguageAlphabet from "./Navigations/LanguageSwitcher/LanguageAlphabet";
+import LanguageAlphabet from "./Navigations/LanguageSwitcher/LanguageAlphabet";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);

@@ -1,0 +1,52 @@
+/* construction guy with services around  */
+.mainWrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.rightDiv {
+  width: 50%;
+}
+.rightDiv img {
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #013d73;
+  filter: drop-shadow(20px -20px #013d73);
+  border-radius: 20px;
+}
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50%;
+}
+
+.iconTextDiv {
+  display: flex;
+  gap: 30px;
+  align-items: end;
+  height: 50px;
+}
+
+.middleDiv p {
+  padding: 30px 0;
+}
+.lowerDiv {
+  padding: 20px;
+  background: linear-gradient(120.36deg, #003d73 -8.4%, #e20001 138.29%);
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .mainWrapper {
+    flex-direction: column;
+  }
+  .leftDiv {
+    width: 100%;
+  }
+  .rightDiv {
+    width: 100%;
+    padding-right: 10px;
+  }
+}

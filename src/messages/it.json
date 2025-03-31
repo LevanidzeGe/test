@@ -1,141 +1,110 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Renovations - Sabbiatura, Pavimentazione & Giardinaggio",
-      "description": "Geo Renovations è specializzata in sabbiatura, rimozione di vernice a pressione, pavimentazione e giardinaggio. Situata in Francia al confine con Ginevra, offriamo soluzioni affidabili e convenienti per i nostri clienti in Francia e a Ginevra."
+      "title": "Geo Judo Club de Genève - Scuola di Judo a Ginevra per Bambini",
+      "description": "Unisciti al Geo Judo Club de Genève per un allenamento di judo di classe mondiale. La nostra scuola è un'istituzione di fiducia a Ginevra da oltre 15 anni, offrendo formazione professionale per bambini dai 2 ai 15 anni."
     },
     "hero": {
-      "title1": "Con noi, la ristrutturazione è facile",
-      "title2": "Sabbiatura, pavimentazione & giardinaggio di qualità a prezzi equi",
+      "title1": "Studia l'arte del judo a",
+      "title2": "Ginevra",
+      "text1": "studenti",
+      "text2": "anni a Ginevra",
       "button1": "Contatto",
-      "button2": "Progetti"
+      "button2": "Iscriviti ora"
     },
     "componentOne": {
-      "title2": "Chi siamo",
-      "title3": "Clienti soddisfatti",
-      "title4": "Anni di esperienza",
-      "text1": "Servizi esperti vicino a Ginevra dal 2010",
-      "text2": "Da 15 anni, Geo Ristrutturazioni è un nome di fiducia nella ristrutturazione di case e aziende. Con sede in Francia vicino a Ginevra, eccelliamo nella sabbiatura, nella pavimentazione e nel giardinaggio, garantendo qualità, efficienza e soddisfazione del cliente."
+      "title1": "Al servizio di Ginevra dal 2010",
+      "text": "La nostra scuola di judo, fondata 15 anni fa a Ginevra, è un luogo significativo per i giovani atleti. Con passione e professionalità, nutriamo i nostri studenti, insegnando loro disciplina, forza e unità attraverso l'arte del judo. Unisciti alla nostra eredità oggi!"
     },
-    "projects": {
-      "title1": "i nostri lavori",
-      "title2": "progetti recenti"
+    "componentTwo": {
+      "text1": "Perché la nostra scuola?",
+      "text2": "Risultati garantiti, attività sportive e un'atmosfera amichevole",
+      "text3": "Perché la nostra scuola?",
+      "text4": "Risultati garantiti, attività sportive e un'atmosfera amichevole",
+      "text5": "Atmosfera amichevole",
+      "text6": "Sviluppo attraverso l'amicizia, le attività sportive e la disciplina",
+      "text7": "Competizioni dell'anno scorso",
+      "text8": "Lo scorso anno, i nostri studenti hanno partecipato a numerose competizioni e hanno meritato medaglie d'oro, d'argento e di bronzo!"
     },
-    "services": {
-      "title1": "I nostri servizi",
-      "title2": "Le nostre specialità",
-      "readMore": "Scopri di più",
-      "seeAll": "Vedi tutti i lavori"
+    "componentThree": {
+      "title1": "Insegnante",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, un istruttore di judo esperto dalla Georgia, si distingue con oltre 20 anni di esperienza nel sport. Da 15 anni insegna a Ginevra, aiutando i bambini dai 2 ai 15 anni a sviluppare tecniche di judo e valori come il rispetto e il lavoro di squadra. La dedizione e la professionalità di Giorgi lo hanno reso una figura rispettata nella comunità locale.",
+      "button": "Iscriviti",
+      "title3": "100+ studenti attivi",
+      "text2": "La conoscenza e l'esperienza accumulate in 15 anni sono il più grande patrimonio della nostra scuola."
+    },
+    "componentFour": {
+      "title1": "Acquista divise da Geo Judo",
+      "text1": "Divisa Judo Nera",
+      "text2": "Divisa Judo Bianca"
     },
     "componentFive": {
       "title1": "Indirizzo",
-      "title2": "Email",
+      "title2": "Scrivici via e-mail",
       "title3": "Chiamaci"
     },
-    "componentSix": {
-      "title1": "Unisciti a noi",
-      "title2": "Il nostro team",
-      "title3": "Accogliamo sempre professionisti qualificati",
-      "text": "Crediamo nella costruzione di un team dedicato in cui ognuno contribuisce con la propria esperienza e passione. Unisciti a noi per lavorare in un ambiente stimolante e sviluppare le tue competenze!",
-      "button": "Contattaci"
-    },
+    "componentSix": {},
     "componentSeven": {},
     "testimonials": {
-      "title1": "Cosa dicono i nostri clienti"
+      "title1": "Cosa dicono i genitori"
     }
   },
-  "projectsPage": {
+  "eventsPage": {
     "metadata": {
-      "title": "Ultimi progetti di sabbiatura & pavimentazione",
-      "description": "Rimani aggiornato sui nostri ultimi progetti di ristrutturazione, tra cui sabbiatura, pavimentazione e giardinaggio. Scopri come trasformiamo gli spazi."
+      "title": "Eventi futuri al Geo Judo Club de Genève",
+      "description": "Scopri gli ultimi eventi e gli eventi futuri al Geo Judo Club de Genève. Rimani aggiornato sulle nostre competizioni e sugli eventi di allenamento."
     },
-    "pageHead": {
-      "title1": "Progetti",
-      "title2": "Le nostre realizzazioni"
-    },
-    "projects": {
-      "title1": "Lavori recenti",
-      "title2": "Il nostro portfolio",
-      "readMore": "Scopri di più",
-      "seeAll": "Vedi altro"
+    "events": {
+      "title": "Eventi recenti",
+      "button": "Leggi di più",
+      "upcomingEvents": "Eventi futuri",
+      "pastEvents": "Eventi passati",
+      "recentEvents": "Eventi recenti",
+      "upcoming": "futuro",
+      "past": "passato",
+      "seeAll": "Tutti gli eventi"
     }
-  },
-  "servicesPage": {
-    "metadata": {
-      "title": "Servizi di ristrutturazione professionale",
-      "description": "Contattaci per soluzioni professionali di sabbiatura, pavimentazione e giardinaggio su misura per le tue esigenze in Francia e a Ginevra."
-    },
-    "pageHead": {
-      "title1": "Servizi",
-      "title2": "Cosa offriamo"
-    },
-    "services": {
-      "title1": "Le nostre prestazioni",
-      "title2": "Cosa facciamo",
-      "readMore": "Scopri",
-      "seeAll": "Tutti i servizi"
-    },
-    "faq": "Domande frequenti"
   },
   "contactPage": {
     "metadata": {
-      "title": "Contatta Geo Ristrutturazioni",
-      "description": "Contattaci per una consulenza o qualsiasi richiesta sui nostri servizi di sabbiatura, pavimentazione e giardinaggio in Francia e a Ginevra."
-    },
-    "pageHead": {
-      "title1": "Contatto",
-      "title2": "Mettiti in contatto"
-    },
-    "contactForm": {
-      "title1": "Soluzioni su misura per le tue esigenze",
-      "title2": "Sempre pronti per nuove sfide",
-      "title3": "Con la nostra esperienza in pavimentazione e giardinaggio, ci assicuriamo che ogni dettaglio venga gestito in modo efficiente. Le nostre soluzioni personalizzate sono progettate per superare le aspettative e creare spazi funzionali."
+      "title": "Contatta Geo Judo Club de Genève",
+      "description": "Contatta il Geo Judo Club de Genève per qualsiasi domanda o iscrizione. Siamo qui per aiutarti!"
     },
     "faq": "Domande frequenti"
   },
-  "aboutPage": {
+  "registrationPage": {
     "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Prenota una consulenza con Geo Renovations e inizia a trasformare la tua proprietà con i nostri servizi specializzati."
-    },
-    "pageHead": {
-      "title1": "Chi siamo",
-      "title2": "La nostra storia"
-    },
-    "componentSeven": {
-      "title1": "Storia dell'azienda",
-      "title2": "Il tuo partner affidabile per ristrutturazioni esperte, sabbiatura, pavimentazione e paesaggistica."
-    },
-    "ourTeam": {
-      "team": "Membri del team"
+      "title": "Iscriviti al Geo Judo Club de Genève",
+      "description": "Iscriviti ai corsi di judo al Geo Judo Club de Genève e inizia il tuo viaggio nel mondo del judo."
     }
   },
   "forms": {
     "contactForm": {
       "head1": "Contattaci",
-      "head2": "Richiedi un preventivo",
+      "head2": "Registrazione",
       "name": "Nome completo",
-      "email": "Email",
-      "phone": "Telefono",
+      "email": "E-mail",
+      "phone": "Numero di telefono",
       "date": "Data",
-      "time": "Ora",
-      "quantity": "Numero di stanze",
-      "message": "Inserisci qui la tua richiesta",
+      "time": "Orario",
+      "quantity": "Numero di persone",
+      "message": "Il tuo messaggio qui",
       "button": "Invia",
-      "send": "Invia richiesta",
+      "send": "Invia richiesta di prenotazione",
       "thankYou": "Grazie per averci contattato!",
-      "comfirmation": "Ti risponderemo al più presto."
+      "comfirmation": "Ti contatteremo il prima possibile."
     }
   },
   "notFoundPage": {
-    "title1": "Pagina non trovata",
-    "title2": "Questa pagina non esiste",
-    "button": "Torna alla home"
+    "title1": "La pagina che stai cercando non esiste",
+    "title2": "La pagina che stai cercando non esiste",
+    "button": "Pagina principale"
   },
   "footer": {
-    "title1": "Contattaci",
-    "title2": "Link rapidi",
-    "title3": "Orari di apertura",
+    "title1": "Informazioni di contatto",
+    "title2": "Navigazione",
+    "title3": "Orari di lavoro",
     "monday": "Lunedì",
     "wednsday": "Mercoledì",
     "thursday": "Giovedì",

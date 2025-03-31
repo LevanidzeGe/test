@@ -26,20 +26,19 @@
   padding: var(--section-padding-xl);
   width: 100%;
   margin: 0 auto;
-  max-width: 3000px;
 }
 .section-light {
-  background-color: var(--bg-light);
+  background-color: var(--color4-10);
 }
 .section-medium {
   /* background-image: url("/assets/background/white-graysh.jpeg"); */
-  background-color: var(--bg-medium);
+  background-color: var(--color4-20);
 
   /* must fix */
 }
 
 .section-dark {
-  background-color: var(--bg-dark);
+  background-color: var(--color5);
 }
 
 .container {

@@ -1,142 +1,112 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Geo Renovations - Sandblasting, Flooring & Gardening",
-      "description": "Geo Renovations specializes in sandblasting, air pressure paint removal, flooring, and gardening services. Located in France near the Geneva border, we provide reliable and affordable solutions for clients in both France and Geneva."
+      "title": "Geo Judo Club de Genève - Judo School in Geneva for Children",
+      "description": "Join Geo Judo Club de Genève for world-class judo training. Our school has been a trusted institution in Geneva for over 15 years, offering professional training for children aged 2-15."
     },
     "hero": {
-      "title1": "With us, renovation is effortless",
-      "title2": "Top-notch sandblasting, flooring & gardening at fair rates",
+      "title1": "Study the art of judo in",
+      "title2": "Geneva",
+      "text1": "Students",
+      "text2": "Years in Geneva",
       "button1": "Contact",
-      "button2": "Get a Quote"
+      "button2": "Roll in"
     },
     "componentOne": {
-      "title2": "Who we are",
-      "title3": "Happy Clients",
-      "title4": "Years in Business",
-      "text1": "Expert Services Near Geneva Since 2010",
-      "text2": "For 15 years, Geo Renovations has been a trusted name in home and business renovations. Based in France near the Geneva border, we excel in sandblasting, flooring, and gardening, ensuring quality, efficiency, and customer satisfaction."
+      "title1": "Proudly Serving Geneva Since 2010",
+      "text": "Our judo school, founded 15 years ago in Geneva, has become a significant place for young athletes. With passion and professionalism, we nurture our students, teaching them discipline, strength, and unity through the art of judo. Join our legacy today!"
     },
-    "projects": {
-      "title1": "our work",
-      "title2": "recent jobs"
+    "componentTwo": {
+      "text1": "Why our school?",
+      "text2": "Guaranteed results, sports activities, and a friendly atmosphere",
+      "text3": "Why our school?",
+      "text4": "Guaranteed results, sports activities, and a friendly atmosphere",
+      "text5": "Friendly atmosphere",
+      "text6": "Development through friendliness, sports activities, and discipline",
+      "text7": "Competitions in the past year",
+      "text8": "In the past year, our students participated in numerous competitions and deservedly won gold, silver, and bronze medals!"
     },
-    "services": {
-      "title1": "What we do",
-      "title2": "Our Specialties",
-      "readMore": "Learn More",
-      "seeAll": "View All Works"
+    "componentThree": {
+      "title1": "Teacher",
+      "title2": "Giorgi Kurtanidze",
+      "text1": "Giorgi Kurtanidze, an experienced judo instructor from Georgia, stands out with over 20 years of experience in sports. For the past 15 years, he has been teaching in Geneva, helping children aged 2-15 develop judo techniques and values such as respect and teamwork. Giorgi's dedication and professionalism have made him a respected figure in the local community.",
+      "button": "Register",
+      "title3": "100+ Active Students",
+      "text2": "The knowledge and experience accumulated over 15 years is the greatest asset of our school."
+    },
+    "componentFour": {
+      "title1": "Purchase Uniforms from Geo Judo",
+      "text1": "Black Judo Uniform",
+      "text2": "White Judo Uniform"
     },
     "componentFive": {
       "title1": "Address",
-      "title2": "Email Us",
-      "title3": "Call Now"
+      "title2": "Write to us via email",
+      "title3": "Call us"
     },
-    "componentSix": {
-      "title1": "Join us",
-      "title2": "Our Crew",
-      "title3": "We always welcome skilled workers",
-      "text": "We believe in building a dedicated team where everyone contributes with their expertise and passion. Join us to work in an inspiring environment and grow your skills!",
-      "button": "Contact us"
-    },
+    "componentSix": {},
+    "componentSeven": {},
     "testimonials": {
-      "title1": "Our customers say"
+      "title1": "What do parents say"
     }
   },
-  "projectsPage": {
+  "eventsPage": {
     "metadata": {
-      "title": "Latest Sandblasting & Flooring Projects",
-      "description": "Stay updated on our recent renovation projects, including sandblasting, flooring, and gardening. See how we bring spaces back to life."
+      "title": "Upcoming Judo Events at Geo Judo Club de Genève",
+      "description": "Explore the latest and upcoming judo events at Geo Judo Club de Genève. Stay up-to-date with our competitions and training events."
     },
-    "pageHead": {
-      "title1": "Projects",
-      "title2": "Latest Works"
-    },
-    "projects": {
-      "title1": "Recent Works",
-      "title2": "Our Portfolio",
-      "readMore": "Learn More",
-      "seeAll": "View More"
+    "events": {
+      "title": "Recent Events",
+      "button": "Read more",
+      "upcomingEvents": "Upcoming events",
+      "pastEvents": "Past events",
+      "recentEvents": "Recent events",
+      "upcoming": "upcoming",
+      "past": "past",
+      "seeAll": "All events"
     }
-  },
-  "servicesPage": {
-    "metadata": {
-      "title": "Expert Renovation Services",
-      "description": "Get in touch for professional sandblasting, flooring installation, and gardening solutions tailored to your needs in France and Geneva."
-    },
-    "pageHead": {
-      "title1": "Services",
-      "title2": "What We Offer"
-    },
-    "services": {
-      "title1": "Our Work",
-      "title2": "What We Do",
-      "readMore": "Discover More",
-      "seeAll": "All Services"
-    },
-    "faq": "Common Questions"
   },
   "contactPage": {
     "metadata": {
-      "title": "Contact Geo Renovations",
-      "description": "Reach out to us for consultations or inquiries regarding sandblasting, flooring, and gardening services in France and Geneva."
+      "title": "Contact Geo Judo Club de Genève",
+      "description": "Get in touch with Geo Judo Club de Genève for any inquiries or registration questions. We're here to help!"
     },
-    "pageHead": {
-      "title1": "Contact",
-      "title2": "Get in Touch"
-    },
-    "contactForm": {
-      "title1": "Custom Solutions for Your Needs",
-      "title2": "Always Ready for New Challenges",
-      "title3": "With our expertise in flooring and gardening, we ensure every detail is handled efficiently. Our tailored solutions are designed to exceed expectations and create functional outdoor spaces."
-    },
-    "faq": "Common Questions"
+    "faq": "Frequently Asked Questions"
   },
-  "aboutPage": {
+  "registrationPage": {
     "metadata": {
-      "title": "Consult Geo Renovations",
-      "description": "Book a consultation with Geo Renovations and start transforming your property with our specialized services."
-    },
-    "pageHead": {
-      "title1": "About Us",
-      "title2": "Our Story"
-    },
-    "componentSeven": {
-      "title1": "History of the company",
-      "title2": "Your reliable partner for expert renovation, sandblasting, flooring, and landscaping services."
-    },
-    "ourTeam": {
-      "team": "Team Members"
+      "title": "Register for Geo Judo Club de Genève",
+      "description": "Sign up for judo classes at Geo Judo Club de Genève and start your journey in the world of judo."
     }
   },
   "forms": {
     "contactForm": {
-      "head1": "Get in Touch",
-      "head2": "Request a Quote",
+      "head1": "Contact us",
+      "head2": "Registration",
       "name": "Full Name",
       "email": "Email",
-      "phone": "Phone",
+      "phone": "Phone Number",
       "date": "Date",
       "time": "Time",
-      "quantity": "Rooms Needed",
-      "message": "Your request here",
-      "button": "Submit",
-      "send": "Send Inquiry",
-      "thankYou": "Thanks for reaching out!",
-      "comfirmation": "We'll respond as soon as possible."
+      "quantity": "Number of People",
+      "message": "Your message here",
+      "button": "send",
+      "send": "Send Reservation Request",
+      "thankYou": "Thank you for your contact!",
+      "comfirmation": "We will contact you back, as soon as possible"
     }
   },
   "notFoundPage": {
-    "title1": "Page Not Found",
-    "title2": "This page does not exist",
-    "button": "Go Home"
+    "title1": "The page you are looking for does not exist",
+    "title2": "The page you are looking for does not exist",
+    "button": "Home Page"
   },
   "footer": {
-    "title1": "Contact Us",
-    "title2": "Quick Links",
-    "title3": "Working Hours",
+    "title1": "Contact Information",
+    "title2": "Navigation",
+    "title3": "Working hours",
     "monday": "Monday",
-    "wednsday": "Wednesday",
+    "wednsday": "Wednsday",
     "thursday": "Thursday",
     "friday": "Friday"
   },

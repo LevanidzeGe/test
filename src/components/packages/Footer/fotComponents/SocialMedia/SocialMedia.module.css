@@ -3,26 +3,17 @@
   gap: 10px;
 }
 .mediaWrapper a {
-  position: relative;
   background-color: var(--color4);
-  border-radius: 6px;
+  border-radius: 50%;
   font-size: 25px;
-  padding: 8px;
-  transition: 0.3s;
+  padding: 6px;
+  transition: 0.2s;
   color: var(--white);
   height: 40px;
   width: 40px;
   display: flex;
   align-items: center;
 }
-
-.mediaWrapper svg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-}
 .mediaWrapper a:hover {
-  background-color: var(--color5);
+  background-color: var(--color2);
 }

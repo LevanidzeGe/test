@@ -1,0 +1,27 @@
+.container {
+  margin-top: 150px;
+}
+.paddingTop {
+  margin-top: 50px;
+}
+
+.eventsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%;
+}
+.iconTextDiv {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  align-items: end;
+}
+.button {
+  margin-left: auto;
+}
+@media (max-width: 992px) {
+  .eventsWrapper {
+    flex-direction: column;
+  }
+}

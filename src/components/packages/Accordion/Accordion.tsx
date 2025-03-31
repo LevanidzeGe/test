@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./Accordion.module.css";
 import { accordionItems } from "./dataAccordion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Accordion({ title }: { title: string }) {
   const locale = useLocale();
@@ -14,9 +14,9 @@ export default function Accordion({ title }: { title: string }) {
   };
 
   return (
-    <section className="section no-padding-y">
+    <section className="section">
       <div className="container">
-        <h5 className={`heading2 color4 ${styles.headTitle}`}>{title}</h5>
+        <h5 className={`heading3 color4 ${styles.headTitle}`}>{title}</h5>
         <div className={styles.accordion}>
           {accordionItems.map((item, index) => (
             <div

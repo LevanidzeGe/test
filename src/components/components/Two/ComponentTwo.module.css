@@ -1,0 +1,136 @@
+.upperDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.upperDiv h2 {
+}
+.upperDiv h3 {
+  max-width: 50%;
+  text-align: right;
+}
+
+.middleDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  height: 100%;
+}
+
+.middleDiv img,
+.lowerDiv img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.middleDiv p,
+.lowerDiv p {
+  padding-top: 20px;
+}
+.lowerDiv {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.firstBox {
+  width: 29%;
+  background: linear-gradient(136.05deg, #003d73 28.44%, #002240 74.18%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.secondBox {
+  width: 44%;
+  border-radius: 20px;
+}
+.thirdBox {
+  width: 24%;
+  background: linear-gradient(161.36deg, #801213 32.15%, #b11919 90.83%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.fourthBox {
+  width: 64%;
+  border-radius: 20px;
+  background: linear-gradient(161.36deg, #801213 32.15%, #b11919 90.83%);
+  padding: 20px;
+}
+.fifthBox {
+  width: 34%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .firstBox {
+    width: 39%;
+  }
+  .secondBox {
+    width: 59%;
+  }
+  .thirdBox {
+    display: none;
+  }
+  .fourthBox {
+  }
+  .fifthBox {
+  }
+  .lowerDiv,
+  .middleDiv,
+  .middleDiv img,
+  .lowerDiv img {
+    height: 300px;
+  }
+  .upperDiv h3 {
+    display: none;
+  }
+  .wrapper h3 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .lowerDiv,
+  .middleDiv,
+  .middleDiv img,
+  .lowerDiv img {
+    height: 250px;
+  }
+  .wrapper h3 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .middleDiv,
+  .lowerDiv {
+    flex-direction: column;
+  }
+  .lowerDiv,
+  .middleDiv,
+  .middleDiv img,
+  .lowerDiv img,
+  .firstBox,
+  .secondBox,
+  .fourthBox,
+  .fifthBox {
+    width: 100%;
+    height: 100%;
+  }
+  .lowerDiv img {
+    display: none;
+  }
+  .middleDiv img {
+    margin: 15px 0 10px 0;
+  }
+  .upperDiv {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+}
+
+/* --break-xl: 1200px;
+--break-lg: 992px;
+--break-md: 768px;
+--break-sm: 576px;
+--break-xs: 400px;
+--break-xxs: 300px; */
