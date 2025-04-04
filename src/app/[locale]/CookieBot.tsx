@@ -28,5 +28,4 @@ export function CookieBot() {
 
 // export const cookiesId = ""; // levanydze https://admin.usercentrics.eu/#/v3/implementation/script-tag?settingsId=91B5hGIps1EnBH
 
-/* cookie bot */
 /* <CookieBot />; */
