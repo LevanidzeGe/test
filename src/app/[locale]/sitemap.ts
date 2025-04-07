@@ -1,7 +1,7 @@
-import { companyDomain, companyRoute } from "@/Manager/info";
-import { navItems, supportedLocales } from "@/Manager/navigation";
+import { companyDomain, companyRoute } from "@/src/Manager/info";
+import { navItems, supportedLocales } from "@/src/Manager/navigation";
 import { ref, get, getDatabase } from "firebase/database";
-import { app } from "@/lib/firebase/firebase";
+import { app } from "@/src/lib/firebase/firebase";
 
 const db = getDatabase(app);
 

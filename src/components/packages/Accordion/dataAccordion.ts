@@ -1,4 +1,4 @@
-import { supportedLocales } from "@/Manager/navigation";
+import { supportedLocales } from "@/src/Manager/navigation";
 
 type Locale = (typeof supportedLocales)[number];
 

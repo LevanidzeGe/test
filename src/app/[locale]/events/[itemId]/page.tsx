@@ -1,8 +1,12 @@
 import { Metadata } from "next";
-import { fetchCollectionIfUpdated } from "@/lib/firebase/getFirebaseData";
-import { collectionRoute1, companyRoute, companyDomain } from "@/Manager/info";
-import { defaultLocale } from "@/Manager/navigation";
-import { extractCollectionFields } from "@/lib/firebase/types";
+import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
+import {
+  collectionRoute1,
+  companyRoute,
+  companyDomain,
+} from "@/src/Manager/info";
+import { defaultLocale } from "@/src/Manager/navigation";
+import { extractCollectionFields } from "@/src/lib/firebase/types";
 import ItemJsx from "./Item/Item";
 
 // ✅ SEO Metadata
@@ -30,14 +34,14 @@ export async function generateMetadata({
   const extracted = extractCollectionFields(item, locale);
 
   return {
-    title: extracted.transTitle || defaultLocale,
-    description: extracted.transDescription || defaultLocale,
+    title: extracted.transOption1 || defaultLocale,
+    description: extracted.transOption2 || defaultLocale,
     alternates: {
       canonical: `/${locale}/projects/${itemId}`,
     },
     openGraph: {
-      title: extracted.transTitle,
-      description: extracted.transDescription,
+      title: extracted.transOption1,
+      description: extracted.transOption2,
       url: `${companyDomain}/${locale}/projects/${itemId}`,
       images: [
         {
@@ -46,7 +50,7 @@ export async function generateMetadata({
             `${companyDomain}/images/openGraph/mainOpenGraph.jpg`,
           width: 500,
           height: 300,
-          alt: extracted.transTitle,
+          alt: extracted.transOption1,
         },
       ],
     },

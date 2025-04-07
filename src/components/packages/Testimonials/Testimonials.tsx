@@ -6,7 +6,7 @@ import { StarIcon } from "./reviews";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
 import { useRef, useState, useEffect } from "react";
 import { useLocale } from "next-intl";
-import { defaultLocale } from "@/Manager/navigation";
+import { defaultLocale } from "@/src/Manager/navigation";
 
 export default function Testimonials({
   title1,

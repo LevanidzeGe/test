@@ -1,4 +1,4 @@
-import { instagramUrl } from "@/Manager/info";
+import { instagramUrl } from "@/src/Manager/info";
 import styles from "./Fourth.module.css";
 import Link from "next/link";
 import {} from "@/public/image";

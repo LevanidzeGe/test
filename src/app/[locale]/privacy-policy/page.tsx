@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Collections from "./collection/Collection";
 
 export async function generateMetadata() {
-  const t = await getTranslations("projectsPage.metadata");
+  const t = await getTranslations("privacyPolicyPage.metadata");
   return {
     title: t("title"),
     description: t("description"),
@@ -11,7 +11,7 @@ export async function generateMetadata() {
 
 // Dynamic server-side rendering function that accepts params
 export default async function ProjectsPage() {
-  const t = await getTranslations("projectsPage");
+  const t = await getTranslations("privacyPolicyPage");
   return (
     <div className="fadeOut">
       <Collections />

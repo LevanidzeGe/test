@@ -9,7 +9,7 @@ import {
   addressLink,
   phoneNumber2,
   address2,
-} from "@/Manager/info";
+} from "@/src/Manager/info";
 interface props {
   title: string;
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./BurgenNav.module.css";
-import { navItems, NavItemProps } from "@/Manager/navigation";
+import { navItems, NavItemProps } from "@/src/Manager/navigation";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocale } from "next-intl";

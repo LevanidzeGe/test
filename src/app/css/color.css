@@ -12,11 +12,12 @@
 
   /* gray colors */
   --white: rgb(255, 255, 255);
+  --gray1: rgb(224, 224, 224);
   --gray3: rgb(200, 200, 200);
   --gray5: rgb(150, 150, 150);
-  --gray7: rgb(90, 90, 90);
-  --gray9: rgb(40, 40, 40);
-  --black: #25313c;
+  --gray7: rgb(70, 70, 70);
+  --gray9: rgb(25, 29, 35);
+  --black: #0b0e11;
 
   /* project colors */
   /* color1 = bright color */
@@ -34,10 +35,12 @@
   --color4-40: hsla(208, 100%, 23%, 0.4); /*opacity 40*/
   --color4-80: hsla(208, 100%, 23%, 0.8); /*opacity 80*/
 }
-
 /* Classes */
 .white {
   color: var(--white);
+}
+.gray1 {
+  color: var(--gray1);
 }
 .gray3 {
   color: var(--gray3);
@@ -48,10 +51,33 @@
 .gray7 {
   color: var(--gray7);
 }
+.gray9 {
+  color: var(--gray9);
+}
 
 .black {
   color: var(--black);
 }
+
+.blue2 {
+  color: var(--blue2);
+}
+.blue1 {
+  color: var(--blue1);
+}
+.yellow2 {
+  color: var(--yellow2);
+}
+.yellow1 {
+  color: var(--yellow1);
+}
+.red1 {
+  color: var(--red1);
+}
+.red2 {
+  color: var(--red2);
+}
+
 .color1 {
   color: var(--color1);
 }

@@ -42,7 +42,7 @@ export default async function Collections() {
       })
     : "Not Available"; // Fallback if collectionTimestamp is not available
   return (
-    <section className="section section-dark  ">
+    <section className="section    ">
       <div className={`container`}>
         <div className={styles.wrapper}>
           <div className={styles.collectionWrapper}>
@@ -53,11 +53,11 @@ export default async function Collections() {
               >
                 <h2 className="gray1 ">
                   {index !== 0 && index + ". "}
-                  {replacePlaceholders(item.transTitle)}
+                  {replacePlaceholders(item.transOption1)}
                 </h2>
                 <p className="gray3 paragraph ">
                   {index !== 0 && "- "}
-                  {replacePlaceholders(item.transDescription)}
+                  {replacePlaceholders(item.transOption2)}
                 </p>
               </div>
             ))}

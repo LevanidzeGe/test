@@ -5,7 +5,7 @@ import {
   addressLink,
   email,
   phoneNumber,
-} from "@/Manager/info";
+} from "@/src/Manager/info";
 import { useTranslations } from "next-intl";
 import emailIcon from "./icons/email.svg";
 import phoneIcon from "./icons/phone-call.svg";

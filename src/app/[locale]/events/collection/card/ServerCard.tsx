@@ -2,21 +2,21 @@ import React from "react";
 import styles from "./ServerCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { ReturnTypeOfExtract } from "@/lib/firebase/types";
+import { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function ServerCard({
   id,
   images,
-  transTitle,
-  transDescription,
-  noTransDate,
+  transOption1,
+  transOption2,
+  noTransOption1,
 }: ReturnTypeOfExtract) {
   const locale = await getLocale();
   const t = await getTranslations();
 
-  const eventTimestamp = new Date(noTransDate).getTime();
+  const eventTimestamp = new Date(noTransOption1).getTime();
   const isUpcoming = eventTimestamp > Date.now();
 
   return (
@@ -27,7 +27,7 @@ export default async function ServerCard({
             src={images[0]}
             width={1000}
             height={700}
-            alt={transTitle}
+            alt={transOption1}
             loading="lazy"
             className={styles.image}
           />
@@ -35,8 +35,10 @@ export default async function ServerCard({
       </Link>
 
       <div className={styles.topDiv}>
-        {noTransDate && <p className={`gray7 ${styles.date}`}>{noTransDate}</p>}
-        {noTransDate && (
+        {noTransOption1 && (
+          <p className={`gray7 ${styles.date}`}>{noTransOption1}</p>
+        )}
+        {noTransOption1 && (
           <span className={isUpcoming ? styles.upcoming : styles.past}>
             {isUpcoming
               ? t("eventsPage.events.upcoming")
@@ -47,14 +49,14 @@ export default async function ServerCard({
 
       <div>
         <h2 className="heading4 color4">
-          {transTitle.length > 40
-            ? `${transTitle.slice(0, 40)}...`
-            : transTitle}
+          {transOption1.length > 40
+            ? `${transOption1.slice(0, 40)}...`
+            : transOption1}
         </h2>
         <p className="paragraph gray7">
-          {transDescription.length > 80
-            ? `${transDescription.slice(0, 80)}...`
-            : transDescription}
+          {transOption2.length > 80
+            ? `${transOption2.slice(0, 80)}...`
+            : transOption2}
         </p>
       </div>
 

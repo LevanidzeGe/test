@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { supportedLocales } from "@/Manager/navigation";
+import { supportedLocales } from "@/src/Manager/navigation";
 
 export default function LanguageFlag() {
   const [flagShow, setFlagShow] = useState<boolean>(false);

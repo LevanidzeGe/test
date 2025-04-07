@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { logo } from "@/public/image";
 import LanguageFlag from "./Navigations/LanguageSwitcher/LanguageFlag";
-import { companyName } from "@/Manager/info";
+import { companyName } from "@/src/Manager/info";
 import StandartNav from "./Navigations/StandartNav/StandartNav";
 import BurgerNav from "./Navigations/BurgerNav/BurgerNav";
 import LanguageAlphabet from "./Navigations/LanguageSwitcher/LanguageAlphabet";

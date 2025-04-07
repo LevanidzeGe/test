@@ -10,11 +10,11 @@ import Header from "@/src/components/packages/Header/Header";
 import Footer from "@/src/components/packages/Footer/Footer";
 import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
 import { redirect } from "next/navigation";
-import { defaultLocale } from "@/Manager/navigation"; // Import supported locales
+import { defaultLocale } from "@/src/Manager/navigation"; // Import supported locales
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
-import { companyDomain, googleAnaliticId } from "@/Manager/info";
+import { companyDomain, googleAnaliticId } from "@/src/Manager/info";
 import { CookieBot } from "./CookieBot";
 
 export async function generateMetadata({

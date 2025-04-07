@@ -1,13 +1,13 @@
-import { fetchCollectionIfUpdated } from "@/lib/firebase/getFirebaseData";
+import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import ServerCard from "./card/ServerCard";
-import { collectionRoute1, companyRoute } from "@/Manager/info";
+import { collectionRoute1, companyRoute } from "@/src/Manager/info";
 import styles from "./Collection.module.css";
-import { extractCollectionFields } from "@/lib/firebase/types";
+import { extractCollectionFields } from "@/src/lib/firebase/types";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import { giSvg } from "@/public/image";
-import type { ReturnTypeOfExtract } from "@/lib/firebase/types";
+import type { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
 
 export default async function Collection({ mini }: { mini?: boolean }) {
   const locale = await getLocale();
@@ -38,15 +38,17 @@ export default async function Collection({ mini }: { mini?: boolean }) {
     if (!aHasTrue && bHasTrue) return 1;
 
     // fallback: sort by date
-    const dateA = a.noTransDate ? new Date(a.noTransDate).getTime() : 0;
-    const dateB = b.noTransDate ? new Date(b.noTransDate).getTime() : 0;
+    const dateA = a.noTransOption1 ? new Date(a.noTransOption1).getTime() : 0;
+    const dateB = b.noTransOption1 ? new Date(b.noTransOption1).getTime() : 0;
     return dateB - dateA;
   });
 
   // down here is the fucntion that was working on local data
   const withTimestamps = sortedCollection.map((event) => ({
     ...event,
-    timestamp: event.noTransDate ? new Date(event.noTransDate).getTime() : 0,
+    timestamp: event.noTransOption1
+      ? new Date(event.noTransOption1).getTime()
+      : 0,
   }));
 
   // 🕓 Sort by most recent timestamp (desc)

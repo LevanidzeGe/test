@@ -1,6 +1,6 @@
 import styles from "./SocialMedia.module.css";
 import EachSocialMedia from "./EachSocialMedia";
-import { facebookUrl, instagramUrl, linkedinUrl } from "@/Manager/info";
+import { facebookUrl, instagramUrl, linkedinUrl } from "@/src/Manager/info";
 
 export default function SocialMedia() {
   return (

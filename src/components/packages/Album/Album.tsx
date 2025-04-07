@@ -1,6 +1,6 @@
-import { fetchCollectionIfUpdated } from "@/lib/firebase/getFirebaseData";
-import { extractCollectionFields } from "@/lib/firebase/types";
-import { collectionRoute2, companyRoute } from "@/Manager/info";
+import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
+import { extractCollectionFields } from "@/src/lib/firebase/types";
+import { collectionRoute2, companyRoute } from "@/src/Manager/info";
 import { getLocale } from "next-intl/server";
 import AlbumSlider from "../AlbumSlider/AlbumSlider";
 
@@ -28,7 +28,7 @@ export default async function Album() {
   const albumImages = sorted
     .map((item) => {
       const src = item.images?.[0];
-      const alt = item.transTitle || "";
+      const alt = item.transOption1 || "";
       return src ? { src, alt } : null;
     })
     .filter((entry): entry is { src: string; alt: string } => !!entry);
