@@ -9,8 +9,6 @@ import StandartNav from "./Navigations/StandartNav/StandartNav";
 import BurgerNav from "./Navigations/BurgerNav/BurgerNav";
 import LanguageAlphabet from "./Navigations/LanguageSwitcher/LanguageAlphabet";
 import { companyName } from "@/src/manager/info";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
