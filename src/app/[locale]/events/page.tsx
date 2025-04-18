@@ -9,7 +9,7 @@ export async function generateMetadata() {
   };
 }
 
-// Dynamic server-side rendering function that accepts params
+export const dinamycPageRoute = "events";
 export default async function ProjectsPage() {
   return (
     <div className="fadeOut">

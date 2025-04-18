@@ -8,6 +8,7 @@ import {
 import { defaultLocale } from "@/src/manager/navigation";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import ItemJsx from "./Item/Item";
+import { dinamycPageRoute } from "../page";
 
 // ✅ SEO Metadata
 export async function generateMetadata({
@@ -27,7 +28,7 @@ export async function generateMetadata({
   if (!item) {
     return {
       title: "Not Found",
-      description: "The project you are looking for does not exist",
+      description: "The events you are looking for does not exist",
     };
   }
 
@@ -37,12 +38,12 @@ export async function generateMetadata({
     title: extracted.transOption1 || defaultLocale,
     description: extracted.transOption2 || defaultLocale,
     alternates: {
-      canonical: `/${locale}/projects/${itemId}`,
+      canonical: `/${locale}/${dinamycPageRoute}/${itemId}`,
     },
     openGraph: {
       title: extracted.transOption1,
       description: extracted.transOption2,
-      url: `${companyDomain}/${locale}/projects/${itemId}`,
+      url: `${companyDomain}/${locale}/${dinamycPageRoute}/${itemId}`,
       images: [
         {
           url:

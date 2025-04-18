@@ -4,9 +4,6 @@ import { collectionRoute1, companyRoute } from "@/src/manager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
-import Image from "next/image";
-import { giSvg } from "@/public/image";
 import type { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
 import HeadLine from "@/src/components/components/miniComponents/HeadLine";
 
