@@ -1,37 +1,57 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./StandartNav.module.css";
-import { navItems, NavItemProps } from "@/src/Manager/navigation";
+import { navItems, NavItemProps } from "@/src/manager/navigation";
 import { useLocale } from "next-intl";
 
-export default function StandartNav() {
+export default function StandartNav({
+  noButton,
+  button,
+}: {
+  noButton?: boolean;
+  button?: boolean;
+}) {
   const pathname = usePathname();
-  const locale = useLocale(); // Get the current locale
-  const items: NavItemProps[] = navItems[locale]; // Get items for the current locale
+  const locale = useLocale();
+  const items: NavItemProps[] = navItems[locale];
 
   return (
-    <nav className={styles.mainNavWrap}>
+    <nav className={`${styles.mainNavWrap} ${noButton && styles.middleNav}`}>
       <ul className={styles.listWrap}>
         {items.map((item: NavItemProps) => {
           const localizedUrl =
             item.url === "/" ? `/${locale}` : `/${locale}${item.url}`;
           const isActive =
             item.url === "/"
-              ? pathname === `/${locale}` // Exact match for homepage
-              : pathname.startsWith(localizedUrl); // For other URLs, starts with localized URL
+              ? pathname === `/${locale}`
+              : pathname.startsWith(localizedUrl);
 
-          return (
-            <li key={item.url} className={styles.navItem}>
-              <Link
-                href={localizedUrl}
-                className={`${
-                  item.button ? "button button-small button-reverse" : "link"
-                } ${isActive && !item.button ? "active-link" : ""}`}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
+          // Render only links if `noButton` is true
+          if (noButton && !item.button) {
+            return (
+              <li key={item.url} className={styles.navItem}>
+                <Link
+                  href={localizedUrl}
+                  className={`link ${isActive ? "active-link" : ""}`}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            );
+          }
+
+          // Render only buttons if `button` is true
+          if (button && item.button) {
+            return (
+              <li key={item.url} className={styles.navItem}>
+                <Link href={localizedUrl} className="link">
+                  {item.title}
+                </Link>
+              </li>
+            );
+          }
+
+          return null; // Avoid rendering anything if conditions are not met
         })}
       </ul>
     </nav>

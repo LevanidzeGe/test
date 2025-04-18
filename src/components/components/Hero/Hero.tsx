@@ -1,68 +1,86 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./Hero.module.css";
-import { giIconSvg, judoChildren } from "@/public/image";
+import {
+  childrenTeam,
+  giorgiSofia,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  judoChildren,
+} from "@/public/image";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function MainImage() {
   const t = await getTranslations("homePage.hero");
   const locale = await getLocale();
+  const judoImages = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+  ];
+  const shuffledImages = [...judoImages].sort(() => 0.5 - Math.random());
+
   return (
     <div
-      className={` section no-padding ${styles.mainWrapper} ${styles.outline}`}
+      className={` section  no-padding-y ${styles.mainWrapper} ${styles.outline}`}
     >
       <div className="container">
-        <div className={styles.overlay}>
+        <div className={styles.wrapper}>
           <div className={styles.leftDiv}>
             <div>
-              <h1 className="heading1">GEO JUDO</h1>
+              <span className="heading3 primary3"> Geneva Champel</span>
+              <h1 className="heading1 primary8">
+                Judo Club Geo <br /> de Genève
+              </h1>
               <div className={styles.title}>
-                <h2 className="heading2">{t("title1")}</h2>
-                <h2 className="heading2">{t("title2")}</h2>
+                <h2 className="heading3 secondary7">
+                  Study the ar of Judo in Geneva with our beautiful somee text
+                  here and so one ...
+                </h2>
               </div>
             </div>
             <div className={styles.buttonContainer}>
+              <Link className="button" href={`${locale}/registration`}>
+                {t("button2")}
+              </Link>
               <Link
-                className="button button-reverse"
+                className="button button-reverse "
                 href={`${locale}/contact`}
               >
                 {t("button1")}
               </Link>
-              <Link className="button" href={`${locale}/registration`}>
-                {t("button2")}
-              </Link>
             </div>
           </div>
           <div className={styles.rightDiv}>
-            <div className={styles.topDiv}>
-              <div>
-                <p>95+</p>
-                <span>{t("text1")}</span>
-              </div>
-              <div>
-                <p>15+</p>
-                <span>{t("text2")}</span>
-              </div>
-            </div>
-            <div className={styles.imagesDiv}>
-              <Image
-                src={judoChildren}
-                width={1000}
-                height={1000}
-                alt="children judo"
-              ></Image>
+            <div className={styles.overlay}></div>
+            <div className={styles.judoGrid}>
+              {shuffledImages.slice(0, 10).map((img, i) => (
+                <div key={i} className={styles.judoImageWrapper}>
+                  <Image
+                    src={img}
+                    alt={`judo-${i}`}
+                    fill
+                    className={styles.judoImage}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
-        <Image
-          className={styles.mainImage}
-          src={giIconSvg}
-          alt=""
-          width={1200}
-          height={800}
-          priority
-        />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+.burgerWrapper {
+}
 .burgerMenu {
   width: 100%;
   position: absolute;
@@ -9,13 +11,13 @@
   margin-top: -460px;
 }
 .burgerActiveNav {
-  transform: translateY(460px);
+  transform: translateY(483px);
 }
 
 .burgerUl {
   display: flex;
   flex-direction: column;
-  background-color: var(--color5);
+  background-color: var(--primary9);
   width: 100%;
   text-align: center;
   transition: 0.5s cubic-bezier(1, 0.23, 0.59, 1.12);
@@ -23,7 +25,7 @@
 }
 .burgerLi {
   padding: 15px 0;
-  border-bottom: 1px solid var(--gray3);
+  border-bottom: 1px solid var(--gray7);
   width: 100%;
 }
 
@@ -39,16 +41,9 @@
 .button {
   margin: 0 auto;
 }
-/* 
-.openCloseIconDiv {
+
+/* .openCloseIconDiv {
 } */
-.openCloseIcon {
-  color: var(--color5);
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 10;
-  margin-bottom: -12px;
-}
 
 @media (min-width: 993px) {
   .burgerWrapper {

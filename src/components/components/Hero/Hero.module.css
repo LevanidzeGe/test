@@ -2,131 +2,124 @@
   overflow: hidden;
   position: relative;
   height: 100vh;
-  max-height: 1500px;
-  min-height: 844px;
+  max-height: 1200px;
+  /* min-height: 844px; */
   margin: 0 auto;
+  /* background-color: var(--secondary0); */
 }
 
-.mainImage {
-  position: absolute;
-  height: 100%;
-  padding: 3% 0;
-  min-height: 600px;
-  z-index: -1;
-  max-height: 1500px;
-  left: -10%;
-  top: 0;
-}
-.overlay {
+.wrapper {
   display: flex;
+  justify-content: space-between;
   position: relative;
   height: 100%;
 }
 .leftDiv {
-  margin-top: 100px;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
   z-index: 1;
 }
-
+.leftDiv h2,
+.leftDiv span {
+  font-size: 2.5vw;
+}
 .leftDiv h1 {
-  color: var(--color4);
-  padding-bottom: 20px;
+  margin: 2vh 0 3vh 0;
+  font-size: 4vw;
 }
-.leftDiv h2 {
-  line-height: 150%;
-  color: rgba(0, 34, 64, 0.6);
-}
-.leftDiv h2:nth-child(2) {
-  color: var(--color6);
-  padding-bottom: 20px;
-}
+
 .buttonContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 15%;
 }
 
 .rightDiv {
   width: 50%;
-  height: 100%;
-}
-.topDiv {
-  position: absolute;
-  right: 80px;
-  margin-top: -20px;
-}
-.topDiv p {
-  color: var(--color4);
-  font-size: 60px;
-  line-height: 50px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-.topDiv span {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--gray7);
-}
-
-.imagesDiv {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   height: 100%;
-  margin: auto 0;
-  padding-bottom: 100px;
+  max-height: 100vh;
+  min-height: 700px;
+}
+.judoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  width: 100%;
 }
 
-.blueDiv {
-  color: var(--color1);
-  max-width: max-content;
-  padding: 10px 20px;
-  background: linear-gradient(
-    100.09deg,
-    var(--color3) 7.55%,
-    var(--color5) 98.78%
-  );
-  border-radius: 11px;
-}
-.redDiv {
-  color: var(--color4);
-  margin-top: 20px;
-  padding: 10px 20px;
-  max-width: max-content;
-  background: linear-gradient(
-    100.09deg,
-    var(--color6) 7.55%,
-    rgb(205, 80, 80) 98.78%
-  );
-  border-radius: 11px;
+.judoImageWrapper {
+  position: relative;
+  aspect-ratio: 4 / 4.5;
+  height: auto;
+  max-width: 350px;
+  overflow: hidden;
 }
 
-@media (max-width: 1300px) {
-  .bottomDiv {
-    display: none;
+.judoImage {
+  object-fit: cover;
+  border-radius: var(--radius3);
+}
+
+/* Apply stagger to 2nd column items */
+.judoGrid > .judoImageWrapper:nth-child(2n) {
+  transform: translateY(-30%);
+}
+
+@media (min-width: 1400px) {
+  .leftDiv h1 {
+    font-size: 52px;
   }
-  .topDiv {
-    display: none;
-  }
-  .imagesDiv {
-    margin-left: -100px;
-  }
-  .title {
-    max-width: 400px;
+  .leftDiv h2,
+  .leftDiv span {
+    font-size: 24px;
   }
 }
 
-@media (max-width: 992px) {
-  .imagesDiv {
-    display: none;
+@media (max-width: 768px) {
+  .leftDiv h1 {
+    font-size: 35px;
+    color: var(--primary3);
   }
-  .title {
-    max-width: auto;
+
+  .leftDiv h2,
+  .leftDiv span {
+    font-size: 25px;
   }
+  .leftDiv h2 {
+    color: var(--secondary8);
+  }
+  .leftDiv span {
+    color: var(--gray5);
+  }
+
   .rightDiv {
-    width: 0;
+    position: absolute;
+    width: 100%;
+    overflow: visible;
   }
   .leftDiv {
     width: 100%;
+    top: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.82);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(1px);
+  }
+  .judoGrid {
+    height: 100%;
+    overflow: hidden;
   }
 }

@@ -2,8 +2,15 @@
 .mainWrapper {
   position: relative;
   margin: 0;
-  padding-top: 70px;
-  /* margin-bottom: 50px; */
+  overflow: hidden;
+}
+
+.darkBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-color: var(--black);
 }
 
 /* Background Blur */
@@ -13,111 +20,63 @@
   object-fit: cover;
   position: absolute;
   z-index: -1;
-  filter: blur(60px);
+  filter: blur(160px);
   transform: translate(0, -50%);
   top: 60%;
+}
+.textWrap {
+  width: 100%;
+  text-align: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.shareDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  gap: 20px;
+}
+.textWrap a {
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.textWrap h2 {
+  margin: 0 auto;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.shareDiv p {
+  color: rgb(236, 188, 85);
+  font-weight: 600;
+  font-size: 17px;
 }
 
 /* Layout Wrappers */
 .wrapper {
   display: flex;
-  justify-content: center;
-}
-
-.textDiv {
-  margin-right: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Domain Wrapper */
-.domainWrapper {
-  width: max-content;
-  background: #1a1a1a; /* Dark background for contrast */
-  padding: 15px 20px;
-  border-radius: 10px; /* Smooth edges */
-}
-
-/* Domain Section */
-.domain {
-  display: flex;
-  background: #1a1a1a; /* Dark background for contrast */
-  border-radius: 10px; /* Smooth edges */
-}
-
-/* Logo Animation */
-.logo {
-  object-fit: contain;
-  height: 35px;
-  margin-left: 10px;
-  animation: rotateLogo 8s linear infinite;
-}
-
-/* Text Styling */
-.textDiv h2 {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  font-size: 35px;
-  font-weight: 700;
-  color: rgb(98, 98, 98);
-  margin-bottom: 30px;
-}
-
-.textDiv p:nth-child(1) {
-  color: #5294ae;
-}
-
-.textDiv p:nth-child(2) {
-  color: #9f7f2e;
-}
-
-.textDiv p:nth-child(3) {
-  color: #c71107;
-}
-
-.textDiv h3 {
-  background: linear-gradient(
-    90deg,
-    #d7782d 0%,
-    #dbc68f 20%,
-    #62b3c5 40%,
-    #43778b 60%,
-    #c71107 80%,
-    #e73026 100%
-  );
-  background-size: 200% auto; /* Enables smooth movement */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transition: background-position 0.7s ease-in-out; /* Smooth transition */
-  font-weight: 700;
-  font-size: 25px;
-}
-.textDiv span {
-  font-size: 30px;
-}
-
-.textDiv h3:hover {
-  background-position: right center; /* Moves the gradient smoothly */
+  justify-content: space-between;
+  margin: 100px 0;
 }
 
 /* Card Styling */
 .cardDiv {
   position: relative;
-  width: 400px;
-  height: 300px;
   perspective: 1000px;
+  width: 100%;
 }
 
 .cardDiv img {
   position: absolute;
-  width: max-content;
-  height: max-content;
   object-fit: contain;
   border-radius: 12px;
+  width: 400px;
+  height: auto;
 }
 
 /* Card Flip Container */
@@ -161,32 +120,16 @@
 @media (max-width: 992px) {
   .wrapper {
     flex-direction: column;
-    align-items: center; /* Ensures everything centers */
+    align-items: center;
     text-align: center;
   }
   .cardDiv:hover .cardInner {
     animation-play-state: running;
   }
 
-  .textDiv {
-    width: 100%;
-    max-width: 600px;
-    margin-right: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers text */
+  .cardDiv:nth-child(2) {
+    display: none;
   }
-
-  .textDiv h2 {
-    justify-content: center;
-    line-height: 110%;
-  }
-
-  .domainWrapper {
-    margin: 0 auto; /* Centers the button */
-  }
-
   .cardDiv {
     margin: 0 auto;
   }
@@ -195,6 +138,9 @@
 @media (max-width: 567px) {
   .cardDiv {
     width: 100%;
+  }
+  .cardDiv img {
+    width: 250px;
   }
 }
 
@@ -226,4 +172,10 @@
   60% {
     transform: rotateY(0deg);
   }
+}
+
+.textDropShadow {
+  color: var(--white);
+  text-shadow: 1px 1px 35px rgba(255, 255, 255, 0.3),
+    0px 0px 10px rgba(255, 255, 255, 0.4);
 }

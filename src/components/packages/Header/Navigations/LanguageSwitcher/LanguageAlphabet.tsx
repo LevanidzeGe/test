@@ -3,10 +3,14 @@ import { useState } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { supportedLocales } from "@/src/Manager/navigation";
+import { supportedLocales } from "@/src/manager/navigation";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-export default function LanguageAlphabet() {
+export default function LanguageAlphabet({
+  navClose,
+}: {
+  navClose: () => void;
+}) {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
@@ -24,10 +28,13 @@ export default function LanguageAlphabet() {
   return (
     <div
       className={styles.languageSwitcher}
-      onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+      onClick={() => {
+        setIsDropdownOpen(!isDropdownOpen);
+        navClose();
+      }}
     >
       {locale}
-      <MdOutlineKeyboardArrowDown />
+      <MdOutlineKeyboardArrowDown className={styles.icon} />
       {isDropdownOpen && (
         <div className={styles.languageDropdown}>
           {supportedLocales

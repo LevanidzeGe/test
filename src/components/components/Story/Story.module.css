@@ -1,21 +1,22 @@
 .photoTextWrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 5%;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .image {
   width: 50%;
   height: auto;
+  max-height: 70vh;
   object-fit: cover;
-  border: 2px solid #013d73;
-  filter: drop-shadow(-30px -30px #013d73);
-  border-radius: 20px;
+  filter: drop-shadow(30px 30px var(--primary4));
+  border-radius: var(--radius5);
+  border-bottom-right-radius: 0;
 }
 
 .textDiv h3 {
-  margin-top: 70px;
+  margin-bottom: 10px;
 }
 .textDiv {
   width: 45%;
@@ -25,7 +26,6 @@
 }
 
 .textDiv p {
-  padding-bottom: 50px;
   color: var(--gray7);
 }
 .iconTextDiv h2 {
@@ -37,15 +37,15 @@
   gap: 20px;
 }
 
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   .photoTextWrapper {
     flex-direction: column-reverse;
     margin: 0 auto;
   }
   .image {
-    width: 100%;
-    margin: 0 auto;
-    margin-right: -10px;
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 40px;
   }
   .textDiv {
     width: 90%;
@@ -53,7 +53,6 @@
     text-align: center;
   }
   .textDiv h3 {
-    margin-top: 40px;
   }
 
   .iconTextDiv {

@@ -3,10 +3,9 @@
   gap: 10px;
 }
 .mediaWrapper a {
-  background-color: var(--color4);
   border-radius: 50%;
   font-size: 25px;
-  padding: 6px;
+  padding: 10px;
   transition: 0.2s;
   color: var(--white);
   height: 40px;
@@ -15,5 +14,5 @@
   align-items: center;
 }
 .mediaWrapper a:hover {
-  background-color: var(--color2);
+  background-color: var(--primary3);
 }

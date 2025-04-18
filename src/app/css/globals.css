@@ -1,0 +1,13 @@
+@import "./reset";
+@import "./animation";
+@import "./shadow";
+@import "./button";
+@import "./container";
+@import "./typography.css";
+@import "./color.css";
+@import "./elements.css";
+@import "./radius.css";
+
+body {
+  background-color: var(--white);
+}

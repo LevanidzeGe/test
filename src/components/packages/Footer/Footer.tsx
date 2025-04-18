@@ -5,6 +5,7 @@ import Second from "./fotComponents/Second";
 import Third from "./fotComponents/Third";
 // import Fourth from "./fotComponents/Fourth";
 import { useTranslations } from "next-intl";
+import LowerFoot from "../LowerFooter/LowerFoot";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -20,6 +21,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
+      <LowerFoot />
     </footer>
   );
 }

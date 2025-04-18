@@ -1,22 +1,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./BurgenNav.module.css";
-import { navItems, NavItemProps } from "@/src/Manager/navigation";
-import { IoClose } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { navItems, NavItemProps } from "@/src/manager/navigation";
 import { useLocale } from "next-intl";
 
 interface BurgerNavProps {
   isNavOpen: boolean;
   navClose: () => void;
-  navToggler: () => void;
 }
 
-export default function BurgerNav({
-  isNavOpen,
-  navClose,
-  navToggler,
-}: BurgerNavProps) {
+export default function BurgerNav({ isNavOpen, navClose }: BurgerNavProps) {
   const pathname = usePathname();
   const locale = useLocale(); // Get the current locale
   const items: NavItemProps[] = navItems[locale]; // Get items for the current locale
@@ -55,19 +48,6 @@ export default function BurgerNav({
           })}
         </ul>
       </div>
-
-      {!isNavOpen ? (
-        <div className={styles.openCloseIconDiv}>
-          <GiHamburgerMenu
-            className={styles.openCloseIcon}
-            onClick={navToggler}
-          />
-        </div>
-      ) : (
-        <div className={styles.openCloseIconDiv}>
-          <IoClose className={styles.openCloseIcon} onClick={navToggler} />
-        </div>
-      )}
     </div>
   );
 }

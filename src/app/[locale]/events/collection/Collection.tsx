@@ -1,6 +1,6 @@
 import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import ServerCard from "./card/ServerCard";
-import { collectionRoute1, companyRoute } from "@/src/Manager/info";
+import { collectionRoute1, companyRoute } from "@/src/manager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { giSvg } from "@/public/image";
 import type { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
+import HeadLine from "@/src/components/components/miniComponents/HeadLine";
 
 export default async function Collection({ mini }: { mini?: boolean }) {
   const locale = await getLocale();
@@ -66,66 +67,77 @@ export default async function Collection({ mini }: { mini?: boolean }) {
   );
 
   // 🆕 Mini Mode: Show the 2 events closest to today's date (future or past)
-  const mostRecentEvents = sortedEvents
-    .sort(
-      (a, b) =>
-        Math.abs(a.timestamp - Date.now()) - Math.abs(b.timestamp - Date.now())
-    )
-    .slice(0, 2);
+  let mostRecentEvents: ReturnTypeOfExtract[] = [];
+
+  // === 1. Find closest featured upcoming event ===
+  const featuredUpcoming = upcomingEvents.find((event) => {
+    if (typeof event.boolOption1 === "object") {
+      return Object.values(event.boolOption1).some((v) => v === true);
+    }
+    return event.boolOption1 === true;
+  });
+
+  // Fallback to any closest upcoming
+  const fallbackUpcoming = upcomingEvents[0];
+
+  // === 2. Find closest featured past event ===
+  const featuredPast = pastEvents.find((event) => {
+    if (typeof event.boolOption1 === "object") {
+      return Object.values(event.boolOption1).some((v) => v === true);
+    }
+    return event.boolOption1 === true;
+  });
+
+  // Fallback to any closest past
+  const fallbackPast = pastEvents[0];
+
+  // === 3. Push into mostRecentEvents (prioritize featured) ===
+  if (featuredUpcoming) {
+    mostRecentEvents.push(featuredUpcoming);
+  } else if (fallbackUpcoming) {
+    mostRecentEvents.push(fallbackUpcoming);
+  }
+
+  if (featuredPast) {
+    mostRecentEvents.push(featuredPast);
+  } else if (fallbackPast) {
+    mostRecentEvents.push(fallbackPast);
+  }
 
   return (
-    <>
-      <section className="section section-light">
-        <div className={`container ${!mini && styles.container}`}>
-          {/* 📅 Upcoming Events Section */}
-          <div className={`${!mini && styles.paddingTop}`}>
-            <div className={styles.iconTextDiv}>
-              <Image src={giSvg} width={50} height={70} alt="Upcoming Events" />
-              <h2 className="heading3 color4">
-                {mini
-                  ? t("eventsPage.events.recentEvents")
-                  : t("eventsPage.events.upcomingEvents")}
-              </h2>
-            </div>
-            <div className={styles.eventsWrapper}>
-              {!mini &&
-                upcomingEvents.map((event: ReturnTypeOfExtract) => (
-                  <ServerCard key={event.id} {...event} />
-                ))}
+    <section className="section ">
+      <div className={`container ${!mini && styles.container}`}>
+        <HeadLine
+          title={
+            mini
+              ? t("eventsPage.events.recentEvents")
+              : t("eventsPage.events.upcomingEvents")
+          }
+        />
+        <div className={styles.eventsWrapper}>
+          {!mini &&
+            upcomingEvents.map((event: ReturnTypeOfExtract) => (
+              <ServerCard key={event.id} {...event} />
+            ))}
 
-              {mini &&
-                mostRecentEvents.map((event: ReturnTypeOfExtract) => (
-                  <ServerCard key={event.id} {...event} />
-                ))}
-            </div>
-            {mini && (
-              <Link
-                href={`${locale}/events`}
-                className={`${styles.button} button button-reverse`}
-              >
-                {t("eventsPage.events.seeAll")}
-              </Link>
-            )}
-          </div>
-
-          {/* ⏳ Past Events Section */}
-          {!mini && (
-            <div className={`${!mini && styles.paddingTop}`}>
-              <div className={styles.iconTextDiv}>
-                <Image src={giSvg} width={50} height={70} alt="Past Events" />
-                <h2 className="heading3 color6">
-                  {t("eventsPage.events.pastEvents")}
-                </h2>
-              </div>
-              <div className={styles.eventsWrapper}>
-                {pastEvents.map((event: ReturnTypeOfExtract) => (
-                  <ServerCard key={event.id} {...event} />
-                ))}
-              </div>
-            </div>
-          )}
+          {mini &&
+            mostRecentEvents.map((event: ReturnTypeOfExtract) => (
+              <ServerCard key={event.id} {...event} />
+            ))}
         </div>
-      </section>
-    </>
+
+        {/* ⏳ Past Events Section */}
+        {!mini && (
+          <div className={styles.paddingTop}>
+            <HeadLine title={t("eventsPage.events.pastEvents")} secondary />
+            <div className={styles.eventsWrapper}>
+              {pastEvents.map((event: ReturnTypeOfExtract) => (
+                <ServerCard key={event.id} {...event} />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
   );
 }

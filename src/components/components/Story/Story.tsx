@@ -1,18 +1,19 @@
 import React from "react";
-import styles from "./ComponentOne.module.css";
+import styles from "./Story.module.css";
 import Image, { StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
-import { giIconSvg, giSvg } from "@/public/image";
+import { giSvg } from "@/public/image";
+import HeadLine from "../miniComponents/HeadLine";
 interface ComponentOne {
   image: StaticImageData;
   reverse?: boolean;
 }
 
-export default function ComponentOne({ image, reverse }: ComponentOne) {
+export default function Story({ image, reverse }: ComponentOne) {
   const t = useTranslations("homePage.componentOne");
 
   return (
-    <section className="section section-light">
+    <section className="section ">
       <div className="container">
         <div
           className={` ${reverse ? styles.reverse : ""}  ${
@@ -27,11 +28,8 @@ export default function ComponentOne({ image, reverse }: ComponentOne) {
             alt="ss"
           />
           <div className={styles.textDiv}>
-            <div className={`blueBg ${styles.iconTextDiv}`}>
-              <Image src={giSvg} width={50} height={70} alt="" />
-              <h2 className="heading2 color6">Geo Judo</h2>
-            </div>
-            <h3 className="heading3 color3">{t("title1")}</h3>
+            <HeadLine title="Geo Judo" />
+            <h3 className="heading3 gray8">{t("title1")}</h3>
             <p className="paragraph">{t("text")}</p>
           </div>
         </div>

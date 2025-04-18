@@ -33,7 +33,7 @@
 }
 
 .languageDropdown button:hover {
-  background-color: var(--color4-40);
+  background-color: var(--primary6);
 }
 
 .flags {

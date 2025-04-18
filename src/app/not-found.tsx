@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "./globals.css";
+import "./css/globals.css";
 
 export default function NotFoundPage() {
   return (
@@ -18,7 +18,7 @@ export default function NotFoundPage() {
           margin: 0,
         }}
       >
-        <h2 className="heading2 color2">404 - Page Not Found</h2>
+        <h2 className="heading2 primary3">404 - Page Not Found</h2>
 
         <p
           className="paragraph"

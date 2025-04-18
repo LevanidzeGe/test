@@ -9,7 +9,7 @@ export default async function ItemJsx({ item }: { item: ReturnTypeOfExtract }) {
 
   return (
     <article className={styles.eventDetailsWrapper}>
-      <h2 className={`heading3 font1 color3 ${styles.title}`}>
+      <h2 className={`heading3 font1 primary5 ${styles.title}`}>
         {item.transOption1}
       </h2>
       <div className={styles.imgWrapper}>

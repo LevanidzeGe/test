@@ -4,8 +4,8 @@ import {
   collectionRoute1,
   companyRoute,
   companyDomain,
-} from "@/src/Manager/info";
-import { defaultLocale } from "@/src/Manager/navigation";
+} from "@/src/manager/info";
+import { defaultLocale } from "@/src/manager/navigation";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import ItemJsx from "./Item/Item";
 

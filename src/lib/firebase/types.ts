@@ -1,4 +1,4 @@
-import { supportedLocales } from "@/src/Manager/navigation";
+import { supportedLocales } from "@/src/manager/navigation";
 export interface CollectionWrapper {
   items?: { [key: string]: CollectionProps };
   categories?: any; // Optional: type it properly if needed

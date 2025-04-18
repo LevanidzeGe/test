@@ -1,12 +1,15 @@
 "use client";
 import Image from "next/image";
 import styles from "./Testimonials.module.css";
-import { reviewsData } from "./reviews";
-import { StarIcon } from "./reviews";
+import { StarIcon } from "./StarIcon";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
 import { useRef, useState, useEffect } from "react";
 import { useLocale } from "next-intl";
-import { defaultLocale } from "@/src/Manager/navigation";
+import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
+import { extractCollectionFields } from "@/src/lib/firebase/types";
+import { companyRoute } from "@/src/manager/info";
+import HeadLine from "../../components/miniComponents/HeadLine";
+const testimonialRoute = "testimonials";
 
 export default function Testimonials({
   title1,
@@ -16,9 +19,28 @@ export default function Testimonials({
   title2?: string;
 }) {
   const reviewsWrapperRef = useRef<HTMLDivElement>(null);
-  const [isScrolledLeft, setIsScrolledLeft] = useState(true); // Track if fully scrolled left
-  const [isScrolledRight, setIsScrolledRight] = useState(false); // Track if fully scrolled right
+  const [isScrolledLeft, setIsScrolledLeft] = useState(true);
+  const [isScrolledRight, setIsScrolledRight] = useState(false);
+  const [items, setItems] = useState<any[]>([]);
   const locale = useLocale();
+
+  useEffect(() => {
+    const loadTestimonials = async () => {
+      const collection = await fetchCollectionIfUpdated(
+        companyRoute,
+        testimonialRoute
+      );
+      const rawItems = collection?.items ? Object.values(collection.items) : [];
+
+      const extracted = rawItems
+        .map((item) => extractCollectionFields(item, locale))
+        .filter((item) => !item.itemActive);
+
+      setItems(extracted);
+    };
+
+    loadTestimonials();
+  }, [locale]);
 
   const handleScroll = () => {
     const wrapper = reviewsWrapperRef.current;
@@ -33,84 +55,76 @@ export default function Testimonials({
   };
 
   const scrollLeft = () => {
-    reviewsWrapperRef.current?.scrollBy({
-      left: -380,
-      behavior: "smooth",
-    });
+    reviewsWrapperRef.current?.scrollBy({ left: -380, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    reviewsWrapperRef.current?.scrollBy({
-      left: 380,
-      behavior: "smooth",
-    });
+    reviewsWrapperRef.current?.scrollBy({ left: 380, behavior: "smooth" });
   };
 
   useEffect(() => {
     const wrapper = reviewsWrapperRef.current;
     if (wrapper) {
       wrapper.addEventListener("scroll", handleScroll);
-      // Initial check
       handleScroll();
-      return () => {
-        wrapper.removeEventListener("scroll", handleScroll);
-      };
+      return () => wrapper.removeEventListener("scroll", handleScroll);
     }
   }, []);
 
+  if (items.length < 1) return null;
+
   return (
-    <section className="section  hidden no-padding-x">
+    <section className="section hidden no-padding-x  ">
       <div>
         <div className="section no-padding-y">
           <div className="container">
-            <div className={styles.titlesWrapper}>
-              <h3 className="heading2 color4">{title1}</h3>
-            </div>
+            <HeadLine title={title1} />
           </div>
         </div>
         <div className={styles.reviewsWrapper} ref={reviewsWrapperRef}>
-          {reviewsData.map((info, index) => (
-            <div key={index} className={`shadow-4-m ${styles.card}`}>
+          {items.map((info, index) => (
+            <div key={index} className={`lift shadow1 ${styles.card}`}>
               <div className={styles.starsReview}>
                 <div className={styles.stars}>
                   {[...Array(5)].map((_, starIndex) => {
-                    const filled = starIndex < Math.floor(info.stars); // Full stars
+                    const ratingStr =
+                      info.noTransOption1?.replace(",", ".") || "5";
+                    const rating = parseFloat(ratingStr);
+
+                    const filled = starIndex < Math.floor(rating);
                     const half =
-                      info.stars % 1 !== 0 &&
-                      starIndex === Math.floor(info.stars); // Half star
+                      rating % 1 !== 0 && starIndex === Math.floor(rating);
 
                     return (
                       <StarIcon key={starIndex} filled={filled} half={half} />
                     );
                   })}
                 </div>
-                <p className="paragraph">{info.reviews[locale]}</p>
+
+                <p className="paragraph gray7">{info.transOption2}</p>
               </div>
 
               <div className={styles.authorInfoWrap}>
-                <Image
-                  className="shadow-4-s"
-                  src={info.image}
-                  alt={info.name}
-                  width={100}
-                  height={100}
-                />
+                {info.images[0] && (
+                  <Image
+                    className="shadow1"
+                    src={info.images?.[0]}
+                    alt={info.transOption1}
+                    width={50}
+                    height={50}
+                  />
+                )}
                 <div>
-                  <h3 className="caption">{info.name}</h3>
+                  <h3 className="paragraph">{info.transOption1}</h3>
                   <p className="caption-mini gray5">
-                    {
-                      <span className="caption-mini gray5">
-                        {info.caption?.[locale] ||
-                          info.caption?.[defaultLocale] ||
-                          null}
-                      </span>
-                    }
+                    {info.transOption3 || ""}
                   </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
         <div className="section no-padding-y">
           <div className="container">
             <div className={`gray7 ${styles.arrowWrapper}`}>

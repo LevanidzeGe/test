@@ -1,7 +1,7 @@
 .menuWrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   text-transform: capitalize;
 }
 

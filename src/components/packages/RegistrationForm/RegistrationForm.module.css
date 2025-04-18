@@ -2,7 +2,7 @@
   position: relative;
   width: 60%;
   max-width: 800px;
-  border: 5px solid var(--color2);
+  border: 5px solid var(--primary3);
   margin: -150px auto 0 auto;
   margin-bottom: 100px;
   background-color: var(--white);
@@ -43,7 +43,7 @@
 
 .input:focus {
   outline: none;
-  border: 2px solid var(--color2);
+  border: 2px solid var(--primary3);
 }
 
 .textArea {
@@ -60,7 +60,7 @@
   margin: 0 auto;
   font-size: 20px;
   width: 100%;
-  background-color: var(--color2);
+  background-color: var(--primary3);
 }
 .formSent {
   display: flex;
@@ -69,7 +69,7 @@
   justify-content: center;
   height: 100%;
   font-size: 40px;
-  color: var(--color2);
+  color: var(--primary3);
   text-align: center;
   width: 70%;
   transition: 1s ease-in-out;

@@ -1,20 +1,27 @@
-import "@/src/app/globals.css";
+import "@/src/app/css/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Poppins, Gabriela, Inter, Dancing_Script } from "next/font/google";
+import {
+  Poppins,
+  Gabriela,
+  Inter,
+  Dancing_Script,
+  Short_Stack,
+  Montserrat_Alternates,
+} from "next/font/google";
 import Header from "@/src/components/packages/Header/Header";
 import Footer from "@/src/components/packages/Footer/Footer";
 import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
 import { redirect } from "next/navigation";
-import { defaultLocale } from "@/src/Manager/navigation"; // Import supported locales
+import { defaultLocale } from "@/src/manager/navigation"; // Import supported locales
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
-import { companyDomain, googleAnaliticId } from "@/src/Manager/info";
+import { companyDomain, googleAnaliticId } from "@/src/manager/info";
 import { CookieBot } from "./CookieBot";
 
 export async function generateMetadata({
@@ -57,23 +64,18 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
-const poppins = Poppins({
+
+const montserat = Montserrat_Alternates({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font1",
 });
 
-const gabriola = Gabriela({
+// const greatVibes = Great_Vibes
+const Short = Short_Stack({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font2",
-});
-
-// const greatVibes = Great_Vibes
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: ["500"],
-  variable: "--font3",
 });
 
 export default async function LocaleLayout({
@@ -96,7 +98,7 @@ export default async function LocaleLayout({
       {/* cookie bot */}
       <CookieBot />
       <body
-        className={` ${inter.className} ${poppins.variable}  ${dancingScript.variable} ${gabriola.variable}   `}
+        className={` ${inter.className} ${montserat.variable}  ${Short.variable}    `}
       >
         <GoogleAnalytics gaId={googleAnaliticId} />
         <NextIntlClientProvider locale={locale} messages={messages}>
@@ -104,7 +106,6 @@ export default async function LocaleLayout({
           {children}
           <Analytics />
           <Footer />
-          <LowerFoot />
         </NextIntlClientProvider>
       </body>
     </html>

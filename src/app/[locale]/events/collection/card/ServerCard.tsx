@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { getLocale, getTranslations } from "next-intl/server";
+import { eventPlaceholder } from "@/public/image";
 
 export default async function ServerCard({
   id,
@@ -22,16 +23,14 @@ export default async function ServerCard({
   return (
     <div className={styles.cardWrapper}>
       <Link href={`/${locale}/events/${id}`} className={styles.imageWrapper}>
-        {images && (
-          <Image
-            src={images[0]}
-            width={1000}
-            height={700}
-            alt={transOption1}
-            loading="lazy"
-            className={styles.image}
-          />
-        )}
+        <Image
+          src={images[0] || eventPlaceholder}
+          width={1000}
+          height={700}
+          alt={transOption1}
+          loading="lazy"
+          className={styles.image}
+        />
       </Link>
 
       <div className={styles.topDiv}>
@@ -47,23 +46,30 @@ export default async function ServerCard({
         )}
       </div>
 
-      <div>
-        <h2 className="heading4 color4">
-          {transOption1.length > 40
-            ? `${transOption1.slice(0, 40)}...`
-            : transOption1}
-        </h2>
-        <p className="paragraph gray7">
-          {transOption2.length > 80
-            ? `${transOption2.slice(0, 80)}...`
-            : transOption2}
-        </p>
-      </div>
+      <div className={styles.textWrap}>
+        <div>
+          <h2
+            className={` heading4  ${isUpcoming ? "primary8" : "secondary9"}`}
+          >
+            {transOption1.length > 40
+              ? `${transOption1.slice(0, 40)}...`
+              : transOption1}
+          </h2>
+          <p className="paragraph gray7">
+            {transOption2.length > 80
+              ? `${transOption2.slice(0, 80)}...`
+              : transOption2}
+          </p>
+        </div>
 
-      <Link href={`/${locale}/events/${id}`} className={styles.button}>
-        {t("eventsPage.events.button")}
-        <FaArrowRightLong />
-      </Link>
+        <Link
+          href={`/${locale}/events/${id}`}
+          className={isUpcoming ? "button" : "button-reverse button"}
+        >
+          {t("eventsPage.events.button")}
+          <FaArrowRightLong />
+        </Link>
+      </div>
     </div>
   );
 }

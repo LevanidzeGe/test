@@ -1,10 +1,10 @@
 :root {
   --section-padding-xl: 110px 80px;
-  --section-padding-lg: 70px 70px;
-  --section-padding-md: 60px 60px;
-  --section-padding-sm: 40px 40px;
-  --section-padding-xs: 30px 30px;
-  --section-padding-xxs: 20px 20px;
+  --section-padding-lg: 90px 70px;
+  --section-padding-md: 90px 60px;
+  --section-padding-sm: 80px 40px;
+  --section-padding-xs: 70px 30px;
+  --section-padding-xxs: 50px 20px;
 
   /* Breakpoints */
   --break-xl: 1200px;
@@ -28,17 +28,16 @@
   margin: 0 auto;
 }
 .section-light {
-  background-color: var(--color4-10);
+  background-color: var(--primary0);
 }
 .section-medium {
-  /* background-image: url("/assets/background/white-graysh.jpeg"); */
-  background-color: var(--color4-20);
+  background-color: var(--primary1);
 
   /* must fix */
 }
 
 .section-dark {
-  background-color: var(--color5);
+  background-color: var(--primary8);
 }
 
 .container {
@@ -91,6 +90,7 @@
 .header {
   padding-top: 25px;
   padding-bottom: 0;
+  max-width: 1400px;
 }
 .hidden {
   overflow: hidden;
