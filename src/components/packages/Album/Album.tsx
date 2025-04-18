@@ -1,6 +1,6 @@
 import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
-import { collectionRoute2, companyRoute } from "@/src/manager/info";
+import { collectionRoute2, companyRoute } from "@/src/PPPmanager/info";
 import { getLocale } from "next-intl/server";
 import AlbumSlider from "../AlbumSlider/AlbumSlider";
 

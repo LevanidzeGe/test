@@ -2,7 +2,12 @@ import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import { getLocale } from "next-intl/server";
-import { companyName, address, email, phoneNumber } from "@/src/manager/info";
+import {
+  companyName,
+  address,
+  email,
+  phoneNumber,
+} from "@/src/PPPmanager/info";
 
 export function replacePlaceholders(text: string): string {
   return text

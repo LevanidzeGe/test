@@ -1,6 +1,6 @@
 import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import ServerCard from "./card/ServerCard";
-import { collectionRoute1, companyRoute } from "@/src/manager/info";
+import { collectionRoute1, companyRoute } from "@/src/PPPmanager/info";
 import styles from "./Collection.module.css";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import { getLocale, getTranslations } from "next-intl/server";

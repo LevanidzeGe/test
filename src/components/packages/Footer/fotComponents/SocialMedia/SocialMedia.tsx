@@ -1,6 +1,6 @@
 import styles from "./SocialMedia.module.css";
 import EachSocialMedia from "./EachSocialMedia";
-import { facebookUrl, instagramUrl, linkedinUrl } from "@/src/manager/info";
+import { facebookUrl, instagramUrl, linkedinUrl } from "@/src/PPPmanager/info";
 
 export default function SocialMedia() {
   return (

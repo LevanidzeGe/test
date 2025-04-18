@@ -1,4 +1,4 @@
-import { supportedLocales } from "@/src/manager/navigation";
+import { supportedLocales } from "@/src/PPPmanager/navigation";
 
 type Locale = (typeof supportedLocales)[number];
 

@@ -1,4 +1,4 @@
-import { supportedLocales } from "@/src/manager/navigation";
+import { supportedLocales } from "@/src/PPPmanager/navigation";
 export interface CollectionWrapper {
   items?: { [key: string]: CollectionProps };
   categories?: any; // Optional: type it properly if needed

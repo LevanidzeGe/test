@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./StandartNav.module.css";
-import { navItems, NavItemProps } from "@/src/manager/navigation";
+import { navItems, NavItemProps } from "@/src/PPPmanager/navigation";
 import { useLocale } from "next-intl";
 
 export default function StandartNav({

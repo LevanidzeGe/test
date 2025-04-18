@@ -1,6 +1,6 @@
 // src/components/UsercentricsScripts.tsx
 "use client";
-import { cookiesId } from "@/src/manager/info";
+import { cookiesId } from "@/src/PPPmanager/info";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 

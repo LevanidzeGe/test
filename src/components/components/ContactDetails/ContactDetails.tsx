@@ -5,7 +5,7 @@ import {
   addressLink,
   email,
   phoneNumber,
-} from "@/src/manager/info";
+} from "@/src/PPPmanager/info";
 import { useTranslations } from "next-intl";
 import emailIcon from "./icons/email.svg";
 import phoneIcon from "./icons/phone-call.svg";

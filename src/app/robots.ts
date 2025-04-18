@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
-import { companyDomain } from "@/src/manager/info";
-import { supportedLocales } from "@/src/manager/navigation"; // Import the supported languages
+import { companyDomain } from "@/src/PPPmanager/info";
+import { supportedLocales } from "@/src/PPPmanager/navigation"; // Import the supported languages
 
 export default function robots(): MetadataRoute.Robots {
   // Check if companyDomain and supportedLocales are valid

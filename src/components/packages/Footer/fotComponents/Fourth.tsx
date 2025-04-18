@@ -1,4 +1,4 @@
-import { instagramUrl } from "@/src/manager/info";
+import { instagramUrl } from "@/src/PPPmanager/info";
 import styles from "./Fourth.module.css";
 import Link from "next/link";
 import {} from "@/public/image";

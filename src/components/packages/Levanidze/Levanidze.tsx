@@ -7,7 +7,7 @@ import photo from "./photo.jpg";
 import web from "./web.jpg";
 import { useTranslations } from "next-intl";
 import { IoShareOutline } from "react-icons/io5";
-import { companyDomain } from "@/src/manager/info";
+import { companyDomain } from "@/src/PPPmanager/info";
 
 export default function Levanidze() {
   const handleShare = async () => {

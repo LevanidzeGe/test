@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Second.module.css";
 import Link from "next/link";
-import { navItems } from "@/src/manager/navigation";
-import { NavItemProps } from "@/src/manager/navigation";
+import { navItems } from "@/src/PPPmanager/navigation";
+import { NavItemProps } from "@/src/PPPmanager/navigation";
 import { getLocale } from "next-intl/server";
 interface props {
   title: string;

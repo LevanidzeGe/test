@@ -1,5 +1,5 @@
-import { companyDomain, companyRoute } from "@/src/manager/info";
-import { navItems, supportedLocales } from "@/src/manager/navigation";
+import { companyDomain, companyRoute } from "@/src/PPPmanager/info";
+import { navItems, supportedLocales } from "@/src/PPPmanager/navigation";
 import { ref, get, getDatabase } from "firebase/database";
 import { app } from "@/src/lib/firebase/firebase";
 

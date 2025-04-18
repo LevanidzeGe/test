@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { supportedLocales } from "@/src/manager/navigation";
+import { supportedLocales } from "@/src/PPPmanager/navigation";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export default function LanguageAlphabet({
