@@ -5,19 +5,11 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { SupportedLocale } from "@/src/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import {
-  Poppins,
-  Gabriela,
-  Inter,
-  Dancing_Script,
-  Short_Stack,
-  Montserrat_Alternates,
-} from "next/font/google";
+import { Short_Stack, Fredoka, Montserrat } from "next/font/google";
 import Header from "@/src/components/packages/Header/Header";
 import Footer from "@/src/components/packages/Footer/Footer";
-import LowerFoot from "@/src/components/packages/LowerFooter/LowerFoot";
 import { redirect } from "next/navigation";
-import { defaultLocale } from "@/src/manager/navigation"; // Import supported locales
+import { defaultLocale } from "@/src/manager/navigation";
 
 // SEO Metadata
 import { getTranslations } from "next-intl/server";
@@ -60,19 +52,18 @@ export async function generateMetadata({
 
 //fonts
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-});
-
-const montserat = Montserrat_Alternates({
+const font = Montserrat({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
+});
+const font1 = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font1",
 });
 
 // const greatVibes = Great_Vibes
-const Short = Short_Stack({
+const font2 = Short_Stack({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font2",
@@ -98,7 +89,7 @@ export default async function LocaleLayout({
       {/* cookie bot */}
       <CookieBot />
       <body
-        className={` ${inter.className} ${montserat.variable}  ${Short.variable}    `}
+        className={` ${font.className} ${font1.variable}  ${font2.variable}    `}
       >
         <GoogleAnalytics gaId={googleAnaliticId} />
         <NextIntlClientProvider locale={locale} messages={messages}>

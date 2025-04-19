@@ -1,12 +1,24 @@
+.titlesWrapper {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+.titlesWrapper h3 {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
 .reviewsWrapper {
   padding-left: 60px;
   padding-right: 60px;
   display: flex;
+  margin-top: 30px;
   overflow-x: scroll; /* Enable horizontal scrolling */
   scroll-behavior: smooth; /* Smooth scrolling when using arrows or scroll events */
+  width: 100vw;
   position: relative; /* Position relative to its container */
   padding-bottom: 40px; /* Add some space at the bottom for better visuals */
-  overflow: hidden;
 }
 .reviewsWrapper::-webkit-scrollbar {
   display: none;
@@ -15,7 +27,7 @@
 .card {
   margin: 15px;
   min-width: 350px;
-  height: 310px;
+  height: 350px;
   width: 350px;
   background-color: var(--white);
   padding: 40px;

@@ -74,7 +74,7 @@ export default function Testimonials({
   if (items.length < 1) return null;
 
   return (
-    <section className="section hidden no-padding-x  ">
+    <section className="section hidden no-padding-x section-medium ">
       <div>
         <div className="section no-padding-y">
           <div className="container">
@@ -107,7 +107,7 @@ export default function Testimonials({
               <div className={styles.authorInfoWrap}>
                 {info.images[0] && (
                   <Image
-                    className="shadow1"
+                    className="shadow-4-s"
                     src={info.images?.[0]}
                     alt={info.transOption1}
                     width={50}

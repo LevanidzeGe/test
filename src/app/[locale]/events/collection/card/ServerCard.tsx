@@ -39,7 +39,7 @@ export default async function ServerCard({
 
       <div className={styles.topDiv}>
         {noTransOption1 && (
-          <p className={`gray7 ${styles.date}`}>{noTransOption1}</p>
+          <p className={`gray7 caption ${styles.date}`}>{noTransOption1}</p>
         )}
         {noTransOption1 && (
           <span className={isUpcoming ? styles.upcoming : styles.past}>
@@ -68,7 +68,9 @@ export default async function ServerCard({
 
         <Link
           href={`/${locale}/${dinamycPageRoute}/${id}`}
-          className={isUpcoming ? "button" : "button-reverse button"}
+          className={`${styles.button} ${
+            isUpcoming ? "button" : "button-reverse button"
+          }`}
         >
           {t("eventsPage.events.button")}
           <FaArrowRightLong />

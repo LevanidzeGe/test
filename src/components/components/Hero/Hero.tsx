@@ -35,14 +35,12 @@ export default async function MainImage() {
   const shuffledImages = [...judoImages].sort(() => 0.5 - Math.random());
 
   return (
-    <div
-      className={` section  no-padding-y ${styles.mainWrapper} ${styles.outline}`}
-    >
-      <div className="container">
+    <section className={` section  no-padding-y  ${styles.mainWrapper}`}>
+      <div className={`container`}>
         <div className={styles.wrapper}>
           <div className={styles.leftDiv}>
             <div>
-              <span className="heading3 primary3"> Geneva Champel</span>
+              <span className="heading2 primary3"> Geneva Champel</span>
               <h1 className="heading1 primary8">
                 Judo Club Geo <br /> de Genève
               </h1>
@@ -82,6 +80,6 @@ export default async function MainImage() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

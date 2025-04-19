@@ -14,7 +14,7 @@ export default function SquaresTextPhoto() {
         <div className={` ${styles.wrapper}`}>
           <div className={styles.middleDiv}>
             <div className={styles.firstBox}>
-              <h3 className="heading2 white">{t("text3")}</h3>
+              <h3 className="heading3 white">{t("text3")}</h3>
               <p className="paragraph gray0">{t("text4")}</p>
             </div>
             <Image
@@ -25,13 +25,13 @@ export default function SquaresTextPhoto() {
               className={styles.secondBox}
             ></Image>
             <div className={styles.thirdBox}>
-              <h3 className="heading2 white">{t("text5")}</h3>
+              <h3 className="heading3 white">{t("text5")}</h3>
               <p className="paragraph gray0">{t("text6")}</p>
             </div>
           </div>
           <div className={styles.lowerDiv}>
             <div className={styles.fourthBox}>
-              <h3 className="heading2 white">{t("text7")}</h3>
+              <h3 className="heading3 white">{t("text7")}</h3>
               <p className="paragraph gray0">{t("text8")}</p>
             </div>
             <Image

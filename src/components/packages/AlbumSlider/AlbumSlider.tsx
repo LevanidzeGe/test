@@ -26,7 +26,7 @@ export default function AlbumSlider({ images }: AlbumProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
 
   return (
-    <section className="section no-padding-x no-padding-y">
+    <section className="section no-padding-x ">
       <div className="container ">
         <div className={styles.mainWrapper}>
           <Swiper

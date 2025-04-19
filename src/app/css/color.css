@@ -51,6 +51,10 @@
   --gradient1: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(51.87deg, #ff6457 -11.28%, #80eeff 149.97%);
   --gradient2: linear-gradient(63.51deg, #b22317 -19.21%, #0c7e80 83.37%);
+
+  --overlay1: #525252d1;
+  --overlay2: #0000008b;
+  --overlay3: #000000d1;
 }
 
 /* Primary colors */

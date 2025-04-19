@@ -10,11 +10,12 @@
 }
 
 .footWrapper h2 {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .footWrapper section {
   width: 25%;
+  max-width: max-content;
 }
 
 @media (max-width: 1000px) {

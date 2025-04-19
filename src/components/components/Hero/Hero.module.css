@@ -3,7 +3,7 @@
   position: relative;
   height: 100vh;
   max-height: 1200px;
-  /* min-height: 844px; */
+  min-height: 544px;
   margin: 0 auto;
   /* background-color: var(--secondary0); */
 }
@@ -21,9 +21,13 @@
   width: 48%;
   z-index: 1;
 }
+.leftDiv h2 {
+  max-width: 80%;
+}
 .leftDiv h2,
 .leftDiv span {
-  font-size: 2.5vw;
+  font-size: 1.8vw;
+  padding-right: 20px;
 }
 .leftDiv h1 {
   margin: 2vh 0 3vh 0;
@@ -50,7 +54,7 @@
 .judoGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2%;
+  gap: 8px;
   width: 100%;
 }
 
@@ -59,7 +63,7 @@
   aspect-ratio: 4 / 4.5;
   height: auto;
   max-width: 350px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .judoImage {
@@ -83,6 +87,13 @@
 }
 
 @media (max-width: 768px) {
+  .mainWrapper {
+    padding: 0 10px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
   .leftDiv h1 {
     font-size: 35px;
     color: var(--primary3);
@@ -90,10 +101,11 @@
 
   .leftDiv h2,
   .leftDiv span {
-    font-size: 25px;
+    font-size: 18px;
   }
   .leftDiv h2 {
-    color: var(--secondary8);
+    color: var(--secondary7);
+    max-width: 100%;
   }
   .leftDiv span {
     color: var(--gray5);
@@ -106,17 +118,22 @@
   }
   .leftDiv {
     width: 100%;
+    max-width: 100%;
     top: 0;
     position: relative;
     z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .overlay {
-    background-color: rgba(0, 0, 0, 0.82);
-    height: 100vh;
+    background-color: var(--overlay3);
+    height: 100%;
     width: 100vw;
     position: absolute;
     z-index: 1;
     backdrop-filter: blur(1px);
+    top: 0;
+    /* min-height: 544px; */
   }
   .judoGrid {
     height: 100%;

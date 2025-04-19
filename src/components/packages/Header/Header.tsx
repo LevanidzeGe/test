@@ -53,6 +53,9 @@ export default function Header() {
             <BurgerNav navClose={navClose} isNavOpen={isNavOpen} />
           </div>
         </div>
+        <div
+          className={` ${styles.navBackground} ${isNavOpen && styles.show} `}
+        ></div>
       </section>
     </header>
   );

@@ -1,6 +1,6 @@
 .mediaWrapper {
   display: flex;
-  gap: 10px;
+  gap: 2px;
 }
 .mediaWrapper a {
   border-radius: 50%;

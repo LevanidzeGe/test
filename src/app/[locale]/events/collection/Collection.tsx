@@ -102,7 +102,7 @@ export default async function Collection({ mini }: { mini?: boolean }) {
   }
 
   return (
-    <section className="section ">
+    <section className={`section ${mini && "section-light"}`}>
       <div className={`container ${!mini && styles.container}`}>
         <HeadLine
           title={

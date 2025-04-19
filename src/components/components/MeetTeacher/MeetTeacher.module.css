@@ -41,6 +41,19 @@
 @media (max-width: 992px) {
   .mainWrapper {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .middleDiv {
+    align-items: center;
+  }
+  .middleDiv a {
+    margin: 0 auto;
+  }
+  .middleDiv p {
+    padding: 0;
+    margin: 15px auto;
+    max-width: 800;
   }
   .leftDiv {
     width: 100%;

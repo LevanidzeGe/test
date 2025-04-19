@@ -6,7 +6,7 @@ export default function Third() {
   const t = useTranslations("footer");
   return (
     <section>
-      <h2 className="heading4">{t("title3")}</h2>
+      <h2 className="heading3">{t("title3")}</h2>
       <ul>
         <li className={styles.eventWrap}>
           <p className="caption">{t("monday")}</p>

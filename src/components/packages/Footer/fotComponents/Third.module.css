@@ -10,3 +10,6 @@
 .eventWrap p {
   margin-right: 10px;
 }
+.eventWrap p:hover {
+  color: var(--white);
+}

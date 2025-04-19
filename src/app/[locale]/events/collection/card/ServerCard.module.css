@@ -22,10 +22,10 @@
   border-radius: var(--radius1);
 }
 .upcoming {
-  background-color: var(--primary3);
+  background-color: var(--primary5);
 }
 .past {
-  background-color: var(--secondary5);
+  background-color: var(--secondary7);
 }
 
 .topDiv {
@@ -45,19 +45,6 @@
   margin: auto 5px auto 10px;
   rotate: -30deg;
   transition: all 0.3s;
-}
-.button {
-  margin-top: 20px;
-  width: max-content;
-  padding: 5px 12px;
-  border: 2px solid var(--gray3);
-  border-radius: var(--radius1);
-  color: var(--gray7);
-  display: flex;
-  transition: all 0.3s;
-}
-.button:hover {
-  background-color: var(--gray3);
 }
 .button:hover svg {
   transform: translateX(8px); /* Move the SVG 10px to the right */

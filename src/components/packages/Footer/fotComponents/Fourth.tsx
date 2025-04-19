@@ -12,7 +12,7 @@ interface props {
 export default function Fourth({ title, subTitle }: props) {
   return (
     <section className={styles.wrapper}>
-      <h2 className="heading4">{title}</h2>
+      <h2 className="heading3">{title}</h2>
       <div className={styles.imageWrapper}>
         {/* {defaultImages.slice(0, 6).map((img, index) => (
           <Image

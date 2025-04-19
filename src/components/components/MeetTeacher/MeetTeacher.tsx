@@ -15,7 +15,7 @@ export default async function MeetTeacher() {
           <div className={styles.leftDiv}>
             <HeadLine title={t("title1")} />
             <div className={styles.middleDiv}>
-              <h3 className="heading3 primary6">{t("title2")}</h3>
+              <h3 className="heading3 gray8">{t("title2")}</h3>
               <p className="paragraph gray7">{t("text1")}</p>
               <Link
                 className="button button-reverse heading4"

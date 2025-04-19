@@ -12,7 +12,7 @@ export default async function Second({ title }: props) {
   const items: NavItemProps[] = navItems[locale]; // Get items for the current locale
   return (
     <section>
-      <h2 className="heading4">{title}</h2>
+      <h2 className="heading3">{title}</h2>
 
       <div className={styles.menuWrap}>
         {items.map((item: NavItemProps) => {

@@ -11,16 +11,16 @@ export default function HeadLine({
     <div className={styles.wrapper}>
       <div
         className={`${styles.greenLine2} ${
-          !secondary ? "bg-primary5" : "bg-secondary5"
+          !secondary ? "bg-primary3" : "bg-secondary5"
         }`}
       ></div>
 
-      <h2 className={`heading2  ${!secondary ? "primary5" : "secondary7"}`}>
+      <h2 className={`heading2  ${!secondary ? "primary3" : "secondary7"}`}>
         {title}
       </h2>
       <div
         className={`${styles.greenLine} ${
-          !secondary ? "bg-primary5" : "bg-secondary5"
+          !secondary ? "bg-primary3" : "bg-secondary5"
         }`}
       ></div>
     </div>
