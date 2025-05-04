@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <div className="fadeOut">
       <Hero />
-      <Levanidze />
+      {/* <Levanidze /> */}
       <Story image={oldImage} />
       <SquaresTextPhoto />
       <Collection mini={true} />
