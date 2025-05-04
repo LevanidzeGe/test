@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { useLocale } from "next-intl";
 import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
-import { companyRoute } from "@/src/manager/info";
 import HeadLine from "../../components/miniComponents/HeadLine";
+import { companyRoute } from "@/src/manager/navigation";
 const faqRoute = "faq";
 
 export default function Accordion({ title1 }: { title1: string }) {

@@ -6,7 +6,7 @@ import { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { getLocale, getTranslations } from "next-intl/server";
 import { eventPlaceholder } from "@/public/image";
-import { dinamycPageRoute } from "../../page";
+import { dynamicPageRoute1 } from "@/src/manager/navigation";
 
 export default async function ServerCard({
   id,
@@ -24,7 +24,7 @@ export default async function ServerCard({
   return (
     <div className={styles.cardWrapper}>
       <Link
-        href={`/${locale}/${dinamycPageRoute}/${id}`}
+        href={`/${locale}/${dynamicPageRoute1}/${id}`}
         className={styles.imageWrapper}
       >
         <Image
@@ -67,7 +67,7 @@ export default async function ServerCard({
         </div>
 
         <Link
-          href={`/${locale}/${dinamycPageRoute}/${id}`}
+          href={`/${locale}/${dynamicPageRoute1}/${id}`}
           className={`${styles.button} ${
             isUpcoming ? "button" : "button-reverse button"
           }`}

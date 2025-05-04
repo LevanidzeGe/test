@@ -7,7 +7,7 @@ import { useRef, useState, useEffect } from "react";
 import { useLocale } from "next-intl";
 import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
-import { companyRoute } from "@/src/manager/info";
+import { companyRoute } from "@/src/manager/navigation";
 import HeadLine from "../../components/miniComponents/HeadLine";
 const testimonialRoute = "testimonials";
 

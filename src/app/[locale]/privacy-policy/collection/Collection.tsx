@@ -13,12 +13,12 @@ export function replacePlaceholders(text: string): string {
 }
 
 export default async function Collections() {
-  const collectionRoute1 = "privacy-policy-collection";
+  const privacyPolicyRoute = "privacy-policy-collection";
   const companyRoute = "privacy-policy";
   const locale = await getLocale();
   const collection = await fetchCollectionIfUpdated(
     companyRoute,
-    collectionRoute1
+    privacyPolicyRoute
   );
 
   const items = collection?.items ? Object.values(collection.items) : [];

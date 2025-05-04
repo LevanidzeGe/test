@@ -1,11 +1,18 @@
-import { companyDomain, companyRoute } from "@/src/manager/info";
-import { navItems, supportedLocales } from "@/src/manager/navigation";
+import { companyDomain } from "@/src/manager/info";
+import {
+  companyRoute,
+  dynamicSitemap,
+  navItems,
+  supportedLocales,
+} from "@/src/manager/navigation";
 import { ref, get, getDatabase } from "firebase/database";
 import { app } from "@/src/lib/firebase/firebase";
+import { getLocale } from "next-intl/server";
 
 const db = getDatabase(app);
 
 export default async function sitemap() {
+  const locale = await getLocale();
   try {
     const collectionsRef = ref(db, `companiesData/${companyRoute}/collections`);
     const snapshot = await get(collectionsRef);
@@ -13,18 +20,24 @@ export default async function sitemap() {
 
     const collectionUrls = collectionsData
       ? Object.entries(collectionsData).flatMap(
-          ([collectionId, collection]: any) => {
-            if (!collection.items) return [];
+          ([collectionKey, collectionValue]: any) => {
+            if (!collectionValue.items) return [];
 
-            return Object.values(collection.items).flatMap((item: any) => {
-              const itemUrl = `${companyDomain}/companiesData/${companyRoute}/collections/${collectionId}/items/${item.id}`;
-              return supportedLocales.map((locale) => ({
-                url: `${itemUrl}?lang=${locale}`,
-                lastModified: new Date().toISOString(),
-                changeFrequency: "monthly",
-                priority: 0.7,
-              }));
-            });
+            const dynamicRoute = dynamicSitemap[collectionKey];
+            if (!dynamicRoute) return [];
+
+            return Object.values(collectionValue.items)
+              .filter((item: any) => !item.itemActive) // ✅ skip inactive if needed
+              .flatMap((item: any) => {
+                return supportedLocales.map((locale) => ({
+                  url: `${companyDomain}/${locale}/${dynamicRoute}/${item.id}`,
+                  lastModified: new Date(
+                    item.itemTimestamp || Date.now()
+                  ).toISOString(),
+                  changeFrequency: "monthly",
+                  priority: 0.7,
+                }));
+              });
           }
         )
       : [];
@@ -46,4 +59,3 @@ export default async function sitemap() {
     return [];
   }
 }
-//

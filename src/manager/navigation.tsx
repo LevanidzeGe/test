@@ -7,6 +7,19 @@ export interface NavItemProps {
   button?: boolean;
 }
 
+export const companyRoute = "geo-judo-geneva-2025-04-16";
+
+export const collectionRoute1 = "events";
+export const collectionRoute2 = "";
+
+export const dynamicPageRoute1 = "events";
+export const dynamicPageRoute2 = "";
+
+export const dynamicSitemap: Record<string, string> = {
+  [collectionRoute1]: dynamicPageRoute1,
+  [collectionRoute2]: dynamicPageRoute2,
+};
+
 export const navItems: { [key: string]: NavItemProps[] } = {
   en: [
     { title: "Main", url: "/" },

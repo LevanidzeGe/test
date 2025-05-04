@@ -3,12 +3,13 @@ import { fetchCollectionIfUpdated } from "@/src/lib/firebase/getFirebaseData";
 import {
   collectionRoute1,
   companyRoute,
-  companyDomain,
-} from "@/src/manager/info";
+  dynamicPageRoute1,
+} from "@/src/manager/navigation";
+companyDomain;
 import { defaultLocale } from "@/src/manager/navigation";
 import { extractCollectionFields } from "@/src/lib/firebase/types";
 import ItemJsx from "./Item/Item";
-import { dinamycPageRoute } from "../page";
+import { companyDomain } from "@/src/manager/info";
 
 // ✅ SEO Metadata
 export async function generateMetadata({
@@ -38,12 +39,12 @@ export async function generateMetadata({
     title: extracted.transOption1 || defaultLocale,
     description: extracted.transOption2 || defaultLocale,
     alternates: {
-      canonical: `/${locale}/${dinamycPageRoute}/${itemId}`,
+      canonical: `/${locale}/${dynamicPageRoute1}/${itemId}`,
     },
     openGraph: {
       title: extracted.transOption1,
       description: extracted.transOption2,
-      url: `${companyDomain}/${locale}/${dinamycPageRoute}/${itemId}`,
+      url: `${companyDomain}/${locale}/${dynamicPageRoute1}/${itemId}`,
       images: [
         {
           url:

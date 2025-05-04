@@ -11,7 +11,6 @@ export async function generateMetadata() {
   };
 }
 
-export const dinamycPageRoute = "events";
 export default async function ProjectsPage() {
   return (
     <div className="fadeOut">
