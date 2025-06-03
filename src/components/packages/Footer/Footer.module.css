@@ -22,6 +22,7 @@
   .footWrapper {
     flex-wrap: wrap;
     gap: 10%;
+    overflow: hidden;
   }
   .footWrapper section {
     min-width: 300px;
