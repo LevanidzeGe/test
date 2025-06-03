@@ -10,6 +10,7 @@ import Collection from "@/src/app/[locale]/events/collection/Collection";
 import { getTranslations } from "next-intl/server";
 import Album from "@/src/components/packages/Album/Album";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
+import Lessons from "@/src/components/components/Lessons/Lessons";
 
 export default async function Home() {
   const t = await getTranslations("homePage");
@@ -17,6 +18,7 @@ export default async function Home() {
   return (
     <div className="fadeOut">
       <Hero />
+      <Lessons />
       <Story image={oldImage} />
       <SquaresTextPhoto />
       <Collection mini={true} />

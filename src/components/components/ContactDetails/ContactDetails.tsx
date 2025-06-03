@@ -6,16 +6,16 @@ import {
   email,
   phoneNumber,
 } from "@/src/manager/info";
-import { useTranslations } from "next-intl";
 import emailIcon from "./icons/email.svg";
 import phoneIcon from "./icons/phone-call.svg";
 import addresslIcon from "./icons/address.svg";
 import Link from "next/link";
 import Image from "next/image";
 import HeadLine from "../miniComponents/HeadLine";
+import { getTranslations } from "next-intl/server";
 
-export default function ContactDetails() {
-  const t = useTranslations("homePage.contactDetails");
+export default async function ContactDetails() {
+  const t = await getTranslations("homePage.contactDetails");
   return (
     <section className="section ">
       <div className="container">
