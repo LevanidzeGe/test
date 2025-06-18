@@ -1,21 +1,21 @@
 import Image from "next/image";
 import styles from "./Sale.module.css";
-import { giSale1, giSale2, giSale3,} from "@/public/image";
+import { giSale1, giSale2, giSale3 } from "@/public/image";
 import { useTranslations } from "next-intl";
 import HeadLine from "../miniComponents/HeadLine";
 
 const giItems = [
   {
     image: giSale1,
-    price: 70,
+    price: 40,
   },
   {
     image: giSale2,
-    price: 70,
+    price: 50,
   },
   {
     image: giSale3,
-    price: 70,
+    price: 60,
   },
 ];
 
