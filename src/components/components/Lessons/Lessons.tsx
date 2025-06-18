@@ -23,7 +23,10 @@ export default async function Lessons() {
                 height={200}
                 placeholder="blur"
               />
-              <h3 className="heading3 white">{group.title[locale]}</h3>
+              <h3 className="heading3 white">
+                {/* {group.title[locale]} */}
+                {""}
+              </h3>
               <p className={`gray0 heading4 ${styles.age}`}>
                 {group.ageLabel[locale]}: {group.age}
               </p>
