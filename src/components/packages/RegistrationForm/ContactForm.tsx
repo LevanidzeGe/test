@@ -8,7 +8,21 @@ export default async function RegistrationForm({ title1 }: { title1: string }) {
         <div className={styles.reservationWrapper}>
           <div className={styles.reservation}>
             {title1 && <p className="heading3 primary8">{title1}</p>}
-            <Contact phone message />
+            <Contact
+              userEmail
+              userName
+              userSurname
+              phone
+              message
+              address
+              nationality
+              avsNumber
+              birth
+              boolean
+              terms1
+              terms2
+              groups
+            />
           </div>
         </div>
       </div>

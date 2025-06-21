@@ -37,6 +37,11 @@
   height: 160px;
   resize: vertical;
 }
+.checkbox {
+  scale: 1.4;
+  margin-right: 7px;
+  cursor: pointer;
+}
 
 .buttonSend {
   margin-top: 20px;
