@@ -64,9 +64,9 @@ const Register: React.FC<ContactFormProps> = ({
   const [messageValue, setMessageValue] = useState("");
   const [participationValue, setParticipationValue] = useState("");
   const [studyGroupValue, setStudyGroupValue] = useState("");
-  // const [dateValue, setDateValue] = useState("");
-  // const [timeValue, setTimeValue] = useState("");
-  // const [quantityValue, setQuantityValue] = useState("");
+  const [dateValue, setDateValue] = useState("");
+  const [timeValue, setTimeValue] = useState("");
+  const [quantityValue, setQuantityValue] = useState("");
 
   const [surnameError, setSurnameError] = useState(false);
   const [nameError, setNameError] = useState(false);
