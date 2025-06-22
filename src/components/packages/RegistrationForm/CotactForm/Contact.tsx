@@ -317,8 +317,8 @@ const Register: React.FC<ContactFormProps> = ({
               }}
             >
               <option value="">{t.choose}</option>
-              <option value="yes">{t.yes}</option>
-              <option value="no">{t.no}</option>
+              <option value="Oui">{t.yes}</option>
+              <option value="Non">{t.no}</option>
             </select>
             <input
               type="hidden"
@@ -349,7 +349,7 @@ const Register: React.FC<ContactFormProps> = ({
             <input
               type="hidden"
               name="group_age"
-              value={groupValue ? t[groupValue] : ""}
+              value={groupValue ? contactFormValues["fr"][groupValue] : ""}
             />
           </label>
         )}
@@ -386,7 +386,17 @@ const Register: React.FC<ContactFormProps> = ({
             <input
               type="hidden"
               name="training_days"
-              value={selectedTimes.join(", ")}
+              value={
+                groupValue
+                  ? groupsData.fr[groupValue].times
+                      .filter((_, i) =>
+                        selectedTimes.includes(
+                          groupsData[locale][groupValue].times[i]
+                        )
+                      )
+                      .join(", ")
+                  : ""
+              }
             />
           </div>
         )}
@@ -418,7 +428,11 @@ const Register: React.FC<ContactFormProps> = ({
             <input
               type="hidden"
               name="photo_agreement"
-              value={agreedTerms1 ? t.yes : t.no}
+              value={
+                agreedTerms1
+                  ? contactFormValues["fr"].yes
+                  : contactFormValues["fr"].no
+              }
             />
           </div>
         )}
@@ -439,7 +453,11 @@ const Register: React.FC<ContactFormProps> = ({
               <input
                 type="hidden"
                 name="feep_payment_agreement"
-                value={agreedTerms2 ? t.yes : t.no}
+                value={
+                  agreedTerms2
+                    ? contactFormValues["fr"].yes
+                    : contactFormValues["fr"].no
+                }
               />
             </label>
 
