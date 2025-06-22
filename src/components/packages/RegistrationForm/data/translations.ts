@@ -23,7 +23,7 @@ export const contactFormValues = {
     age: "Âge", // (kept for your use)
     group1: "4-6 ans",
     group2: "7-12 ans",
-    group3: "14+ & 18+ ans",
+    group3: "12+ & 18+ ans",
     groupHours: {
       group1: "Horaires des cours : lundi, jeudi, vendredi 17h15–18h00",
       group2: "Horaires des cours : lundi, jeudi, vendredi 18h00–19h00",
@@ -61,7 +61,7 @@ export const contactFormValues = {
     age: "Age", // (kept for your use)
     group1: "4-6 years",
     group2: "7-12 years",
-    group3: "14+ & 18+ years",
+    group3: "12+ & 18+ years",
     groupHours: {
       group1: "Lesson hours: Monday, Thursday, Friday 17:15–18:00",
       group2: "Lesson hours: Monday, Thursday, Friday 18:00–19:00",
@@ -100,7 +100,7 @@ export const contactFormValues = {
     age: "Alter", // (kept for your use)
     group1: "4-6 Jahre",
     group2: "7-12 Jahre",
-    group3: "14+ & 18+ Jahre",
+    group3: "12+ & 18+ Jahre",
     groupHours: {
       group1: "Unterrichtszeiten: Montag, Donnerstag, Freitag 17:15–18:00 Uhr",
       group2: "Unterrichtszeiten: Montag, Donnerstag, Freitag 18:00–19:00 Uhr",
@@ -138,7 +138,7 @@ export const contactFormValues = {
     age: "Età", // (kept for your use)
     group1: "4-6 anni",
     group2: "7-12 anni",
-    group3: "14+ & 18+ anni",
+    group3: "12+ & 18+ anni",
     groupHours: {
       group1: "Orari delle lezioni: lunedì, giovedì, venerdì 17:15–18:00",
       group2: "Orari delle lezioni: lunedì, giovedì, venerdì 18:00–19:00",
@@ -176,7 +176,7 @@ export const contactFormValues = {
     age: "ასაკი", // (kept for your use)
     group1: "4-6 წელი",
     group2: "7-12 წელი",
-    group3: "14+ & 18+ წელი",
+    group3: "12+ & 18+ წელი",
     groupHours: {
       group1: "გაკვეთილების დრო: ორშაბათი, ხუთშაბათი, პარასკევი 17:15–18:00",
       group2: "გაკვეთილების დრო: ორშაბათი, ხუთშაბათი, პარასკევი 18:00–19:00",
