@@ -27,7 +27,7 @@ export default function Story({ image, reverse }: ComponentOne) {
             alt="ss"
           />
           <div className={styles.textDiv}>
-            <HeadLine title="Geo Judo" />
+            <HeadLine title="Judo Club Geo de Genève " />
             <h3 className="heading3 gray8">{t("title1")}</h3>
             <p className="paragraph">{t("text")}</p>
           </div>

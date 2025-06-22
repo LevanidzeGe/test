@@ -194,4 +194,99 @@ export const contactFormValues = {
   },
 } as const;
 
+export const groupsData = {
+  en: {
+    trainingDays: "Choose training day(s)",
+    group1: {
+      times: [
+        "Monday 17:15–18:00",
+        "Thursday 17:15–18:00",
+        "Friday 17:15–18:00",
+      ],
+    },
+    group2: {
+      times: [
+        "Monday 18:00–19:00",
+        "Thursday 18:00–19:00",
+        "Friday 18:00–19:00",
+      ],
+    },
+    group3: {
+      times: ["Thursday 19:00–20:15"],
+    },
+  },
+  fr: {
+    trainingDays: "Choisissez le(s) jour(s) d'entraînement",
+    group1: {
+      times: ["Lundi 17h15–18h00", "Jeudi 17h15–18h00", "Vendredi 17h15–18h00"],
+    },
+    group2: {
+      times: ["Lundi 18h00–19h00", "Jeudi 18h00–19h00", "Vendredi 18h00–19h00"],
+    },
+    group3: {
+      times: ["Jeudi 19h00–20h15"],
+    },
+  },
+  de: {
+    trainingDays: "Wählen Sie Trainingstag(e)",
+    group1: {
+      times: [
+        "Montag 17:15–18:00",
+        "Donnerstag 17:15–18:00",
+        "Freitag 17:15–18:00",
+      ],
+    },
+    group2: {
+      times: [
+        "Montag 18:00–19:00",
+        "Donnerstag 18:00–19:00",
+        "Freitag 18:00–19:00",
+      ],
+    },
+    group3: {
+      times: ["Donnerstag 19:00–20:15"],
+    },
+  },
+  it: {
+    trainingDays: "Scegli i giorni di allenamento",
+    group1: {
+      times: [
+        "Lunedì 17:15–18:00",
+        "Giovedì 17:15–18:00",
+        "Venerdì 17:15–18:00",
+      ],
+    },
+    group2: {
+      times: [
+        "Lunedì 18:00–19:00",
+        "Giovedì 18:00–19:00",
+        "Venerdì 18:00–19:00",
+      ],
+    },
+    group3: {
+      times: ["Giovedì 19:00–20:15"],
+    },
+  },
+  ge: {
+    trainingDays: "აირჩიეთ ვარჯიშის დღე(ები)",
+    group1: {
+      times: [
+        "ორშაბათი 17:15–18:00",
+        "ხუთშაბათი 17:15–18:00",
+        "პარასკევი 17:15–18:00",
+      ],
+    },
+    group2: {
+      times: [
+        "ორშაბათი 18:00–19:00",
+        "ხუთშაბათი 18:00–19:00",
+        "პარასკევი 18:00–19:00",
+      ],
+    },
+    group3: {
+      times: ["ხუთშაბათი 19:00–20:15"],
+    },
+  },
+} as const;
+
 export type SupportedLocale = keyof typeof contactFormValues;

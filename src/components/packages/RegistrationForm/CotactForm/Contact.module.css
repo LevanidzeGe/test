@@ -32,6 +32,18 @@
 .inputRed {
   border-color: red !important;
 }
+.groupHours {
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+}
+.groupHours span {
+  font-size: 13px;
+  cursor: pointer;
+}
+.groupHours label {
+  padding-right: 10px;
+}
 
 .textArea {
   height: 160px;

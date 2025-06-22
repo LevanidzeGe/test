@@ -1,9 +1,9 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { sendEmail } from "./EmailService";
 import styles from "./Contact.module.css";
 import { useLocale } from "next-intl";
-import { contactFormValues } from "../data/translations";
+import { contactFormValues, groupsData } from "../data/translations";
 import { unMemberCountries } from "../data/unMemberCountries";
 export interface ContactFormProps {
   title1?: string;
@@ -60,38 +60,98 @@ const Register: React.FC<ContactFormProps> = ({
   const [avsNumberValue, setAvsNumberValue] = useState("");
   const [birthDateValue, setBirthDateValue] = useState("");
   const [nationalityValue, setNationalityValue] = useState("");
+  const [participateCompetitionValue, setParticipateCompetitionValue] =
+    useState("");
+  type GroupKey = "" | "group1" | "group2" | "group3";
+  const [groupValue, setGroupValue] = useState<GroupKey>("");
 
   const [messageValue, setMessageValue] = useState("");
-  const [participationValue, setParticipationValue] = useState("");
-  const [studyGroupValue, setStudyGroupValue] = useState("");
+  const [agreedTerms1, setAgreedTerms1] = useState(true);
+  const [agreedTerms2, setAgreedTerms2] = useState(false);
+
   const [dateValue, setDateValue] = useState("");
   const [timeValue, setTimeValue] = useState("");
   const [quantityValue, setQuantityValue] = useState("");
 
+  // Must fill
   const [surnameError, setSurnameError] = useState(false);
   const [nameError, setNameError] = useState(false);
+  const [addressError, setAddressError] = useState(false);
   const [emailError, setEmailError] = useState(false);
-  const [messageError, setMessageError] = useState(false);
-
-  const [agreedTerms1, setAgreedTerms1] = useState(true);
-  const [agreedTerms1Error, setAgreedTerms1Error] = useState(false);
-
-  const [agreedTerms2, setAgreedTerms2] = useState(false);
-  const [agreedTerms2Error, setAgreedTerms2Error] = useState(false);
-
-  const [participateCompetitionValue, setParticipateCompetitionValue] =
-    useState("");
+  const [phoneError, setPhoneError] = useState(false);
+  const [avsNumberError, setAvsNumberError] = useState(false);
+  const [birthDateError, setBirthDateError] = useState(false);
+  const [nationalityError, setNationalityError] = useState(false);
   const [participateCompetitionError, setParticipateCompetitionError] =
     useState(false);
-
-  const [groupValue, setGroupValue] = useState("");
   const [groupError, setGroupError] = useState(false);
+  // const [messageError, setMessageError] = useState(false);
+  const [agreedTerms1Error, setAgreedTerms1Error] = useState(false);
+  const [agreedTerms2Error, setAgreedTerms2Error] = useState(false);
+
+  const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
+  const [selectedTimesError, setSelectedTimesError] = useState(false);
 
   const handleErrors = () => {
-    setNameError(!nameValue);
     setSurnameError(!surnameValue);
+    setNameError(!nameValue);
+    setAddressError(!addressValue);
     setEmailError(!emailValue || !emailValue.includes("@"));
-    setMessageError(!messageValue);
+    setPhoneError(!phoneValue);
+    setAvsNumberError(!avsNumberValue);
+    setBirthDateError(!birthDateValue);
+    setNationalityError(!nationalityValue);
+    setParticipateCompetitionError(!participateCompetitionValue);
+    setGroupError(!groupValue);
+    // setMessageError(!messageValue);
+    // setAgreedTerms1Error(!agreedTerms1);
+    setAgreedTerms2Error(!agreedTerms2);
+  };
+
+  const validateRequiredFields = () => {
+    let hasError = false;
+
+    setSurnameError(!surnameValue);
+    if (!surnameValue) hasError = true;
+
+    setNameError(!nameValue);
+    if (!nameValue) hasError = true;
+
+    setAddressError(!addressValue);
+    if (!addressValue) hasError = true;
+
+    setEmailError(!emailValue || !emailValue.includes("@"));
+    if (!emailValue || !emailValue.includes("@")) hasError = true;
+
+    setPhoneError(!phoneValue);
+    if (!phoneValue) hasError = true;
+
+    setAvsNumberError(!avsNumberValue);
+    if (!avsNumberValue) hasError = true;
+
+    setBirthDateError(!birthDateValue);
+    if (!birthDateValue) hasError = true;
+
+    setNationalityError(!nationalityValue);
+    if (!nationalityValue) hasError = true;
+
+    setParticipateCompetitionError(!participateCompetitionValue);
+    if (!participateCompetitionValue) hasError = true;
+
+    setGroupError(!groupValue);
+    if (!groupValue) hasError = true;
+
+    setAgreedTerms2Error(!agreedTerms2);
+    if (!agreedTerms2) hasError = true;
+
+    if (groupValue && selectedTimes.length === 0) {
+      setSelectedTimesError(true);
+      hasError = true;
+    } else {
+      setSelectedTimesError(false);
+    }
+
+    return !hasError;
   };
 
   const handleEmailSent = () => setEmailSent(true);
@@ -100,6 +160,10 @@ const Register: React.FC<ContactFormProps> = ({
     if (!form.current) return;
     sendEmail(form.current, handleEmailSent)(e);
   };
+
+  useEffect(() => {
+    setSelectedTimes([]); // Clear all checked times when group changes
+  }, [groupValue]);
 
   return (
     <div className={""}>
@@ -115,7 +179,7 @@ const Register: React.FC<ContactFormProps> = ({
                 surnameError ? styles.inputRed : ""
               }`}
               type="text"
-              name="user_name"
+              name="user_surname"
               placeholder={t.surname}
               value={surnameValue}
               onChange={(e) => setSurnameValue(e.target.value)}
@@ -133,9 +197,11 @@ const Register: React.FC<ContactFormProps> = ({
           )}
           {address && (
             <input
-              className={`${styles.input}`}
+              className={`${styles.input} ${
+                addressError ? styles.inputRed : ""
+              }`}
               type="text"
-              name="user_name"
+              name="user_address"
               placeholder={t.address}
               value={addressValue}
               onChange={(e) => setAddressValue(e.target.value)}
@@ -153,7 +219,7 @@ const Register: React.FC<ContactFormProps> = ({
           )}
           {phone && (
             <input
-              className={styles.input}
+              className={`${styles.input} ${phoneError ? styles.inputRed : ""}`}
               type="tel"
               name="user_phone"
               placeholder={t.phone}
@@ -164,12 +230,15 @@ const Register: React.FC<ContactFormProps> = ({
 
           {avsNumber && (
             <input
-              className={styles.input}
+              className={`${styles.input} ${
+                avsNumberError ? styles.inputRed : ""
+              }`}
               type="text"
-              name="user_phone"
+              name="user_avs"
               placeholder={t.avsNumber}
-              value={phoneValue}
-              onChange={(e) => setPhoneValue(e.target.value)}
+              value={avsNumberValue}
+              autoComplete="off"
+              onChange={(e) => setAvsNumberValue(e.target.value)}
             />
           )}
 
@@ -185,9 +254,11 @@ const Register: React.FC<ContactFormProps> = ({
           )}
           {birth && (
             <input
-              className={styles.input}
+              className={`${styles.input} ${
+                birthDateError ? styles.inputRed : ""
+              }`}
               type="text"
-              name="user_date"
+              name="user_birthdate"
               placeholder={t.birthDate}
               value={birthDateValue}
               onChange={(e) => setBirthDateValue(e.target.value)}
@@ -195,7 +266,9 @@ const Register: React.FC<ContactFormProps> = ({
           )}
           {nationality && (
             <select
-              className={`${styles.input}`}
+              className={`${styles.input} ${
+                nationalityError ? styles.inputRed : ""
+              }`}
               name="user_nationality"
               value={nationalityValue}
               onChange={(e) => setNationalityValue(e.target.value)}
@@ -208,7 +281,6 @@ const Register: React.FC<ContactFormProps> = ({
               ))}
             </select>
           )}
-
           {time && (
             <input
               className={styles.input}
@@ -248,6 +320,11 @@ const Register: React.FC<ContactFormProps> = ({
               <option value="yes">{t.yes}</option>
               <option value="no">{t.no}</option>
             </select>
+            <input
+              type="hidden"
+              name="competition_participation"
+              value={participateCompetitionValue}
+            />
           </label>
         )}
         {groups && (
@@ -256,10 +333,7 @@ const Register: React.FC<ContactFormProps> = ({
             <select
               className={`${styles.input} ${groupError ? styles.inputRed : ""}`}
               value={groupValue}
-              onChange={(e) => {
-                setGroupValue(e.target.value);
-                setGroupError(false);
-              }}
+              onChange={(e) => setGroupValue(e.target.value as GroupKey)}
             >
               <option value="">{t.choose}</option>
               <option value="group1">
@@ -272,20 +346,54 @@ const Register: React.FC<ContactFormProps> = ({
                 {t.group3} {t.age}
               </option>
             </select>
-            {groupError && <div className={styles.inputRed}>{t.choose}</div>}
-            {groupValue && (t.groupHours as any)[groupValue] && (
-              <div className="primary4">
-                {(t.groupHours as any)[groupValue]}
-              </div>
-            )}
+            <input
+              type="hidden"
+              name="group_age"
+              value={groupValue ? t[groupValue] : ""}
+            />
           </label>
+        )}
+
+        {/* Map checkboxes for the selected group's times */}
+        {groupValue && groupsData[locale] && groupsData[locale][groupValue] && (
+          <div>
+            <div
+              className={`paragraph  ${
+                selectedTimesError ? "secondary6" : "gray7"
+              }`}
+            >
+              {groupsData[locale].trainingDays}
+            </div>
+            <div className={styles.groupHours}>
+              {groupsData[locale][groupValue].times.map((time) => (
+                <label key={time} className="paragraph gray7">
+                  <input
+                    className={styles.checkbox}
+                    type="checkbox"
+                    checked={selectedTimes.includes(time)}
+                    onChange={() => {
+                      setSelectedTimes((prev) =>
+                        prev.includes(time)
+                          ? prev.filter((t) => t !== time)
+                          : [...prev, time]
+                      );
+                    }}
+                  />
+                  <span>{time}</span>
+                </label>
+              ))}
+            </div>
+            <input
+              type="hidden"
+              name="training_days"
+              value={selectedTimes.join(", ")}
+            />
+          </div>
         )}
 
         {message && (
           <textarea
-            className={`${styles.textArea} ${styles.input} ${
-              messageError ? styles.inputRed : ""
-            }`}
+            className={`${styles.textArea} ${styles.input}`}
             name="message"
             placeholder={t.message}
             value={messageValue}
@@ -307,14 +415,11 @@ const Register: React.FC<ContactFormProps> = ({
             <label htmlFor="terms1" className={styles.checkboxLabel}>
               {t.termsConditions1}
             </label>
-            {agreedTerms1Error && (
-              <div
-                className={styles.inputRed}
-                style={{ marginBottom: 8, fontSize: 13 }}
-              >
-                {t.mustAgree}
-              </div>
-            )}
+            <input
+              type="hidden"
+              name="photo_agreement"
+              value={agreedTerms1 ? t.yes : t.no}
+            />
           </div>
         )}
         {terms2 && (
@@ -331,10 +436,16 @@ const Register: React.FC<ContactFormProps> = ({
             />
             <label htmlFor="terms2" className={styles.checkboxLabel}>
               {t.termsConditions2}
+              <input
+                type="hidden"
+                name="feep_payment_agreement"
+                value={agreedTerms2 ? t.yes : t.no}
+              />
             </label>
+
             {agreedTerms2Error && (
               <div
-                className={styles.inputRed}
+                className="secondary6 paragraph"
                 style={{ marginBottom: 8, fontSize: 13 }}
               >
                 {t.mustAgree}
@@ -343,19 +454,19 @@ const Register: React.FC<ContactFormProps> = ({
           </div>
         )}
         <button
-          type={
-            nameValue && messageValue && emailValue.includes("@")
-              ? "submit"
-              : "button"
-          }
+          type="submit"
           className={`button ${styles.buttonSend} ${
             !buttonDisable ? "button" : "buttonDisabled"
           }`}
-          onClick={
-            !nameValue || !messageValue || !emailValue.includes("@")
-              ? handleErrors
-              : () => setButtonDisable(true)
-          }
+          onClick={(e) => {
+            // If not valid, prevent submission and show errors
+            if (!validateRequiredFields()) {
+              e.preventDefault();
+              return;
+            }
+            setButtonDisable(true); // optionally prevent double submission
+            // Allow submit (form onSubmit will handle sending)
+          }}
         >
           {t.button}
         </button>
