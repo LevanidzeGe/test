@@ -11,7 +11,7 @@ export const contactFormValues = {
     avsNumber: "Numéro AVS", // client: Numéro AVS *
     birthDate: "Date de naissance - JJ/MM/AAAA",
     termsConditions1:
-      "J’autorise le Club de Judo à prendre des photos durant les manifestations et entraînements et à utiliser uniquement dans le cadre de supports liés au club (site internet, plaquettes, journaux, publications etc…)", // client: photo permission *
+      " (Recommandé) J’autorise le Club de Judo à prendre des photos durant les manifestations et entraînements et à utiliser uniquement dans le cadre de supports liés au club (site internet, plaquettes, journaux, publications etc…)", // client: photo permission *
     termsConditions2:
       "En inscrivant votre enfant au Judo Club Geo de Genève, vous vous engagez à régler l'intégralité de la cotisation annuelle à compter du jour de l'inscription de votre enfant. La facilité de paiement en plusieurs fois, ne dispense en aucun cas du règlement de la cotisation annuelle.", // client: fee rule *
     mustAgree: "Vous devez accepter pour continuer", // improved for French users
@@ -22,7 +22,7 @@ export const contactFormValues = {
     groups: "Groupe d'étude", // (kept for your use)
     age: "Âge", // (kept for your use)
     group1: "4-6 ans",
-    group2: "7-14 ans",
+    group2: "7-12 ans",
     group3: "14+ & 18+ ans",
     groupHours: {
       group1: "Horaires des cours : lundi, jeudi, vendredi 17h15–18h00",
@@ -49,7 +49,7 @@ export const contactFormValues = {
     avsNumber: "AVS Number", // client: AVS Number *
     birthDate: "Date of birth - DD/MM/YYYY", // client: Date of birth *. DAY MONTH YEAR
     termsConditions1:
-      "I authorize the Judo Club to take photos during events and training sessions and to use them exclusively for club-related materials (website, brochures, newspapers, publications, etc.)", // client: photo permission *
+      "(Recommended) I authorize the Judo Club to take photos during events and training sessions and to use them exclusively for club-related materials (website, brochures, newspapers, publications, etc.)", // client: photo permission *
     termsConditions2:
       "By registering your child at Judo Club Geo de Genève, you agree to pay the full annual membership fee from the day of registration. Payment in installments does not exempt you from settling the full annual fee.", // client: fee rule *
     mustAgree: "You must agree to continue", // improved for English users
@@ -60,7 +60,7 @@ export const contactFormValues = {
     groups: "Study group", // (kept for your use)
     age: "Age", // (kept for your use)
     group1: "4-6 years",
-    group2: "7-14 years",
+    group2: "7-12 years",
     group3: "14+ & 18+ years",
     groupHours: {
       group1: "Lesson hours: Monday, Thursday, Friday 17:15–18:00",
@@ -88,7 +88,7 @@ export const contactFormValues = {
     avsNumber: "AHV-Nummer", // client: AHV-Nummer *
     birthDate: "Geburtsdatum - TT/MM/JJJJ", // client: Geburtsdatum *. TAG MONAT JAHR
     termsConditions1:
-      "Ich erlaube dem Judo-Club, während Veranstaltungen und Trainings Fotos zu machen und diese ausschließlich für vereinsbezogene Materialien zu verwenden (Website, Broschüren, Zeitungen, Veröffentlichungen usw.)", // client: Fotogenehmigung *
+      "(Empfohlen) Ich erlaube dem Judo-Club, während Veranstaltungen und Trainings Fotos zu machen und diese ausschließlich für vereinsbezogene Materialien zu verwenden (Website, Broschüren, Zeitungen, Veröffentlichungen usw.)", // client: Fotogenehmigung *
     termsConditions2:
       "Mit der Anmeldung Ihres Kindes beim Judo Club Geo de Genève verpflichten Sie sich, den gesamten Jahresbeitrag ab dem Tag der Anmeldung zu zahlen. Die Möglichkeit der Ratenzahlung entbindet in keinem Fall von der Zahlung des gesamten Jahresbeitrags.", // client: Beitragsregel *
     mustAgree: "Sie müssen zustimmen, um fortzufahren",
@@ -99,7 +99,7 @@ export const contactFormValues = {
     groups: "Studiengruppe", // (kept for your use)
     age: "Alter", // (kept for your use)
     group1: "4-6 Jahre",
-    group2: "7-14 Jahre",
+    group2: "7-12 Jahre",
     group3: "14+ & 18+ Jahre",
     groupHours: {
       group1: "Unterrichtszeiten: Montag, Donnerstag, Freitag 17:15–18:00 Uhr",
@@ -126,7 +126,7 @@ export const contactFormValues = {
     avsNumber: "Numero AVS", // client: Numero AVS *
     birthDate: "Data di nascita - GG/MM/AAAA", // client: Data di nascita *. GIORNO MESE ANNO
     termsConditions1:
-      "Autorizzo il Club di Judo a scattare foto durante eventi e allenamenti e ad utilizzarle esclusivamente per i materiali legati al club (sito web, brochure, giornali, pubblicazioni, ecc.)", // client: consenso foto *
+      "(Consigliato) Autorizzo il Club di Judo a scattare foto durante eventi e allenamenti e ad utilizzarle esclusivamente per i materiali legati al club (sito web, brochure, giornali, pubblicazioni, ecc.)", // client: consenso foto *
     termsConditions2:
       "Iscrivendo il/la proprio/a figlio/a al Judo Club Geo di Ginevra, vi impegnate a pagare l’intera quota annuale a partire dal giorno dell’iscrizione. Il pagamento rateale non esonera in alcun modo dal saldo della quota annuale.", // client: regola quota *
     mustAgree: "Devi accettare per continuare",
@@ -137,7 +137,7 @@ export const contactFormValues = {
     groups: "Gruppo di studio", // (kept for your use)
     age: "Età", // (kept for your use)
     group1: "4-6 anni",
-    group2: "7-14 anni",
+    group2: "7-12 anni",
     group3: "14+ & 18+ anni",
     groupHours: {
       group1: "Orari delle lezioni: lunedì, giovedì, venerdì 17:15–18:00",
@@ -164,7 +164,7 @@ export const contactFormValues = {
     avsNumber: "AVS ნომერი", // client: AVS ნომერი *
     birthDate: "დაბადების თარიღი - დღე/თვე/წელი", // client: დაბადების თარიღი *. დღე თვე წელი
     termsConditions1:
-      "ვაძლევ ნებართვას ძიუდოს კლუბს გადაიღოს ფოტოები ღონისძიებებისა და ვარჯიშების დროს და გამოიყენოს ისინი მხოლოდ კლუბის მასალებისთვის (ვებსაიტი, ბუკლეტი, გაზეთები, პუბლიკაციები და სხვ.)", // client: ფოტოების ნებართვა *
+      "(რეკომენდებულია) ვაძლევ ნებართვას ძიუდოს კლუბს გადაიღოს ფოტოები ღონისძიებებისა და ვარჯიშების დროს და გამოიყენოს ისინი მხოლოდ კლუბის მასალებისთვის (ვებსაიტი, ბუკლეტი, გაზეთები, პუბლიკაციები და სხვ.)", // client: ფოტოების ნებართვა *
     termsConditions2:
       "თუ თქვენ რეგისტრირებთ თქვენს შვილს ჟენევის ძიუდოს კლუბში, ვალდებული ხართ გადაიხადოთ წლიური საწევრო სრულად რეგისტრაციის დღიდან. გადახდის გადანაწილება არ ათავისუფლებს წლიური საწევროს სრულად გადახდისგან.", // client: საწევროს წესი *
     mustAgree: "გთხოვთ დათანხმდეთ გასაგრძელებლად",
@@ -175,7 +175,7 @@ export const contactFormValues = {
     groups: "სასწავლო ჯგუფი", // (kept for your use)
     age: "ასაკი", // (kept for your use)
     group1: "4-6 წელი",
-    group2: "7-14 წელი",
+    group2: "7-12 წელი",
     group3: "14+ & 18+ წელი",
     groupHours: {
       group1: "გაკვეთილების დრო: ორშაბათი, ხუთშაბათი, პარასკევი 17:15–18:00",

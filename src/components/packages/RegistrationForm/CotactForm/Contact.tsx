@@ -52,24 +52,28 @@ const Register: React.FC<ContactFormProps> = ({
   const [emailSent, setEmailSent] = useState(false);
   const [buttonDisable, setButtonDisable] = useState(false);
 
-  const [nameValue, setNameValue] = useState("");
   const [surnameValue, setSurnameValue] = useState("");
-  const [emailValue, setEmailValue] = useState("");
+  const [nameValue, setNameValue] = useState("");
   const [addressValue, setAddressValue] = useState("");
-  const [nationalityValue, setNationalityValue] = useState("");
-  const [messageValue, setMessageValue] = useState("");
+  const [emailValue, setEmailValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
-  const [dateValue, setDateValue] = useState("");
-  const [birthDate, setBirthDateValue] = useState("");
-  const [timeValue, setTimeValue] = useState("");
-  const [quantityValue, setQuantityValue] = useState("");
+  const [avsNumberValue, setAvsNumberValue] = useState("");
+  const [birthDateValue, setBirthDateValue] = useState("");
+  const [nationalityValue, setNationalityValue] = useState("");
+
+  const [messageValue, setMessageValue] = useState("");
+  const [participationValue, setParticipationValue] = useState("");
+  const [studyGroupValue, setStudyGroupValue] = useState("");
+  // const [dateValue, setDateValue] = useState("");
+  // const [timeValue, setTimeValue] = useState("");
+  // const [quantityValue, setQuantityValue] = useState("");
 
   const [surnameError, setSurnameError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
-  const [agreedTerms1, setAgreedTerms1] = useState(false);
+  const [agreedTerms1, setAgreedTerms1] = useState(true);
   const [agreedTerms1Error, setAgreedTerms1Error] = useState(false);
 
   const [agreedTerms2, setAgreedTerms2] = useState(false);
@@ -104,9 +108,6 @@ const Register: React.FC<ContactFormProps> = ({
         ref={form}
         onSubmit={onSubmit}
       >
-        {/* Pratique de la compétition 2 choise */}
-        {/* specific course 3 chise*/}
-
         <div className={styles.inputGroup}>
           {userSurname && (
             <input
@@ -140,38 +141,33 @@ const Register: React.FC<ContactFormProps> = ({
               onChange={(e) => setAddressValue(e.target.value)}
             />
           )}
-          {nationality && (
-            <select
-              className={`${styles.input}`}
-              name="user_nationality"
-              value={nationalityValue}
-              onChange={(e) => setNationalityValue(e.target.value)}
-            >
-              <option value="">{t.nationality}</option>
-              {unMemberCountries.map((country, index) => (
-                <option value={country} key={index}>
-                  {country}
-                </option>
-              ))}
-            </select>
-          )}
-          {avsNumber && (
+          {userEmail && (
             <input
-              className={styles.input}
-              type="text"
-              name="user_phone"
-              placeholder={t.avsNumber}
-              value={phoneValue}
-              onChange={(e) => setPhoneValue(e.target.value)}
+              className={`${styles.input} ${emailError ? styles.inputRed : ""}`}
+              type="email"
+              name="user_email"
+              placeholder={t.email}
+              value={emailValue}
+              onChange={(e) => setEmailValue(e.target.value)}
             />
           )}
-
           {phone && (
             <input
               className={styles.input}
               type="tel"
               name="user_phone"
               placeholder={t.phone}
+              value={phoneValue}
+              onChange={(e) => setPhoneValue(e.target.value)}
+            />
+          )}
+
+          {avsNumber && (
+            <input
+              className={styles.input}
+              type="text"
+              name="user_phone"
+              placeholder={t.avsNumber}
               value={phoneValue}
               onChange={(e) => setPhoneValue(e.target.value)}
             />
@@ -193,9 +189,24 @@ const Register: React.FC<ContactFormProps> = ({
               type="text"
               name="user_date"
               placeholder={t.birthDate}
-              value={birthDate}
+              value={birthDateValue}
               onChange={(e) => setBirthDateValue(e.target.value)}
             />
+          )}
+          {nationality && (
+            <select
+              className={`${styles.input}`}
+              name="user_nationality"
+              value={nationalityValue}
+              onChange={(e) => setNationalityValue(e.target.value)}
+            >
+              <option value="">{t.nationality}</option>
+              {unMemberCountries.map((country, index) => (
+                <option value={country} key={index}>
+                  {country}
+                </option>
+              ))}
+            </select>
           )}
 
           {time && (
@@ -217,17 +228,6 @@ const Register: React.FC<ContactFormProps> = ({
               placeholder={t.quantity}
               value={quantityValue}
               onChange={(e) => setQuantityValue(e.target.value)}
-            />
-          )}
-
-          {userEmail && (
-            <input
-              className={`${styles.input} ${emailError ? styles.inputRed : ""}`}
-              type="email"
-              name="user_email"
-              placeholder={t.email}
-              value={emailValue}
-              onChange={(e) => setEmailValue(e.target.value)}
             />
           )}
         </div>
