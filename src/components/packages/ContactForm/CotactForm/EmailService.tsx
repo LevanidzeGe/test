@@ -20,7 +20,7 @@ export const sendEmail =
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE!,
-        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE!,
+        process.env.NEXT_PUBLIC_CONTACT_TEMPLATE!,
         form,
         process.env.NEXT_PUBLIC_EMAIL_FORM
       )
