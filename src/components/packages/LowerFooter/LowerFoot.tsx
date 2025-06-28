@@ -16,7 +16,7 @@ export default async function LowerFoot() {
             Created with <FaHeart className={styles.heart} />
             by
           </p>
-          <Link href="https://www.levanidze.com/" target="_blank">
+          <Link href="https://www.webmoderna.com/" target="_blank">
             <p className={` ${styles.lighted}`}>Levani</p>
           </Link>
         </div>
@@ -25,17 +25,17 @@ export default async function LowerFoot() {
 
           <p className={styles.dimmed}>Powered by</p>
           <Link
-            href="https://www.levanidze.com/"
+            href="https://www.webmoderna.com/"
             target="_blank"
             className={styles.link}
           >
-            <p className={` ${styles.lighted}`}>Levanidze.com</p>
+            <p className={` ${styles.lighted}`}>WebModerna.com</p>
             <Image
               className={styles.logoIcon}
               src={logo}
               width={15}
               height={15}
-              alt="Levanidze Web Agency www.Levanidze.com"
+              alt="Web Moderna Web Agency www.WebModerna.com"
             ></Image>
           </Link>
         </div>
