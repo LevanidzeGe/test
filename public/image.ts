@@ -15,6 +15,7 @@ import giorgiSofia from "@/public/images/giorgi-sofia.jpg";
 import giSale1 from "@/public/images/giSale1.png";
 import giSale2 from "@/public/images/giSale2.png";
 import giSale3 from "@/public/images/giSale3.png";
+import sponsor1 from "./images/sponsors/sponsor1.jpg";
 
 //
 //
@@ -52,4 +53,5 @@ export {
   img5,
   img6,
   locationIcon,
+  sponsor1,
 };

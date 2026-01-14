@@ -1,10 +1,9 @@
 import styles from "./Item.module.css";
 import AlbumSlider from "@/src/components/packages/AlbumSlider/AlbumSlider";
 import type { ReturnTypeOfExtract } from "@/src/lib/firebase/types";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 
 export default async function ItemJsx({ item }: { item: ReturnTypeOfExtract }) {
-  const t = await getTranslations("projectsPage.projects");
   const locale = await getLocale();
 
   return (
